@@ -22,7 +22,8 @@ jobs:
           python-version: "3.11"
 
       - name: Install Python packages
-        run: pip install requests
+        run: pip install requests beutifulsoup4
+        
 
       - name: Run watcher
         run: python watch_sources.py
