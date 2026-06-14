@@ -1,0 +1,26 @@
+{
+  "MADDS (Brandeis OPRC)": {
+    "signals": [],
+    "hash": "c6be77661a881cf0e369afbc10a735920cb8788a86e15fb68071c5b214720363",
+    "last_checked": "2026-06-14"
+  },
+  "NFLIS Home (Snapshots & announcements)": {
+    "signals": [
+      "January 1, 2025",
+      "March 31, 2025",
+      "October 1, 2024",
+      "December 31, 2024",
+      "January 1, 2024",
+      "September 30, 2024"
+    ],
+    "hash": "20afbfc2c686f38bb717262a87ba7e3ffad19fcfa32f5b5c0110538e0217c846",
+    "last_checked": "2026-06-14"
+  },
+  "NFLIS Publications (best-effort)": {
+    "signals": [
+      "September 2017"
+    ],
+    "hash": "7bab83cdace68ce865698a22c4b4e93370bab1aed135179898236fad2c1f18b1",
+    "last_checked": "2026-06-14"
+  }
+}
