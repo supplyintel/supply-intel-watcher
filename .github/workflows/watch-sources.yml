@@ -22,7 +22,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install Python packages
-        run: pip install requests beutifulsoup4
+        run: pip install requests beautifulsoup4
         
 
       - name: Run watcher
