@@ -1,4 +1,4 @@
-# Source watch — 2026-06-14
+# Source watch — 2026-06-15
 
 ## ⚠ Watcher problems (source may be blind)
 
@@ -8,16 +8,6 @@ _A failed check means no news from that source is reaching you. If the same sour
 The watcher could not read this source: `404 Client Error: Not Found for url: https://ndews.umd.edu/resources/ndews-weekly-briefing`
 
 [Check it by hand](https://ndews.umd.edu/resources/ndews-weekly-briefing)
-
-### ⚠ CFSRE / NPS Discovery — Public Alerts
-The watcher could not read this source: `500 Server Error: Internal Server Error for url: https://www.cfsre.org/nps-discovery/`
-
-[Check it by hand](https://www.npsdiscovery.org/reports/public-alerts/)
-
-### ⚠ CFSRE / NPS Discovery — Trend Reports
-The watcher could not read this source: `500 Server Error: Internal Server Error for url: https://www.cfsre.org/nps-discovery/`
-
-[Check it by hand](https://www.npsdiscovery.org/reports/trend-reports/)
 
 ### ⚠ NIST RaDAR
 The watcher could not read this source: `404 Client Error: Not Found for url: https://www.nist.gov/programs-projects/nist-rapid-drug-analysis-and-research-radar-program`
