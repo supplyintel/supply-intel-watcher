@@ -1,4 +1,4 @@
-# Source watch — 2026-06-15
+# Source watch — 2026-06-22
 
 ## ⚠ Watcher problems (source may be blind)
 
@@ -8,6 +8,11 @@ _A failed check means no news from that source is reaching you. If the same sour
 The watcher could not read this source: `404 Client Error: Not Found for url: https://ndews.umd.edu/resources/ndews-weekly-briefing`
 
 [Check it by hand](https://ndews.umd.edu/resources/ndews-weekly-briefing)
+
+### ⚠ MADDS (Brandeis OPRC)
+The watcher could not read this source: `403 Client Error: Forbidden for url: https://heller.brandeis.edu/opioid-policy/community-resources/madds/index.html`
+
+[Check it by hand](https://heller.brandeis.edu/opioid-policy/community-resources/madds/index.html)
 
 ### ⚠ NIST RaDAR
 The watcher could not read this source: `404 Client Error: Not Found for url: https://www.nist.gov/programs-projects/nist-rapid-drug-analysis-and-research-radar-program`
