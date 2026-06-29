@@ -13,24 +13,24 @@
       "January 1, 2024",
       "September 30, 2024"
     ],
-    "hash": "20afbfc2c686f38bb717262a87ba7e3ffad19fcfa32f5b5c0110538e0217c846",
-    "last_checked": "2026-06-22"
+    "hash": "3b8c17a117dd37fa90ddf016f97231dd8dd92bb2a5a10a7ece1e3ff6c1b54f8c",
+    "last_checked": "2026-06-29"
   },
   "NFLIS Publications (best-effort)": {
     "signals": [
       "September 2017"
     ],
     "hash": "7bab83cdace68ce865698a22c4b4e93370bab1aed135179898236fad2c1f18b1",
-    "last_checked": "2026-06-22"
+    "last_checked": "2026-06-29"
   },
   "CFSRE / NPS Discovery \u2014 Public Alerts": {
     "signals": [],
     "hash": "c28cf3b0a83a9a8846473fa061cd5365e75719e0cc2d84355f694df87faec094",
-    "last_checked": "2026-06-22"
+    "last_checked": "2026-06-29"
   },
   "CFSRE / NPS Discovery \u2014 Trend Reports": {
     "signals": [],
     "hash": "c28cf3b0a83a9a8846473fa061cd5365e75719e0cc2d84355f694df87faec094",
-    "last_checked": "2026-06-22"
+    "last_checked": "2026-06-29"
   }
 }

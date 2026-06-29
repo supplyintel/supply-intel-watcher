@@ -1,4 +1,11 @@
-# Source watch — 2026-06-22
+# Source watch — 2026-06-29
+
+## 🟢 New content detected
+
+### NFLIS Home (Snapshots & announcements)
+Page content changed (no clear issue number or date found — worth a quick look).
+
+[Open the source](https://www.nflis.deadiversion.usdoj.gov/)
 
 ## ⚠ Watcher problems (source may be blind)
 
