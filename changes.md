@@ -1,18 +1,11 @@
-# Source watch — 2026-06-29
-
-## 🟢 New content detected
-
-### NFLIS Home (Snapshots & announcements)
-Page content changed (no clear issue number or date found — worth a quick look).
-
-[Open the source](https://www.nflis.deadiversion.usdoj.gov/)
+# Source watch — 2026-07-06
 
 ## ⚠ Watcher problems (source may be blind)
 
 _A failed check means no news from that source is reaching you. If the same source fails two weeks in a row, the page probably moved and its URL in `watch_sources.py` needs updating._
 
 ### ⚠ NDEWS Weekly Briefings
-The watcher could not read this source: `404 Client Error: Not Found for url: https://ndews.umd.edu/resources/ndews-weekly-briefing`
+The watcher could not read this source: `HTTPSConnectionPool(host='ndews.umd.edu', port=443): Max retries exceeded with url: /resources/ndews-weekly-briefing (Caused by ConnectTimeoutError(<HTTPSConnection(host='ndews.umd.edu', port=443) at 0x7f793e343910>, 'Connection to ndews.umd.edu timed out. (connect timeout=45)'))`
 
 [Check it by hand](https://ndews.umd.edu/resources/ndews-weekly-briefing)
 
