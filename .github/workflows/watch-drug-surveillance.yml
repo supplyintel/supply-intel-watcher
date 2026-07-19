@@ -1,0 +1,100 @@
+name: Supply Intel Watcher v3
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 12 * * 1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: supply-intel-watcher
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install packages
+        run: pip install -r requirements.txt
+
+      - name: Run watcher
+        env:
+          NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
+        run: python watch_sources.py
+
+      - name: Save state and reports
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add watch_state_v3.json reports/
+          git commit -m "Update supply intelligence report" || echo "No changes to commit"
+          git push
+
+      - name: Email HTML summary
+        if: always()
+        env:
+          EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+        run: |
+          python - <<'PY'
+          import os
+          import smtplib
+          from datetime import datetime, timezone
+          from email.message import EmailMessage
+          from pathlib import Path
+
+          username = os.environ["EMAIL_USERNAME"]
+          password = os.environ["EMAIL_PASSWORD"]
+
+          html_path = Path("reports/latest.html")
+          text_path = Path("reports/latest.md")
+
+          if text_path.exists():
+              text_body = text_path.read_text(
+                  encoding="utf-8",
+                  errors="replace"
+              )
+          else:
+              text_body = (
+                  "The workflow ended before a report was created. "
+                  "Review the GitHub Actions log."
+              )
+
+          if html_path.exists():
+              html_body = html_path.read_text(
+                  encoding="utf-8",
+                  errors="replace"
+              )
+          else:
+              html_body = f"<pre>{text_body}</pre>"
+
+          run_date = datetime.now(timezone.utc).strftime("%B %d, %Y")
+
+          message = EmailMessage()
+          message["From"] = username
+          message["To"] = username
+          message["Subject"] = (
+              f"Weekly drug intelligence report — {run_date}"
+          )
+
+          message.set_content(text_body)
+          message.add_alternative(html_body, subtype="html")
+
+          with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+              server.login(username, password)
+              server.send_message(message)
+
+          print("Email sent.")
+          PY
