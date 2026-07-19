@@ -13,24 +13,24 @@
       "January 1, 2024",
       "September 30, 2024"
     ],
-    "hash": "3b8c17a117dd37fa90ddf016f97231dd8dd92bb2a5a10a7ece1e3ff6c1b54f8c",
-    "last_checked": "2026-07-13"
+    "hash": "d4482ee3a988dd95652f9d18341e4ad1c0e20820db8235918a81849170da8978",
+    "last_checked": "2026-07-19"
   },
   "NFLIS Publications (best-effort)": {
     "signals": [
       "September 2017"
     ],
     "hash": "7bab83cdace68ce865698a22c4b4e93370bab1aed135179898236fad2c1f18b1",
-    "last_checked": "2026-07-13"
+    "last_checked": "2026-07-19"
   },
   "CFSRE / NPS Discovery \u2014 Public Alerts": {
     "signals": [],
-    "hash": "c28cf3b0a83a9a8846473fa061cd5365e75719e0cc2d84355f694df87faec094",
-    "last_checked": "2026-07-13"
+    "hash": "58e33319be3f36eeb5535f805bfe6cc990c267c79b9cc357d86891d7238acf1a",
+    "last_checked": "2026-07-19"
   },
   "CFSRE / NPS Discovery \u2014 Trend Reports": {
     "signals": [],
-    "hash": "c28cf3b0a83a9a8846473fa061cd5365e75719e0cc2d84355f694df87faec094",
-    "last_checked": "2026-07-13"
+    "hash": "58e33319be3f36eeb5535f805bfe6cc990c267c79b9cc357d86891d7238acf1a",
+    "last_checked": "2026-07-19"
   }
 }
