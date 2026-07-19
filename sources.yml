@@ -1,0 +1,146 @@
+version: 3
+contact_email: joe.sawicki.jr@gmail.com
+
+state:
+  max_seen_items: 5000
+
+keywords:
+  high_priority:
+    - nitazene
+    - isotonitazene
+    - metonitazene
+    - protonitazene
+    - etonitazepyne
+    - medetomidine
+    - dexmedetomidine
+    - xylazine
+    - brorphine
+    - fluorofentanyl
+    - para-fluorofentanyl
+    - bromazolam
+    - designer benzodiazepine
+    - 7-hydroxymitragynine
+    - 7-OH
+    - kratom
+  massachusetts:
+    - Massachusetts
+    - Mass.
+    - Boston
+    - Worcester
+    - Barnstable
+    - Plymouth County
+    - Middlesex County
+    - Suffolk County
+  drug_classes:
+    - synthetic opioid
+    - novel psychoactive substance
+    - NPS
+    - fentanyl
+    - stimulant
+    - cathinone
+    - synthetic cannabinoid
+    - veterinary sedative
+    - opioid
+  surveillance_terms:
+    - overdose
+    - drug checking
+    - toxicology
+    - public alert
+    - health advisory
+    - scheduling
+    - seizure
+    - mortality
+    - emerging drug
+
+sources:
+  - name: CFSRE NPS Discovery — Public Alerts
+    type: html_links
+    section: United States
+    url: https://www.npsdiscovery.org/reports/public-alerts/
+    selector: main
+    link_selector: "a[href]"
+    include_all: true
+    base_score: 4
+    max_items: 30
+    enabled: true
+
+  - name: CFSRE NPS Discovery — Trend Reports
+    type: html_links
+    section: United States
+    url: https://www.npsdiscovery.org/reports/trend-reports/
+    selector: main
+    link_selector: "a[href]"
+    include_all: true
+    base_score: 3
+    max_items: 30
+    enabled: true
+
+  - name: NFLIS homepage
+    type: html_links
+    section: United States
+    url: https://www.nflis.deadiversion.usdoj.gov/
+    selector: body
+    link_selector: "a[href]"
+    include_all: false
+    base_score: 2
+    max_items: 30
+    enabled: true
+
+  - name: PubMed — emerging drug surveillance
+    type: pubmed
+    section: Research
+    url: https://pubmed.ncbi.nlm.nih.gov/
+    query: >-
+      (nitazene OR medetomidine OR xylazine OR bromazolam OR brorphine OR
+      fluorofentanyl OR "novel psychoactive substance" OR "drug checking")
+    lookback_days: 14
+    max_items: 40
+    base_score: 1
+    enabled: true
+
+  - name: PubMed — Massachusetts overdose and drug supply
+    type: pubmed
+    section: Massachusetts
+    url: https://pubmed.ncbi.nlm.nih.gov/
+    query: >-
+      (Massachusetts[Title/Abstract]) AND
+      (overdose OR fentanyl OR xylazine OR nitazene OR "drug supply" OR toxicology)
+    lookback_days: 30
+    max_items: 30
+    base_score: 4
+    enabled: true
+
+  # These page watches may be blocked by the publisher. They are retained but
+  # disabled until a stable official feed or API is available.
+  - name: Massachusetts current overdose data
+    type: page_hash
+    section: Massachusetts
+    url: https://www.mass.gov/lists/current-overdose-data
+    selector: main
+    base_score: 4
+    enabled: false
+
+  - name: Massachusetts BSAS dashboard
+    type: page_hash
+    section: Massachusetts
+    url: https://www.mass.gov/info-details/bureau-of-substance-addiction-services-bsas-dashboard
+    selector: main
+    base_score: 4
+    enabled: false
+
+  - name: DEA news releases
+    type: html_links
+    section: United States
+    url: https://www.dea.gov/what-we-do/news/press-releases
+    selector: main
+    include_all: false
+    base_score: 2
+    enabled: false
+
+  - name: MADDS
+    type: page_hash
+    section: Massachusetts
+    url: https://heller.brandeis.edu/opioid-policy/community-resources/madds/index.html
+    selector: main
+    base_score: 5
+    enabled: false
