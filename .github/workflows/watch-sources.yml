@@ -23,10 +23,12 @@ jobs:
 
       - name: Install Python packages
         run: pip install requests beautifulsoup4
-        
 
-      - name: Run watcher
-        run: python watch_sources.py
+      - name: Run watcher and create summary
+        shell: bash
+        run: |
+          set -o pipefail
+          python watch_sources.py 2>&1 | tee /tmp/drug-surveillance-report.txt
 
       - name: Save changes
         run: |
@@ -35,3 +37,53 @@ jobs:
           git add .
           git commit -m "Update source snapshots" || echo "No changes to commit"
           git push
+
+      - name: Email summary
+        env:
+          EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+        run: |
+          python - <<'PY'
+          import os
+          import smtplib
+          from datetime import datetime, timezone
+          from email.message import EmailMessage
+          from pathlib import Path
+
+          username = os.environ["EMAIL_USERNAME"]
+          password = os.environ["EMAIL_PASSWORD"]
+
+          report_path = Path("/tmp/drug-surveillance-report.txt")
+
+          if report_path.exists():
+              report = report_path.read_text(
+                  encoding="utf-8",
+                  errors="replace"
+              ).strip()
+          else:
+              report = ""
+
+          if not report:
+              report = (
+                  "The drug-surveillance watcher completed, "
+                  "but the script did not produce any written output."
+              )
+
+          run_date = datetime.now(timezone.utc).strftime("%B %d, %Y")
+
+          message = EmailMessage()
+          message["From"] = username
+          message["To"] = username
+          message["Subject"] = f"Drug-surveillance summary — {run_date}"
+          message.set_content(
+              "Drug-surveillance watcher report\n"
+              f"Run date: {run_date}\n\n"
+              f"{report}\n"
+          )
+
+          with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+              server.login(username, password)
+              server.send_message(message)
+
+          print("Summary email sent successfully.")
+          PY
