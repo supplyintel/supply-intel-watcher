@@ -1,22 +1,5 @@
 # Source watch — 2026-07-19
 
-## 🟢 New content detected
-
-### CFSRE / NPS Discovery — Public Alerts
-Page content changed (no clear issue number or date found — worth a quick look).
-
-[Open the source](https://www.npsdiscovery.org/reports/public-alerts/)
-
-### CFSRE / NPS Discovery — Trend Reports
-Page content changed (no clear issue number or date found — worth a quick look).
-
-[Open the source](https://www.npsdiscovery.org/reports/trend-reports/)
-
-### NFLIS Home (Snapshots & announcements)
-Page content changed (no clear issue number or date found — worth a quick look).
-
-[Open the source](https://www.nflis.deadiversion.usdoj.gov/)
-
 ## ⚠ Watcher problems (source may be blind)
 
 _A failed check means no news from that source is reaching you. If the same source fails two weeks in a row, the page probably moved and its URL in `watch_sources.py` needs updating._
