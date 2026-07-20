@@ -22,6 +22,7 @@ An item can appear in more than one section because a single source may be relev
 - `reports/one_pager.md`: concise substance and audience summary ready for editorial review
 - `reports/editorial_queue.md`: review-now, monitor, and background tiers with cross-source signal labels
 - `reports/trends.md`: rolling seven-day topic signals compared with the preceding seven days
+- `reports/audiences/`: separate briefings for court staff, treatment providers, harm reduction, and law enforcement
 - `reports/archive/`: dated full reports
 - `watch_state_v3.json`: deduplication, page hashes, 90-day topic history, initialization state, and source failure history
 
