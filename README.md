@@ -14,6 +14,10 @@ Reports now organize the same evidence into decision-friendly sections:
 
 An item can appear in more than one section because a single source may be relevant to several substances or audiences. Categories, priority tiers, corroboration labels, and implications are deterministic triage aids—not generated facts or individualized legal/clinical conclusions. Review the linked source before reuse.
 
+## Phase 4 dashboard foundation
+
+`reports/dashboard.html` is a responsive, self-contained dashboard generated on every watcher run. It includes weekly metrics, full-text search, priority filters, substance filters, audience filters, and source-linked results. It remains an artifact inside the private repository until an authenticated hosting option is configured.
+
 ## Outputs
 
 - `reports/latest.md` and `reports/latest.html`: all new relevant items
@@ -24,6 +28,7 @@ An item can appear in more than one section because a single source may be relev
 - `reports/trends.md`: rolling seven-day topic signals compared with the preceding seven days
 - `reports/audiences/`: separate briefings for court staff, treatment providers, harm reduction, and law enforcement
 - `reports/massachusetts.md`: direct Massachusetts evidence separated from external watchlist signals
+- `reports/dashboard.html`: searchable and filterable browser dashboard artifact
 - `reports/archive/`: dated full reports
 - `watch_state_v3.json`: deduplication, page hashes, 90-day topic history, initialization state, and source failure history
 
