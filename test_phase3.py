@@ -9,6 +9,8 @@ from watch_sources import (
     classify_item,
     corroborating_sources,
     evidence_label,
+    is_direct_massachusetts,
+    massachusetts_watchlist_candidates,
     priority_score,
     priority_tier,
     render_audience_briefing,
@@ -16,6 +18,7 @@ from watch_sources import (
     render_briefing,
     render_editorial_queue,
     render_markdown,
+    render_massachusetts_briefing,
     render_one_pager,
     render_trends,
     record_topic_history,
@@ -256,6 +259,55 @@ class Phase3ClassificationTests(unittest.TestCase):
             },
         )
         self.assertEqual(audience_slug("Court staff"), "court_staff")
+
+
+    def test_massachusetts_direct_and_external_items_are_separated(self):
+        direct = make_item(
+            source="Massachusetts surveillance",
+            section="Massachusetts",
+            title="Massachusetts dashboard update",
+            summary="New state surveillance data",
+            item_id="ma",
+        )
+        external = make_item(
+            source="International alert system",
+            section="International",
+            title="Nitazene alert",
+            summary="An emerging nitazene warning",
+            item_id="external",
+        )
+        self.assertTrue(is_direct_massachusetts(direct))
+        self.assertFalse(is_direct_massachusetts(external))
+        self.assertEqual(
+            massachusetts_watchlist_candidates([direct, external]),
+            [external],
+        )
+
+    def test_massachusetts_brief_has_geographic_safeguard(self):
+        external = make_item(
+            source="International alert system",
+            section="International",
+            title="Nitazene alert",
+            summary="An emerging nitazene warning",
+            item_id="external",
+        )
+        report = render_massachusetts_briefing([external], 50)
+        self.assertIn("# Massachusetts drug intelligence briefing", report)
+        self.assertIn("No new item was directly categorized", report)
+        self.assertIn("## External signals to monitor for Massachusetts", report)
+        self.assertIn("Reporting geography: International", report)
+        self.assertIn("does not establish detection", report)
+
+    def test_low_priority_external_item_is_not_on_massachusetts_watchlist(self):
+        item = make_item(
+            source="International research",
+            section="International",
+            title="Nitazene note",
+            summary="Nitazene",
+            score=2,
+            presentation_worthy=False,
+        )
+        self.assertEqual(massachusetts_watchlist_candidates([item]), [])
 
 
 if __name__ == "__main__":
