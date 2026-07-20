@@ -1,4 +1,5 @@
 import unittest
+from datetime import datetime, timedelta, timezone
 
 from watch_sources import (
     Item,
@@ -12,7 +13,10 @@ from watch_sources import (
     render_editorial_queue,
     render_markdown,
     render_one_pager,
+    render_trends,
+    record_topic_history,
     structured_groups,
+    trend_snapshot,
     usefulness_flags,
 )
 
@@ -153,6 +157,61 @@ class Phase3ClassificationTests(unittest.TestCase):
         self.assertIn("## Background", report)
         self.assertIn("Cross-source signal (2 sources)", report)
         self.assertIn("do not verify that separate sources report the same event", report)
+
+
+    def test_topic_history_records_and_trims_old_entries(self):
+        now = datetime(2026, 7, 20, tzinfo=timezone.utc)
+        state = {
+            "topic_history": [
+                {
+                    "item_id": "old",
+                    "recorded": (now - timedelta(days=91)).isoformat(),
+                    "source": "Old source",
+                    "topics": ["Nitazenes"],
+                }
+            ]
+        }
+        record_topic_history(state, [make_item()], now)
+        self.assertEqual(len(state["topic_history"]), 1)
+        self.assertEqual(
+            state["topic_history"][0]["topics"],
+            ["Nitazenes", "Xylazine", "Toxicology case reports"],
+        )
+
+    def test_trend_snapshot_compares_seven_day_windows(self):
+        now = datetime(2026, 7, 20, tzinfo=timezone.utc)
+        history = [
+            {
+                "recorded": (now - timedelta(days=2)).isoformat(),
+                "topics": ["Nitazenes", "Xylazine"],
+            },
+            {
+                "recorded": (now - timedelta(days=3)).isoformat(),
+                "topics": ["Nitazenes"],
+            },
+            {
+                "recorded": (now - timedelta(days=10)).isoformat(),
+                "topics": ["Xylazine", "Novel stimulants"],
+            },
+        ]
+        snapshot = trend_snapshot(history, now)
+        self.assertEqual(snapshot["Nitazenes"]["status"], "New")
+        self.assertEqual(snapshot["Xylazine"]["status"], "Steady")
+        self.assertEqual(snapshot["Novel stimulants"]["status"], "Cooling")
+
+    def test_trend_report_explains_limits(self):
+        now = datetime(2026, 7, 20, tzinfo=timezone.utc)
+        history = [
+            {
+                "recorded": (now - timedelta(days=1)).isoformat(),
+                "topics": ["Medetomidine"],
+            }
+        ]
+        report = render_trends(history, 50, now)
+        self.assertIn("# Topic trend watch", report)
+        self.assertIn("## New", report)
+        self.assertIn("**Medetomidine:** 1 current signal(s)", report)
+        self.assertIn("not prevalence estimates", report)
 
 
 if __name__ == "__main__":
