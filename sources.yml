@@ -264,14 +264,9 @@ sources:
     enabled: true
 
   - name: EUDA News
-    type: html_links
+    type: rss
     section: International
-    url: https://www.euda.europa.eu/news_en
-    selector: main
-    selector_fallback: body
-    link_selector: "a[href]"
-    url_includes:
-      - /news/
+    url: https://www.euda.europa.eu/news/home/rss.xml
     include_all: false
     base_score: 4
     max_items: 50
