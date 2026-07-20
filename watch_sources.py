@@ -26,6 +26,8 @@ import feedparser
 import requests
 import yaml
 from bs4 import BeautifulSoup
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 CONFIG_FILE = Path("sources.yml")
 STATE_FILE = Path("watch_state_v3.json")
@@ -120,8 +122,26 @@ def is_relevant(text: str, matches: list[str], source: dict[str, Any]) -> bool:
     return bool(matches)
 
 
+def is_excluded(text: str, source: dict[str, Any]) -> bool:
+    lowered = text.lower()
+    return any(term.lower() in lowered for term in source.get("exclude_terms", []))
+
+
 def get_session(config: dict[str, Any]) -> requests.Session:
     session = requests.Session()
+    retry = Retry(
+        total=4,
+        connect=3,
+        read=3,
+        status=4,
+        backoff_factor=1.0,
+        status_forcelist=(429, 500, 502, 503, 504),
+        allowed_methods=frozenset({"GET", "POST"}),
+        respect_retry_after_header=True,
+    )
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount("https://", adapter)
+    session.mount("http://", adapter)
     session.headers.update(DEFAULT_HEADERS)
     contact = config.get("contact_email")
     if contact:
@@ -190,6 +210,7 @@ def fetch_pubmed(
     if api_key:
         params["api_key"] = api_key
 
+    time.sleep(float(source.get("request_delay_seconds", 0.4)))
     search = session.get(
         "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
         params=params,
@@ -210,9 +231,10 @@ def fetch_pubmed(
     if api_key:
         summary_params["api_key"] = api_key
 
-    details = session.get(
+    time.sleep(float(source.get("request_delay_seconds", 0.4)))
+    details = session.post(
         "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi",
-        params=summary_params,
+        data=summary_params,
         timeout=TIMEOUT,
     )
     details.raise_for_status()
@@ -227,6 +249,8 @@ def fetch_pubmed(
         authors = ", ".join(a.get("name", "") for a in record.get("authors", [])[:4])
         journal = clean_text(record.get("fulljournalname"))
         summary = " | ".join(part for part in [authors, journal] if part)
+        if is_excluded(f"{title} {summary}", source):
+            continue
         matches, score = keyword_matches(title, keyword_groups)
         item_id = stable_id(source["name"], title, url)
         items.append(
@@ -257,6 +281,9 @@ def fetch_html_links(
     selector = source.get("selector", "main")
     region = soup.select_one(selector) if selector else soup
     if region is None:
+        fallback = source.get("selector_fallback")
+        region = soup.select_one(fallback) if fallback else None
+    if region is None:
         raise RuntimeError(f"Selector did not match: {selector}")
 
     items: list[Item] = []
@@ -270,7 +297,12 @@ def fetch_html_links(
         if url in seen_links:
             continue
         seen_links.add(url)
+        url_includes = [value.lower() for value in source.get("url_includes", [])]
+        if url_includes and not any(value in url.lower() for value in url_includes):
+            continue
         context = clean_text(link.parent.get_text(" ") if link.parent else title)
+        if is_excluded(f"{title} {context}", source):
+            continue
         matches, score = keyword_matches(f"{title} {context}", keyword_groups)
         if not is_relevant(f"{title} {context}", matches, source):
             continue

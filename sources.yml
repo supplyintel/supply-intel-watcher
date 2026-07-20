@@ -58,7 +58,15 @@ sources:
     section: United States
     url: https://www.npsdiscovery.org/reports/public-alerts/
     selector: main
+    selector_fallback: body
     link_selector: "a[href]"
+    url_includes:
+      - /reports/
+      - .pdf
+    exclude_terms:
+      - skip to main content
+      - contact
+      - privacy
     include_all: true
     base_score: 4
     max_items: 30
@@ -69,7 +77,15 @@ sources:
     section: United States
     url: https://www.npsdiscovery.org/reports/trend-reports/
     selector: main
+    selector_fallback: body
     link_selector: "a[href]"
+    url_includes:
+      - /reports/
+      - .pdf
+    exclude_terms:
+      - skip to main content
+      - contact
+      - privacy
     include_all: true
     base_score: 3
     max_items: 30
@@ -81,6 +97,10 @@ sources:
     url: https://www.nflis.deadiversion.usdoj.gov/
     selector: body
     link_selector: "a[href]"
+    url_includes:
+      - nflisdata/docs/
+    exclude_terms:
+      - skip to main content
     include_all: false
     base_score: 2
     max_items: 30
@@ -94,7 +114,18 @@ sources:
       (nitazene OR medetomidine OR xylazine OR bromazolam OR brorphine OR
       fluorofentanyl OR "novel psychoactive substance" OR "drug checking")
     lookback_days: 14
+    request_delay_seconds: 0.5
     max_items: 40
+    exclude_terms:
+      - veterinary
+      - anaesthesia
+      - anesthesia
+      - sedating dogs
+      - in donkeys
+      - in horses
+      - in rats
+      - in mice
+      - zoo and wildlife
     base_score: 1
     enabled: true
 
@@ -106,6 +137,7 @@ sources:
       (Massachusetts[Title/Abstract]) AND
       (overdose OR fentanyl OR xylazine OR nitazene OR "drug supply" OR toxicology)
     lookback_days: 30
+    request_delay_seconds: 0.5
     max_items: 30
     base_score: 4
     enabled: true
