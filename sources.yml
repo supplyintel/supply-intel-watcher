@@ -351,7 +351,7 @@ sources:
     url: https://heller.brandeis.edu/opioid-policy/community-resources/madds/index.html
     selector: main
     base_score: 5
-    enabled: true
+    enabled: false
 
   - name: MADDS Community Drug Supply Alerts
     type: html_links
@@ -371,7 +371,7 @@ sources:
     base_score: 6
     max_items: 40
     baseline_on_first_run: true
-    enabled: true
+    enabled: false
 
   - name: MADDS Street Narcotics Updates and Alerts
     type: html_links
@@ -391,7 +391,7 @@ sources:
     base_score: 6
     max_items: 40
     baseline_on_first_run: true
-    enabled: true
+    enabled: false
 
   - name: MADDS Public Health Bulletins
     type: html_links
@@ -411,13 +411,13 @@ sources:
     base_score: 6
     max_items: 40
     baseline_on_first_run: true
-    enabled: true
+    enabled: false
 
   - name: NIST Rapid Drug Analysis and Research
     type: page_hash
     section: United States
     url: https://www.nist.gov/programs-projects/radar
-    selector: main
+    selector: body
     base_score: 5
     enabled: true
 
@@ -434,7 +434,7 @@ sources:
     base_score: 4
     max_items: 40
     baseline_on_first_run: true
-    enabled: true
+    enabled: false
 
   - name: NSW Health Public Drug Warnings
     type: html_links
@@ -475,5 +475,47 @@ sources:
     section: United States
     url: https://www.health.ny.gov/diseases/aids/consumers/prevention/oduh/drug_checking.htm
     selector: body
+    base_score: 5
+    enabled: true
+
+  # Brandeis MADDS and ACIC are retained above but disabled because they block
+  # or time out in GitHub Actions. These official substitutes are runner-safe.
+  - name: NYC Drug Checking Data
+    type: page_hash
+    section: United States
+    url: https://www.nyc.gov/site/doh/health/health-topics/drug-checking-data.page
+    selector: body
+    base_score: 6
+    enabled: true
+
+  - name: NYC Alcohol and Drug Use Data
+    type: page_hash
+    section: United States
+    url: https://www.nyc.gov/site/doh/health/health-topics/alcohol-and-drug-use-data.page
+    selector: body
+    base_score: 5
+    enabled: true
+
+  - name: Vermont Know Overdose
+    type: page_hash
+    section: United States
+    url: https://www.healthvermont.gov/alcohol-drugs/overdose-response/know-overdose
+    selector: main
+    base_score: 5
+    enabled: true
+
+  - name: Vermont Substance Use Data and Reports
+    type: page_hash
+    section: United States
+    url: https://www.healthvermont.gov/alcohol-drugs/substance-use-data-reports/data-and-reports
+    selector: main
+    base_score: 4
+    enabled: true
+
+  - name: Victoria Pill Testing Service
+    type: page_hash
+    section: International
+    url: https://www.health.vic.gov.au/alcohol-and-drugs/pill-testing
+    selector: main
     base_score: 5
     enabled: true
