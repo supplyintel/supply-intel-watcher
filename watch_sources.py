@@ -394,6 +394,121 @@ def run_source(
     raise ValueError(f"Unsupported source type: {source_type}")
 
 
+EMERGING_SUBSTANCES = {
+    "Nitazenes": ("nitazene", "isotonitazene", "metonitazene", "protonitazene", "etonitazene"),
+    "Medetomidine": ("medetomidine", "dexmedetomidine"),
+    "Xylazine": ("xylazine",),
+    "Novel benzodiazepines": ("bromazolam", "etizolam", "clonazolam", "novel benzodiazepine"),
+    "Novel stimulants": ("cathinone", "novel stimulant", "synthetic stimulant"),
+    "Synthetic cannabinoids": ("synthetic cannabinoid", "spice", "k2"),
+}
+
+AUDIENCE_RULES = {
+    "Court staff": (
+        ("overdose", "mortality", "death", "toxicology", "scheduling", "drug checking"),
+        "May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.",
+    ),
+    "Treatment providers": (
+        ("overdose", "withdrawal", "treatment", "xylazine", "medetomidine", "nitazene", "benzodiazepine"),
+        "May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.",
+    ),
+    "Harm reduction": (
+        ("alert", "warning", "drug checking", "overdose", "naloxone", "xylazine", "medetomidine", "nitazene"),
+        "May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.",
+    ),
+    "Law enforcement": (
+        ("scheduling", "forensic", "toxicology", "novel psychoactive", "drug supply", "seizure"),
+        "May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.",
+    ),
+}
+
+
+def item_text(item: Item) -> str:
+    return " ".join(
+        [item.source, item.section, item.title, item.summary, *item.matched_keywords]
+    ).lower()
+
+
+def classify_item(item: Item) -> dict[str, list[str]]:
+    """Return deterministic Phase 3 categories; an item may support several sections."""
+    text = item_text(item)
+    categories: dict[str, list[str]] = {
+        "Massachusetts": [],
+        "Emerging substances": [],
+        "Research": [],
+        "Implications": [],
+    }
+
+    if item.section == "Massachusetts" or "massachusetts" in text:
+        if "dashboard" in text or "data" in text or "surveillance" in text:
+            categories["Massachusetts"].append("Dashboard updates")
+        elif "alert" in text or "warning" in text or "drug checking" in text:
+            categories["Massachusetts"].append("Drug-checking alerts")
+        else:
+            categories["Massachusetts"].append("New reports")
+
+    for label, terms in EMERGING_SUBSTANCES.items():
+        if any(term in text for term in terms):
+            categories["Emerging substances"].append(label)
+
+    if item.section == "Research" or "pubmed" in text or "journal" in text:
+        if "case report" in text or "forensic toxicology" in text:
+            categories["Research"].append("Toxicology case reports")
+        elif "mortality" in text or "death" in text or "fatal" in text:
+            categories["Research"].append("Mortality studies")
+        else:
+            categories["Research"].append("New PubMed papers")
+
+    for audience, (terms, _note) in AUDIENCE_RULES.items():
+        if any(term in text for term in terms):
+            categories["Implications"].append(audience)
+    return categories
+
+
+def usefulness_flags(item: Item) -> list[str]:
+    flags: list[str] = []
+    if item.presentation_worthy:
+        flags.append("Presentation")
+    if item.score >= 7 and (
+        item.section == "Massachusetts"
+        or any(classify_item(item)[key] for key in ("Emerging substances", "Research"))
+    ):
+        flags.append("One-pager")
+    return flags
+
+
+def append_markdown_item(lines: list[str], item: Item, implication: str = "") -> None:
+    flags = usefulness_flags(item)
+    suffix = f" **[Useful for: {', '.join(flags)}]**" if flags else ""
+    lines.append(f"#### [{item.title}]({item.url}){suffix}")
+    lines.append(f"- Source: {item.source}")
+    if item.published:
+        lines.append(f"- Published/updated: {item.published}")
+    lines.append(f"- Relevance score: {item.score}")
+    if item.matched_keywords:
+        lines.append(f"- Terms matched: {', '.join(item.matched_keywords)}")
+    if implication:
+        lines.append(f"- Why it may matter: {implication}")
+    if item.summary:
+        lines.append(f"- Note: {item.summary}")
+    lines.append("")
+
+
+def structured_groups(items: list[Item]) -> dict[str, dict[str, list[Item]]]:
+    order = {
+        "Massachusetts": ["New reports", "Dashboard updates", "Drug-checking alerts"],
+        "Emerging substances": list(EMERGING_SUBSTANCES),
+        "Research": ["New PubMed papers", "Toxicology case reports", "Mortality studies"],
+        "Implications": list(AUDIENCE_RULES),
+    }
+    groups = {section: {sub: [] for sub in subs} for section, subs in order.items()}
+    for item in sorted(items, key=lambda x: (-x.score, x.source, x.title.lower())):
+        for section, subcategories in classify_item(item).items():
+            for subcategory in subcategories:
+                groups[section][subcategory].append(item)
+    return groups
+
+
 def render_markdown(
     new_items: list[Item],
     failures: list[dict[str, str]],
@@ -409,29 +524,28 @@ def render_markdown(
         f"**Source failures:** {len(failures)}",
         "",
     ]
+    groups = structured_groups(new_items)
+    rendered_ids: set[str] = set()
 
-    if not new_items:
+    for section, subgroups in groups.items():
+        populated = [(name, items) for name, items in subgroups.items() if items]
+        if not populated:
+            continue
+        lines.extend([f"## {section}", ""])
+        for subgroup, items in populated:
+            lines.extend([f"### {subgroup}", ""])
+            implication = AUDIENCE_RULES[subgroup][1] if section == "Implications" else ""
+            for item in items:
+                append_markdown_item(lines, item, implication)
+                rendered_ids.add(item.item_id)
+
+    other_items = [item for item in new_items if item.item_id not in rendered_ids]
+    if other_items:
+        lines.extend(["## Other new intelligence", ""])
+        for item in sorted(other_items, key=lambda x: (-x.score, x.source, x.title.lower())):
+            append_markdown_item(lines, item)
+    elif not new_items:
         lines.extend(["## New items", "", "No new relevant items were detected.", ""])
-    else:
-        sections: dict[str, list[Item]] = {}
-        for item in sorted(new_items, key=lambda x: (-x.score, x.source, x.title.lower())):
-            sections.setdefault(item.section, []).append(item)
-        for section in ["Massachusetts", "United States", "International", "Research", "Other"]:
-            if section not in sections:
-                continue
-            lines.extend([f"## {section}", ""])
-            for item in sections[section]:
-                flag = " **[Presentation-worthy]**" if item.presentation_worthy else ""
-                lines.append(f"### [{item.title}]({item.url}){flag}")
-                lines.append(f"- Source: {item.source}")
-                if item.published:
-                    lines.append(f"- Published/updated: {item.published}")
-                lines.append(f"- Relevance score: {item.score}")
-                if item.matched_keywords:
-                    lines.append(f"- Terms matched: {', '.join(item.matched_keywords)}")
-                if item.summary:
-                    lines.append(f"- Note: {item.summary}")
-                lines.append("")
 
     lines.extend(["## Source status", ""])
     if failures:
@@ -447,8 +561,9 @@ def render_markdown(
             "",
             "## Use limits",
             "",
-            "Automated flags require review against the linked source before use in a "
-            "presentation, advisory, court document, or clinical communication.",
+            "Categories, implications, and usefulness flags are automated triage aids. "
+            "Review the linked source before use in a presentation, one-pager, advisory, "
+            "court document, or clinical communication.",
             "",
         ]
     )
@@ -457,79 +572,79 @@ def render_markdown(
 
 def render_html_report(markdown_items: list[Item], failures: list[dict[str, str]], checked_count: int) -> str:
     run_time = datetime.now(timezone.utc).strftime("%B %d, %Y at %H:%M UTC")
-    grouped: dict[str, list[Item]] = {}
-    for item in sorted(markdown_items, key=lambda x: (-x.score, x.source, x.title.lower())):
-        grouped.setdefault(item.section, []).append(item)
+    groups = structured_groups(markdown_items)
+    blocks: list[str] = []
+    rendered_ids: set[str] = set()
 
-    blocks = []
-    for section in ["Massachusetts", "United States", "International", "Research", "Other"]:
-        if section not in grouped:
-            continue
-        cards = []
-        for item in grouped[section]:
-            matched = ", ".join(item.matched_keywords) or "No configured term"
-            badge = '<span class="badge">Presentation-worthy</span>' if item.presentation_worthy else ""
-            cards.append(
-                f"""
-                <div class="card">
-                  <h3><a href="{html.escape(item.url)}">{html.escape(item.title)}</a> {badge}</h3>
-                  <p><b>Source:</b> {html.escape(item.source)}</p>
-                  <p><b>Date:</b> {html.escape(item.published or "Not supplied")}</p>
-                  <p><b>Score:</b> {item.score} &nbsp; <b>Terms:</b> {html.escape(matched)}</p>
-                  <p>{html.escape(item.summary)}</p>
-                </div>
-                """
-            )
-        blocks.append(f"<h2>{html.escape(section)}</h2>{''.join(cards)}")
+    def card(item: Item, implication: str = "") -> str:
+        matched = ", ".join(item.matched_keywords) or "No configured term"
+        badges = "".join(
+            f'<span class="badge">{html.escape(flag)}</span>'
+            for flag in usefulness_flags(item)
+        )
+        why = (
+            f"<p><b>Why it may matter:</b> {html.escape(implication)}</p>"
+            if implication else ""
+        )
+        return f"""
+        <article class="card">
+          <h4><a href="{html.escape(item.url)}">{html.escape(item.title)}</a> {badges}</h4>
+          <p><b>Source:</b> {html.escape(item.source)}</p>
+          <p><b>Date:</b> {html.escape(item.published or "Not supplied")}</p>
+          <p><b>Score:</b> {item.score} &nbsp; <b>Terms:</b> {html.escape(matched)}</p>
+          {why}<p>{html.escape(item.summary)}</p>
+        </article>"""
 
-    if not blocks:
-        blocks.append("<h2>New items</h2><p>No new relevant items were detected.</p>")
+    for section, subgroups in groups.items():
+        section_parts: list[str] = []
+        for subgroup, items in subgroups.items():
+            if not items:
+                continue
+            implication = AUDIENCE_RULES[subgroup][1] if section == "Implications" else ""
+            section_parts.append(f"<h3>{html.escape(subgroup)}</h3>")
+            for item in items:
+                section_parts.append(card(item, implication))
+                rendered_ids.add(item.item_id)
+        if section_parts:
+            blocks.append(f"<section><h2>{html.escape(section)}</h2>{''.join(section_parts)}</section>")
+
+    other_items = [item for item in markdown_items if item.item_id not in rendered_ids]
+    if other_items:
+        blocks.append("<section><h2>Other new intelligence</h2>" +
+                      "".join(card(item) for item in other_items) + "</section>")
+    elif not markdown_items:
+        blocks.append("<section><h2>New items</h2><p>No new relevant items were detected.</p></section>")
 
     failure_html = (
         "".join(
             f'<li><b>{html.escape(f["source"])}</b>: {html.escape(f["error"])} '
             f'(<a href="{html.escape(f["url"])}">open source</a>)</li>'
             for f in failures
-        )
-        if failures
-        else "<li>All enabled sources completed without an error.</li>"
+        ) if failures else "<li>All enabled sources completed without an error.</li>"
     )
-
     return f"""<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
+<html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Weekly drug intelligence report</title>
 <style>
-body {{ font-family: Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 24px; color: #202124; }}
+body {{ font-family: Arial,sans-serif; max-width: 960px; margin: 0 auto; padding: 24px; color: #202124; }}
 .header {{ border-bottom: 3px solid #314b66; padding-bottom: 14px; }}
 .metrics {{ background: #f3f5f7; padding: 12px 16px; margin: 18px 0; }}
 .card {{ border: 1px solid #d7dce1; border-radius: 6px; padding: 14px; margin: 10px 0; }}
-.card h3 {{ margin-top: 0; }}
-.badge {{ font-size: 12px; background: #efe7c5; padding: 3px 6px; border-radius: 4px; }}
+.card h4 {{ margin-top: 0; }}
+.badge {{ font-size: 12px; background: #efe7c5; padding: 3px 6px; border-radius: 4px; margin-left: 4px; }}
 a {{ color: #174ea6; }}
 .note {{ font-size: 13px; color: #5f6368; margin-top: 24px; }}
-</style>
-</head>
-<body>
-<div class="header">
-<h1>Weekly drug intelligence report</h1>
-<p>{html.escape(run_time)}</p>
-</div>
-<div class="metrics">
-<b>Sources checked:</b> {checked_count}<br>
+</style></head><body>
+<div class="header"><h1>Weekly drug intelligence report</h1><p>{html.escape(run_time)}</p></div>
+<div class="metrics"><b>Sources checked:</b> {checked_count}<br>
 <b>New relevant items:</b> {len(markdown_items)}<br>
-<b>Source failures:</b> {len(failures)}
-</div>
+<b>Source failures:</b> {len(failures)}</div>
 {''.join(blocks)}
-<h2>Source status</h2>
-<ul>{failure_html}</ul>
-<p class="note">Automated flags require review against the linked source before use in a presentation, advisory, court document, or clinical communication.</p>
-</body>
-</html>
+<h2>Source status</h2><ul>{failure_html}</ul>
+<p class="note">Categories, implications, and usefulness flags are automated triage aids. Review the linked source before use.</p>
+</body></html>
 """
-
 
 def main() -> int:
     config = load_yaml(CONFIG_FILE)
