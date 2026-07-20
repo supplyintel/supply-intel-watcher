@@ -2,7 +2,7 @@
 
 **Run time:** July 20, 2026 at 13:51 UTC
 **Sources checked:** 5
-**New relevant items:** 5
+**New relevant items:** 2
 **Source failures:** 0
 
 ## Massachusetts
@@ -14,18 +14,6 @@
 - Terms matched: opioid
 - Note: Hsu HE, Lodi S, Yan S, Bovell-Ammon BJ | JAMA network open
 
-### [Enhancing Access to Methadone Treatment in Three HEALing Communities Study Sites: A Spatial and Geostatistical Study.](https://pubmed.ncbi.nlm.nih.gov/42472677/)
-- Source: PubMed — Massachusetts overdose and drug supply
-- Published/updated: 2026 Jul 19
-- Relevance score: 4
-- Note: Lewis O, Srinivasan S, Shrestha S, Harris DR | Substance use & misuse
-
-### [Multisite Mobile Addiction Services: Four-Year Outcomes.](https://pubmed.ncbi.nlm.nih.gov/42354287/)
-- Source: PubMed — Massachusetts overdose and drug supply
-- Published/updated: 2026 Jun 4
-- Relevance score: 4
-- Note: Tschampl CA, Wicks JJ, Hodgkin D, Regis C | International journal of environmental research and public health
-
 ## Research
 
 ### [Xylazine's κ relatively potent opioid agonist activity is not shared with other US Food and Drug Administration-approved α(2)-adrenergic agonists.](https://pubmed.ncbi.nlm.nih.gov/42472543/) **[Presentation-worthy]**
@@ -34,13 +22,6 @@
 - Relevance score: 9
 - Terms matched: opioid, xylazine
 - Note: Huang XP, Krumm BE, Bedard ML, McElligott ZA | The Journal of pharmacology and experimental therapeutics
-
-### [Managing acute bromazolam intoxication in a custodial setting: a prison health case study.](https://pubmed.ncbi.nlm.nih.gov/42473847/)
-- Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Jul 21
-- Relevance score: 6
-- Terms matched: bromazolam
-- Note: Taylor K, Amor S | International journal of prison health
 
 ## Source status
 
