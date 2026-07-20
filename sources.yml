@@ -648,3 +648,116 @@ sources:
     selector: main
     base_score: 5
     enabled: true
+
+  - name: CDC Provisional Drug Overdose Death Counts
+    type: page_hash
+    section: United States
+    url: https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm
+    selector: main
+    base_score: 5
+    enabled: true
+
+  - name: PubMed — forensic toxicology case reports
+    type: pubmed
+    section: Research
+    url: https://pubmed.ncbi.nlm.nih.gov/
+    query: >-
+      ((forensic toxicology[Title/Abstract]) OR (case report[Title/Abstract]))
+      AND (nitazene OR medetomidine OR xylazine OR bromazolam OR
+      "novel benzodiazepine" OR "synthetic cannabinoid" OR cathinone)
+    lookback_days: 30
+    request_delay_seconds: 0.5
+    max_items: 40
+    base_score: 2
+    enabled: true
+
+  - name: PubMed — overdose mortality studies
+    type: pubmed
+    section: Research
+    url: https://pubmed.ncbi.nlm.nih.gov/
+    query: >-
+      (overdose mortality[Title/Abstract] OR drug poisoning death[Title/Abstract])
+      AND (opioid OR stimulant OR fentanyl OR xylazine OR nitazene)
+    lookback_days: 30
+    request_delay_seconds: 0.5
+    max_items: 40
+    base_score: 2
+    enabled: true
+
+  - name: Public Health Scotland RADAR Alerts
+    type: html_links
+    section: International
+    url: https://publichealthscotland.scot/population-health/improving-scotlands-health/drugs/surveillance/rapid-action-drug-alerts-and-response-radar/radar-alerts/
+    selector: main
+    selector_fallback: body
+    link_selector: "a[href]"
+    url_includes:
+      - /rapid-action-drug-alerts-and-response-radar/
+    include_all: true
+    base_score: 6
+    max_items: 40
+    baseline_on_first_run: true
+    enabled: true
+
+  - name: Public Health Scotland RADAR Quarterly Reports
+    type: html_links
+    section: International
+    url: https://publichealthscotland.scot/population-health/improving-scotlands-health/drugs/surveillance/rapid-action-drug-alerts-and-response-radar/radar-quarterly-reports/
+    selector: main
+    selector_fallback: body
+    link_selector: "a[href]"
+    url_includes:
+      - /publications/rapid-action-drug-alerts-and-response-radar-quarterly-report/
+    include_all: true
+    base_score: 5
+    max_items: 40
+    baseline_on_first_run: true
+    enabled: true
+
+  - name: WHO Expert Committee on Drug Dependence
+    type: page_hash
+    section: International
+    url: https://www.who.int/groups/ecdd
+    selector: body
+    base_score: 4
+    enabled: true
+
+  - name: Ireland HSE Emerging Overdose Communications
+    type: page_hash
+    section: International
+    url: https://about.hse.ie/news/hse-risk-communication-monitoring-emerging-overdose-situation/
+    selector: main
+    base_score: 5
+    enabled: true
+
+  - name: UK Synthetic Opioid Death Surveillance
+    type: page_hash
+    section: International
+    url: https://www.gov.uk/government/publications/deaths-linked-to-potent-synthetic-opioids/deaths-linked-to-potent-synthetic-opioids
+    selector: main
+    base_score: 5
+    enabled: true
+
+  - name: WEDINOS Drug Checking Results
+    type: page_hash
+    section: International
+    url: https://wedinos.wales/sample-results/
+    selector: body
+    base_score: 6
+    enabled: true
+
+  - name: Public Health Wales WEDINOS Reports
+    type: html_links
+    section: International
+    url: https://phw.nhs.wales/public-health-report-category/drug-testing-wedinos/
+    selector: main
+    selector_fallback: body
+    link_selector: "a[href]"
+    url_includes:
+      - /app/uploads/
+      - /reports/
+    include_all: true
+    base_score: 5
+    max_items: 40
+    baseline_on_first_run: true
+    enabled: true
