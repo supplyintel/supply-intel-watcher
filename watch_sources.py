@@ -35,6 +35,8 @@ REPORT_MD = Path("reports/latest.md")
 REPORT_HTML = Path("reports/latest.html")
 EMAIL_REPORT_MD = Path("reports/email.md")
 EMAIL_REPORT_HTML = Path("reports/email.html")
+BRIEFING_REPORT_MD = Path("reports/briefing.md")
+ONE_PAGER_REPORT_MD = Path("reports/one_pager.md")
 ARCHIVE_DIR = Path("reports/archive")
 TIMEOUT = 45
 
@@ -477,6 +479,127 @@ def usefulness_flags(item: Item) -> list[str]:
     return flags
 
 
+
+def priority_score(item: Item) -> int:
+    """Rank briefing candidates without changing the underlying relevance score."""
+    categories = classify_item(item)
+    score = item.score
+    if item.section == "Massachusetts" or categories["Massachusetts"]:
+        score += 4
+    score += min(4, 2 * len(categories["Emerging substances"]))
+    if "Drug-checking alerts" in categories["Massachusetts"] or "alert" in item_text(item):
+        score += 2
+    if item.presentation_worthy:
+        score += 2
+    return score
+
+
+def briefing_candidates(items: list[Item], limit: int = 5) -> list[Item]:
+    eligible = [item for item in items if usefulness_flags(item)]
+    return sorted(
+        eligible,
+        key=lambda item: (-priority_score(item), -item.score, item.title.lower()),
+    )[:limit]
+
+
+def concise_signal(item: Item) -> str:
+    categories = classify_item(item)
+    labels = (
+        categories["Massachusetts"]
+        + categories["Emerging substances"]
+        + categories["Research"]
+    )
+    focus = ", ".join(labels[:3]) if labels else item.section
+    date = f" ({item.published})" if item.published else ""
+    return f"{item.title}{date} — {focus}."
+
+
+def render_briefing(items: list[Item], checked_count: int) -> str:
+    selected = briefing_candidates(items)
+    lines = [
+        "# Weekly presentation briefing",
+        "",
+        f"**Sources checked:** {checked_count}",
+        f"**Priority items selected:** {len(selected)}",
+        "",
+        "## Opening summary",
+        "",
+    ]
+    if not selected:
+        lines.extend(["No new presentation or one-pager candidates were detected.", ""])
+    else:
+        for item in selected[:3]:
+            lines.append(f"- {concise_signal(item)} ([source]({item.url}))")
+        lines.extend(["", "## Suggested slides", ""])
+        for number, item in enumerate(selected, 1):
+            audiences = classify_item(item)["Implications"]
+            audience_text = ", ".join(audiences) or "General surveillance"
+            lines.extend(
+                [
+                    f"### Slide {number}: {item.title}",
+                    f"- **Key signal:** {concise_signal(item)}",
+                    f"- **Why it matters:** Relevant to {audience_text}.",
+                    f"- **Evidence:** [{item.source}]({item.url})"
+                    + (f", {item.published}" if item.published else ""),
+                    f"- **Priority score:** {priority_score(item)}",
+                    "",
+                ]
+            )
+    lines.extend(
+        [
+            "## Presenter note",
+            "",
+            "These are source-linked briefing prompts, not finished factual claims. "
+            "Open and review each source before presenting it.",
+            "",
+        ]
+    )
+    return "\n".join(lines)
+
+
+def render_one_pager(items: list[Item], checked_count: int) -> str:
+    selected = [
+        item for item in briefing_candidates(items, limit=10)
+        if "One-pager" in usefulness_flags(item)
+    ]
+    lines = [
+        "# One-pager source brief",
+        "",
+        f"**Sources checked:** {checked_count}",
+        f"**Items selected:** {len(selected)}",
+        "",
+        "## What is new",
+        "",
+    ]
+    if not selected:
+        lines.extend(["No new one-pager candidates were detected.", ""])
+    else:
+        for item in selected[:5]:
+            lines.append(f"- **[{item.title}]({item.url})** — {concise_signal(item)}")
+        groups = structured_groups(selected)
+        emerging = [(name, values) for name, values in groups["Emerging substances"].items() if values]
+        if emerging:
+            lines.extend(["", "## Substances to watch", ""])
+            for name, values in emerging:
+                sources = ", ".join(dict.fromkeys(item.source for item in values[:3]))
+                lines.append(f"- **{name}:** {len(values)} new item(s); sources: {sources}.")
+        lines.extend(["", "## Practical relevance", ""])
+        for audience, (_terms, note) in AUDIENCE_RULES.items():
+            count = len(groups["Implications"][audience])
+            if count:
+                lines.append(f"- **{audience} ({count}):** {note}")
+    lines.extend(
+        [
+            "",
+            "## Use note",
+            "",
+            "This is an automated source brief. Verify the linked material and add "
+            "local context, dates, and caveats before publication.",
+            "",
+        ]
+    )
+    return "\n".join(lines)
+
 def append_markdown_item(lines: list[str], item: Item, implication: str = "") -> None:
     flags = usefulness_flags(item)
     suffix = f" **[Useful for: {', '.join(flags)}]**" if flags else ""
@@ -711,12 +834,17 @@ def main() -> int:
     EMAIL_REPORT_MD.write_text(email_markdown, encoding="utf-8")
     EMAIL_REPORT_HTML.write_text(email_html, encoding="utf-8")
 
+    briefing = render_briefing(new_items, len(enabled_sources))
+    one_pager = render_one_pager(new_items, len(enabled_sources))
+    BRIEFING_REPORT_MD.write_text(briefing, encoding="utf-8")
+    ONE_PAGER_REPORT_MD.write_text(one_pager, encoding="utf-8")
+
     date_stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     (ARCHIVE_DIR / f"{date_stamp}.md").write_text(markdown, encoding="utf-8")
     (ARCHIVE_DIR / f"{date_stamp}.html").write_text(html_report, encoding="utf-8")
 
     save_state(state)
-    print(f"\nWrote {REPORT_MD}, {REPORT_HTML}, and high-priority email reports")
+    print(f"\nWrote full, email, briefing, and one-pager reports")
     print(
         f"New items: {len(new_items)} | "
         f"Email items: {len(email_items)} | Failures: {len(failures)}"
