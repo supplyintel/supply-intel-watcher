@@ -345,10 +345,193 @@ sources:
     base_score: 2
     enabled: false
 
-  - name: MADDS
+  - name: MADDS overview
     type: page_hash
     section: Massachusetts
     url: https://heller.brandeis.edu/opioid-policy/community-resources/madds/index.html
     selector: main
     base_score: 5
     enabled: false
+
+  - name: MADDS Community Drug Supply Alerts
+    type: html_links
+    section: Massachusetts
+    url: https://heller.brandeis.edu/opioid-policy/community-resources/madds/community-drug-supply-alerts.html
+    selector: main
+    selector_fallback: body
+    link_selector: "a[href]"
+    url_includes:
+      - .pdf
+      - /madds/
+    exclude_terms:
+      - skip to content
+      - contact
+      - donate
+    include_all: true
+    base_score: 6
+    max_items: 40
+    baseline_on_first_run: true
+    enabled: false
+
+  - name: MADDS Street Narcotics Updates and Alerts
+    type: html_links
+    section: Massachusetts
+    url: https://heller.brandeis.edu/opioid-policy/community-resources/madds/street-narcotics-updates-alerts.html
+    selector: main
+    selector_fallback: body
+    link_selector: "a[href]"
+    url_includes:
+      - .pdf
+      - /madds/
+    exclude_terms:
+      - skip to content
+      - contact
+      - donate
+    include_all: true
+    base_score: 6
+    max_items: 40
+    baseline_on_first_run: true
+    enabled: false
+
+  - name: MADDS Public Health Bulletins
+    type: html_links
+    section: Massachusetts
+    url: https://heller.brandeis.edu/opioid-policy/community-resources/madds/public-health-bulletins.html
+    selector: main
+    selector_fallback: body
+    link_selector: "a[href]"
+    url_includes:
+      - .pdf
+      - /madds/
+    exclude_terms:
+      - skip to content
+      - contact
+      - donate
+    include_all: true
+    base_score: 6
+    max_items: 40
+    baseline_on_first_run: true
+    enabled: false
+
+  - name: NIST Rapid Drug Analysis and Research
+    type: page_hash
+    section: United States
+    url: https://www.nist.gov/programs-projects/radar
+    selector: body
+    base_score: 5
+    enabled: true
+
+  - name: Australian National Wastewater Drug Monitoring Program
+    type: html_links
+    section: International
+    url: https://www.acic.gov.au/publications/national-wastewater-drug-monitoring-program-reports
+    selector: main
+    selector_fallback: body
+    link_selector: "a[href]"
+    url_includes:
+      - /national-wastewater-drug-monitoring-program-reports/report-
+    include_all: true
+    base_score: 4
+    max_items: 40
+    baseline_on_first_run: true
+    enabled: false
+
+  - name: NSW Health Public Drug Warnings
+    type: html_links
+    section: International
+    url: https://www.health.nsw.gov.au/aod/public-drug-alerts/Pages/rss.aspx
+    selector: main
+    selector_fallback: body
+    link_selector: "a[href]"
+    url_includes:
+      - /aod/public-drug-alerts/Pages/
+    exclude_terms:
+      - public drug warnings
+      - rss
+    include_all: true
+    base_score: 6
+    max_items: 50
+    baseline_on_first_run: true
+    enabled: true
+
+  - name: Victoria Department of Health Drug Alerts
+    type: page_hash
+    section: International
+    url: https://www.health.vic.gov.au/alcohol-and-drugs/drug-alerts
+    selector: main
+    base_score: 6
+    enabled: true
+
+  - name: New York Drug Checking Data
+    type: page_hash
+    section: United States
+    url: https://www.health.ny.gov/diseases/aids/consumers/prevention/oduh/drug_checking_data.htm
+    selector: body
+    base_score: 6
+    enabled: true
+
+  - name: New York Drug Checking Service
+    type: page_hash
+    section: United States
+    url: https://www.health.ny.gov/diseases/aids/consumers/prevention/oduh/drug_checking.htm
+    selector: body
+    base_score: 5
+    enabled: true
+
+  # Brandeis MADDS and ACIC are retained above but disabled because they block
+  # or time out in GitHub Actions. These official substitutes are runner-safe.
+  - name: NYC Drug Checking Data
+    type: page_hash
+    section: United States
+    url: https://www.nyc.gov/site/doh/health/health-topics/drug-checking-data.page
+    selector: body
+    base_score: 6
+    enabled: false
+
+  - name: NYC Alcohol and Drug Use Data
+    type: page_hash
+    section: United States
+    url: https://www.nyc.gov/site/doh/health/health-topics/alcohol-and-drug-use-data.page
+    selector: body
+    base_score: 5
+    enabled: false
+
+  - name: Vermont Know Overdose
+    type: page_hash
+    section: United States
+    url: https://www.healthvermont.gov/alcohol-drugs/overdose-response/know-overdose
+    selector: main
+    base_score: 5
+    enabled: true
+
+  - name: Vermont Substance Use Data and Reports
+    type: page_hash
+    section: United States
+    url: https://www.healthvermont.gov/alcohol-drugs/substance-use-data-reports/data-and-reports
+    selector: main
+    base_score: 4
+    enabled: true
+
+  - name: Victoria Pill Testing Service
+    type: page_hash
+    section: International
+    url: https://www.health.vic.gov.au/alcohol-and-drugs/pill-testing
+    selector: main
+    base_score: 5
+    enabled: true
+
+  - name: Vermont Substance Use Dashboard
+    type: page_hash
+    section: United States
+    url: https://www.healthvermont.gov/alcohol-drugs/substance-use-data-reports/substance-use-dashboard
+    selector: main
+    base_score: 4
+    enabled: true
+
+  - name: Vermont Health Alerts and Advisories
+    type: page_hash
+    section: United States
+    url: https://www.healthvermont.gov/about/public-health-response/health-alerts-advisories
+    selector: main
+    base_score: 4
+    enabled: true
