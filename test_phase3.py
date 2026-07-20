@@ -8,6 +8,7 @@ from watch_sources import (
     briefing_candidates,
     classify_item,
     corroborating_sources,
+    dashboard_records,
     evidence_label,
     is_direct_massachusetts,
     massachusetts_watchlist_candidates,
@@ -16,6 +17,7 @@ from watch_sources import (
     render_audience_briefing,
     render_audience_briefings,
     render_briefing,
+    render_dashboard,
     render_editorial_queue,
     render_markdown,
     render_massachusetts_briefing,
@@ -308,6 +310,34 @@ class Phase3ClassificationTests(unittest.TestCase):
             presentation_worthy=False,
         )
         self.assertEqual(massachusetts_watchlist_candidates([item]), [])
+
+
+    def test_dashboard_records_include_filters_and_evidence(self):
+        records = dashboard_records([make_item()])
+        self.assertEqual(len(records), 1)
+        self.assertEqual(records[0]["priority"], "Monitor")
+        self.assertIn("Nitazenes", records[0]["substances"])
+        self.assertIn("Court staff", records[0]["audiences"])
+        self.assertEqual(records[0]["evidence"], "Single-source signal")
+
+    def test_dashboard_has_metrics_search_and_filter_controls(self):
+        dashboard = render_dashboard([make_item()], [], 50)
+        self.assertIn("<strong>50</strong>sources checked", dashboard)
+        self.assertIn('id="search"', dashboard)
+        self.assertIn('id="priority"', dashboard)
+        self.assertIn('id="substance"', dashboard)
+        self.assertIn('id="audience"', dashboard)
+        self.assertIn('id="dashboard-data"', dashboard)
+        self.assertIn("Showing ", dashboard)
+
+    def test_dashboard_json_does_not_allow_script_breakout(self):
+        malicious = make_item(
+            title="Alert </script><script>alert(1)</script>",
+            summary="unsafe </script> sequence",
+        )
+        dashboard = render_dashboard([malicious], [], 50)
+        self.assertNotIn("Alert </script><script>alert(1)</script>", dashboard)
+        self.assertIn("<\\/script>", dashboard)
 
 
 if __name__ == "__main__":
