@@ -221,6 +221,7 @@ class Phase3ClassificationTests(unittest.TestCase):
     def test_audience_candidates_filter_and_rank(self):
         court_item = make_item(item_id="court")
         unrelated = make_item(
+            source="General public health source",
             title="General dashboard release",
             summary="A dashboard was updated",
             matched_keywords=[],
