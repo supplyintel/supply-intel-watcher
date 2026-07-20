@@ -761,3 +761,43 @@ sources:
     max_items: 40
     baseline_on_first_run: true
     enabled: true
+
+  - name: CDC SUDORS Fatal Overdose Dashboard
+    type: page_hash
+    section: United States
+    url: https://www.cdc.gov/overdose-prevention/data-research/facts-stats/sudors-dashboard-fatal-overdose-data.html
+    selector: main
+    base_score: 5
+    enabled: true
+
+  - name: CDC DOSE-SYS Nonfatal Overdose Dashboard
+    type: page_hash
+    section: United States
+    url: https://www.cdc.gov/overdose-prevention/data-research/facts-stats/dose-dashboard-nonfatal-surveillance-data.html
+    selector: main
+    base_score: 5
+    enabled: true
+
+  - name: CDC DOSE-DIS Nonfatal Overdose Dashboard
+    type: page_hash
+    section: United States
+    url: https://www.cdc.gov/overdose-prevention/data-research/facts-stats/dose-dashboard-nonfatal-discharge-data.html
+    selector: main
+    base_score: 5
+    enabled: true
+
+  - name: CDC Fentalog Toxicology Dashboard
+    type: page_hash
+    section: United States
+    url: https://www.cdc.gov/overdose-prevention/data-research/facts-stats/fentalog-study-dashboard.html
+    selector: main
+    base_score: 6
+    enabled: true
+
+  - name: SAMHSA Drug Abuse Warning Network
+    type: page_hash
+    section: United States
+    url: https://www.samhsa.gov/data/data-we-collect/dawn-drug-abuse-warning-network
+    selector: main
+    base_score: 4
+    enabled: true
