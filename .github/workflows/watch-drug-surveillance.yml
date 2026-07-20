@@ -65,8 +65,8 @@ jobs:
           username = os.environ["EMAIL_USERNAME"]
           password = os.environ["EMAIL_PASSWORD"]
 
-          html_path = Path("reports/latest.html")
-          text_path = Path("reports/latest.md")
+          html_path = Path("reports/email.html")
+          text_path = Path("reports/email.md")
 
           if text_path.exists():
               text_body = text_path.read_text(
@@ -93,7 +93,7 @@ jobs:
           message["From"] = username
           message["To"] = username
           message["Subject"] = (
-              f"Weekly drug intelligence report — {run_date}"
+              f"High-priority drug intelligence report — {run_date}"
           )
 
           message.set_content(text_body)

@@ -4,6 +4,9 @@ contact_email: joe.sawicki.jr@gmail.com
 state:
   max_seen_items: 5000
 
+email:
+  min_score: 7
+
 keywords:
   high_priority:
     - nitazene

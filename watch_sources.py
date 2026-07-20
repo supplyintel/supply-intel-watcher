@@ -33,6 +33,8 @@ CONFIG_FILE = Path("sources.yml")
 STATE_FILE = Path("watch_state_v3.json")
 REPORT_MD = Path("reports/latest.md")
 REPORT_HTML = Path("reports/latest.html")
+EMAIL_REPORT_MD = Path("reports/email.md")
+EMAIL_REPORT_HTML = Path("reports/email.html")
 ARCHIVE_DIR = Path("reports/archive")
 TIMEOUT = 45
 
@@ -574,13 +576,23 @@ def main() -> int:
     REPORT_MD.write_text(markdown, encoding="utf-8")
     REPORT_HTML.write_text(html_report, encoding="utf-8")
 
+    email_min_score = int(config.get("email", {}).get("min_score", 7))
+    email_items = [item for item in new_items if item.score >= email_min_score]
+    email_markdown = render_markdown(email_items, failures, len(enabled_sources))
+    email_html = render_html_report(email_items, failures, len(enabled_sources))
+    EMAIL_REPORT_MD.write_text(email_markdown, encoding="utf-8")
+    EMAIL_REPORT_HTML.write_text(email_html, encoding="utf-8")
+
     date_stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     (ARCHIVE_DIR / f"{date_stamp}.md").write_text(markdown, encoding="utf-8")
     (ARCHIVE_DIR / f"{date_stamp}.html").write_text(html_report, encoding="utf-8")
 
     save_state(state)
-    print(f"\nWrote {REPORT_MD} and {REPORT_HTML}")
-    print(f"New items: {len(new_items)} | Failures: {len(failures)}")
+    print(f"\nWrote {REPORT_MD}, {REPORT_HTML}, and high-priority email reports")
+    print(
+        f"New items: {len(new_items)} | "
+        f"Email items: {len(email_items)} | Failures: {len(failures)}"
+    )
     return 0
 
 
