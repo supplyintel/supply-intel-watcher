@@ -564,7 +564,7 @@ sources:
     type: page_hash
     section: United States
     url: https://www.aegislabs.com/services/novel-psychoactive-substances/frontline-alert-emerging-substances/
-    selector: main
+    selector: body
     base_score: 5
     enabled: true
 
@@ -574,7 +574,7 @@ sources:
     url: https://www.act.gov.au/health/topics/drugs-alcohol-smoking-and-vaping/drug-checking
     selector: main
     base_score: 5
-    enabled: true
+    enabled: false
 
   - name: ACT Health Drug Warning Media Releases
     type: html_links
@@ -589,7 +589,7 @@ sources:
     base_score: 5
     max_items: 40
     baseline_on_first_run: true
-    enabled: true
+    enabled: false
 
   - name: Pennsylvania Substance Use Data Dashboards
     type: page_hash
@@ -621,4 +621,30 @@ sources:
     url: https://www.pa.gov/agencies/ddap/training/pa-emerging-drug-trends-symposium
     selector: main
     base_score: 4
+    enabled: false
+
+  # The ACT sites above block GitHub Actions and the PA symposium URL was
+  # retired. Keep them registered but disabled for later retesting.
+  - name: Wisconsin Drug Checking Technologies
+    type: page_hash
+    section: United States
+    url: https://www.dhs.wisconsin.gov/aoda/drug-checking.htm
+    selector: main
+    base_score: 4
+    enabled: true
+
+  - name: Health Canada Multi-Drug Toxicity Surveillance
+    type: page_hash
+    section: International
+    url: https://www.canada.ca/en/health-canada/services/opioids/data-surveillance-research/multi-drug-combinations-national-opioid-stimulant-toxicity-deaths.html
+    selector: main
+    base_score: 5
+    enabled: true
+
+  - name: NIJ NPS Discovery Trend Reports
+    type: page_hash
+    section: United States
+    url: https://nij.ojp.gov/library/publications/nps-discovery-q3-2025-trend-reports-nps-benzodiazepines-nps-opioids-nps
+    selector: main
+    base_score: 5
     enabled: true
