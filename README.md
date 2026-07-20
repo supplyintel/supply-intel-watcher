@@ -18,6 +18,8 @@ An item can appear in more than one section because a single source may be relev
 
 - `reports/latest.md` and `reports/latest.html`: all new relevant items
 - `reports/email.md` and `reports/email.html`: items meeting the configured email score threshold, plus source failures
+- `reports/briefing.md`: five prioritized, source-linked presentation prompts
+- `reports/one_pager.md`: concise substance and audience summary ready for editorial review
 - `reports/archive/`: dated full reports
 - `watch_state_v3.json`: deduplication, page hashes, initialization state, and source failure history
 
