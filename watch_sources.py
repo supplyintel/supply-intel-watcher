@@ -40,6 +40,7 @@ ONE_PAGER_REPORT_MD = Path("reports/one_pager.md")
 EDITORIAL_QUEUE_MD = Path("reports/editorial_queue.md")
 TRENDS_REPORT_MD = Path("reports/trends.md")
 AUDIENCE_REPORT_DIR = Path("reports/audiences")
+MASSACHUSETTS_REPORT_MD = Path("reports/massachusetts.md")
 ARCHIVE_DIR = Path("reports/archive")
 TIMEOUT = 45
 
@@ -825,6 +826,122 @@ def render_one_pager(items: list[Item], checked_count: int) -> str:
     return "\n".join(lines)
 
 
+
+def is_direct_massachusetts(item: Item) -> bool:
+    return bool(classify_item(item)["Massachusetts"])
+
+
+def massachusetts_watchlist_candidates(
+    items: list[Item],
+    limit: int = 8,
+) -> list[Item]:
+    external = [
+        item
+        for item in items
+        if not is_direct_massachusetts(item)
+        and classify_item(item)["Emerging substances"]
+        and priority_score(item) >= 9
+    ]
+    return sorted(
+        external,
+        key=lambda item: (-priority_score(item), -item.score, item.title.lower()),
+    )[:limit]
+
+
+def render_massachusetts_briefing(
+    items: list[Item],
+    checked_count: int,
+) -> str:
+    direct = sorted(
+        [item for item in items if is_direct_massachusetts(item)],
+        key=lambda item: (-priority_score(item), -item.score, item.title.lower()),
+    )
+    watchlist = massachusetts_watchlist_candidates(items)
+    lines = [
+        "# Massachusetts drug intelligence briefing",
+        "",
+        f"**Sources checked:** {checked_count}",
+        f"**Direct Massachusetts items:** {len(direct)}",
+        f"**External watchlist items:** {len(watchlist)}",
+        "",
+        "## Direct Massachusetts evidence",
+        "",
+    ]
+    if not direct:
+        lines.extend(
+            [
+                "No new item was directly categorized as Massachusetts-specific in this run.",
+                "",
+            ]
+        )
+    else:
+        for item in direct:
+            categories = classify_item(item)["Massachusetts"]
+            lines.extend(
+                [
+                    f"### [{item.title}]({item.url})",
+                    f"- Type: {', '.join(categories)}",
+                    f"- Evidence status: {evidence_label(item, items)}",
+                    f"- Source: {item.source}"
+                    + (f" ({item.published})" if item.published else ""),
+                    f"- Priority score: {priority_score(item)}",
+                    "",
+                ]
+            )
+
+    lines.extend(
+        [
+            "## External signals to monitor for Massachusetts",
+            "",
+            "These items were reported outside Massachusetts or are not Massachusetts-specific. "
+            "Their inclusion is a watchlist prompt only.",
+            "",
+        ]
+    )
+    if not watchlist:
+        lines.extend(["No external emerging-substance item met the watchlist threshold.", ""])
+    else:
+        for item in watchlist:
+            substances = classify_item(item)["Emerging substances"]
+            lines.extend(
+                [
+                    f"### [{item.title}]({item.url})",
+                    f"- Substances: {', '.join(substances)}",
+                    f"- Reporting geography: {item.section}",
+                    f"- Source: {item.source}"
+                    + (f" ({item.published})" if item.published else ""),
+                    f"- Why monitor: High-priority {', '.join(substances)} signal for local situational awareness.",
+                    "",
+                ]
+            )
+
+    audience_counts = {
+        audience: sum(
+            audience in classify_item(item)["Implications"]
+            for item in direct + watchlist
+        )
+        for audience in AUDIENCE_RULES
+    }
+    lines.extend(["## Potential Massachusetts audiences", ""])
+    if any(audience_counts.values()):
+        for audience, count in audience_counts.items():
+            if count:
+                lines.append(f"- **{audience}:** {count} relevant item(s) for human review.")
+    else:
+        lines.append("No audience matches were generated.")
+    lines.extend(
+        [
+            "",
+            "## Geographic safeguard",
+            "",
+            "An external watchlist item does not establish detection, availability, exposure, "
+            "overdose involvement, or risk in Massachusetts. Confirm Massachusetts-specific "
+            "evidence before making a local claim or recommendation.",
+            "",
+        ]
+    )
+    return "\n".join(lines)
+
 def audience_slug(audience: str) -> str:
     return re.sub(r"[^a-z0-9]+", "_", audience.lower()).strip("_")
 
@@ -1162,13 +1279,15 @@ def main() -> int:
         new_items, len(enabled_sources)
     ).items():
         (AUDIENCE_REPORT_DIR / filename).write_text(content, encoding="utf-8")
+    massachusetts = render_massachusetts_briefing(new_items, len(enabled_sources))
+    MASSACHUSETTS_REPORT_MD.write_text(massachusetts, encoding="utf-8")
 
     date_stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     (ARCHIVE_DIR / f"{date_stamp}.md").write_text(markdown, encoding="utf-8")
     (ARCHIVE_DIR / f"{date_stamp}.html").write_text(html_report, encoding="utf-8")
 
     save_state(state)
-    print(f"\nWrote full, email, briefing, one-pager, editorial queue, trend, and audience reports")
+    print(f"\nWrote full, email, briefing, one-pager, editorial queue, trend, audience, and Massachusetts reports")
     print(
         f"New items: {len(new_items)} | "
         f"Email items: {len(email_items)} | Failures: {len(failures)}"
