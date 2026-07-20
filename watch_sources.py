@@ -39,6 +39,7 @@ BRIEFING_REPORT_MD = Path("reports/briefing.md")
 ONE_PAGER_REPORT_MD = Path("reports/one_pager.md")
 EDITORIAL_QUEUE_MD = Path("reports/editorial_queue.md")
 TRENDS_REPORT_MD = Path("reports/trends.md")
+AUDIENCE_REPORT_DIR = Path("reports/audiences")
 ARCHIVE_DIR = Path("reports/archive")
 TIMEOUT = 45
 
@@ -823,6 +824,95 @@ def render_one_pager(items: list[Item], checked_count: int) -> str:
     )
     return "\n".join(lines)
 
+
+def audience_slug(audience: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "_", audience.lower()).strip("_")
+
+
+def audience_candidates(
+    items: list[Item],
+    audience: str,
+    limit: int = 8,
+) -> list[Item]:
+    if audience not in AUDIENCE_RULES:
+        raise ValueError(f"Unknown audience: {audience}")
+    relevant = [
+        item
+        for item in items
+        if audience in classify_item(item)["Implications"]
+    ]
+    return sorted(
+        relevant,
+        key=lambda item: (-priority_score(item), -item.score, item.title.lower()),
+    )[:limit]
+
+
+def render_audience_briefing(
+    items: list[Item],
+    audience: str,
+    checked_count: int,
+) -> str:
+    selected = audience_candidates(items, audience)
+    implication = AUDIENCE_RULES[audience][1]
+    lines = [
+        f"# {audience} intelligence briefing",
+        "",
+        f"**Sources checked:** {checked_count}",
+        f"**Relevant new items:** {len(selected)}",
+        "",
+        "## Audience lens",
+        "",
+        implication,
+        "",
+        "## Priority signals",
+        "",
+    ]
+    if not selected:
+        lines.extend(["No new items matched this audience profile.", ""])
+    else:
+        for item in selected:
+            categories = classify_item(item)
+            focus = (
+                categories["Massachusetts"]
+                + categories["Emerging substances"]
+                + categories["Research"]
+            )
+            lines.extend(
+                [
+                    f"### [{item.title}]({item.url})",
+                    f"- Signal: {concise_signal(item)}",
+                    f"- Focus: {', '.join(focus) or item.section}",
+                    f"- Evidence status: {evidence_label(item, items)}",
+                    f"- Source: {item.source}"
+                    + (f" ({item.published})" if item.published else ""),
+                    f"- Suggested use: {implication}",
+                    "",
+                ]
+            )
+    lines.extend(
+        [
+            "## Use boundary",
+            "",
+            "This automated audience match supports triage and training preparation only. "
+            "It does not replace review of the linked source, local policy, legal analysis, "
+            "clinical judgment, or case-specific evidence.",
+            "",
+        ]
+    )
+    return "\n".join(lines)
+
+
+def render_audience_briefings(
+    items: list[Item],
+    checked_count: int,
+) -> dict[str, str]:
+    return {
+        f"{audience_slug(audience)}.md": render_audience_briefing(
+            items, audience, checked_count
+        )
+        for audience in AUDIENCE_RULES
+    }
+
 def append_markdown_item(lines: list[str], item: Item, implication: str = "") -> None:
     flags = usefulness_flags(item)
     suffix = f" **[Useful for: {', '.join(flags)}]**" if flags else ""
@@ -1046,6 +1136,7 @@ def main() -> int:
     reports = Path("reports")
     reports.mkdir(exist_ok=True)
     ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
+    AUDIENCE_REPORT_DIR.mkdir(parents=True, exist_ok=True)
 
     markdown = render_markdown(new_items, failures, len(enabled_sources))
     html_report = render_html_report(new_items, failures, len(enabled_sources))
@@ -1067,13 +1158,17 @@ def main() -> int:
     EDITORIAL_QUEUE_MD.write_text(editorial_queue, encoding="utf-8")
     trends = render_trends(state["topic_history"], len(enabled_sources))
     TRENDS_REPORT_MD.write_text(trends, encoding="utf-8")
+    for filename, content in render_audience_briefings(
+        new_items, len(enabled_sources)
+    ).items():
+        (AUDIENCE_REPORT_DIR / filename).write_text(content, encoding="utf-8")
 
     date_stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     (ARCHIVE_DIR / f"{date_stamp}.md").write_text(markdown, encoding="utf-8")
     (ARCHIVE_DIR / f"{date_stamp}.html").write_text(html_report, encoding="utf-8")
 
     save_state(state)
-    print(f"\nWrote full, email, briefing, one-pager, editorial queue, and trend reports")
+    print(f"\nWrote full, email, briefing, one-pager, editorial queue, trend, and audience reports")
     print(
         f"New items: {len(new_items)} | "
         f"Email items: {len(email_items)} | Failures: {len(failures)}"
