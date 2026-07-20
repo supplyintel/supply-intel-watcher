@@ -263,6 +263,8 @@ sources:
     baseline_on_first_run: true
     enabled: true
 
+  # EUDA blocks GitHub Actions with HTTP 403 on both the news page and
+  # official RSS feed. Keep registered for periodic retesting.
   - name: EUDA News
     type: rss
     section: International
@@ -271,7 +273,7 @@ sources:
     base_score: 4
     max_items: 50
     baseline_on_first_run: true
-    enabled: true
+    enabled: false
 
   - name: UNODC Early Warning Advisory
     type: html_links
@@ -296,6 +298,21 @@ sources:
     link_selector: "a[href]"
     url_includes:
       - /canadian-drug-and-substance-watch/
+    include_all: false
+    base_score: 4
+    max_items: 40
+    baseline_on_first_run: true
+    enabled: true
+
+  - name: Health Canada Drug Analysis Service
+    type: html_links
+    section: International
+    url: https://health-infobase.canada.ca/drug-analysis-service/
+    selector: main
+    selector_fallback: body
+    link_selector: "a[href]"
+    url_includes:
+      - /drug-analysis-service/
     include_all: false
     base_score: 4
     max_items: 40
