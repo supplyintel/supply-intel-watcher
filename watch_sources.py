@@ -37,6 +37,7 @@ EMAIL_REPORT_MD = Path("reports/email.md")
 EMAIL_REPORT_HTML = Path("reports/email.html")
 BRIEFING_REPORT_MD = Path("reports/briefing.md")
 ONE_PAGER_REPORT_MD = Path("reports/one_pager.md")
+EDITORIAL_QUEUE_MD = Path("reports/editorial_queue.md")
 ARCHIVE_DIR = Path("reports/archive")
 TIMEOUT = 45
 
@@ -494,6 +495,101 @@ def priority_score(item: Item) -> int:
     return score
 
 
+
+def signal_topics(item: Item) -> set[str]:
+    categories = classify_item(item)
+    return set(categories["Massachusetts"] + categories["Emerging substances"])
+
+
+def corroborating_sources(item: Item, items: list[Item]) -> list[str]:
+    topics = signal_topics(item)
+    if not topics:
+        return [item.source]
+    sources = {
+        candidate.source
+        for candidate in items
+        if topics.intersection(signal_topics(candidate))
+    }
+    return sorted(sources, key=str.lower)
+
+
+def evidence_label(item: Item, items: list[Item]) -> str:
+    if item.title.lower().startswith("page content changed:"):
+        return "Change detected — source review required"
+    source_count = len(corroborating_sources(item, items))
+    if source_count >= 2:
+        return f"Cross-source signal ({source_count} sources)"
+    return "Single-source signal"
+
+
+def priority_tier(item: Item, items: list[Item]) -> str:
+    text = item_text(item)
+    urgent_signal = (
+        "alert" in text
+        or "warning" in text
+        or "Drug-checking alerts" in classify_item(item)["Massachusetts"]
+    )
+    cross_source = len(corroborating_sources(item, items)) >= 2
+    if priority_score(item) >= 14 and (urgent_signal or cross_source):
+        return "Review now"
+    if priority_score(item) >= 9 or usefulness_flags(item):
+        return "Monitor"
+    return "Background"
+
+
+def render_editorial_queue(items: list[Item], checked_count: int) -> str:
+    tiers = {"Review now": [], "Monitor": [], "Background": []}
+    for item in sorted(
+        items,
+        key=lambda candidate: (
+            -priority_score(candidate),
+            -candidate.score,
+            candidate.title.lower(),
+        ),
+    ):
+        tiers[priority_tier(item, items)].append(item)
+
+    lines = [
+        "# Editorial review queue",
+        "",
+        f"**Sources checked:** {checked_count}",
+        f"**New items triaged:** {len(items)}",
+        "",
+    ]
+    for tier, description in (
+        ("Review now", "High-priority alert or corroborated signal requiring prompt human review."),
+        ("Monitor", "Relevant signal to track or consider for a briefing."),
+        ("Background", "Lower-priority material retained for research and archive use."),
+    ):
+        lines.extend([f"## {tier}", "", description, ""])
+        if not tiers[tier]:
+            lines.extend(["No items in this tier.", ""])
+            continue
+        for item in tiers[tier]:
+            sources = corroborating_sources(item, items)
+            lines.extend(
+                [
+                    f"### [{item.title}]({item.url})",
+                    f"- Priority score: {priority_score(item)}",
+                    f"- Evidence: {evidence_label(item, items)}",
+                    f"- Related sources: {', '.join(sources)}",
+                    f"- Suggested products: {', '.join(usefulness_flags(item)) or 'Archive/research'}",
+                    f"- Audiences: {', '.join(classify_item(item)['Implications']) or 'General'}",
+                    "",
+                ]
+            )
+    lines.extend(
+        [
+            "## Editorial safeguard",
+            "",
+            "Priority and corroboration describe automated matching across source items; "
+            "they do not verify that separate sources report the same event or establish "
+            "causation. Review every linked source before publication or operational use.",
+            "",
+        ]
+    )
+    return "\n".join(lines)
+
 def briefing_candidates(items: list[Item], limit: int = 5) -> list[Item]:
     eligible = [item for item in items if usefulness_flags(item)]
     return sorted(
@@ -838,13 +934,15 @@ def main() -> int:
     one_pager = render_one_pager(new_items, len(enabled_sources))
     BRIEFING_REPORT_MD.write_text(briefing, encoding="utf-8")
     ONE_PAGER_REPORT_MD.write_text(one_pager, encoding="utf-8")
+    editorial_queue = render_editorial_queue(new_items, len(enabled_sources))
+    EDITORIAL_QUEUE_MD.write_text(editorial_queue, encoding="utf-8")
 
     date_stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     (ARCHIVE_DIR / f"{date_stamp}.md").write_text(markdown, encoding="utf-8")
     (ARCHIVE_DIR / f"{date_stamp}.html").write_text(html_report, encoding="utf-8")
 
     save_state(state)
-    print(f"\nWrote full, email, briefing, and one-pager reports")
+    print(f"\nWrote full, email, briefing, one-pager, and editorial queue reports")
     print(
         f"New items: {len(new_items)} | "
         f"Email items: {len(email_items)} | Failures: {len(failures)}"

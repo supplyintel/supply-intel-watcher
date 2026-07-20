@@ -12,7 +12,7 @@ Reports now organize the same evidence into decision-friendly sections:
 - **Implications:** court staff, treatment providers, harm reduction, and law enforcement
 - **Usefulness flags:** presentation and one-pager candidates
 
-An item can appear in more than one section because a single source may be relevant to several substances or audiences. Categories and implications are deterministic triage aids—not generated facts or individualized legal/clinical conclusions. Review the linked source before reuse.
+An item can appear in more than one section because a single source may be relevant to several substances or audiences. Categories, priority tiers, corroboration labels, and implications are deterministic triage aids—not generated facts or individualized legal/clinical conclusions. Review the linked source before reuse.
 
 ## Outputs
 
@@ -20,6 +20,7 @@ An item can appear in more than one section because a single source may be relev
 - `reports/email.md` and `reports/email.html`: items meeting the configured email score threshold, plus source failures
 - `reports/briefing.md`: five prioritized, source-linked presentation prompts
 - `reports/one_pager.md`: concise substance and audience summary ready for editorial review
+- `reports/editorial_queue.md`: review-now, monitor, and background tiers with cross-source signal labels
 - `reports/archive/`: dated full reports
 - `watch_state_v3.json`: deduplication, page hashes, initialization state, and source failure history
 

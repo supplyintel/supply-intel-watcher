@@ -4,8 +4,12 @@ from watch_sources import (
     Item,
     briefing_candidates,
     classify_item,
+    corroborating_sources,
+    evidence_label,
     priority_score,
+    priority_tier,
     render_briefing,
+    render_editorial_queue,
     render_markdown,
     render_one_pager,
     structured_groups,
@@ -111,6 +115,44 @@ class Phase3ClassificationTests(unittest.TestCase):
         self.assertIn("## Practical relevance", report)
         self.assertIn("**Court staff (1):**", report)
         self.assertIn("automated source brief", report)
+
+
+    def test_cross_source_signal_and_review_tier(self):
+        first = make_item(source="Lab A", item_id="a")
+        second = make_item(
+            source="Lab B",
+            title="Xylazine and nitazene alert",
+            item_id="b",
+        )
+        items = [first, second]
+        self.assertEqual(corroborating_sources(first, items), ["Lab A", "Lab B"])
+        self.assertEqual(evidence_label(first, items), "Cross-source signal (2 sources)")
+        self.assertEqual(priority_tier(second, items), "Review now")
+
+    def test_page_change_requires_source_review(self):
+        item = make_item(
+            title="Page content changed: State dashboard",
+            section="United States",
+            summary="The watched page changed.",
+            matched_keywords=[],
+            score=5,
+            presentation_worthy=False,
+        )
+        self.assertEqual(
+            evidence_label(item, [item]),
+            "Change detected — source review required",
+        )
+
+    def test_editorial_queue_has_tiers_evidence_and_safeguard(self):
+        first = make_item(source="Lab A", item_id="a")
+        second = make_item(source="Lab B", item_id="b")
+        report = render_editorial_queue([first, second], 50)
+        self.assertIn("# Editorial review queue", report)
+        self.assertIn("## Review now", report)
+        self.assertIn("## Monitor", report)
+        self.assertIn("## Background", report)
+        self.assertIn("Cross-source signal (2 sources)", report)
+        self.assertIn("do not verify that separate sources report the same event", report)
 
 
 if __name__ == "__main__":
