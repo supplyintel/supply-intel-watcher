@@ -307,9 +307,8 @@ sources:
   - name: Health Canada Drug Analysis Service
     type: html_links
     section: International
-    url: https://health-infobase.canada.ca/drug-analysis-service/
-    selector: main
-    selector_fallback: body
+    url: https://health-infobase.canada.ca/drug-analysis-service/drug-classification.html
+    selector: body
     link_selector: "a[href]"
     url_includes:
       - /drug-analysis-service/
