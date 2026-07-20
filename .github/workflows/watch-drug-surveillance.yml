@@ -2,6 +2,12 @@ name: Supply Intel Watcher v3
 
 on:
   workflow_dispatch:
+  pull_request:
+    paths:
+      - "watch_sources.py"
+      - "sources.yml"
+      - "requirements.txt"
+      - ".github/workflows/watch-drug-surveillance.yml"
   schedule:
     - cron: "0 12 * * 1"
 
@@ -35,6 +41,7 @@ jobs:
         run: python watch_sources.py
 
       - name: Save state and reports
+        if: github.event_name != 'pull_request'
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
@@ -43,7 +50,7 @@ jobs:
           git push
 
       - name: Email HTML summary
-        if: always()
+        if: always() && github.event_name != 'pull_request'
         env:
           EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
