@@ -718,7 +718,7 @@ sources:
     type: page_hash
     section: International
     url: https://www.who.int/groups/ecdd
-    selector: main
+    selector: body
     base_score: 4
     enabled: true
 
