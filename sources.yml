@@ -486,7 +486,7 @@ sources:
     url: https://www.nyc.gov/site/doh/health/health-topics/drug-checking-data.page
     selector: body
     base_score: 6
-    enabled: true
+    enabled: false
 
   - name: NYC Alcohol and Drug Use Data
     type: page_hash
@@ -494,7 +494,7 @@ sources:
     url: https://www.nyc.gov/site/doh/health/health-topics/alcohol-and-drug-use-data.page
     selector: body
     base_score: 5
-    enabled: true
+    enabled: false
 
   - name: Vermont Know Overdose
     type: page_hash
@@ -518,4 +518,20 @@ sources:
     url: https://www.health.vic.gov.au/alcohol-and-drugs/pill-testing
     selector: main
     base_score: 5
+    enabled: true
+
+  - name: Vermont Substance Use Dashboard
+    type: page_hash
+    section: United States
+    url: https://www.healthvermont.gov/alcohol-drugs/substance-use-data-reports/substance-use-dashboard
+    selector: main
+    base_score: 4
+    enabled: true
+
+  - name: Vermont Health Alerts and Advisories
+    type: page_hash
+    section: United States
+    url: https://www.healthvermont.gov/about/public-health-response/health-alerts-advisories
+    selector: main
+    base_score: 4
     enabled: true
