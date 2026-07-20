@@ -3,12 +3,16 @@ from datetime import datetime, timedelta, timezone
 
 from watch_sources import (
     Item,
+    audience_candidates,
+    audience_slug,
     briefing_candidates,
     classify_item,
     corroborating_sources,
     evidence_label,
     priority_score,
     priority_tier,
+    render_audience_briefing,
+    render_audience_briefings,
     render_briefing,
     render_editorial_queue,
     render_markdown,
@@ -212,6 +216,45 @@ class Phase3ClassificationTests(unittest.TestCase):
         self.assertIn("## New", report)
         self.assertIn("**Medetomidine:** 1 current signal(s)", report)
         self.assertIn("not prevalence estimates", report)
+
+
+    def test_audience_candidates_filter_and_rank(self):
+        court_item = make_item(item_id="court")
+        unrelated = make_item(
+            title="General dashboard release",
+            summary="A dashboard was updated",
+            matched_keywords=[],
+            score=5,
+            presentation_worthy=False,
+            item_id="other",
+        )
+        self.assertEqual(
+            audience_candidates([unrelated, court_item], "Court staff"),
+            [court_item],
+        )
+        with self.assertRaises(ValueError):
+            audience_candidates([court_item], "Unknown audience")
+
+    def test_audience_briefing_is_source_linked_and_bounded(self):
+        report = render_audience_briefing([make_item()], "Court staff", 50)
+        self.assertIn("# Court staff intelligence briefing", report)
+        self.assertIn("## Audience lens", report)
+        self.assertIn("## Priority signals", report)
+        self.assertIn("[Nitazene forensic toxicology case report]", report)
+        self.assertIn("case-specific evidence", report)
+
+    def test_all_audience_files_are_generated(self):
+        reports = render_audience_briefings([make_item()], 50)
+        self.assertEqual(
+            set(reports),
+            {
+                "court_staff.md",
+                "treatment_providers.md",
+                "harm_reduction.md",
+                "law_enforcement.md",
+            },
+        )
+        self.assertEqual(audience_slug("Court staff"), "court_staff")
 
 
 if __name__ == "__main__":
