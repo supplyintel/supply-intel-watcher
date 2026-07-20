@@ -17,7 +17,7 @@ import sys
 import time
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass, asdict
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 from urllib.parse import urljoin
@@ -38,6 +38,7 @@ EMAIL_REPORT_HTML = Path("reports/email.html")
 BRIEFING_REPORT_MD = Path("reports/briefing.md")
 ONE_PAGER_REPORT_MD = Path("reports/one_pager.md")
 EDITORIAL_QUEUE_MD = Path("reports/editorial_queue.md")
+TRENDS_REPORT_MD = Path("reports/trends.md")
 ARCHIVE_DIR = Path("reports/archive")
 TIMEOUT = 45
 
@@ -76,13 +77,14 @@ def load_yaml(path: Path) -> dict[str, Any]:
 
 def load_state() -> dict[str, Any]:
     if not STATE_FILE.exists():
-        return {"seen": {}, "page_hashes": {}, "failures": {}, "initialized_sources": {}}
+        return {"seen": {}, "page_hashes": {}, "failures": {}, "initialized_sources": {}, "topic_history": []}
     try:
         data = json.loads(STATE_FILE.read_text(encoding="utf-8"))
         data.setdefault("seen", {})
         data.setdefault("page_hashes", {})
         data.setdefault("failures", {})
         data.setdefault("initialized_sources", {})
+        data.setdefault("topic_history", [])
         return data
     except (json.JSONDecodeError, OSError):
         return {"seen": {}, "page_hashes": {}, "failures": {}, "initialized_sources": {}}
@@ -590,6 +592,131 @@ def render_editorial_queue(items: list[Item], checked_count: int) -> str:
     )
     return "\n".join(lines)
 
+
+def trend_topics(item: Item) -> list[str]:
+    categories = classify_item(item)
+    topics = (
+        categories["Massachusetts"]
+        + categories["Emerging substances"]
+        + categories["Research"]
+    )
+    return list(dict.fromkeys(topics))
+
+
+def record_topic_history(
+    state: dict[str, Any],
+    items: list[Item],
+    now: datetime | None = None,
+) -> None:
+    timestamp = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
+    history = state.setdefault("topic_history", [])
+    for item in items:
+        topics = trend_topics(item)
+        if topics:
+            history.append(
+                {
+                    "item_id": item.item_id,
+                    "recorded": timestamp.isoformat(),
+                    "source": item.source,
+                    "topics": topics,
+                }
+            )
+    cutoff = timestamp - timedelta(days=90)
+    retained = []
+    for entry in history:
+        try:
+            recorded = datetime.fromisoformat(entry["recorded"].replace("Z", "+00:00"))
+        except (KeyError, TypeError, ValueError):
+            continue
+        if recorded >= cutoff:
+            retained.append(entry)
+    state["topic_history"] = retained
+
+
+def trend_snapshot(
+    history: list[dict[str, Any]],
+    now: datetime | None = None,
+) -> dict[str, dict[str, int | str]]:
+    timestamp = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
+    current_start = timestamp - timedelta(days=7)
+    prior_start = timestamp - timedelta(days=14)
+    counts: dict[str, dict[str, int]] = {}
+    for entry in history:
+        try:
+            recorded = datetime.fromisoformat(entry["recorded"].replace("Z", "+00:00"))
+        except (KeyError, TypeError, ValueError):
+            continue
+        bucket = "current" if recorded >= current_start else "prior" if recorded >= prior_start else ""
+        if not bucket:
+            continue
+        for topic in entry.get("topics", []):
+            counts.setdefault(topic, {"current": 0, "prior": 0})[bucket] += 1
+
+    snapshot: dict[str, dict[str, int | str]] = {}
+    for topic, values in counts.items():
+        current, prior = values["current"], values["prior"]
+        if current > 0 and prior == 0:
+            status = "New"
+        elif current >= prior + 2:
+            status = "Rising"
+        elif current > 0 and current >= prior:
+            status = "Steady"
+        elif prior > current:
+            status = "Cooling"
+        else:
+            status = "Quiet"
+        snapshot[topic] = {"current": current, "prior": prior, "status": status}
+    return snapshot
+
+
+def render_trends(
+    history: list[dict[str, Any]],
+    checked_count: int,
+    now: datetime | None = None,
+) -> str:
+    snapshot = trend_snapshot(history, now)
+    order = {"Rising": 0, "New": 1, "Steady": 2, "Cooling": 3, "Quiet": 4}
+    ranked = sorted(
+        snapshot.items(),
+        key=lambda pair: (
+            order[pair[1]["status"]],
+            -int(pair[1]["current"]),
+            pair[0].lower(),
+        ),
+    )
+    lines = [
+        "# Topic trend watch",
+        "",
+        f"**Sources checked:** {checked_count}",
+        "**Comparison:** most recent 7 days versus the preceding 7 days",
+        "",
+    ]
+    if not ranked:
+        lines.extend(["No categorized topic history is available yet.", ""])
+    else:
+        for status in ("Rising", "New", "Steady", "Cooling"):
+            rows = [(topic, values) for topic, values in ranked if values["status"] == status]
+            if not rows:
+                continue
+            lines.extend([f"## {status}", ""])
+            for topic, values in rows:
+                lines.append(
+                    f"- **{topic}:** {values['current']} current signal(s); "
+                    f"{values['prior']} in the prior window."
+                )
+            lines.append("")
+    lines.extend(
+        [
+            "## Interpretation note",
+            "",
+            "Counts represent newly detected source items categorized by the watcher. "
+            "They are not prevalence estimates, event counts, or proof of a real-world "
+            "increase. Review source coverage and linked reports before interpreting a trend.",
+            "",
+        ]
+    )
+    return "\n".join(lines)
+
 def briefing_candidates(items: list[Item], limit: int = 5) -> list[Item]:
     eligible = [item for item in items if usefulness_flags(item)]
     return sorted(
@@ -909,6 +1036,8 @@ def main() -> int:
             new_items.append(item)
         seen[item.item_id] = datetime.now(timezone.utc).isoformat()
 
+    record_topic_history(state, new_items)
+
     max_seen = int(config.get("state", {}).get("max_seen_items", 5000))
     if len(seen) > max_seen:
         trimmed = sorted(seen.items(), key=lambda pair: pair[1], reverse=True)[:max_seen]
@@ -936,13 +1065,15 @@ def main() -> int:
     ONE_PAGER_REPORT_MD.write_text(one_pager, encoding="utf-8")
     editorial_queue = render_editorial_queue(new_items, len(enabled_sources))
     EDITORIAL_QUEUE_MD.write_text(editorial_queue, encoding="utf-8")
+    trends = render_trends(state["topic_history"], len(enabled_sources))
+    TRENDS_REPORT_MD.write_text(trends, encoding="utf-8")
 
     date_stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     (ARCHIVE_DIR / f"{date_stamp}.md").write_text(markdown, encoding="utf-8")
     (ARCHIVE_DIR / f"{date_stamp}.html").write_text(html_report, encoding="utf-8")
 
     save_state(state)
-    print(f"\nWrote full, email, briefing, one-pager, and editorial queue reports")
+    print(f"\nWrote full, email, briefing, one-pager, editorial queue, and trend reports")
     print(
         f"New items: {len(new_items)} | "
         f"Email items: {len(email_items)} | Failures: {len(failures)}"
