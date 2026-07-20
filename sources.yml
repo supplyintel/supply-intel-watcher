@@ -535,3 +535,90 @@ sources:
     selector: main
     base_score: 4
     enabled: true
+
+  - name: Health Canada Opioid and Substance Surveillance
+    type: page_hash
+    section: International
+    url: https://www.canada.ca/en/health-canada/services/opioids/data-surveillance-research.html
+    selector: main
+    base_score: 5
+    enabled: true
+
+  - name: Health Canada Toxic Illegal Drug Supply
+    type: page_hash
+    section: International
+    url: https://www.canada.ca/en/health-canada/services/opioids/overdose-crisis-toxic-illegal-drug-supply.html
+    selector: main
+    base_score: 5
+    enabled: true
+
+  - name: NIJ NPS Discovery Research
+    type: page_hash
+    section: United States
+    url: https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence
+    selector: main
+    base_score: 5
+    enabled: true
+
+  - name: Aegis Labs NPS Frontline Alerts
+    type: page_hash
+    section: United States
+    url: https://www.aegislabs.com/services/novel-psychoactive-substances/frontline-alert-emerging-substances/
+    selector: main
+    base_score: 5
+    enabled: true
+
+  - name: ACT Government Drug Checking
+    type: page_hash
+    section: International
+    url: https://www.act.gov.au/health/topics/drugs-alcohol-smoking-and-vaping/drug-checking
+    selector: main
+    base_score: 5
+    enabled: true
+
+  - name: ACT Health Drug Warning Media Releases
+    type: html_links
+    section: International
+    url: https://www.cmtedd.act.gov.au/open_government/inform/act_government_media_releases/hd
+    selector: main
+    selector_fallback: body
+    link_selector: "a[href]"
+    url_includes:
+      - /act_government_media_releases/hd/
+    include_all: false
+    base_score: 5
+    max_items: 40
+    baseline_on_first_run: true
+    enabled: true
+
+  - name: Pennsylvania Substance Use Data Dashboards
+    type: page_hash
+    section: United States
+    url: https://www.pa.gov/agencies/ddap/about-us/data-dashboards
+    selector: main
+    base_score: 4
+    enabled: true
+
+  - name: Maryland Rapid Analysis of Drugs
+    type: page_hash
+    section: United States
+    url: https://health.maryland.gov/carroll/Pages/Overdose-Prevention-and-Response.aspx
+    selector: body
+    base_score: 5
+    enabled: true
+
+  - name: Erie County Harm Reduction Data
+    type: page_hash
+    section: United States
+    url: https://www3.erie.gov/health/harm-reduction-data
+    selector: main
+    base_score: 4
+    enabled: true
+
+  - name: Pennsylvania Emerging Drug Trends
+    type: page_hash
+    section: United States
+    url: https://www.pa.gov/agencies/ddap/training/pa-emerging-drug-trends-symposium
+    selector: main
+    base_score: 4
+    enabled: true
