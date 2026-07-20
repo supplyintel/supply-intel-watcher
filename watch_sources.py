@@ -41,6 +41,7 @@ EDITORIAL_QUEUE_MD = Path("reports/editorial_queue.md")
 TRENDS_REPORT_MD = Path("reports/trends.md")
 AUDIENCE_REPORT_DIR = Path("reports/audiences")
 MASSACHUSETTS_REPORT_MD = Path("reports/massachusetts.md")
+DASHBOARD_HTML = Path("reports/dashboard.html")
 ARCHIVE_DIR = Path("reports/archive")
 TIMEOUT = 45
 
@@ -1030,6 +1031,117 @@ def render_audience_briefings(
         for audience in AUDIENCE_RULES
     }
 
+
+def dashboard_records(items: list[Item]) -> list[dict[str, Any]]:
+    records = []
+    for item in sorted(
+        items,
+        key=lambda candidate: (-priority_score(candidate), -candidate.score, candidate.title.lower()),
+    ):
+        categories = classify_item(item)
+        records.append(
+            {
+                "title": item.title,
+                "url": item.url,
+                "source": item.source,
+                "published": item.published,
+                "summary": item.summary,
+                "section": item.section,
+                "score": item.score,
+                "priority": priority_tier(item, items),
+                "evidence": evidence_label(item, items),
+                "substances": categories["Emerging substances"],
+                "audiences": categories["Implications"],
+            }
+        )
+    return records
+
+
+def render_dashboard(
+    items: list[Item],
+    failures: list[dict[str, str]],
+    checked_count: int,
+) -> str:
+    records = dashboard_records(items)
+    data_json = json.dumps(records, ensure_ascii=False).replace("</", "<\\/")
+    overdose_count = sum(
+        any(term in item_text(item) for term in ("overdose", "mortality", "death"))
+        for item in items
+    )
+    alert_count = sum(
+        any(term in item_text(item) for term in ("alert", "warning", "drug checking"))
+        for item in items
+    )
+    emerging_count = sum(bool(classify_item(item)["Emerging substances"]) for item in items)
+    generated = datetime.now(timezone.utc).strftime("%B %d, %Y at %H:%M UTC")
+    return f"""<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Supply Intelligence Dashboard</title>
+<style>
+:root {{ --navy:#17324d; --blue:#246a9a; --pale:#eef5f8; --line:#d7e1e7; --ink:#18242e; }}
+* {{ box-sizing:border-box; }} body {{ margin:0; font-family:Arial,sans-serif; color:var(--ink); background:#f7f9fa; }}
+header {{ background:var(--navy); color:white; padding:24px max(20px,calc((100% - 1180px)/2)); }}
+header h1 {{ margin:0 0 6px; font-size:clamp(24px,4vw,38px); }} header p {{ margin:0; color:#dce8ef; }}
+main {{ max-width:1180px; margin:auto; padding:22px; }}
+.metrics {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px; }}
+.metric {{ background:white; border:1px solid var(--line); border-radius:10px; padding:16px; }}
+.metric strong {{ display:block; color:var(--blue); font-size:28px; }}
+.controls {{ display:grid; grid-template-columns:2fr repeat(3,1fr); gap:10px; margin:20px 0; }}
+.controls input,.controls select {{ width:100%; padding:11px; border:1px solid #aebdc7; border-radius:7px; background:white; }}
+.status {{ margin:10px 0; color:#536570; }} .grid {{ display:grid; grid-template-columns:repeat(auto-fill,minmax(290px,1fr)); gap:14px; }}
+.card {{ background:white; border:1px solid var(--line); border-left:5px solid var(--blue); border-radius:9px; padding:15px; }}
+.card h2 {{ margin:0 0 9px; font-size:18px; }} .card a {{ color:#164f7a; }}
+.tags {{ display:flex; flex-wrap:wrap; gap:5px; margin:8px 0; }}
+.tag {{ background:var(--pale); border-radius:999px; padding:4px 8px; font-size:12px; }}
+.meta {{ font-size:13px; color:#536570; }} .empty {{ padding:24px; background:white; border:1px solid var(--line); border-radius:9px; }}
+footer {{ max-width:1180px; margin:20px auto; padding:22px; font-size:13px; color:#536570; }}
+@media(max-width:760px) {{ .controls {{ grid-template-columns:1fr; }} }}
+</style></head><body>
+<header><h1>Supply Intelligence Dashboard</h1>
+<p>Generated {html.escape(generated)} · Private dashboard artifact</p></header>
+<main><section class="metrics" aria-label="Weekly metrics">
+<div class="metric"><strong>{checked_count}</strong>sources checked</div>
+<div class="metric"><strong>{len(items)}</strong>new relevant items</div>
+<div class="metric"><strong>{overdose_count}</strong>overdose signals</div>
+<div class="metric"><strong>{alert_count}</strong>alert signals</div>
+<div class="metric"><strong>{emerging_count}</strong>emerging-substance items</div>
+<div class="metric"><strong>{len(failures)}</strong>source failures</div>
+</section>
+<section class="controls" aria-label="Dashboard filters">
+<input id="search" type="search" placeholder="Search title, source, substance…" aria-label="Search intelligence">
+<select id="priority" aria-label="Filter by priority"><option value="">All priorities</option>
+<option>Review now</option><option>Monitor</option><option>Background</option></select>
+<select id="substance" aria-label="Filter by substance"><option value="">All substances</option></select>
+<select id="audience" aria-label="Filter by audience"><option value="">All audiences</option></select>
+</section><p id="status" class="status" aria-live="polite"></p>
+<section id="results" class="grid"></section></main>
+<footer>Dashboard labels are automated triage aids. Review each linked source before presentation, publication, clinical, legal, or operational use.</footer>
+<script id="dashboard-data" type="application/json">{data_json}</script>
+<script>
+const records=JSON.parse(document.getElementById("dashboard-data").textContent);
+const search=document.getElementById("search"),priority=document.getElementById("priority");
+const substance=document.getElementById("substance"),audience=document.getElementById("audience");
+const results=document.getElementById("results"),status=document.getElementById("status");
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}}[c]));
+const fill=(select,values)=>[...new Set(values.flat())].sort().forEach(v=>select.insertAdjacentHTML("beforeend","<option>"+esc(v)+"</option>"));
+fill(substance,records.map(r=>r.substances));fill(audience,records.map(r=>r.audiences));
+function render(){{
+ const q=search.value.trim().toLowerCase();
+ const shown=records.filter(r=>{{
+  const hay=JSON.stringify(r).toLowerCase();
+  return (!q||hay.includes(q))&&(!priority.value||r.priority===priority.value)&&
+   (!substance.value||r.substances.includes(substance.value))&&
+   (!audience.value||r.audiences.includes(audience.value));
+ }});
+ status.textContent="Showing "+shown.length+" of "+records.length+" items";
+ results.innerHTML=shown.length?shown.map(r=>'<article class="card"><h2><a href="'+esc(r.url)+'" target="_blank" rel="noopener">'+esc(r.title)+'</a></h2><div class="tags"><span class="tag">'+esc(r.priority)+'</span>'+r.substances.map(v=>'<span class="tag">'+esc(v)+'</span>').join("")+r.audiences.map(v=>'<span class="tag">'+esc(v)+'</span>').join("")+'</div><p class="meta">'+esc(r.source)+' · '+esc(r.published||"Date not supplied")+' · Score '+r.score+'</p><p>'+esc(r.summary)+'</p><p class="meta">'+esc(r.evidence)+'</p></article>').join(""):'<div class="empty">No items match these filters.</div>';
+}}
+[search,priority,substance,audience].forEach(el=>el.addEventListener("input",render));render();
+</script></body></html>"""
+
+
+
 def append_markdown_item(lines: list[str], item: Item, implication: str = "") -> None:
     flags = usefulness_flags(item)
     suffix = f" **[Useful for: {', '.join(flags)}]**" if flags else ""
@@ -1281,13 +1393,15 @@ def main() -> int:
         (AUDIENCE_REPORT_DIR / filename).write_text(content, encoding="utf-8")
     massachusetts = render_massachusetts_briefing(new_items, len(enabled_sources))
     MASSACHUSETTS_REPORT_MD.write_text(massachusetts, encoding="utf-8")
+    dashboard = render_dashboard(new_items, failures, len(enabled_sources))
+    DASHBOARD_HTML.write_text(dashboard, encoding="utf-8")
 
     date_stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     (ARCHIVE_DIR / f"{date_stamp}.md").write_text(markdown, encoding="utf-8")
     (ARCHIVE_DIR / f"{date_stamp}.html").write_text(html_report, encoding="utf-8")
 
     save_state(state)
-    print(f"\nWrote full, email, briefing, one-pager, editorial queue, trend, audience, and Massachusetts reports")
+    print(f"\nWrote intelligence reports and dashboard artifact")
     print(
         f"New items: {len(new_items)} | "
         f"Email items: {len(email_items)} | Failures: {len(failures)}"
