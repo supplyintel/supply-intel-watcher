@@ -73,15 +73,16 @@ def load_yaml(path: Path) -> dict[str, Any]:
 
 def load_state() -> dict[str, Any]:
     if not STATE_FILE.exists():
-        return {"seen": {}, "page_hashes": {}, "failures": {}}
+        return {"seen": {}, "page_hashes": {}, "failures": {}, "initialized_sources": {}}
     try:
         data = json.loads(STATE_FILE.read_text(encoding="utf-8"))
         data.setdefault("seen", {})
         data.setdefault("page_hashes", {})
         data.setdefault("failures", {})
+        data.setdefault("initialized_sources", {})
         return data
     except (json.JSONDecodeError, OSError):
-        return {"seen": {}, "page_hashes": {}, "failures": {}}
+        return {"seen": {}, "page_hashes": {}, "failures": {}, "initialized_sources": {}}
 
 
 def save_state(state: dict[str, Any]) -> None:
@@ -542,6 +543,18 @@ def main() -> int:
     for source in enabled_sources:
         try:
             candidates = run_source(source, session, config, state)
+            if (
+                source.get("baseline_on_first_run", False)
+                and source["name"] not in state["initialized_sources"]
+            ):
+                baseline_time = datetime.now(timezone.utc).isoformat()
+                for candidate in candidates:
+                    seen[candidate.item_id] = baseline_time
+                state["initialized_sources"][source["name"]] = baseline_time
+                print(
+                    f"baseline {source['name']}: "
+                    f"{len(candidates)} existing item(s) recorded"
+                )
             all_candidates.extend(candidates)
             state["failures"].pop(source["name"], None)
             print(f"ok      {source['name']}: {len(candidates)} candidate(s)")
