@@ -44,6 +44,12 @@ keywords:
     - synthetic cannabinoid
     - veterinary sedative
     - opioid
+    - benzodiazepine
+    - psychostimulant
+    - methamphetamine
+    - naloxone
+    - buprenorphine
+    - methadone
   surveillance_terms:
     - overdose
     - drug checking
@@ -54,6 +60,13 @@ keywords:
     - seizure
     - mortality
     - emerging drug
+    - drug safety
+    - controlled substance
+    - drug alert
+    - poisoning
+    - adulterant
+    - contaminant
+    - early warning
 
 sources:
   - name: CFSRE NPS Discovery — Public Alerts
@@ -143,6 +156,166 @@ sources:
     request_delay_seconds: 0.5
     max_items: 30
     base_score: 4
+    enabled: true
+
+  - name: CDC Health Alert Network
+    type: html_links
+    section: United States
+    url: https://www.cdc.gov/han/php/notices/index.html
+    selector: main
+    selector_fallback: body
+    link_selector: "a[href]"
+    url_includes:
+      - /han/php/notices/han
+    include_all: false
+    base_score: 4
+    max_items: 40
+    baseline_on_first_run: true
+    enabled: true
+
+  - name: CDC MMWR
+    type: html_links
+    section: Research
+    url: https://www.cdc.gov/mmwr/index.html
+    selector: main
+    selector_fallback: body
+    link_selector: "a[href]"
+    url_includes:
+      - /mmwr/volumes/
+    include_all: false
+    base_score: 3
+    max_items: 50
+    baseline_on_first_run: true
+    enabled: true
+
+  - name: FDA Drug Safety Communications
+    type: html_links
+    section: United States
+    url: https://www.fda.gov/drugs/drug-safety-and-availability/drug-safety-communications
+    selector: main
+    selector_fallback: body
+    link_selector: "a[href]"
+    url_includes:
+      - /drugs/drug-safety-communications/
+    include_all: false
+    base_score: 3
+    max_items: 40
+    baseline_on_first_run: true
+    enabled: true
+
+  - name: DEA Federal Register notices
+    type: html_links
+    section: United States
+    url: https://www.federalregister.gov/agencies/drug-enforcement-administration
+    selector: main
+    selector_fallback: body
+    link_selector: "a[href]"
+    url_includes:
+      - /documents/
+    include_all: false
+    base_score: 4
+    max_items: 50
+    baseline_on_first_run: true
+    enabled: true
+
+  - name: NIDA News and Events
+    type: html_links
+    section: Research
+    url: https://nida.nih.gov/news-events
+    selector: main
+    selector_fallback: body
+    link_selector: "a[href]"
+    url_includes:
+      - /news-events/
+    include_all: false
+    base_score: 2
+    max_items: 40
+    baseline_on_first_run: true
+    enabled: true
+
+  - name: SAMHSA News and Announcements
+    type: html_links
+    section: United States
+    url: https://www.samhsa.gov/about/news-announcements
+    selector: main
+    selector_fallback: body
+    link_selector: "a[href]"
+    url_includes:
+      - /about/news-announcements/
+    include_all: false
+    base_score: 2
+    max_items: 40
+    baseline_on_first_run: true
+    enabled: true
+
+  - name: ONDCP News
+    type: html_links
+    section: United States
+    url: https://www.whitehouse.gov/ondcp/news/
+    selector: main
+    selector_fallback: body
+    link_selector: "a[href]"
+    url_includes:
+      - /ondcp/news/
+    include_all: false
+    base_score: 3
+    max_items: 40
+    baseline_on_first_run: true
+    enabled: true
+
+  # EUDA blocks GitHub Actions with HTTP 403 on both the news page and
+  # official RSS feed. Keep registered for periodic retesting.
+  - name: EUDA News
+    type: rss
+    section: International
+    url: https://www.euda.europa.eu/news/home/rss.xml
+    include_all: false
+    base_score: 4
+    max_items: 50
+    baseline_on_first_run: true
+    enabled: false
+
+  - name: UNODC Early Warning Advisory
+    type: html_links
+    section: International
+    url: https://www.unodc.org/LSS/Home/NPS
+    selector: body
+    link_selector: "a[href]"
+    url_includes:
+      - /LSS/Announcement/Details/
+    include_all: false
+    base_score: 5
+    max_items: 40
+    baseline_on_first_run: true
+    enabled: true
+
+  - name: Canadian Drug and Substance Watch
+    type: html_links
+    section: International
+    url: https://health-infobase.canada.ca/canadian-drug-and-substance-watch/
+    selector: main
+    selector_fallback: body
+    link_selector: "a[href]"
+    url_includes:
+      - /canadian-drug-and-substance-watch/
+    include_all: false
+    base_score: 4
+    max_items: 40
+    baseline_on_first_run: true
+    enabled: true
+
+  - name: Health Canada Drug Analysis Service
+    type: html_links
+    section: International
+    url: https://health-infobase.canada.ca/drug-analysis-service/drug-classification.html
+    selector: body
+    link_selector: "a[href]"
+    url_includes:
+      - /drug-analysis-service/
+    include_all: false
+    base_score: 4
+    max_items: 40
+    baseline_on_first_run: true
     enabled: true
 
   # These page watches may be blocked by the publisher. They are retained but
