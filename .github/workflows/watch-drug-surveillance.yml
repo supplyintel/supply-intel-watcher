@@ -44,12 +44,17 @@ jobs:
       - name: Build enhanced intelligence dashboard
         run: python enhance_dashboard.py
 
+      - name: Publish dashboard to Cloudflare directory
+        run: |
+          mkdir -p dist
+          cp reports/dashboard.html dist/index.html
+
       - name: Save state and reports
         if: github.event_name != 'pull_request'
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add watch_state_v3.json reports/
+          git add watch_state_v3.json reports/ dist/index.html
           git commit -m "Update supply intelligence report" || echo "No changes to commit"
           git push
 
