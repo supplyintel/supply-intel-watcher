@@ -5,6 +5,7 @@ on:
   pull_request:
     paths:
       - "watch_sources.py"
+      - "enhance_dashboard.py"
       - "sources.yml"
       - "requirements.txt"
       - ".github/workflows/watch-drug-surveillance.yml"
@@ -39,6 +40,9 @@ jobs:
         env:
           NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
         run: python watch_sources.py
+
+      - name: Build enhanced intelligence dashboard
+        run: python enhance_dashboard.py
 
       - name: Save state and reports
         if: github.event_name != 'pull_request'
@@ -87,6 +91,21 @@ jobs:
           else:
               html_body = f"<pre>{text_body}</pre>"
 
+          dashboard_url = "https://dashboard.supplyintel.org"
+          dashboard_button = (
+              '<p style="margin:24px 0">'
+              f'<a href="{dashboard_url}" '
+              'style="background:#173f59;color:#ffffff;text-decoration:none;'
+              'padding:12px 18px;border-radius:7px;font-weight:bold;display:inline-block">'
+              'Open Supply Intelligence Dashboard</a></p>'
+          )
+          if "</body>" in html_body.lower():
+              position = html_body.lower().rfind("</body>")
+              html_body = html_body[:position] + dashboard_button + html_body[position:]
+          else:
+              html_body += dashboard_button
+
+          text_body += f"\n\nOpen dashboard: {dashboard_url}\n"
           run_date = datetime.now(timezone.utc).strftime("%B %d, %Y")
 
           message = EmailMessage()
