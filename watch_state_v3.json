@@ -1,59 +1,378 @@
 {
   "failures": {},
-  "page_hashes": {},
+  "initialized_sources": {
+    "CDC Health Alert Network": "2026-07-21T17:45:01.946439+00:00",
+    "CDC MMWR": "2026-07-21T17:45:01.998537+00:00",
+    "Canadian Drug and Substance Watch": "2026-07-21T17:45:03.908041+00:00",
+    "DEA Federal Register notices": "2026-07-21T17:45:02.174020+00:00",
+    "FDA Drug Safety Communications": "2026-07-21T17:45:02.110132+00:00",
+    "Health Canada Drug Analysis Service": "2026-07-21T17:45:03.967386+00:00",
+    "NIDA News and Events": "2026-07-21T17:45:02.202904+00:00",
+    "NSW Health Public Drug Warnings": "2026-07-21T17:45:06.698020+00:00",
+    "ONDCP News": "2026-07-21T17:45:02.629866+00:00",
+    "Public Health Scotland RADAR Alerts": "2026-07-21T17:45:21.620475+00:00",
+    "Public Health Scotland RADAR Quarterly Reports": "2026-07-21T17:45:21.948817+00:00",
+    "Public Health Wales WEDINOS Reports": "2026-07-21T17:45:27.958954+00:00",
+    "SAMHSA News and Announcements": "2026-07-21T17:45:02.567254+00:00",
+    "UNODC Early Warning Advisory": "2026-07-21T17:45:03.738901+00:00"
+  },
+  "page_hashes": {
+    "Aegis Labs NPS Frontline Alerts": "7315340bc5d7740f048b2f1f1831fed3391b2bd23e41fa9f232353d1ad3051c3",
+    "CDC DOSE-DIS Nonfatal Overdose Dashboard": "b405283f15b392544da8ae0ab8ca5154c29feff1f48403409f635cd9bc37da37",
+    "CDC DOSE-SYS Nonfatal Overdose Dashboard": "26f307f12cfb71a5839af7cf9db10c5be9a79d678006be558c3f7e28392a477b",
+    "CDC Fentalog Toxicology Dashboard": "6062087aa9acf60ad5799c0379cf07d7e40a0a78cfbfec6b782e761694d9d576",
+    "CDC Provisional Drug Overdose Death Counts": "80db068e6be3c3f50b6ed43dc38807c35d67bca82e4b946fb546dfec0b25e631",
+    "CDC SUDORS Fatal Overdose Dashboard": "e63272b5af2a48c105ed947caf5d17adafbc8362b0f664850a8d7ac1cdf5f73e",
+    "Erie County Harm Reduction Data": "aee808d28258b66dc9876343d6ee34829d31a23e1f0f05e1dda5cd2a8d0c2e19",
+    "Health Canada Multi-Drug Toxicity Surveillance": "fd96da25063f49565747a396a8bb1360a1bcae0fb12839de83fa8f3d9d0e2638",
+    "Health Canada Opioid and Substance Surveillance": "29c4b4eebdbe8bfb7563ef237ab4e735b0518831185b5a8c6da918ceb56cae22",
+    "Health Canada Toxic Illegal Drug Supply": "728272798dc796c31fc268499b41222d61ccf4c4ca09e0f8b77d86275d2af91a",
+    "Ireland HSE Emerging Overdose Communications": "d309a96d90ebe2c3375f5cff6be2ef4a306a7bf3b78b437cbe12d6620439c752",
+    "Maryland Rapid Analysis of Drugs": "946d79aa0090f6f264466add8643943b15f355577670c357e47a29f1b230ed41",
+    "NIJ NPS Discovery Research": "44dbd9e010e5537f5ae9e2e07a55cdd473ff9dd0b3ebac0e85232a8bdfba93a5",
+    "NIJ NPS Discovery Trend Reports": "d3ef3aa37b36d39b517287f5542293a8878a0b883f1c0e03e3a3850727d1ba61",
+    "NIST Rapid Drug Analysis and Research": "889d30f748ac3605c6146e2ab3ac2acafdd8dc9cb66668929f298569d9376d1f",
+    "New York Drug Checking Data": "4f7dd99aee2a5fad0a1b84bf49bb080b44653f8908a61b3c11155e050059dede",
+    "New York Drug Checking Service": "19e5063a480c23ee180e8c5974ce9edca2c9b632f8443e11eeb0953ba5e6988f",
+    "Pennsylvania Substance Use Data Dashboards": "f688811bf373a369c8dd52e953abdef006fd1b4c8cb5a4a1008b4250cd6a6791",
+    "SAMHSA Drug Abuse Warning Network": "538251ab310a73b59a72127ef664eeebbbd4cc2101ddd6ff83c4b1f09b9f56f2",
+    "UK Synthetic Opioid Death Surveillance": "38e0dbf3c4c31e19593d60235bca2eafefe5daa19431f2490ebf1617bac7992d",
+    "Vermont Health Alerts and Advisories": "2c7baf474ce1dfed4992940967dcefe980c439fc1807b69f98e4fed0da60e733",
+    "Vermont Know Overdose": "af210b20bcd9549517ce74e232f48e2fafec594caaf81cc7bb44c0a1ae4be737",
+    "Vermont Substance Use Dashboard": "ff18e831794bd78b48b5ec0f371cd07c14d9b4f2dc115a560fa081a419f597bd",
+    "Vermont Substance Use Data and Reports": "87a346ef43a3ab0b5d9bdd2b73f1031e981118a52fcdcf0a0d182a40bb420ce9",
+    "Victoria Department of Health Drug Alerts": "01a996b964acf9a58f271b69b67297348f8efd36851de2ce8a50b65a4aec1ea9",
+    "Victoria Pill Testing Service": "d78c9abb3ff1e8c9e9a3b34d9daee98972914d895bd51a1d310bf0f22ab2c239",
+    "WEDINOS Drug Checking Results": "5bc2aee4f7e9433f9f8e5d389505ffc9cdbaf2569d60ca5cee14aa5a1cf2f231",
+    "WHO Expert Committee on Drug Dependence": "a16d1eeb9d7cf29475824de055b4d235438af2fb346f35a77af0dba4ea0b9215",
+    "Wisconsin Drug Checking Technologies": "d602a9a381ddece92bf92bcfe7c248d67af54305d4e4680a1dc2490090981fb9"
+  },
   "seen": {
+    "012415e333a3bb448f42b840": "2026-07-21T17:45:31.582792+00:00",
+    "0315771df4c7f6160ef6953a": "2026-07-21T17:45:31.582805+00:00",
     "09cdb8db8a7f56e8a13a2624": "2026-07-19T16:02:08.532636+00:00",
-    "11501ef7915393e3c03c4f3d": "2026-07-20T13:51:39.380652+00:00",
-    "1c7ff8e8ff24304a54940192": "2026-07-20T13:51:39.380648+00:00",
-    "1f45f8647c99c5630544432e": "2026-07-20T13:51:39.380650+00:00",
+    "0f7ba2b83bec023bd4a0be74": "2026-07-21T17:45:31.582839+00:00",
+    "11501ef7915393e3c03c4f3d": "2026-07-21T17:45:31.582727+00:00",
+    "176bf917d6f05f27998164ec": "2026-07-21T17:45:31.582808+00:00",
+    "1c7ff8e8ff24304a54940192": "2026-07-21T17:45:31.582724+00:00",
+    "1edf30c0dba0c863adde3fe4": "2026-07-21T17:45:31.582812+00:00",
+    "1f45f8647c99c5630544432e": "2026-07-21T17:45:31.582725+00:00",
     "1fdb8180df118abbf351a990": "2026-07-19T16:02:08.532680+00:00",
+    "23e89b0ea8756b98a0c7342c": "2026-07-21T17:45:31.582832+00:00",
+    "24ae6f4527e1b38cacf22ae7": "2026-07-21T17:45:31.582781+00:00",
     "24c7732b36aec0c086e408f1": "2026-07-19T16:02:08.532632+00:00",
-    "2d7b0f773abc694a1f03bf89": "2026-07-20T13:51:39.380672+00:00",
+    "2cf1c400f0cb0380b8130d21": "2026-07-21T17:45:31.582767+00:00",
+    "2d7b0f773abc694a1f03bf89": "2026-07-21T17:45:31.582748+00:00",
     "2e248c91997b7d438f6e8485": "2026-07-19T16:02:08.532777+00:00",
-    "3010707caa7e4976a55f071e": "2026-07-20T13:51:39.380656+00:00",
-    "30691cf2c4a1ec3ca1f0ceec": "2026-07-20T13:51:39.380622+00:00",
+    "2efffcec80a2eaf830fb3fbd": "2026-07-21T17:45:31.582782+00:00",
+    "3010707caa7e4976a55f071e": "2026-07-21T17:45:31.582732+00:00",
+    "30691cf2c4a1ec3ca1f0ceec": "2026-07-21T17:45:31.582685+00:00",
+    "30a761034e940c264b2616c1": "2026-07-21T17:45:31.582795+00:00",
     "315ac6f7eb7e6b6b31d61c4d": "2026-07-19T16:02:08.532676+00:00",
-    "31f78fa16b701cf486b0be22": "2026-07-20T13:51:39.380638+00:00",
+    "31f78fa16b701cf486b0be22": "2026-07-21T17:45:31.582712+00:00",
+    "3300e637735113a013040854": "2026-07-21T17:45:31.582847+00:00",
     "37ac55050b3c3e7250c5fdc4": "2026-07-19T16:02:08.532784+00:00",
-    "48d18a3e33227a46c9b8d33e": "2026-07-20T13:51:39.380666+00:00",
-    "4ac3a65d3a2b416cf122a69e": "2026-07-20T13:51:39.380632+00:00",
-    "4bb92da44f1ac7e61f5fcc5a": "2026-07-20T13:51:39.380619+00:00",
-    "5132b7ea66173601e2d8100e": "2026-07-20T13:51:39.380645+00:00",
+    "39d27bef97471dfbd1c7384d": "2026-07-21T17:45:31.582868+00:00",
+    "3ae50d781185d05e4bb5b326": "2026-07-21T17:45:31.582827+00:00",
+    "433b6c287e1a517364b04025": "2026-07-21T17:45:31.582774+00:00",
+    "46559cc342b13b387a3424d8": "2026-07-21T17:45:31.582762+00:00",
+    "474ebf5e2ab1ea364ca8a965": "2026-07-21T17:45:31.582857+00:00",
+    "48d18a3e33227a46c9b8d33e": "2026-07-21T17:45:31.582741+00:00",
+    "499f362bfbc4f30558dbb465": "2026-07-21T17:45:31.582763+00:00",
+    "4ac3a65d3a2b416cf122a69e": "2026-07-21T17:45:31.582704+00:00",
+    "4bb92da44f1ac7e61f5fcc5a": "2026-07-21T17:45:31.582682+00:00",
+    "4f85b3986285e877f6c50539": "2026-07-21T17:45:31.582834+00:00",
+    "50d10c05b756a1ba6fc13757": "2026-07-21T17:45:31.582800+00:00",
+    "5132b7ea66173601e2d8100e": "2026-07-21T17:45:31.582720+00:00",
     "54f99d46d37b0648c7ea12c8": "2026-07-19T16:02:08.532750+00:00",
-    "613815a97969ed97a929bd5c": "2026-07-20T13:51:39.380674+00:00",
+    "55d9f6d4df56b61052e1c788": "2026-07-21T17:45:31.582802+00:00",
+    "5cf6bda711db341aa9b00134": "2026-07-21T17:45:31.582753+00:00",
+    "5f8db5245a103153529d2fb8": "2026-07-21T17:45:31.582803+00:00",
+    "613815a97969ed97a929bd5c": "2026-07-21T17:45:31.582749+00:00",
+    "63e97155cd463120ee42d0c3": "2026-07-21T17:45:31.582794+00:00",
     "68a3e51eb34131dab14ddcd1": "2026-07-19T16:02:08.532754+00:00",
-    "691dd0ef1f3a15ccac2beace": "2026-07-20T13:51:39.380631+00:00",
-    "7464c4cbd5aae4f6bcadc2a0": "2026-07-20T13:51:39.380668+00:00",
-    "7834ef05c3a3c79ba884f1b9": "2026-07-20T13:51:39.380628+00:00",
+    "68f9b2fad3c183b91d18cb6f": "2026-07-21T17:45:31.582755+00:00",
+    "691dd0ef1f3a15ccac2beace": "2026-07-21T17:45:31.582694+00:00",
+    "6a57b980e7f98ccc176f266e": "2026-07-21T17:45:31.582863+00:00",
+    "6e261355ce1464fe2466ad86": "2026-07-21T17:45:31.582852+00:00",
+    "70d3e7c88970f28d86e23a57": "2026-07-21T17:45:31.582777+00:00",
+    "71ef3a77b9e70530b2881697": "2026-07-21T17:45:31.582831+00:00",
+    "72a90e46dfb63b14cebae197": "2026-07-21T17:45:31.582870+00:00",
+    "7464c4cbd5aae4f6bcadc2a0": "2026-07-21T17:45:31.582742+00:00",
+    "75027489a51eec83a6a9d0fd": "2026-07-21T17:45:31.582818+00:00",
+    "754aa5486af878fe997ccffd": "2026-07-21T17:45:31.582826+00:00",
+    "77b824aaf512eccfdd00761b": "2026-07-21T17:45:31.582872+00:00",
+    "7834ef05c3a3c79ba884f1b9": "2026-07-21T17:45:31.582692+00:00",
     "7879b4822b6130f9aa689b70": "2026-07-19T16:02:08.532687+00:00",
-    "7f1764afb80e6829f6cc98c3": "2026-07-20T13:51:39.380640+00:00",
+    "7d2bd410568e50f72a337b53": "2026-07-21T17:45:31.582791+00:00",
+    "7ed7855baf20fe08bee8ce88": "2026-07-21T17:45:31.582765+00:00",
+    "7f1764afb80e6829f6cc98c3": "2026-07-21T17:45:31.582714+00:00",
     "80a6c3035e4659370ccd04f0": "2026-07-19T16:02:08.532598+00:00",
-    "810879bceef7b79d92ce06b6": "2026-07-20T13:51:39.380647+00:00",
-    "849c6162ed9981b6511b5c64": "2026-07-20T13:51:39.380643+00:00",
-    "85f374bb85603f3385e8bf2e": "2026-07-20T13:51:39.380664+00:00",
+    "80d6dc5b2c8898a463271194": "2026-07-21T17:45:31.582861+00:00",
+    "810879bceef7b79d92ce06b6": "2026-07-21T17:45:31.582722+00:00",
+    "8383017f69dbd8ecfe77162d": "2026-07-21T17:45:31.582758+00:00",
+    "849c6162ed9981b6511b5c64": "2026-07-21T17:45:31.582718+00:00",
+    "8513e1a480140240c093707f": "2026-07-21T17:45:31.582816+00:00",
+    "85f374bb85603f3385e8bf2e": "2026-07-21T17:45:31.582739+00:00",
+    "87a993ef7d876b676c74c52d": "2026-07-21T17:45:31.582702+00:00",
     "88112c99395a1de2f8b0c0f9": "2026-07-19T16:02:08.532643+00:00",
-    "8a2d2b6fd3de758dc241f86d": "2026-07-20T13:51:39.380671+00:00",
+    "8a234b8160a31012460a5d0a": "2026-07-21T17:45:31.582859+00:00",
+    "8a2d2b6fd3de758dc241f86d": "2026-07-21T17:45:31.582746+00:00",
     "8c84a17e65ab3a2ffdbf5119": "2026-07-19T16:02:08.532773+00:00",
     "8ce60e5fed3040fe67ddeef2": "2026-07-20T13:51:39.380661+00:00",
-    "8f040cd4652f7c733be00bfe": "2026-07-20T13:51:39.380591+00:00",
-    "a30f52a6004257779976b824": "2026-07-20T13:51:39.380669+00:00",
+    "8eec72ec6f28839bec8a8039": "2026-07-21T17:45:31.582814+00:00",
+    "8f040cd4652f7c733be00bfe": "2026-07-21T17:45:31.582679+00:00",
+    "8fbdac1d8e9f1007f1a67391": "2026-07-21T17:45:31.582850+00:00",
+    "92feb10857f9f7f67974e844": "2026-07-21T17:45:31.582824+00:00",
+    "9692a87ea8f8ed1f35919acd": "2026-07-21T17:45:31.582836+00:00",
+    "96d1e50bf0445af2b2ed9023": "2026-07-21T17:45:31.582829+00:00",
+    "a2d9406d93f3c20b9c611af2": "2026-07-21T17:45:31.582821+00:00",
+    "a30f52a6004257779976b824": "2026-07-21T17:45:31.582744+00:00",
+    "a6875a50829826c07979ae99": "2026-07-21T17:45:31.582756+00:00",
     "a78056b68411a36c953eb585": "2026-07-19T16:02:08.532618+00:00",
-    "aa5a7fdb8a410e1a072ab799": "2026-07-20T13:51:39.380624+00:00",
+    "a9fb2ac758e05bc65cd477a5": "2026-07-21T17:45:31.582874+00:00",
+    "aa5a7fdb8a410e1a072ab799": "2026-07-21T17:45:31.582687+00:00",
+    "ad6e7db3586c5c378d79b16c": "2026-07-21T17:45:31.582760+00:00",
     "b10a227d52adb3845b1c2f73": "2026-07-19T16:02:08.532780+00:00",
-    "bb1552af73a7d44049d5f385": "2026-07-20T13:51:39.380675+00:00",
-    "c5a9dab3d55d145d4f74dcc6": "2026-07-20T13:51:39.380657+00:00",
-    "cceaf2195cada29df61db8c8": "2026-07-20T13:51:39.380636+00:00",
-    "d17373f8ffb1447fc5d2e362": "2026-07-20T13:51:39.380659+00:00",
-    "de2b505289bea785206bd97c": "2026-07-20T13:51:39.380642+00:00",
+    "b21c594daf80cb4cd6160ed7": "2026-07-21T17:45:31.582849+00:00",
+    "b4f92b6a2ac89bbd3ce21ad4": "2026-07-21T17:45:31.582787+00:00",
+    "b53bcc2c78828a34a2e97ba0": "2026-07-21T17:45:31.582768+00:00",
+    "b7e5a14201f19a03357916f3": "2026-07-21T17:45:31.582789+00:00",
+    "ba57b120f33c2493c5865347": "2026-07-21T17:45:31.582772+00:00",
+    "bb1552af73a7d44049d5f385": "2026-07-21T17:45:31.582751+00:00",
+    "bf9b759cf626360c82a68426": "2026-07-21T17:45:31.582810+00:00",
+    "bfd5df37a9f8b40e730a700e": "2026-07-21T17:45:31.582697+00:00",
+    "c4aeeb66cd5fb05ac938cb84": "2026-07-21T17:45:31.582784+00:00",
+    "c5a9dab3d55d145d4f74dcc6": "2026-07-21T17:45:31.582734+00:00",
+    "c658da0986b4de2b2b99fb61": "2026-07-21T17:45:31.582779+00:00",
+    "c74d446147b480bfbb090081": "2026-07-21T17:45:31.582775+00:00",
+    "c927ac6a7f1bedc45277ad81": "2026-07-21T17:45:31.582786+00:00",
+    "cb0c5b61c1f207d3aa738519": "2026-07-21T17:45:31.582806+00:00",
+    "cceaf2195cada29df61db8c8": "2026-07-21T17:45:31.582709+00:00",
+    "cdd2fc25c55e14df020a842f": "2026-07-21T17:45:31.582856+00:00",
+    "ce09a39ec74d87f1f476e2fb": "2026-07-21T17:45:31.582699+00:00",
+    "ce6bc286796a9eeca3cd45a5": "2026-07-21T17:45:31.582854+00:00",
+    "cf5ce53f672a53ccdb8d9f2e": "2026-07-21T17:45:31.582797+00:00",
+    "d17373f8ffb1447fc5d2e362": "2026-07-21T17:45:31.582735+00:00",
+    "d2ecac7d3f244d3937ccd97d": "2026-07-21T17:45:31.582820+00:00",
+    "d4179ee10805eb4906445418": "2026-07-21T17:45:31.582799+00:00",
+    "dd1259012a7ccefcf9600b47": "2026-07-21T17:45:31.582843+00:00",
+    "dd1879b536ae05f4c5eba58c": "2026-07-21T17:45:31.582845+00:00",
+    "de2b505289bea785206bd97c": "2026-07-21T17:45:31.582716+00:00",
     "e38615c1f4798e9a17d24bb0": "2026-07-19T16:02:08.532607+00:00",
     "e3e44def65bad82d85edd7a1": "2026-07-19T16:02:08.532647+00:00",
-    "e97efe87dddfd423d34c58e3": "2026-07-20T13:51:39.380568+00:00",
-    "eaaecc7ad63290ef0d70ddbe": "2026-07-20T13:51:39.380662+00:00",
+    "e62a6ab424ea702d893591dd": "2026-07-21T17:45:31.582838+00:00",
+    "e97efe87dddfd423d34c58e3": "2026-07-21T17:45:31.582659+00:00",
+    "eaa17d9965fdd58569244dbc": "2026-07-21T17:45:31.582841+00:00",
+    "eaaecc7ad63290ef0d70ddbe": "2026-07-21T17:45:31.582737+00:00",
     "edfa9716826cfbf55059f8d9": "2026-07-19T16:02:08.532640+00:00",
-    "ee95b7332c7dde20c99a4146": "2026-07-20T13:51:39.380626+00:00",
+    "ee95b7332c7dde20c99a4146": "2026-07-21T17:45:31.582690+00:00",
     "f1b00c46313c9a836413bb98": "2026-07-19T16:02:08.532623+00:00",
-    "f3acc0eb0b8287c78ab0e4b2": "2026-07-20T13:51:39.380654+00:00",
+    "f38bc48735f71cbd3c329e50": "2026-07-21T17:45:31.582770+00:00",
+    "f3acc0eb0b8287c78ab0e4b2": "2026-07-21T17:45:31.582729+00:00",
     "ff10f5cce3afb1b765e13cb6": "2026-07-19T16:02:08.532627+00:00",
-    "ffe10804ef9375513c14949c": "2026-07-20T13:51:39.380634+00:00"
-  }
+    "ffe10804ef9375513c14949c": "2026-07-21T17:45:31.582708+00:00"
+  },
+  "topic_history": [
+    {
+      "item_id": "bfd5df37a9f8b40e730a700e",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 emerging drug surveillance",
+      "topics": [
+        "New PubMed papers"
+      ]
+    },
+    {
+      "item_id": "ce09a39ec74d87f1f476e2fb",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 emerging drug surveillance",
+      "topics": [
+        "New PubMed papers"
+      ]
+    },
+    {
+      "item_id": "87a993ef7d876b676c74c52d",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 emerging drug surveillance",
+      "topics": [
+        "New PubMed papers"
+      ]
+    },
+    {
+      "item_id": "176bf917d6f05f27998164ec",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 forensic toxicology case reports",
+      "topics": [
+        "Toxicology case reports"
+      ]
+    },
+    {
+      "item_id": "bf9b759cf626360c82a68426",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 forensic toxicology case reports",
+      "topics": [
+        "Toxicology case reports"
+      ]
+    },
+    {
+      "item_id": "1edf30c0dba0c863adde3fe4",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 forensic toxicology case reports",
+      "topics": [
+        "Toxicology case reports"
+      ]
+    },
+    {
+      "item_id": "8eec72ec6f28839bec8a8039",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 overdose mortality studies",
+      "topics": [
+        "Mortality studies"
+      ]
+    },
+    {
+      "item_id": "8513e1a480140240c093707f",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 overdose mortality studies",
+      "topics": [
+        "Mortality studies"
+      ]
+    },
+    {
+      "item_id": "75027489a51eec83a6a9d0fd",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 overdose mortality studies",
+      "topics": [
+        "Mortality studies"
+      ]
+    },
+    {
+      "item_id": "d2ecac7d3f244d3937ccd97d",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 overdose mortality studies",
+      "topics": [
+        "Mortality studies"
+      ]
+    },
+    {
+      "item_id": "a2d9406d93f3c20b9c611af2",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 overdose mortality studies",
+      "topics": [
+        "Mortality studies"
+      ]
+    },
+    {
+      "item_id": "92feb10857f9f7f67974e844",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 overdose mortality studies",
+      "topics": [
+        "Mortality studies"
+      ]
+    },
+    {
+      "item_id": "754aa5486af878fe997ccffd",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 overdose mortality studies",
+      "topics": [
+        "Mortality studies"
+      ]
+    },
+    {
+      "item_id": "3ae50d781185d05e4bb5b326",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 overdose mortality studies",
+      "topics": [
+        "Mortality studies"
+      ]
+    },
+    {
+      "item_id": "96d1e50bf0445af2b2ed9023",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 overdose mortality studies",
+      "topics": [
+        "Mortality studies"
+      ]
+    },
+    {
+      "item_id": "71ef3a77b9e70530b2881697",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 overdose mortality studies",
+      "topics": [
+        "Mortality studies"
+      ]
+    },
+    {
+      "item_id": "23e89b0ea8756b98a0c7342c",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 overdose mortality studies",
+      "topics": [
+        "Mortality studies"
+      ]
+    },
+    {
+      "item_id": "4f85b3986285e877f6c50539",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 overdose mortality studies",
+      "topics": [
+        "Mortality studies"
+      ]
+    },
+    {
+      "item_id": "9692a87ea8f8ed1f35919acd",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 overdose mortality studies",
+      "topics": [
+        "Mortality studies"
+      ]
+    },
+    {
+      "item_id": "e62a6ab424ea702d893591dd",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 overdose mortality studies",
+      "topics": [
+        "Mortality studies"
+      ]
+    },
+    {
+      "item_id": "0f7ba2b83bec023bd4a0be74",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 overdose mortality studies",
+      "topics": [
+        "Mortality studies"
+      ]
+    },
+    {
+      "item_id": "eaa17d9965fdd58569244dbc",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 overdose mortality studies",
+      "topics": [
+        "Mortality studies"
+      ]
+    },
+    {
+      "item_id": "dd1259012a7ccefcf9600b47",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 overdose mortality studies",
+      "topics": [
+        "Mortality studies"
+      ]
+    },
+    {
+      "item_id": "dd1879b536ae05f4c5eba58c",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 overdose mortality studies",
+      "topics": [
+        "Mortality studies"
+      ]
+    },
+    {
+      "item_id": "3300e637735113a013040854",
+      "recorded": "2026-07-21T17:45:31.582877+00:00",
+      "source": "PubMed \u2014 overdose mortality studies",
+      "topics": [
+        "Mortality studies"
+      ]
+    }
+  ]
 }
