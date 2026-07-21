@@ -1,6 +1,6 @@
 # Weekly drug intelligence report
 
-**Run time:** July 21, 2026 at 18:06 UTC
+**Run time:** July 21, 2026 at 20:05 UTC
 **Sources checked:** 50
 **New relevant items:** 0
 **Source failures:** 0
