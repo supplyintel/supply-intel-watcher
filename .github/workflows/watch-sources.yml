@@ -22,7 +22,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install Python packages
-        run: pip install requests beautifulsoup4 feedparser
+        run: pip install requests beautifulsoup4 feedparser pyyaml
 
       - name: Run watcher and create summary
         shell: bash
