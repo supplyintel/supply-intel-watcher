@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild the generated dashboard with richer run-level analysis and a clearer UI."""
+"""Rebuild the generated dashboard as a briefing-style intelligence interface."""
 from __future__ import annotations
 
 import html
@@ -24,8 +24,15 @@ def extract_records(page: str) -> list[dict]:
 
 
 def extract_metric(page: str, label: str, default: int = 0) -> int:
-    match = re.search(rf"<strong>(\d+)</strong>{re.escape(label)}", page)
-    return int(match.group(1)) if match else default
+    patterns = (
+        rf'<strong[^>]*>(\d+)</strong>\s*<span[^>]*>{re.escape(label)}</span>',
+        rf'<strong>(\d+)</strong>{re.escape(label)}',
+    )
+    for pattern in patterns:
+        match = re.search(pattern, page, flags=re.IGNORECASE)
+        if match:
+            return int(match.group(1))
+    return default
 
 
 def top_rows(counter: Counter, limit: int = 6) -> list[tuple[str, int]]:
@@ -37,14 +44,10 @@ def render(records: list[dict], checked_count: int, failure_count: int) -> str:
     priority_counts = Counter(record.get("priority") or "Unclassified" for record in records)
     source_counts = Counter(record.get("source") or "Unknown source" for record in records)
     substance_counts = Counter(
-        substance
-        for record in records
-        for substance in record.get("substances", [])
+        substance for record in records for substance in record.get("substances", [])
     )
     audience_counts = Counter(
-        audience
-        for record in records
-        for audience in record.get("audiences", [])
+        audience for record in records for audience in record.get("audiences", [])
     )
     massachusetts_count = sum(
         record.get("section") == "Massachusetts"
@@ -52,8 +55,7 @@ def render(records: list[dict], checked_count: int, failure_count: int) -> str:
         for record in records
     )
     cross_source_count = sum(
-        str(record.get("evidence", "")).startswith("Cross-source")
-        for record in records
+        str(record.get("evidence", "")).startswith("Cross-source") for record in records
     )
     generated = datetime.now(timezone.utc).strftime("%B %d, %Y at %H:%M UTC")
 
@@ -66,85 +68,65 @@ def render(records: list[dict], checked_count: int, failure_count: int) -> str:
         for name, count in top_rows(substance_counts)
     ) or '<li class="muted">No emerging substances matched</li>'
     audience_rows = "".join(
-        f'<li><span>{html.escape(name)}</span><strong>{count}</strong></li>'
-        for name, count in top_rows(audience_counts)
-    ) or '<li class="muted">No audience matches</li>'
+        f'<button class="audience-chip" data-audience="{html.escape(name)}"><span>{html.escape(name)}</span><strong>{count}</strong></button>'
+        for name, count in top_rows(audience_counts, 8)
+    ) or '<span class="muted">No audience matches</span>'
 
     return f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Supply Intelligence Dashboard</title>
+<title>Massachusetts Drug Supply Intelligence</title>
 <style>
-:root{{--navy:#132f46;--navy2:#1d4965;--blue:#1f6f9e;--teal:#137d79;--red:#a43b36;--amber:#9a6500;--green:#30734d;--ink:#17242d;--muted:#5b6b76;--line:#d9e2e7;--paper:#fff;--bg:#f3f6f8;--soft:#edf4f7}}
-*{{box-sizing:border-box}} body{{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.45}}
-a{{color:#155f8c}} header{{background:linear-gradient(120deg,var(--navy),var(--navy2));color:#fff;padding:30px max(20px,calc((100% - 1240px)/2)) 46px}}
-.eyebrow{{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#bcd6e5;font-weight:700}} header h1{{margin:5px 0 7px;font-size:clamp(28px,4vw,44px);line-height:1.08}} header p{{margin:0;color:#d8e7ef}}
-main{{max-width:1240px;margin:-24px auto 0;padding:0 20px 28px}} .metrics{{display:grid;grid-template-columns:repeat(6,minmax(125px,1fr));gap:10px}}
-.metric,.panel,.card,.controls{{background:var(--paper);border:1px solid var(--line);box-shadow:0 5px 18px rgba(18,46,66,.06)}} .metric{{border-radius:12px;padding:15px;min-height:96px}}
-.metric strong{{display:block;font-size:29px;line-height:1.1;color:var(--blue)}} .metric span{{display:block;margin-top:6px;color:var(--muted);font-size:13px}}
-.section-title{{margin:25px 0 10px;font-size:19px}} .overview{{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:12px}}
-.panel{{border-radius:12px;padding:16px}} .panel h2{{font-size:15px;margin:0 0 11px}} .bar-row{{display:grid;grid-template-columns:100px 1fr 30px;gap:8px;align-items:center;margin:10px 0;font-size:13px}}
-.bar{{height:9px;background:#e8eef1;border-radius:999px;overflow:hidden}} .bar>span{{display:block;height:100%;background:var(--blue);border-radius:999px}}
-.rank{{list-style:none;margin:0;padding:0}} .rank li{{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #edf1f3;font-size:13px}} .rank li:last-child{{border-bottom:0}}
-.controls{{position:sticky;top:0;z-index:5;display:grid;grid-template-columns:2fr repeat(5,1fr) auto;gap:8px;padding:12px;margin:18px 0 12px;border-radius:12px}}
-.controls input,.controls select,.controls button{{width:100%;min-height:42px;border:1px solid #b8c6ce;border-radius:8px;background:#fff;padding:9px;font:inherit}} .controls button{{cursor:pointer;background:#eef4f7;color:#244858;font-weight:700}}
-.status-row{{display:flex;justify-content:space-between;gap:12px;align-items:center;margin:8px 2px 12px;color:var(--muted);font-size:13px}} .grid{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
-.card{{border-radius:12px;padding:17px;border-left:5px solid var(--blue)}} .card.review-now{{border-left-color:var(--red)}} .card.monitor{{border-left-color:var(--amber)}} .card.background{{border-left-color:#7b8c96}}
-.card h2{{font-size:18px;line-height:1.3;margin:0 0 8px}} .meta{{color:var(--muted);font-size:12px;margin:7px 0}} .summary{{font-size:14px;margin:10px 0}}
-.tags{{display:flex;flex-wrap:wrap;gap:5px}} .tag{{font-size:11px;border-radius:999px;padding:4px 8px;background:var(--soft);color:#284956}} .tag.priority{{font-weight:700}} .tag.review-now{{background:#f8e7e5;color:#812b27}} .tag.monitor{{background:#fff1d6;color:#775000}}
-.card-actions{{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:11px;padding-top:10px;border-top:1px solid #edf1f3}} .source-link{{font-weight:700;font-size:13px}} .empty{{grid-column:1/-1;padding:28px;background:#fff;border:1px solid var(--line);border-radius:12px}}
-.muted{{color:var(--muted)}} footer{{max-width:1240px;margin:auto;padding:10px 20px 30px;color:var(--muted);font-size:12px}}
-@media(max-width:1000px){{.metrics{{grid-template-columns:repeat(3,1fr)}}.overview{{grid-template-columns:1fr 1fr}}.controls{{grid-template-columns:1fr 1fr 1fr}}}}
-@media(max-width:680px){{header{{padding-bottom:38px}}main{{padding:0 12px 22px}}.metrics{{grid-template-columns:1fr 1fr}}.overview,.grid{{grid-template-columns:1fr}}.controls{{position:static;grid-template-columns:1fr}}.status-row{{align-items:flex-start;flex-direction:column}}}}
-</style></head><body>
-<header><div class="eyebrow">Pharmacist-led surveillance triage</div><h1>Supply Intelligence Dashboard</h1><p>Last rebuilt {html.escape(generated)} · Signals require review of the linked source</p></header>
+:root{{--navy:#112f46;--navy-2:#19445f;--blue:#246f98;--teal:#197b78;--red:#a13a35;--amber:#9b6500;--green:#2e7150;--ink:#17242d;--muted:#60717d;--line:#d8e2e7;--paper:#fff;--bg:#f4f7f9;--soft:#edf3f6;--shadow:0 10px 30px rgba(17,47,70,.08)}}
+*{{box-sizing:border-box}} html{{scroll-behavior:smooth}} body{{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.45}}
+a{{color:#145f8d}} button,input,select{{font:inherit}}
+.shell{{min-height:100vh}} .topbar{{background:linear-gradient(115deg,var(--navy),var(--navy-2));color:#fff;padding:28px max(20px,calc((100% - 1280px)/2)) 76px}}
+.brand-row{{display:flex;justify-content:space-between;gap:24px;align-items:flex-start}} .eyebrow{{font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:#b9d3e2;font-weight:800}}
+h1{{margin:7px 0 8px;font-size:clamp(30px,4.5vw,50px);line-height:1.03;letter-spacing:-.035em}} .subtitle{{margin:0;max-width:820px;color:#dbe8ef;font-size:15px}}
+.run-stamp{{border:1px solid rgba(255,255,255,.25);border-radius:10px;padding:10px 12px;color:#dceaf1;font-size:12px;white-space:nowrap}}
+main{{max-width:1280px;margin:-48px auto 0;padding:0 20px 34px}} .surface{{background:var(--paper);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}}
+.briefing{{padding:18px}} .briefing-head{{display:flex;justify-content:space-between;gap:18px;align-items:center;margin-bottom:14px}} .briefing-head h2{{font-size:17px;margin:0}} .briefing-head p{{font-size:12px;color:var(--muted);margin:3px 0 0}}
+.metrics{{display:grid;grid-template-columns:repeat(6,minmax(120px,1fr));gap:10px}} .metric{{padding:14px 15px;border:1px solid var(--line);border-radius:12px;background:#fbfcfd;min-height:92px}} .metric strong{{display:block;font-size:30px;line-height:1;color:var(--blue);letter-spacing:-.03em}} .metric span{{display:block;margin-top:8px;color:var(--muted);font-size:12px}} .metric.alert strong{{color:var(--red)}} .metric.warn strong{{color:var(--amber)}}
+.audience-strip{{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}} .audience-chip{{display:flex;align-items:center;gap:8px;border:1px solid #cbd8de;border-radius:999px;background:#fff;padding:7px 11px;cursor:pointer;color:#294756}} .audience-chip:hover,.audience-chip.active{{background:#e9f3f6;border-color:#8fb5c5}} .audience-chip strong{{font-size:11px;background:#dfecef;border-radius:999px;padding:2px 6px}}
+.layout{{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:16px;margin-top:16px}} .content{{min-width:0}} .sidebar{{display:flex;flex-direction:column;gap:14px}}
+.panel{{padding:16px}} .panel h2{{font-size:15px;margin:0 0 12px}} .panel h3{{font-size:13px;margin:18px 0 8px;color:#365464}} .rank{{list-style:none;margin:0;padding:0}} .rank li{{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid #edf1f3;font-size:13px}} .rank li:last-child{{border-bottom:0}}
+.priority-bars .bar-row{{display:grid;grid-template-columns:84px 1fr 28px;gap:8px;align-items:center;margin:10px 0;font-size:12px}} .bar{{height:8px;background:#e7edf0;border-radius:99px;overflow:hidden}} .bar span{{display:block;height:100%;background:var(--blue);border-radius:99px}}
+.timeline{{display:flex;align-items:flex-end;gap:5px;height:112px;padding:8px 0 2px}} .timeline-col{{flex:1;min-width:7px;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%}} .timeline-bar{{width:100%;min-height:2px;border-radius:4px 4px 1px 1px;background:var(--teal)}} .timeline-labels{{display:flex;justify-content:space-between;color:var(--muted);font-size:10px;margin-top:4px}}
+.notice{{border-left:4px solid var(--amber);background:#fff8e8;padding:12px 13px;border-radius:8px;font-size:12px;color:#5f4a18}}
+.controls{{position:sticky;top:0;z-index:10;padding:13px;margin-bottom:12px;display:grid;grid-template-columns:2fr repeat(4,1fr) auto;gap:8px}} .controls input,.controls select,.controls button{{width:100%;min-height:42px;border:1px solid #b9c8d0;border-radius:9px;background:#fff;padding:9px 10px;color:#203744}} .controls button{{cursor:pointer;background:#edf4f7;font-weight:750}}
+.results-head{{display:flex;justify-content:space-between;gap:14px;align-items:end;margin:18px 2px 10px}} .results-head h2{{font-size:19px;margin:0}} .status{{color:var(--muted);font-size:12px}} .view-toggle{{display:flex;border:1px solid #c7d4da;border-radius:9px;overflow:hidden}} .view-toggle button{{border:0;background:#fff;padding:7px 10px;cursor:pointer;font-size:12px}} .view-toggle button.active{{background:#e6f0f4;font-weight:750}}
+.grid{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}} .grid.list-view{{grid-template-columns:1fr}} .card{{background:#fff;border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:13px;padding:17px;box-shadow:0 4px 15px rgba(17,47,70,.045)}} .card.review-now{{border-left-color:var(--red)}} .card.monitor{{border-left-color:var(--amber)}} .card.background{{border-left-color:#7b8c96}} .card h3{{font-size:17px;line-height:1.3;margin:0 0 8px}} .card h3 a{{color:#173d56;text-decoration:none}} .card h3 a:hover{{text-decoration:underline}} .meta{{color:var(--muted);font-size:11px;margin:7px 0}} .summary{{font-size:13px;margin:10px 0;color:#263842}} .tags{{display:flex;flex-wrap:wrap;gap:5px}} .tag{{font-size:10px;border-radius:999px;padding:4px 8px;background:var(--soft);color:#2d4d5a}} .tag.priority{{font-weight:800}} .tag.review-now{{background:#f8e7e5;color:#812b27}} .tag.monitor{{background:#fff1d6;color:#775000}} .card-actions{{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;padding-top:10px;border-top:1px solid #edf1f3}} .source-link{{font-weight:750;font-size:12px}} .empty{{grid-column:1/-1;padding:30px;text-align:center;background:#fff;border:1px solid var(--line);border-radius:12px;color:var(--muted)}}
+.method{{font-size:12px;color:#526672}} footer{{max-width:1280px;margin:auto;padding:0 20px 30px;color:var(--muted);font-size:11px}}
+@media(max-width:1050px){{.metrics{{grid-template-columns:repeat(3,1fr)}}.layout{{grid-template-columns:1fr}}.sidebar{{display:grid;grid-template-columns:repeat(2,1fr)}}.controls{{grid-template-columns:2fr repeat(2,1fr)}}}}
+@media(max-width:700px){{.topbar{{padding-bottom:62px}}.brand-row{{display:block}}.run-stamp{{display:inline-block;margin-top:16px;white-space:normal}}main{{padding:0 12px 24px}}.metrics{{grid-template-columns:1fr 1fr}}.layout,.grid,.sidebar{{grid-template-columns:1fr}}.controls{{position:static;grid-template-columns:1fr}}.briefing-head,.results-head{{align-items:flex-start;flex-direction:column}}}}
+</style></head><body><div class="shell">
+<header class="topbar"><div class="brand-row"><div><div class="eyebrow">Pharmacist-led surveillance triage</div><h1>Massachusetts drug supply intelligence</h1><p class="subtitle">A screening dashboard for newly detected reports, alerts, publications, and source updates. Open the linked source before using any item operationally.</p></div><div class="run-stamp">Last rebuilt<br><strong>{html.escape(generated)}</strong></div></div></header>
 <main>
-<section class="metrics" aria-label="Current run metrics">
-<div class="metric"><strong>{checked_count}</strong><span>sources checked</span></div>
-<div class="metric"><strong>{len(records)}</strong><span>new relevant items</span></div>
-<div class="metric"><strong>{priority_counts.get('Review now',0)}</strong><span>review now</span></div>
-<div class="metric"><strong>{massachusetts_count}</strong><span>Massachusetts signals</span></div>
-<div class="metric"><strong>{cross_source_count}</strong><span>cross-source signals</span></div>
-<div class="metric"><strong>{failure_count}</strong><span>source failures</span></div>
-</section>
-<h2 class="section-title">What this run contains</h2>
-<section class="overview">
-<div class="panel"><h2>Priority mix</h2><div id="priority-bars"></div></div>
-<div class="panel"><h2>Leading substances</h2><ul class="rank">{substance_rows}</ul></div>
-<div class="panel"><h2>Leading sources</h2><ul class="rank">{source_rows}</ul></div>
-<div class="panel"><h2>Audience matches</h2><ul class="rank">{audience_rows}</ul></div>
-</section>
-<section class="controls" aria-label="Dashboard filters">
-<input id="search" type="search" placeholder="Search title, source, summary, substance…" aria-label="Search intelligence">
-<select id="priority"><option value="">All priorities</option><option>Review now</option><option>Monitor</option><option>Background</option></select>
-<select id="section"><option value="">All sections</option></select>
-<select id="substance"><option value="">All substances</option></select>
-<select id="audience"><option value="">All audiences</option></select>
-<select id="source"><option value="">All sources</option></select>
-<button id="reset" type="button">Clear</button>
-</section>
-<div class="status-row"><span id="status" aria-live="polite"></span><span>Sorted by priority score</span></div>
-<section id="results" class="grid"></section>
-</main>
-<footer>Counts are newly detected source items, not prevalence estimates or proof of a change in the drug supply. Automated labels support triage only.</footer>
+<section class="surface briefing"><div class="briefing-head"><div><h2>Current surveillance run</h2><p>Counts describe newly detected source items, not prevalence.</p></div></div>
+<div class="metrics"><div class="metric"><strong>{checked_count}</strong><span>sources checked</span></div><div class="metric"><strong>{len(records)}</strong><span>new relevant items</span></div><div class="metric alert"><strong>{priority_counts.get('Review now',0)}</strong><span>review now</span></div><div class="metric"><strong>{massachusetts_count}</strong><span>Massachusetts signals</span></div><div class="metric"><strong>{cross_source_count}</strong><span>cross-source signals</span></div><div class="metric warn"><strong>{failure_count}</strong><span>source failures</span></div></div>
+<div class="audience-strip" aria-label="Audience shortcuts">{audience_rows}</div></section>
+<div class="layout"><div class="content">
+<section class="surface controls" aria-label="Dashboard filters"><input id="search" type="search" placeholder="Search title, source, summary, or substance" aria-label="Search intelligence"><select id="priority"><option value="">All priorities</option><option>Review now</option><option>Monitor</option><option>Background</option></select><select id="section"><option value="">All sections</option></select><select id="substance"><option value="">All substances</option></select><select id="source"><option value="">All sources</option></select><button id="reset" type="button">Clear filters</button></section>
+<div class="results-head"><div><h2>Intelligence items</h2><div id="status" class="status" aria-live="polite"></div></div><div class="view-toggle" aria-label="Results view"><button id="grid-view" class="active" type="button">Cards</button><button id="list-view" type="button">List</button></div></div><section id="results" class="grid"></section></div>
+<aside class="sidebar"><section class="surface panel"><h2>Priority mix</h2><div id="priority-bars" class="priority-bars"></div><h3>Publication timeline</h3><div id="timeline" class="timeline"></div><div id="timeline-labels" class="timeline-labels"></div></section><section class="surface panel"><h2>Leading substances</h2><ul class="rank">{substance_rows}</ul><h3>Leading sources</h3><ul class="rank">{source_rows}</ul></section><section class="surface panel"><h2>Interpretation note</h2><div class="notice">Automated labels support triage. A signal may reflect a new publication, a revised webpage, or a repeated topic rather than a new change in the street supply.</div><p class="method">Priority is assigned from record metadata and relevance scoring. Cross-source labels indicate corroborating source mentions, not independent laboratory confirmation.</p></section></aside></div>
+</main><footer>For informational surveillance use. Review dates, methods, geography, denominators, and source limitations before citing an item.</footer>
 <script id="dashboard-data" type="application/json">{data_json}</script>
 <script>
 const records=JSON.parse(document.getElementById('dashboard-data').textContent);
-const ids=['search','priority','section','substance','audience','source']; const controls=Object.fromEntries(ids.map(id=>[id,document.getElementById(id)]));
+const ids=['search','priority','section','substance','source'];
+const controls=Object.fromEntries(ids.map(id=>[id,document.getElementById(id)]));
 const results=document.getElementById('results'),status=document.getElementById('status');
+let selectedAudience='';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}}[c]));
 const fill=(el,values)=>[...new Set(values.flat().filter(Boolean))].sort((a,b)=>a.localeCompare(b)).forEach(v=>el.insertAdjacentHTML('beforeend','<option>'+esc(v)+'</option>'));
-fill(controls.section,records.map(r=>[r.section])); fill(controls.substance,records.map(r=>r.substances||[])); fill(controls.audience,records.map(r=>r.audiences||[])); fill(controls.source,records.map(r=>[r.source]));
-const counts=records.reduce((a,r)=>(a[r.priority]=(a[r.priority]||0)+1,a),{{}}); const max=Math.max(1,...Object.values(counts));
+fill(controls.section,records.map(r=>[r.section]));fill(controls.substance,records.map(r=>r.substances||[]));fill(controls.source,records.map(r=>[r.source]));
+const counts=records.reduce((a,r)=>(a[r.priority]=(a[r.priority]||0)+1,a),{{}});const max=Math.max(1,...Object.values(counts));
 document.getElementById('priority-bars').innerHTML=['Review now','Monitor','Background'].map(k=>'<div class="bar-row"><span>'+k+'</span><div class="bar"><span style="width:'+((counts[k]||0)/max*100)+'%"></span></div><strong>'+(counts[k]||0)+'</strong></div>').join('');
-function render(){{
- const q=controls.search.value.trim().toLowerCase();
- const shown=records.filter(r=>{{const hay=JSON.stringify(r).toLowerCase();return(!q||hay.includes(q))&&(!controls.priority.value||r.priority===controls.priority.value)&&(!controls.section.value||r.section===controls.section.value)&&(!controls.substance.value||(r.substances||[]).includes(controls.substance.value))&&(!controls.audience.value||(r.audiences||[]).includes(controls.audience.value))&&(!controls.source.value||r.source===controls.source.value)}});
- status.textContent='Showing '+shown.length+' of '+records.length+' items';
- results.innerHTML=shown.length?shown.map(r=>{{const cls=(r.priority||'background').toLowerCase().replaceAll(' ','-');const tags=[...(r.substances||[]),...(r.audiences||[])];return '<article class="card '+cls+'"><h2><a href="'+esc(r.url)+'" target="_blank" rel="noopener">'+esc(r.title)+'</a></h2><div class="tags"><span class="tag priority '+cls+'">'+esc(r.priority)+'</span><span class="tag">'+esc(r.section)+'</span>'+tags.map(v=>'<span class="tag">'+esc(v)+'</span>').join('')+'</div><p class="meta">'+esc(r.source)+' · '+esc(r.published||'Date not supplied')+' · Relevance score '+esc(r.score)+'</p><p class="summary">'+esc(r.summary||'No source summary was supplied.')+'</p><div class="card-actions"><span class="meta">'+esc(r.evidence)+'</span><a class="source-link" href="'+esc(r.url)+'" target="_blank" rel="noopener">Open source</a></div></article>'}}).join(''):'<div class="empty">No items match the selected filters.</div>';
-}}
-Object.values(controls).forEach(el=>el.addEventListener('input',render)); document.getElementById('reset').addEventListener('click',()=>{{Object.values(controls).forEach(el=>el.value='');render()}}); render();
-</script></body></html>'''
+function parseDate(value){{const d=new Date(value);return Number.isNaN(d.getTime())?null:d}}
+function drawTimeline(){{const dated=records.map(r=>parseDate(r.published)).filter(Boolean);const end=dated.length?new Date(Math.max(...dated.map(d=>d.getTime()))):new Date();const start=new Date(end);start.setDate(start.getDate()-27);const buckets=Array(28).fill(0);records.forEach(r=>{{const d=parseDate(r.published);if(!d)return;const index=Math.floor((d-start)/86400000);if(index>=0&&index<28)buckets[index]++}});const maxBucket=Math.max(1,...buckets);document.getElementById('timeline').innerHTML=buckets.map((v,i)=>'<div class="timeline-col" title="'+v+' item'+(v===1?'':'s')+'"><div class="timeline-bar" style="height:'+Math.max(2,v/maxBucket*100)+'%"></div></div>').join('');document.getElementById('timeline-labels').innerHTML='<span>'+start.toLocaleDateString(undefined,{{month:'short',day:'numeric'}})+'</span><span>'+end.toLocaleDateString(undefined,{{month:'short',day:'numeric'}})+'</span>'}}
+function render(){{const q=controls.search.value.trim().toLowerCase();const shown=records.filter(r=>{{const hay=JSON.stringify(r).toLowerCase();return(!q||hay.includes(q))&&(!controls.priority.value||r.priority===controls.priority.value)&&(!controls.section.value||r.section===controls.section.value)&&(!controls.substance.value||(r.substances||[]).includes(controls.substance.value))&&(!controls.source.value||r.source===controls.source.value)&&(!selectedAudience||(r.audiences||[]).includes(selectedAudience))}});status.textContent='Showing '+shown.length+' of '+records.length+' items'+(selectedAudience?' for '+selectedAudience:'');results.innerHTML=shown.length?shown.map(r=>{{const cls=(r.priority||'background').toLowerCase().replaceAll(' ','-');const tags=[...(r.substances||[]),...(r.audiences||[])];return '<article class="card '+cls+'"><h3><a href="'+esc(r.url)+'" target="_blank" rel="noopener">'+esc(r.title)+'</a></h3><div class="tags"><span class="tag priority '+cls+'">'+esc(r.priority)+'</span><span class="tag">'+esc(r.section)+'</span>'+tags.map(v=>'<span class="tag">'+esc(v)+'</span>').join('')+'</div><p class="meta">'+esc(r.source)+' · '+esc(r.published||'Date not supplied')+' · relevance score '+esc(r.score)+'</p><p class="summary">'+esc(r.summary||'No source summary was supplied.')+'</p><div class="card-actions"><span class="meta">'+esc(r.evidence)+'</span><a class="source-link" href="'+esc(r.url)+'" target="_blank" rel="noopener">Open source</a></div></article>'}}).join(''):'<div class="empty">No items match the selected filters.</div>'}}
+Object.values(controls).forEach(el=>el.addEventListener('input',render));document.getElementById('reset').addEventListener('click',()=>{{Object.values(controls).forEach(el=>el.value='');selectedAudience='';document.querySelectorAll('.audience-chip').forEach(b=>b.classList.remove('active'));render()}});document.querySelectorAll('.audience-chip').forEach(btn=>btn.addEventListener('click',()=>{{selectedAudience=selectedAudience===btn.dataset.audience?'':btn.dataset.audience;document.querySelectorAll('.audience-chip').forEach(b=>b.classList.toggle('active',b.dataset.audience===selectedAudience));render()}}));document.getElementById('grid-view').addEventListener('click',()=>{{results.classList.remove('list-view');document.getElementById('grid-view').classList.add('active');document.getElementById('list-view').classList.remove('active')}});document.getElementById('list-view').addEventListener('click',()=>{{results.classList.add('list-view');document.getElementById('list-view').classList.add('active');document.getElementById('grid-view').classList.remove('active')}});drawTimeline();render();
+</script></div></body></html>'''
 
 
 def main() -> int:
