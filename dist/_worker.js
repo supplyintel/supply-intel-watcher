@@ -14,6 +14,18 @@ export default {
       return Response.redirect(url.toString(), 307);
     }
 
-    return env.ASSETS.fetch(request);
+    const assetResponse = await env.ASSETS.fetch(request);
+    const response = new Response(assetResponse.body, assetResponse);
+
+    if (url.pathname === "/" || url.pathname === "/index.html") {
+      response.headers.set(
+        "Cache-Control",
+        "no-store, no-cache, must-revalidate, max-age=0"
+      );
+      response.headers.set("Pragma", "no-cache");
+      response.headers.set("Expires", "0");
+    }
+
+    return response;
   },
 };
