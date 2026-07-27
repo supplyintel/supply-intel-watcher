@@ -2,7 +2,7 @@
 
 **Sources checked:** 50
 **Direct Massachusetts items:** 0
-**External watchlist items:** 0
+**External watchlist items:** 4
 
 ## Direct Massachusetts evidence
 
@@ -12,11 +12,36 @@ No new item was directly categorized as Massachusetts-specific in this run.
 
 These items were reported outside Massachusetts or are not Massachusetts-specific. Their inclusion is a watchlist prompt only.
 
-No external emerging-substance item met the watchlist threshold.
+### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence)
+- Substances: Nitazenes, Medetomidine, Synthetic cannabinoids
+- Reporting geography: United States
+- Source: NIJ NPS Discovery Research (2026-07-27)
+- Why monitor: High-priority Nitazenes, Medetomidine, Synthetic cannabinoids signal for local situational awareness.
+
+### [Page content changed: NIJ NPS Discovery Trend Reports](https://nij.ojp.gov/library/publications/nps-discovery-q3-2025-trend-reports-nps-benzodiazepines-nps-opioids-nps)
+- Substances: Synthetic cannabinoids
+- Reporting geography: United States
+- Source: NIJ NPS Discovery Trend Reports (2026-07-27)
+- Why monitor: High-priority Synthetic cannabinoids signal for local situational awareness.
+
+### [Novel 2-Benzylbenzimidazole Opioids: Emerging Drugs of Abuse and Pharmacological Considerations with Nitazene Analogs.](https://pubmed.ncbi.nlm.nih.gov/42484800/)
+- Substances: Nitazenes
+- Reporting geography: Research
+- Source: PubMed — emerging drug surveillance (2026 Jul 22)
+- Why monitor: High-priority Nitazenes signal for local situational awareness.
+
+### [Get the Public Alert](https://www.nflis.deadiversion.usdoj.gov/nflisdata/docs/4-Fluoro-3-methyl_diethylcathinone_Public_Alert_July-2026.pdf)
+- Substances: Novel stimulants
+- Reporting geography: United States
+- Source: NFLIS homepage
+- Why monitor: High-priority Novel stimulants signal for local situational awareness.
 
 ## Potential Massachusetts audiences
 
-No audience matches were generated.
+- **Court staff:** 1 relevant item(s) for human review.
+- **Treatment providers:** 3 relevant item(s) for human review.
+- **Harm reduction:** 3 relevant item(s) for human review.
+- **Law enforcement:** 2 relevant item(s) for human review.
 
 ## Geographic safeguard
 
