@@ -5,8 +5,9 @@
 
 ## Rising
 
-- **Nitazenes:** 5 current signal(s); 2 in the prior window.
-- **Synthetic cannabinoids:** 4 current signal(s); 2 in the prior window.
+- **Nitazenes:** 6 current signal(s); 2 in the prior window.
+- **Synthetic cannabinoids:** 6 current signal(s); 2 in the prior window.
+- **Medetomidine:** 3 current signal(s); 1 in the prior window.
 
 ## New
 
@@ -15,7 +16,6 @@
 
 ## Steady
 
-- **Medetomidine:** 2 current signal(s); 1 in the prior window.
 - **Novel stimulants:** 1 current signal(s); 1 in the prior window.
 
 ## Cooling
