@@ -6,9 +6,9 @@
 ## Rising
 
 - **New PubMed papers:** 16 current signal(s); 5 in the prior window.
-- **Synthetic cannabinoids:** 8 current signal(s); 2 in the prior window.
-- **Nitazenes:** 7 current signal(s); 2 in the prior window.
-- **Medetomidine:** 6 current signal(s); 1 in the prior window.
+- **Synthetic cannabinoids:** 10 current signal(s); 2 in the prior window.
+- **Nitazenes:** 8 current signal(s); 2 in the prior window.
+- **Medetomidine:** 7 current signal(s); 1 in the prior window.
 - **Mortality studies:** 5 current signal(s); 3 in the prior window.
 - **Toxicology case reports:** 4 current signal(s); 1 in the prior window.
 
