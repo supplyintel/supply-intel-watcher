@@ -1,7 +1,7 @@
 # Law enforcement intelligence briefing
 
 **Sources checked:** 50
-**Relevant new items:** 0
+**Relevant new items:** 3
 
 ## Audience lens
 
@@ -9,7 +9,26 @@ May inform situational awareness and training; surveillance signals alone do not
 
 ## Priority signals
 
-No new items matched this audience profile.
+### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence)
+- Signal: Page content changed: NIJ NPS Discovery Research (2026-08-24) — Nitazenes, Medetomidine, Synthetic cannabinoids.
+- Focus: Nitazenes, Medetomidine, Synthetic cannabinoids
+- Evidence status: Change detected — source review required
+- Source: NIJ NPS Discovery Research (2026-08-24)
+- Suggested use: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
+
+### [Page content changed: NIJ NPS Discovery Trend Reports](https://nij.ojp.gov/library/publications/nps-discovery-q3-2025-trend-reports-nps-benzodiazepines-nps-opioids-nps)
+- Signal: Page content changed: NIJ NPS Discovery Trend Reports (2026-08-24) — Synthetic cannabinoids.
+- Focus: Synthetic cannabinoids
+- Evidence status: Change detected — source review required
+- Source: NIJ NPS Discovery Trend Reports (2026-08-24)
+- Suggested use: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
+
+### [Detection of drugs of abuse: evolving analytical strategies and emerging challenges.](https://pubmed.ncbi.nlm.nih.gov/42609521/)
+- Signal: Detection of drugs of abuse: evolving analytical strategies and emerging challenges. (2026) — Toxicology case reports.
+- Focus: Toxicology case reports
+- Evidence status: Single-source signal
+- Source: PubMed — forensic toxicology case reports (2026)
+- Suggested use: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
 
 ## Use boundary
 
