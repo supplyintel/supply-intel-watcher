@@ -1,7 +1,7 @@
 # Harm reduction intelligence briefing
 
 **Sources checked:** 50
-**Relevant new items:** 6
+**Relevant new items:** 8
 
 ## Audience lens
 
@@ -10,45 +10,59 @@ May inform outreach, supply education, and alert monitoring; confirm local relev
 ## Priority signals
 
 ### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence)
-- Signal: Page content changed: NIJ NPS Discovery Research (2026-08-24) — Nitazenes, Medetomidine, Synthetic cannabinoids.
+- Signal: Page content changed: NIJ NPS Discovery Research (2026-08-31) — Nitazenes, Medetomidine, Synthetic cannabinoids.
 - Focus: Nitazenes, Medetomidine, Synthetic cannabinoids
 - Evidence status: Change detected — source review required
-- Source: NIJ NPS Discovery Research (2026-08-24)
+- Source: NIJ NPS Discovery Research (2026-08-31)
+- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+
+### [Page content changed: NIST Rapid Drug Analysis and Research](https://www.nist.gov/programs-projects/radar)
+- Signal: Page content changed: NIST Rapid Drug Analysis and Research (2026-08-31) — Nitazenes, Medetomidine, Xylazine.
+- Focus: Nitazenes, Medetomidine, Xylazine
+- Evidence status: Change detected — source review required
+- Source: NIST Rapid Drug Analysis and Research (2026-08-31)
+- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+
+### [Page content changed: CDC DOSE-SYS Nonfatal Overdose Dashboard](https://www.cdc.gov/overdose-prevention/data-research/facts-stats/dose-dashboard-nonfatal-surveillance-data.html)
+- Signal: Page content changed: CDC DOSE-SYS Nonfatal Overdose Dashboard (2026-08-31) — United States.
+- Focus: United States
+- Evidence status: Change detected — source review required
+- Source: CDC DOSE-SYS Nonfatal Overdose Dashboard (2026-08-31)
+- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+
+### [Page content changed: CDC DOSE-DIS Nonfatal Overdose Dashboard](https://www.cdc.gov/overdose-prevention/data-research/facts-stats/dose-dashboard-nonfatal-discharge-data.html)
+- Signal: Page content changed: CDC DOSE-DIS Nonfatal Overdose Dashboard (2026-08-31) — United States.
+- Focus: United States
+- Evidence status: Change detected — source review required
+- Source: CDC DOSE-DIS Nonfatal Overdose Dashboard (2026-08-31)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
 ### [Page content changed: Vermont Substance Use Data and Reports](https://www.healthvermont.gov/alcohol-drugs/substance-use-data-reports/data-and-reports)
-- Signal: Page content changed: Vermont Substance Use Data and Reports (2026-08-24) — United States.
+- Signal: Page content changed: Vermont Substance Use Data and Reports (2026-08-31) — United States.
 - Focus: United States
 - Evidence status: Change detected — source review required
-- Source: Vermont Substance Use Data and Reports (2026-08-24)
+- Source: Vermont Substance Use Data and Reports (2026-08-31)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
-### [In Vitro Pharmacological Characterization of a Series of 5-Cyano Desnitazene Opioids or "Cyanazenes".](https://pubmed.ncbi.nlm.nih.gov/42609078/)
-- Signal: In Vitro Pharmacological Characterization of a Series of 5-Cyano Desnitazene Opioids or "Cyanazenes". (2026 Aug 18) — Nitazenes, New PubMed papers.
-- Focus: Nitazenes, New PubMed papers
+### [Page content changed: Victoria Pill Testing Service](https://www.health.vic.gov.au/alcohol-and-drugs/pill-testing)
+- Signal: Page content changed: Victoria Pill Testing Service (2026-08-31) — International.
+- Focus: International
+- Evidence status: Change detected — source review required
+- Source: Victoria Pill Testing Service (2026-08-31)
+- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+
+### [Suggestions from Clinicians and Harm Reduction Specialists to Mitigate the Impact of Xylazine on People Who Use Opioids.](https://pubmed.ncbi.nlm.nih.gov/42640756/)
+- Signal: Suggestions from Clinicians and Harm Reduction Specialists to Mitigate the Impact of Xylazine on People Who Use Opioids. (2026 Aug 25) — Xylazine, New PubMed papers.
+- Focus: Xylazine, New PubMed papers
 - Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — emerging drug surveillance (2026 Aug 18)
+- Source: PubMed — emerging drug surveillance (2026 Aug 25)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
-### [Geospatial Determinants and Spatial Heterogeneity of Opioid Overdose Mortality in Arizona.](https://pubmed.ncbi.nlm.nih.gov/42632857/)
-- Signal: Geospatial Determinants and Spatial Heterogeneity of Opioid Overdose Mortality in Arizona. (2026 Aug 22) — Mortality studies.
-- Focus: Mortality studies
-- Evidence status: Single-source signal
-- Source: PubMed — overdose mortality studies (2026 Aug 22)
-- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-
-### [Detection of Multiple Medetomidine Metabolites in Clinical Urine Specimens by Liquid Chromatography-Quadrupole Time-of-Flight Mass Spectrometry (LC-qToF-MS).](https://pubmed.ncbi.nlm.nih.gov/42606078/)
-- Signal: Detection of Multiple Medetomidine Metabolites in Clinical Urine Specimens by Liquid Chromatography-Quadrupole Time-of-Flight Mass Spectrometry (LC-qToF-MS). (2026 Aug 17) — Medetomidine, New PubMed papers.
-- Focus: Medetomidine, New PubMed papers
+### [Unmasking a neurotoxic duo: a comprehensive overview of fentanyl-xylazine crosstalk in kinase pathways.](https://pubmed.ncbi.nlm.nih.gov/42656323/)
+- Signal: Unmasking a neurotoxic duo: a comprehensive overview of fentanyl-xylazine crosstalk in kinase pathways. (2026) — Xylazine, New PubMed papers.
+- Focus: Xylazine, New PubMed papers
 - Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — emerging drug surveillance (2026 Aug 17)
-- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-
-### [Clinical Decision Support and the Naloxone Equity Exception: Insights from an Emergency Department.](https://pubmed.ncbi.nlm.nih.gov/42627314/)
-- Signal: Clinical Decision Support and the Naloxone Equity Exception: Insights from an Emergency Department. (2026 Aug 21) — Mortality studies.
-- Focus: Mortality studies
-- Evidence status: Single-source signal
-- Source: PubMed — overdose mortality studies (2026 Aug 21)
+- Source: PubMed — emerging drug surveillance (2026)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
 ## Use boundary
