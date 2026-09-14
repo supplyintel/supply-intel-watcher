@@ -10,59 +10,59 @@ May inform outreach, supply education, and alert monitoring; confirm local relev
 ## Priority signals
 
 ### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence)
-- Signal: Page content changed: NIJ NPS Discovery Research (2026-09-07) — Nitazenes, Medetomidine, Synthetic cannabinoids.
+- Signal: Page content changed: NIJ NPS Discovery Research (2026-09-14) — Nitazenes, Medetomidine, Synthetic cannabinoids.
 - Focus: Nitazenes, Medetomidine, Synthetic cannabinoids
 - Evidence status: Change detected — source review required
-- Source: NIJ NPS Discovery Research (2026-09-07)
+- Source: NIJ NPS Discovery Research (2026-09-14)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
-### [Page content changed: NIST Rapid Drug Analysis and Research](https://www.nist.gov/programs-projects/radar)
-- Signal: Page content changed: NIST Rapid Drug Analysis and Research (2026-09-07) — Nitazenes, Medetomidine, Xylazine.
-- Focus: Nitazenes, Medetomidine, Xylazine
+### [Page content changed: Vermont Substance Use Data and Reports](https://www.healthvermont.gov/alcohol-drugs/substance-use-data-reports/data-and-reports)
+- Signal: Page content changed: Vermont Substance Use Data and Reports (2026-09-14) — United States.
+- Focus: United States
 - Evidence status: Change detected — source review required
-- Source: NIST Rapid Drug Analysis and Research (2026-09-07)
+- Source: Vermont Substance Use Data and Reports (2026-09-14)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
-### [Acute toxic leucoencephalopathy following protonitazene ingestion.](https://pubmed.ncbi.nlm.nih.gov/42702575/)
-- Signal: Acute toxic leucoencephalopathy following protonitazene ingestion. (2026 Sep 6) — Nitazenes, New PubMed papers.
+### [[Illegal Drug： Metonitazene].](https://pubmed.ncbi.nlm.nih.gov/42732988/)
+- Signal: [Illegal Drug： Metonitazene]. (2026 Jun 25) — Nitazenes, Toxicology case reports.
+- Focus: Nitazenes, Toxicology case reports
+- Evidence status: Cross-source signal (3 sources)
+- Source: PubMed — forensic toxicology case reports (2026 Jun 25)
+- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+
+### [[Illegal Drug： Metonitazene].](https://pubmed.ncbi.nlm.nih.gov/42732988/)
+- Signal: [Illegal Drug： Metonitazene]. (2026 Jun 25) — Nitazenes, New PubMed papers.
 - Focus: Nitazenes, New PubMed papers
 - Evidence status: Cross-source signal (3 sources)
-- Source: PubMed — emerging drug surveillance (2026 Sep 6)
+- Source: PubMed — emerging drug surveillance (2026 Jun 25)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
-### [Determination of xylazine, xylazine-4-hydroxy, and 2,6-dimethylaniline in canine urine: veterinary and forensic applications in two suspected poisoning cases.](https://pubmed.ncbi.nlm.nih.gov/42671682/)
-- Signal: Determination of xylazine, xylazine-4-hydroxy, and 2,6-dimethylaniline in canine urine: veterinary and forensic applications in two suspected poisoning cases. (2026 Aug 31) — Xylazine, Toxicology case reports.
-- Focus: Xylazine, Toxicology case reports
-- Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — forensic toxicology case reports (2026 Aug 31)
-- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-
-### [Responding to medetomidine in Philadelphia: narrative summary of the public health response to a new psychoactive substance.](https://pubmed.ncbi.nlm.nih.gov/42675531/)
-- Signal: Responding to medetomidine in Philadelphia: narrative summary of the public health response to a new psychoactive substance. (2026 Aug 31) — Medetomidine, New PubMed papers.
-- Focus: Medetomidine, New PubMed papers
-- Evidence status: Cross-source signal (3 sources)
-- Source: PubMed — emerging drug surveillance (2026 Aug 31)
-- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-
-### [Adolescent Opioid Use Disorder: Assessment, Treatment, and Overdose Prevention.](https://pubmed.ncbi.nlm.nih.gov/42686308/)
-- Signal: Adolescent Opioid Use Disorder: Assessment, Treatment, and Overdose Prevention. (2026 Oct) — Mortality studies.
-- Focus: Mortality studies
-- Evidence status: Single-source signal
-- Source: PubMed — overdose mortality studies (2026 Oct)
-- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-
-### [Opioid Overdose Risk and Recovery Barriers: A Mixed Methods Study of Perspectives From a Community.](https://pubmed.ncbi.nlm.nih.gov/42702061/)
-- Signal: Opioid Overdose Risk and Recovery Barriers: A Mixed Methods Study of Perspectives From a Community. (2026 Sep 6) — Mortality studies.
-- Focus: Mortality studies
-- Evidence status: Single-source signal
-- Source: PubMed — overdose mortality studies (2026 Sep 6)
-- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-
-### [Dynamic mechanistic dominance in fentanyl and polysubstance overdose: Implications for next-generation reversal.](https://pubmed.ncbi.nlm.nih.gov/42679490/)
-- Signal: Dynamic mechanistic dominance in fentanyl and polysubstance overdose: Implications for next-generation reversal. (2026 Aug 3) — New PubMed papers.
+### [Overdose Risk Reduction Using Fentanyl Test Strips: Education for Nurse Practitioners.](https://pubmed.ncbi.nlm.nih.gov/42734579/)
+- Signal: Overdose Risk Reduction Using Fentanyl Test Strips: Education for Nurse Practitioners. (2026 Jul-Sep 01) — New PubMed papers.
 - Focus: New PubMed papers
 - Evidence status: Single-source signal
-- Source: PubMed — emerging drug surveillance (2026 Aug 3)
+- Source: PubMed — emerging drug surveillance (2026 Jul-Sep 01)
+- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+
+### [Population-level benefits of correctional medications for opioid use disorder.](https://pubmed.ncbi.nlm.nih.gov/42731697/)
+- Signal: Population-level benefits of correctional medications for opioid use disorder. (2026 Sep 12) — Mortality studies.
+- Focus: Mortality studies
+- Evidence status: Single-source signal
+- Source: PubMed — overdose mortality studies (2026 Sep 12)
+- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+
+### [People who use drugs as frontline responders: Rethinking overdose response training through lived experience.](https://pubmed.ncbi.nlm.nih.gov/42731533/)
+- Signal: People who use drugs as frontline responders: Rethinking overdose response training through lived experience. (2026 Sep 12) — Mortality studies.
+- Focus: Mortality studies
+- Evidence status: Single-source signal
+- Source: PubMed — overdose mortality studies (2026 Sep 12)
+- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+
+### [People who use drugs as frontline responders: Rethinking overdose response training through lived experience.](https://pubmed.ncbi.nlm.nih.gov/42731533/)
+- Signal: People who use drugs as frontline responders: Rethinking overdose response training through lived experience. (2026 Sep 12) — New PubMed papers.
+- Focus: New PubMed papers
+- Evidence status: Single-source signal
+- Source: PubMed — emerging drug surveillance (2026 Sep 12)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
 ## Use boundary

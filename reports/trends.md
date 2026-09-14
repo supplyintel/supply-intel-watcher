@@ -5,14 +5,21 @@
 
 ## New
 
-- **New PubMed papers:** 14 current signal(s); 0 in the prior window.
-- **Medetomidine:** 6 current signal(s); 0 in the prior window.
-- **Synthetic cannabinoids:** 6 current signal(s); 0 in the prior window.
-- **Mortality studies:** 5 current signal(s); 0 in the prior window.
-- **Nitazenes:** 5 current signal(s); 0 in the prior window.
-- **Xylazine:** 5 current signal(s); 0 in the prior window.
-- **Toxicology case reports:** 2 current signal(s); 0 in the prior window.
-- **New reports:** 1 current signal(s); 0 in the prior window.
+- **Novel stimulants:** 2 current signal(s); 0 in the prior window.
+
+## Steady
+
+- **Mortality studies:** 5 current signal(s); 5 in the prior window.
+- **Toxicology case reports:** 2 current signal(s); 2 in the prior window.
+
+## Cooling
+
+- **New PubMed papers:** 7 current signal(s); 14 in the prior window.
+- **Nitazenes:** 3 current signal(s); 5 in the prior window.
+- **Synthetic cannabinoids:** 2 current signal(s); 6 in the prior window.
+- **Medetomidine:** 1 current signal(s); 6 in the prior window.
+- **New reports:** 0 current signal(s); 1 in the prior window.
+- **Xylazine:** 0 current signal(s); 5 in the prior window.
 
 ## Interpretation note
 
