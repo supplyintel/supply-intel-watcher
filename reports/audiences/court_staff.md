@@ -10,59 +10,59 @@ May inform court education, case context, and referral conversations; do not tre
 ## Priority signals
 
 ### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence)
-- Signal: Page content changed: NIJ NPS Discovery Research (2026-09-14) — Nitazenes, Medetomidine, Synthetic cannabinoids.
+- Signal: Page content changed: NIJ NPS Discovery Research (2026-09-21) — Nitazenes, Medetomidine, Synthetic cannabinoids.
 - Focus: Nitazenes, Medetomidine, Synthetic cannabinoids
 - Evidence status: Change detected — source review required
-- Source: NIJ NPS Discovery Research (2026-09-14)
+- Source: NIJ NPS Discovery Research (2026-09-21)
 - Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
 
-### [Page content changed: Vermont Substance Use Data and Reports](https://www.healthvermont.gov/alcohol-drugs/substance-use-data-reports/data-and-reports)
-- Signal: Page content changed: Vermont Substance Use Data and Reports (2026-09-14) — United States.
+### [Page content changed: CDC Provisional Drug Overdose Death Counts](https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm)
+- Signal: Page content changed: CDC Provisional Drug Overdose Death Counts (2026-09-21) — United States.
 - Focus: United States
 - Evidence status: Change detected — source review required
-- Source: Vermont Substance Use Data and Reports (2026-09-14)
+- Source: CDC Provisional Drug Overdose Death Counts (2026-09-21)
 - Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
 
-### [[Illegal Drug： Metonitazene].](https://pubmed.ncbi.nlm.nih.gov/42732988/)
-- Signal: [Illegal Drug： Metonitazene]. (2026 Jun 25) — Nitazenes, Toxicology case reports.
-- Focus: Nitazenes, Toxicology case reports
-- Evidence status: Cross-source signal (3 sources)
-- Source: PubMed — forensic toxicology case reports (2026 Jun 25)
-- Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
-
-### [Characterisation of the designer cathinone N-isopropylbutylone by a multi-technique approach and its metabolic profiling and stability assessment using dried matrix spots.](https://pubmed.ncbi.nlm.nih.gov/42709180/)
-- Signal: Characterisation of the designer cathinone N-isopropylbutylone by a multi-technique approach and its metabolic profiling and stability assessment using dried matrix spots. (2026 Sep 8) — Novel stimulants, Toxicology case reports.
-- Focus: Novel stimulants, Toxicology case reports
+### [Suspected Xylazine-Associated Skin Ulcers in Montreal, Canada: A Case Report on Diagnostic Challenges and Multidisciplinary Care.](https://pubmed.ncbi.nlm.nih.gov/42746459/)
+- Signal: Suspected Xylazine-Associated Skin Ulcers in Montreal, Canada: A Case Report on Diagnostic Challenges and Multidisciplinary Care. (2026 Aug) — Xylazine, Toxicology case reports.
+- Focus: Xylazine, Toxicology case reports
 - Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — forensic toxicology case reports (2026 Sep 8)
+- Source: PubMed — forensic toxicology case reports (2026 Aug)
 - Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
 
-### [Overdose Risk Reduction Using Fentanyl Test Strips: Education for Nurse Practitioners.](https://pubmed.ncbi.nlm.nih.gov/42734579/)
-- Signal: Overdose Risk Reduction Using Fentanyl Test Strips: Education for Nurse Practitioners. (2026 Jul-Sep 01) — New PubMed papers.
-- Focus: New PubMed papers
-- Evidence status: Single-source signal
-- Source: PubMed — emerging drug surveillance (2026 Jul-Sep 01)
-- Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
-
-### [Intoxications and Fatalities Associated with the Ingestion of the Novel Synthetic Cathinone, N-Isopropyl Butylone.](https://pubmed.ncbi.nlm.nih.gov/42728645/)
-- Signal: Intoxications and Fatalities Associated with the Ingestion of the Novel Synthetic Cathinone, N-Isopropyl Butylone. (2026 Sep 11) — Novel stimulants, Mortality studies.
-- Focus: Novel stimulants, Mortality studies
+### [Xylazine: Evaluation of antemortem and postmortem specimen storage conditions.](https://pubmed.ncbi.nlm.nih.gov/42758130/)
+- Signal: Xylazine: Evaluation of antemortem and postmortem specimen storage conditions. (2026 Sep 18) — Xylazine, Toxicology case reports.
+- Focus: Xylazine, Toxicology case reports
 - Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — emerging drug surveillance (2026 Sep 11)
+- Source: PubMed — forensic toxicology case reports (2026 Sep 18)
 - Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
 
-### [Causes of Death Among Stillbirths and Children Aged <5 Years in Africa and South Asia — Child Health and Mortality Prevention Surveillance, Seven Countries, 2016–2024](https://www.cdc.gov/mmwr/volumes/75/ss/ss7506a1.htm?s_cid=OS_ss7506a1_w)
-- Signal: Causes of Death Among Stillbirths and Children Aged <5 Years in Africa and South Asia — Child Health and Mortality Prevention Surveillance, Seven Countries, 2016–2024 — Mortality studies.
+### [Xylazine: Evaluation of antemortem and postmortem specimen storage conditions.](https://pubmed.ncbi.nlm.nih.gov/42758130/)
+- Signal: Xylazine: Evaluation of antemortem and postmortem specimen storage conditions. (2026 Sep 18) — Xylazine, New PubMed papers.
+- Focus: Xylazine, New PubMed papers
+- Evidence status: Cross-source signal (2 sources)
+- Source: PubMed — emerging drug surveillance (2026 Sep 18)
+- Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
+
+### [Fentanyl purity and overdose decline: A reexamination of geographic trends.](https://pubmed.ncbi.nlm.nih.gov/42748263/)
+- Signal: Fentanyl purity and overdose decline: A reexamination of geographic trends. (2026 Sep 18) — Mortality studies.
 - Focus: Mortality studies
 - Evidence status: Single-source signal
-- Source: CDC MMWR
+- Source: PubMed — overdose mortality studies (2026 Sep 18)
 - Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
 
-### [Population-level benefits of correctional medications for opioid use disorder.](https://pubmed.ncbi.nlm.nih.gov/42731697/)
-- Signal: Population-level benefits of correctional medications for opioid use disorder. (2026 Sep 12) — Mortality studies.
+### [Community-level determinants of buprenorphine provider availability: A ZCTA-level (zip code tabulation area) analysis.](https://pubmed.ncbi.nlm.nih.gov/42763521/)
+- Signal: Community-level determinants of buprenorphine provider availability: A ZCTA-level (zip code tabulation area) analysis. (2026 Dec) — Mortality studies.
 - Focus: Mortality studies
 - Evidence status: Single-source signal
-- Source: PubMed — overdose mortality studies (2026 Sep 12)
+- Source: PubMed — overdose mortality studies (2026 Dec)
+- Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
+
+### [Increased buprenorphine prescribing following implementation of a low-barrier virtual prescriber network.](https://pubmed.ncbi.nlm.nih.gov/42744115/)
+- Signal: Increased buprenorphine prescribing following implementation of a low-barrier virtual prescriber network. (2026 Sep 15) — Mortality studies.
+- Focus: Mortality studies
+- Evidence status: Single-source signal
+- Source: PubMed — overdose mortality studies (2026 Sep 15)
 - Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
 
 ## Use boundary
