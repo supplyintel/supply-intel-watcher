@@ -10,59 +10,59 @@ May inform outreach, supply education, and alert monitoring; confirm local relev
 ## Priority signals
 
 ### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence)
-- Signal: Page content changed: NIJ NPS Discovery Research (2026-09-21) — Nitazenes, Medetomidine, Synthetic cannabinoids.
+- Signal: Page content changed: NIJ NPS Discovery Research (2026-09-28) — Nitazenes, Medetomidine, Synthetic cannabinoids.
 - Focus: Nitazenes, Medetomidine, Synthetic cannabinoids
 - Evidence status: Change detected — source review required
-- Source: NIJ NPS Discovery Research (2026-09-21)
+- Source: NIJ NPS Discovery Research (2026-09-28)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
-### ["Rhino Tranq" in Connecticut-Prevalence of Medetomidine in the Fentanyl Supply Varies by Data Source.](https://pubmed.ncbi.nlm.nih.gov/42748561/)
-- Signal: "Rhino Tranq" in Connecticut-Prevalence of Medetomidine in the Fentanyl Supply Varies by Data Source. (2026 Sep 15) — Medetomidine, New PubMed papers.
-- Focus: Medetomidine, New PubMed papers
-- Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — emerging drug surveillance (2026 Sep 15)
+### [Page content changed: Health Canada Opioid and Substance Surveillance](https://www.canada.ca/en/health-canada/services/opioids/data-surveillance-research.html)
+- Signal: Page content changed: Health Canada Opioid and Substance Surveillance (2026-09-28) — Nitazenes, Xylazine.
+- Focus: Nitazenes, Xylazine
+- Evidence status: Change detected — source review required
+- Source: Health Canada Opioid and Substance Surveillance (2026-09-28)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
-### [Page content changed: CDC Provisional Drug Overdose Death Counts](https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm)
-- Signal: Page content changed: CDC Provisional Drug Overdose Death Counts (2026-09-21) — United States.
+### [Page content changed: Wisconsin Drug Checking Technologies](https://www.dhs.wisconsin.gov/aoda/drug-checking.htm)
+- Signal: Page content changed: Wisconsin Drug Checking Technologies (2026-09-28) — Xylazine.
+- Focus: Xylazine
+- Evidence status: Change detected — source review required
+- Source: Wisconsin Drug Checking Technologies (2026-09-28)
+- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+
+### [Page content changed: Vermont Substance Use Data and Reports](https://www.healthvermont.gov/alcohol-drugs/substance-use-data-reports/data-and-reports)
+- Signal: Page content changed: Vermont Substance Use Data and Reports (2026-09-28) — United States.
 - Focus: United States
 - Evidence status: Change detected — source review required
-- Source: CDC Provisional Drug Overdose Death Counts (2026-09-21)
+- Source: Vermont Substance Use Data and Reports (2026-09-28)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
-### [Suspected Xylazine-Associated Skin Ulcers in Montreal, Canada: A Case Report on Diagnostic Challenges and Multidisciplinary Care.](https://pubmed.ncbi.nlm.nih.gov/42746459/)
-- Signal: Suspected Xylazine-Associated Skin Ulcers in Montreal, Canada: A Case Report on Diagnostic Challenges and Multidisciplinary Care. (2026 Aug) — Xylazine, Toxicology case reports.
-- Focus: Xylazine, Toxicology case reports
+### [Responding to the increase in substance use, HIV, HCV, and overdose in New England (RISE-NE): Protocol for a prospective cohort study.](https://pubmed.ncbi.nlm.nih.gov/42789600/)
+- Signal: Responding to the increase in substance use, HIV, HCV, and overdose in New England (RISE-NE): Protocol for a prospective cohort study. (2026) — New reports, New PubMed papers.
+- Focus: New reports, New PubMed papers
+- Evidence status: Single-source signal
+- Source: PubMed — Massachusetts overdose and drug supply (2026)
+- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+
+### [EXPRESS: EFFECTS OF INTRAMUSCULAR AND INTRANASAL ADMINISTRATION OF MEDETOMIDINE ON SEDATION AND SOME CARDIOPULMONARY VARIABLES IN HEALTHY CATS.](https://pubmed.ncbi.nlm.nih.gov/42768427/)
+- Signal: EXPRESS: EFFECTS OF INTRAMUSCULAR AND INTRANASAL ADMINISTRATION OF MEDETOMIDINE ON SEDATION AND SOME CARDIOPULMONARY VARIABLES IN HEALTHY CATS. (2026 Sep 21) — Medetomidine, New PubMed papers.
+- Focus: Medetomidine, New PubMed papers
 - Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — forensic toxicology case reports (2026 Aug)
+- Source: PubMed — emerging drug surveillance (2026 Sep 21)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
-### [Xylazine: Evaluation of antemortem and postmortem specimen storage conditions.](https://pubmed.ncbi.nlm.nih.gov/42758130/)
-- Signal: Xylazine: Evaluation of antemortem and postmortem specimen storage conditions. (2026 Sep 18) — Xylazine, Toxicology case reports.
-- Focus: Xylazine, Toxicology case reports
-- Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — forensic toxicology case reports (2026 Sep 18)
-- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-
-### [Insights About Nitazene Use From Self-reported Experiences on Reddit Obtained Using Natural Language Processing.](https://pubmed.ncbi.nlm.nih.gov/42757529/)
-- Signal: Insights About Nitazene Use From Self-reported Experiences on Reddit Obtained Using Natural Language Processing. (2026 Sep 18) — Nitazenes, New PubMed papers.
+### [Protodesnitazene: The identification and tissue distribution of a new nitazene.](https://pubmed.ncbi.nlm.nih.gov/42798250/)
+- Signal: Protodesnitazene: The identification and tissue distribution of a new nitazene. (2026 Sep 26) — Nitazenes, New PubMed papers.
 - Focus: Nitazenes, New PubMed papers
-- Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — emerging drug surveillance (2026 Sep 18)
+- Evidence status: Cross-source signal (3 sources)
+- Source: PubMed — emerging drug surveillance (2026 Sep 26)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
-### [Management of Patients with Medetomidine Withdrawal During Interfacility Transfer.](https://pubmed.ncbi.nlm.nih.gov/42748282/)
-- Signal: Management of Patients with Medetomidine Withdrawal During Interfacility Transfer. (2026 Sep 16) — Medetomidine, New PubMed papers.
-- Focus: Medetomidine, New PubMed papers
-- Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — emerging drug surveillance (2026 Sep 16)
-- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-
-### [Medetomidine Exposure in a Shifting Drug Landscape: Insights From Patient Experiences.](https://pubmed.ncbi.nlm.nih.gov/42735410/)
-- Signal: Medetomidine Exposure in a Shifting Drug Landscape: Insights From Patient Experiences. (2026 Sep 15) — Medetomidine, New PubMed papers.
-- Focus: Medetomidine, New PubMed papers
-- Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — emerging drug surveillance (2026 Sep 15)
+### [Meeting people where they are, whenever they are here: the implementation of harm reduction programs in two U.S. emergency departments.](https://pubmed.ncbi.nlm.nih.gov/42791515/)
+- Signal: Meeting people where they are, whenever they are here: the implementation of harm reduction programs in two U.S. emergency departments. (2026 Sep 25) — New reports, New PubMed papers.
+- Focus: New reports, New PubMed papers
+- Evidence status: Single-source signal
+- Source: PubMed — Massachusetts overdose and drug supply (2026 Sep 25)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
 ## Use boundary

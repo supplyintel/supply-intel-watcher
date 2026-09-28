@@ -1,8 +1,8 @@
 # Weekly drug intelligence report
 
-**Run time:** September 21, 2026 at 17:34 UTC
+**Run time:** September 28, 2026 at 19:02 UTC
 **Sources checked:** 50
-**New relevant items:** 8
+**New relevant items:** 6
 **Source failures:** 2
 
 ## Emerging substances
@@ -11,108 +11,69 @@
 
 #### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence) **[Useful for: One-pager]**
 - Source: NIJ NPS Discovery Research
-- Published/updated: 2026-09-21
+- Published/updated: 2026-09-28
 - Relevance score: 49
 - Terms matched: adulterant, benzodiazepine, early warning, emerging drug, fentanyl, medetomidine, metonitazene, nitazene, novel psychoactive substance, NPS, overdose, public alert, scheduling, synthetic cannabinoid, toxicology
+- Note: The watched page changed. Review the source directly before using the information.
+
+#### [Page content changed: Health Canada Opioid and Substance Surveillance](https://www.canada.ca/en/health-canada/services/opioids/data-surveillance-research.html) **[Useful for: One-pager]**
+- Source: Health Canada Opioid and Substance Surveillance
+- Published/updated: 2026-09-28
+- Relevance score: 31
+- Terms matched: benzodiazepine, fentanyl, nitazene, opioid, overdose, poisoning, stimulant, xylazine
 - Note: The watched page changed. Review the source directly before using the information.
 
 ### Medetomidine
 
 #### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence) **[Useful for: One-pager]**
 - Source: NIJ NPS Discovery Research
-- Published/updated: 2026-09-21
+- Published/updated: 2026-09-28
 - Relevance score: 49
 - Terms matched: adulterant, benzodiazepine, early warning, emerging drug, fentanyl, medetomidine, metonitazene, nitazene, novel psychoactive substance, NPS, overdose, public alert, scheduling, synthetic cannabinoid, toxicology
 - Note: The watched page changed. Review the source directly before using the information.
 
-#### ["Rhino Tranq" in Connecticut-Prevalence of Medetomidine in the Fentanyl Supply Varies by Data Source.](https://pubmed.ncbi.nlm.nih.gov/42748561/) **[Useful for: Presentation, One-pager]**
-- Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 15
-- Relevance score: 9
-- Terms matched: fentanyl, medetomidine
-- Note: Hill K, Znamierowski E, Breen C, Rose R | Journal of addiction medicine
-
 ### Xylazine
 
-#### [Suspected Xylazine-Associated Skin Ulcers in Montreal, Canada: A Case Report on Diagnostic Challenges and Multidisciplinary Care.](https://pubmed.ncbi.nlm.nih.gov/42746459/) **[Useful for: One-pager]**
-- Source: PubMed — forensic toxicology case reports
-- Published/updated: 2026 Aug
-- Relevance score: 7
-- Terms matched: xylazine
-- Note: Dastjerdi P, Ibrahim S | Cureus
+#### [Page content changed: Health Canada Opioid and Substance Surveillance](https://www.canada.ca/en/health-canada/services/opioids/data-surveillance-research.html) **[Useful for: One-pager]**
+- Source: Health Canada Opioid and Substance Surveillance
+- Published/updated: 2026-09-28
+- Relevance score: 31
+- Terms matched: benzodiazepine, fentanyl, nitazene, opioid, overdose, poisoning, stimulant, xylazine
+- Note: The watched page changed. Review the source directly before using the information.
 
-#### [Xylazine: Evaluation of antemortem and postmortem specimen storage conditions.](https://pubmed.ncbi.nlm.nih.gov/42758130/) **[Useful for: One-pager]**
-- Source: PubMed — forensic toxicology case reports
-- Published/updated: 2026 Sep 18
-- Relevance score: 7
-- Terms matched: xylazine
-- Note: Riley-Carrier P, Wagner R | Journal of analytical toxicology
+#### [Page content changed: Wisconsin Drug Checking Technologies](https://www.dhs.wisconsin.gov/aoda/drug-checking.htm) **[Useful for: One-pager]**
+- Source: Wisconsin Drug Checking Technologies
+- Published/updated: 2026-09-28
+- Relevance score: 22
+- Terms matched: drug checking, fentanyl, methamphetamine, opioid, overdose, xylazine
+- Note: The watched page changed. Review the source directly before using the information.
 
 ### Synthetic cannabinoids
 
 #### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence) **[Useful for: One-pager]**
 - Source: NIJ NPS Discovery Research
-- Published/updated: 2026-09-21
+- Published/updated: 2026-09-28
 - Relevance score: 49
 - Terms matched: adulterant, benzodiazepine, early warning, emerging drug, fentanyl, medetomidine, metonitazene, nitazene, novel psychoactive substance, NPS, overdose, public alert, scheduling, synthetic cannabinoid, toxicology
 - Note: The watched page changed. Review the source directly before using the information.
 
 #### [Page content changed: NIJ NPS Discovery Trend Reports](https://nij.ojp.gov/library/publications/nps-discovery-q3-2025-trend-reports-nps-benzodiazepines-nps-opioids-nps) **[Useful for: One-pager]**
 - Source: NIJ NPS Discovery Trend Reports
-- Published/updated: 2026-09-21
+- Published/updated: 2026-09-28
 - Relevance score: 23
 - Terms matched: benzodiazepine, novel psychoactive substance, NPS, opioid, stimulant, synthetic cannabinoid
 - Note: The watched page changed. Review the source directly before using the information.
-
-#### [Fentanyl Detection in Biological Samples From Individuals Reporting Synthetic Cannabinoid Use in São Paulo, Brazil.](https://pubmed.ncbi.nlm.nih.gov/42745532/) **[Useful for: One-pager]**
-- Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep
-- Relevance score: 7
-- Terms matched: fentanyl, synthetic cannabinoid
-- Note: Endo LG, de Oliveira RA, Miziara ID, Yonamine M | Drug and alcohol review
 
 ## Research
 
 ### New PubMed papers
 
-#### ["Rhino Tranq" in Connecticut-Prevalence of Medetomidine in the Fentanyl Supply Varies by Data Source.](https://pubmed.ncbi.nlm.nih.gov/42748561/) **[Useful for: Presentation, One-pager]**
+#### [The opioid flexion phenotype: postural flexion and nodding in the fentanyl era.](https://pubmed.ncbi.nlm.nih.gov/42787112/) **[Useful for: One-pager]**
 - Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 15
-- Relevance score: 9
-- Terms matched: fentanyl, medetomidine
-- Note: Hill K, Znamierowski E, Breen C, Rose R | Journal of addiction medicine
-
-#### [Fentanyl Detection in Biological Samples From Individuals Reporting Synthetic Cannabinoid Use in São Paulo, Brazil.](https://pubmed.ncbi.nlm.nih.gov/42745532/) **[Useful for: One-pager]**
-- Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep
+- Published/updated: 2026
 - Relevance score: 7
-- Terms matched: fentanyl, synthetic cannabinoid
-- Note: Endo LG, de Oliveira RA, Miziara ID, Yonamine M | Drug and alcohol review
-
-### Toxicology case reports
-
-#### [Suspected Xylazine-Associated Skin Ulcers in Montreal, Canada: A Case Report on Diagnostic Challenges and Multidisciplinary Care.](https://pubmed.ncbi.nlm.nih.gov/42746459/) **[Useful for: One-pager]**
-- Source: PubMed — forensic toxicology case reports
-- Published/updated: 2026 Aug
-- Relevance score: 7
-- Terms matched: xylazine
-- Note: Dastjerdi P, Ibrahim S | Cureus
-
-#### [Xylazine: Evaluation of antemortem and postmortem specimen storage conditions.](https://pubmed.ncbi.nlm.nih.gov/42758130/) **[Useful for: One-pager]**
-- Source: PubMed — forensic toxicology case reports
-- Published/updated: 2026 Sep 18
-- Relevance score: 7
-- Terms matched: xylazine
-- Note: Riley-Carrier P, Wagner R | Journal of analytical toxicology
-
-### Mortality studies
-
-#### [Fentanyl purity and overdose decline: A reexamination of geographic trends.](https://pubmed.ncbi.nlm.nih.gov/42748263/) **[Useful for: One-pager]**
-- Source: PubMed — overdose mortality studies
-- Published/updated: 2026 Sep 18
-- Relevance score: 7
-- Terms matched: fentanyl, overdose
-- Note: Dasgupta N, Sibley A, Gildner P, Gora Combs K | Science advances
+- Terms matched: fentanyl, opioid
+- Note: Albert OM, Aboud H, Arthur A, Orukpe IO | Frontiers in neuroscience
 
 ## Implications
 
@@ -120,157 +81,117 @@
 
 #### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence) **[Useful for: One-pager]**
 - Source: NIJ NPS Discovery Research
-- Published/updated: 2026-09-21
+- Published/updated: 2026-09-28
 - Relevance score: 49
 - Terms matched: adulterant, benzodiazepine, early warning, emerging drug, fentanyl, medetomidine, metonitazene, nitazene, novel psychoactive substance, NPS, overdose, public alert, scheduling, synthetic cannabinoid, toxicology
 - Why it may matter: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
 - Note: The watched page changed. Review the source directly before using the information.
 
-#### [Page content changed: CDC Provisional Drug Overdose Death Counts](https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm)
-- Source: CDC Provisional Drug Overdose Death Counts
-- Published/updated: 2026-09-21
-- Relevance score: 11
-- Terms matched: mortality, overdose, toxicology
+#### [Page content changed: Health Canada Opioid and Substance Surveillance](https://www.canada.ca/en/health-canada/services/opioids/data-surveillance-research.html) **[Useful for: One-pager]**
+- Source: Health Canada Opioid and Substance Surveillance
+- Published/updated: 2026-09-28
+- Relevance score: 31
+- Terms matched: benzodiazepine, fentanyl, nitazene, opioid, overdose, poisoning, stimulant, xylazine
 - Why it may matter: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
 - Note: The watched page changed. Review the source directly before using the information.
 
-#### [Suspected Xylazine-Associated Skin Ulcers in Montreal, Canada: A Case Report on Diagnostic Challenges and Multidisciplinary Care.](https://pubmed.ncbi.nlm.nih.gov/42746459/) **[Useful for: One-pager]**
-- Source: PubMed — forensic toxicology case reports
-- Published/updated: 2026 Aug
-- Relevance score: 7
-- Terms matched: xylazine
+#### [Page content changed: Wisconsin Drug Checking Technologies](https://www.dhs.wisconsin.gov/aoda/drug-checking.htm) **[Useful for: One-pager]**
+- Source: Wisconsin Drug Checking Technologies
+- Published/updated: 2026-09-28
+- Relevance score: 22
+- Terms matched: drug checking, fentanyl, methamphetamine, opioid, overdose, xylazine
 - Why it may matter: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
-- Note: Dastjerdi P, Ibrahim S | Cureus
+- Note: The watched page changed. Review the source directly before using the information.
 
-#### [Xylazine: Evaluation of antemortem and postmortem specimen storage conditions.](https://pubmed.ncbi.nlm.nih.gov/42758130/) **[Useful for: One-pager]**
-- Source: PubMed — forensic toxicology case reports
-- Published/updated: 2026 Sep 18
-- Relevance score: 7
-- Terms matched: xylazine
+#### [Page content changed: Vermont Substance Use Data and Reports](https://www.healthvermont.gov/alcohol-drugs/substance-use-data-reports/data-and-reports)
+- Source: Vermont Substance Use Data and Reports
+- Published/updated: 2026-09-28
+- Relevance score: 19
+- Terms matched: drug checking, naloxone, opioid, overdose, poisoning, stimulant
 - Why it may matter: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
-- Note: Riley-Carrier P, Wagner R | Journal of analytical toxicology
-
-#### [Fentanyl purity and overdose decline: A reexamination of geographic trends.](https://pubmed.ncbi.nlm.nih.gov/42748263/) **[Useful for: One-pager]**
-- Source: PubMed — overdose mortality studies
-- Published/updated: 2026 Sep 18
-- Relevance score: 7
-- Terms matched: fentanyl, overdose
-- Why it may matter: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
-- Note: Dasgupta N, Sibley A, Gildner P, Gora Combs K | Science advances
+- Note: The watched page changed. Review the source directly before using the information.
 
 ### Treatment providers
 
 #### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence) **[Useful for: One-pager]**
 - Source: NIJ NPS Discovery Research
-- Published/updated: 2026-09-21
+- Published/updated: 2026-09-28
 - Relevance score: 49
 - Terms matched: adulterant, benzodiazepine, early warning, emerging drug, fentanyl, medetomidine, metonitazene, nitazene, novel psychoactive substance, NPS, overdose, public alert, scheduling, synthetic cannabinoid, toxicology
 - Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
 - Note: The watched page changed. Review the source directly before using the information.
 
+#### [Page content changed: Health Canada Opioid and Substance Surveillance](https://www.canada.ca/en/health-canada/services/opioids/data-surveillance-research.html) **[Useful for: One-pager]**
+- Source: Health Canada Opioid and Substance Surveillance
+- Published/updated: 2026-09-28
+- Relevance score: 31
+- Terms matched: benzodiazepine, fentanyl, nitazene, opioid, overdose, poisoning, stimulant, xylazine
+- Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
+- Note: The watched page changed. Review the source directly before using the information.
+
 #### [Page content changed: NIJ NPS Discovery Trend Reports](https://nij.ojp.gov/library/publications/nps-discovery-q3-2025-trend-reports-nps-benzodiazepines-nps-opioids-nps) **[Useful for: One-pager]**
 - Source: NIJ NPS Discovery Trend Reports
-- Published/updated: 2026-09-21
+- Published/updated: 2026-09-28
 - Relevance score: 23
 - Terms matched: benzodiazepine, novel psychoactive substance, NPS, opioid, stimulant, synthetic cannabinoid
 - Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
 - Note: The watched page changed. Review the source directly before using the information.
 
-#### [Page content changed: CDC Provisional Drug Overdose Death Counts](https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm)
-- Source: CDC Provisional Drug Overdose Death Counts
-- Published/updated: 2026-09-21
-- Relevance score: 11
-- Terms matched: mortality, overdose, toxicology
+#### [Page content changed: Wisconsin Drug Checking Technologies](https://www.dhs.wisconsin.gov/aoda/drug-checking.htm) **[Useful for: One-pager]**
+- Source: Wisconsin Drug Checking Technologies
+- Published/updated: 2026-09-28
+- Relevance score: 22
+- Terms matched: drug checking, fentanyl, methamphetamine, opioid, overdose, xylazine
 - Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
 - Note: The watched page changed. Review the source directly before using the information.
 
-#### ["Rhino Tranq" in Connecticut-Prevalence of Medetomidine in the Fentanyl Supply Varies by Data Source.](https://pubmed.ncbi.nlm.nih.gov/42748561/) **[Useful for: Presentation, One-pager]**
-- Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 15
-- Relevance score: 9
-- Terms matched: fentanyl, medetomidine
+#### [Page content changed: Vermont Substance Use Data and Reports](https://www.healthvermont.gov/alcohol-drugs/substance-use-data-reports/data-and-reports)
+- Source: Vermont Substance Use Data and Reports
+- Published/updated: 2026-09-28
+- Relevance score: 19
+- Terms matched: drug checking, naloxone, opioid, overdose, poisoning, stimulant
 - Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
-- Note: Hill K, Znamierowski E, Breen C, Rose R | Journal of addiction medicine
-
-#### [Suspected Xylazine-Associated Skin Ulcers in Montreal, Canada: A Case Report on Diagnostic Challenges and Multidisciplinary Care.](https://pubmed.ncbi.nlm.nih.gov/42746459/) **[Useful for: One-pager]**
-- Source: PubMed — forensic toxicology case reports
-- Published/updated: 2026 Aug
-- Relevance score: 7
-- Terms matched: xylazine
-- Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
-- Note: Dastjerdi P, Ibrahim S | Cureus
-
-#### [Xylazine: Evaluation of antemortem and postmortem specimen storage conditions.](https://pubmed.ncbi.nlm.nih.gov/42758130/) **[Useful for: One-pager]**
-- Source: PubMed — forensic toxicology case reports
-- Published/updated: 2026 Sep 18
-- Relevance score: 7
-- Terms matched: xylazine
-- Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
-- Note: Riley-Carrier P, Wagner R | Journal of analytical toxicology
-
-#### [Fentanyl purity and overdose decline: A reexamination of geographic trends.](https://pubmed.ncbi.nlm.nih.gov/42748263/) **[Useful for: One-pager]**
-- Source: PubMed — overdose mortality studies
-- Published/updated: 2026 Sep 18
-- Relevance score: 7
-- Terms matched: fentanyl, overdose
-- Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
-- Note: Dasgupta N, Sibley A, Gildner P, Gora Combs K | Science advances
+- Note: The watched page changed. Review the source directly before using the information.
 
 ### Harm reduction
 
 #### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence) **[Useful for: One-pager]**
 - Source: NIJ NPS Discovery Research
-- Published/updated: 2026-09-21
+- Published/updated: 2026-09-28
 - Relevance score: 49
 - Terms matched: adulterant, benzodiazepine, early warning, emerging drug, fentanyl, medetomidine, metonitazene, nitazene, novel psychoactive substance, NPS, overdose, public alert, scheduling, synthetic cannabinoid, toxicology
 - Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 - Note: The watched page changed. Review the source directly before using the information.
 
-#### [Page content changed: CDC Provisional Drug Overdose Death Counts](https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm)
-- Source: CDC Provisional Drug Overdose Death Counts
-- Published/updated: 2026-09-21
-- Relevance score: 11
-- Terms matched: mortality, overdose, toxicology
+#### [Page content changed: Health Canada Opioid and Substance Surveillance](https://www.canada.ca/en/health-canada/services/opioids/data-surveillance-research.html) **[Useful for: One-pager]**
+- Source: Health Canada Opioid and Substance Surveillance
+- Published/updated: 2026-09-28
+- Relevance score: 31
+- Terms matched: benzodiazepine, fentanyl, nitazene, opioid, overdose, poisoning, stimulant, xylazine
 - Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 - Note: The watched page changed. Review the source directly before using the information.
 
-#### ["Rhino Tranq" in Connecticut-Prevalence of Medetomidine in the Fentanyl Supply Varies by Data Source.](https://pubmed.ncbi.nlm.nih.gov/42748561/) **[Useful for: Presentation, One-pager]**
-- Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 15
-- Relevance score: 9
-- Terms matched: fentanyl, medetomidine
+#### [Page content changed: Wisconsin Drug Checking Technologies](https://www.dhs.wisconsin.gov/aoda/drug-checking.htm) **[Useful for: One-pager]**
+- Source: Wisconsin Drug Checking Technologies
+- Published/updated: 2026-09-28
+- Relevance score: 22
+- Terms matched: drug checking, fentanyl, methamphetamine, opioid, overdose, xylazine
 - Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-- Note: Hill K, Znamierowski E, Breen C, Rose R | Journal of addiction medicine
+- Note: The watched page changed. Review the source directly before using the information.
 
-#### [Suspected Xylazine-Associated Skin Ulcers in Montreal, Canada: A Case Report on Diagnostic Challenges and Multidisciplinary Care.](https://pubmed.ncbi.nlm.nih.gov/42746459/) **[Useful for: One-pager]**
-- Source: PubMed — forensic toxicology case reports
-- Published/updated: 2026 Aug
-- Relevance score: 7
-- Terms matched: xylazine
+#### [Page content changed: Vermont Substance Use Data and Reports](https://www.healthvermont.gov/alcohol-drugs/substance-use-data-reports/data-and-reports)
+- Source: Vermont Substance Use Data and Reports
+- Published/updated: 2026-09-28
+- Relevance score: 19
+- Terms matched: drug checking, naloxone, opioid, overdose, poisoning, stimulant
 - Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-- Note: Dastjerdi P, Ibrahim S | Cureus
-
-#### [Xylazine: Evaluation of antemortem and postmortem specimen storage conditions.](https://pubmed.ncbi.nlm.nih.gov/42758130/) **[Useful for: One-pager]**
-- Source: PubMed — forensic toxicology case reports
-- Published/updated: 2026 Sep 18
-- Relevance score: 7
-- Terms matched: xylazine
-- Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-- Note: Riley-Carrier P, Wagner R | Journal of analytical toxicology
-
-#### [Fentanyl purity and overdose decline: A reexamination of geographic trends.](https://pubmed.ncbi.nlm.nih.gov/42748263/) **[Useful for: One-pager]**
-- Source: PubMed — overdose mortality studies
-- Published/updated: 2026 Sep 18
-- Relevance score: 7
-- Terms matched: fentanyl, overdose
-- Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-- Note: Dasgupta N, Sibley A, Gildner P, Gora Combs K | Science advances
+- Note: The watched page changed. Review the source directly before using the information.
 
 ### Law enforcement
 
 #### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence) **[Useful for: One-pager]**
 - Source: NIJ NPS Discovery Research
-- Published/updated: 2026-09-21
+- Published/updated: 2026-09-28
 - Relevance score: 49
 - Terms matched: adulterant, benzodiazepine, early warning, emerging drug, fentanyl, medetomidine, metonitazene, nitazene, novel psychoactive substance, NPS, overdose, public alert, scheduling, synthetic cannabinoid, toxicology
 - Why it may matter: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
@@ -278,35 +199,11 @@
 
 #### [Page content changed: NIJ NPS Discovery Trend Reports](https://nij.ojp.gov/library/publications/nps-discovery-q3-2025-trend-reports-nps-benzodiazepines-nps-opioids-nps) **[Useful for: One-pager]**
 - Source: NIJ NPS Discovery Trend Reports
-- Published/updated: 2026-09-21
+- Published/updated: 2026-09-28
 - Relevance score: 23
 - Terms matched: benzodiazepine, novel psychoactive substance, NPS, opioid, stimulant, synthetic cannabinoid
 - Why it may matter: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
 - Note: The watched page changed. Review the source directly before using the information.
-
-#### [Page content changed: CDC Provisional Drug Overdose Death Counts](https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm)
-- Source: CDC Provisional Drug Overdose Death Counts
-- Published/updated: 2026-09-21
-- Relevance score: 11
-- Terms matched: mortality, overdose, toxicology
-- Why it may matter: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
-- Note: The watched page changed. Review the source directly before using the information.
-
-#### [Suspected Xylazine-Associated Skin Ulcers in Montreal, Canada: A Case Report on Diagnostic Challenges and Multidisciplinary Care.](https://pubmed.ncbi.nlm.nih.gov/42746459/) **[Useful for: One-pager]**
-- Source: PubMed — forensic toxicology case reports
-- Published/updated: 2026 Aug
-- Relevance score: 7
-- Terms matched: xylazine
-- Why it may matter: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
-- Note: Dastjerdi P, Ibrahim S | Cureus
-
-#### [Xylazine: Evaluation of antemortem and postmortem specimen storage conditions.](https://pubmed.ncbi.nlm.nih.gov/42758130/) **[Useful for: One-pager]**
-- Source: PubMed — forensic toxicology case reports
-- Published/updated: 2026 Sep 18
-- Relevance score: 7
-- Terms matched: xylazine
-- Why it may matter: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
-- Note: Riley-Carrier P, Wagner R | Journal of analytical toxicology
 
 ## Source status
 

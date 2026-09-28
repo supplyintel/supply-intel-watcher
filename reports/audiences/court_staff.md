@@ -10,59 +10,59 @@ May inform court education, case context, and referral conversations; do not tre
 ## Priority signals
 
 ### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence)
-- Signal: Page content changed: NIJ NPS Discovery Research (2026-09-21) — Nitazenes, Medetomidine, Synthetic cannabinoids.
+- Signal: Page content changed: NIJ NPS Discovery Research (2026-09-28) — Nitazenes, Medetomidine, Synthetic cannabinoids.
 - Focus: Nitazenes, Medetomidine, Synthetic cannabinoids
 - Evidence status: Change detected — source review required
-- Source: NIJ NPS Discovery Research (2026-09-21)
+- Source: NIJ NPS Discovery Research (2026-09-28)
 - Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
 
-### [Page content changed: CDC Provisional Drug Overdose Death Counts](https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm)
-- Signal: Page content changed: CDC Provisional Drug Overdose Death Counts (2026-09-21) — United States.
+### [Page content changed: Health Canada Opioid and Substance Surveillance](https://www.canada.ca/en/health-canada/services/opioids/data-surveillance-research.html)
+- Signal: Page content changed: Health Canada Opioid and Substance Surveillance (2026-09-28) — Nitazenes, Xylazine.
+- Focus: Nitazenes, Xylazine
+- Evidence status: Change detected — source review required
+- Source: Health Canada Opioid and Substance Surveillance (2026-09-28)
+- Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
+
+### [Page content changed: Wisconsin Drug Checking Technologies](https://www.dhs.wisconsin.gov/aoda/drug-checking.htm)
+- Signal: Page content changed: Wisconsin Drug Checking Technologies (2026-09-28) — Xylazine.
+- Focus: Xylazine
+- Evidence status: Change detected — source review required
+- Source: Wisconsin Drug Checking Technologies (2026-09-28)
+- Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
+
+### [Page content changed: Vermont Substance Use Data and Reports](https://www.healthvermont.gov/alcohol-drugs/substance-use-data-reports/data-and-reports)
+- Signal: Page content changed: Vermont Substance Use Data and Reports (2026-09-28) — United States.
 - Focus: United States
 - Evidence status: Change detected — source review required
-- Source: CDC Provisional Drug Overdose Death Counts (2026-09-21)
+- Source: Vermont Substance Use Data and Reports (2026-09-28)
 - Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
 
-### [Suspected Xylazine-Associated Skin Ulcers in Montreal, Canada: A Case Report on Diagnostic Challenges and Multidisciplinary Care.](https://pubmed.ncbi.nlm.nih.gov/42746459/)
-- Signal: Suspected Xylazine-Associated Skin Ulcers in Montreal, Canada: A Case Report on Diagnostic Challenges and Multidisciplinary Care. (2026 Aug) — Xylazine, Toxicology case reports.
-- Focus: Xylazine, Toxicology case reports
-- Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — forensic toxicology case reports (2026 Aug)
+### [Responding to the increase in substance use, HIV, HCV, and overdose in New England (RISE-NE): Protocol for a prospective cohort study.](https://pubmed.ncbi.nlm.nih.gov/42789600/)
+- Signal: Responding to the increase in substance use, HIV, HCV, and overdose in New England (RISE-NE): Protocol for a prospective cohort study. (2026) — New reports, New PubMed papers.
+- Focus: New reports, New PubMed papers
+- Evidence status: Single-source signal
+- Source: PubMed — Massachusetts overdose and drug supply (2026)
 - Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
 
-### [Xylazine: Evaluation of antemortem and postmortem specimen storage conditions.](https://pubmed.ncbi.nlm.nih.gov/42758130/)
-- Signal: Xylazine: Evaluation of antemortem and postmortem specimen storage conditions. (2026 Sep 18) — Xylazine, Toxicology case reports.
-- Focus: Xylazine, Toxicology case reports
-- Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — forensic toxicology case reports (2026 Sep 18)
+### [Meeting people where they are, whenever they are here: the implementation of harm reduction programs in two U.S. emergency departments.](https://pubmed.ncbi.nlm.nih.gov/42791515/)
+- Signal: Meeting people where they are, whenever they are here: the implementation of harm reduction programs in two U.S. emergency departments. (2026 Sep 25) — New reports, New PubMed papers.
+- Focus: New reports, New PubMed papers
+- Evidence status: Single-source signal
+- Source: PubMed — Massachusetts overdose and drug supply (2026 Sep 25)
 - Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
 
-### [Xylazine: Evaluation of antemortem and postmortem specimen storage conditions.](https://pubmed.ncbi.nlm.nih.gov/42758130/)
-- Signal: Xylazine: Evaluation of antemortem and postmortem specimen storage conditions. (2026 Sep 18) — Xylazine, New PubMed papers.
-- Focus: Xylazine, New PubMed papers
-- Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — emerging drug surveillance (2026 Sep 18)
+### [Multiorgan toxicity of 3-Chloromethcathinone (3-CMC) in male and female mice: translational implications for liver, kidney, and spleen.](https://pubmed.ncbi.nlm.nih.gov/42778126/)
+- Signal: Multiorgan toxicity of 3-Chloromethcathinone (3-CMC) in male and female mice: translational implications for liver, kidney, and spleen. (2026 Sep 23) — Novel stimulants, New PubMed papers.
+- Focus: Novel stimulants, New PubMed papers
+- Evidence status: Single-source signal
+- Source: PubMed — emerging drug surveillance (2026 Sep 23)
 - Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
 
-### [Fentanyl purity and overdose decline: A reexamination of geographic trends.](https://pubmed.ncbi.nlm.nih.gov/42748263/)
-- Signal: Fentanyl purity and overdose decline: A reexamination of geographic trends. (2026 Sep 18) — Mortality studies.
+### [Clinical Characteristics and Treatment Outcomes Among Patients with Fentanyl-Positive Urine Drug Screening in Inpatient Detoxification and Rehabilitation.](https://pubmed.ncbi.nlm.nih.gov/42789416/)
+- Signal: Clinical Characteristics and Treatment Outcomes Among Patients with Fentanyl-Positive Urine Drug Screening in Inpatient Detoxification and Rehabilitation. (2026 Sep 25) — Mortality studies.
 - Focus: Mortality studies
 - Evidence status: Single-source signal
-- Source: PubMed — overdose mortality studies (2026 Sep 18)
-- Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
-
-### [Community-level determinants of buprenorphine provider availability: A ZCTA-level (zip code tabulation area) analysis.](https://pubmed.ncbi.nlm.nih.gov/42763521/)
-- Signal: Community-level determinants of buprenorphine provider availability: A ZCTA-level (zip code tabulation area) analysis. (2026 Dec) — Mortality studies.
-- Focus: Mortality studies
-- Evidence status: Single-source signal
-- Source: PubMed — overdose mortality studies (2026 Dec)
-- Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
-
-### [Increased buprenorphine prescribing following implementation of a low-barrier virtual prescriber network.](https://pubmed.ncbi.nlm.nih.gov/42744115/)
-- Signal: Increased buprenorphine prescribing following implementation of a low-barrier virtual prescriber network. (2026 Sep 15) — Mortality studies.
-- Focus: Mortality studies
-- Evidence status: Single-source signal
-- Source: PubMed — overdose mortality studies (2026 Sep 15)
+- Source: PubMed — overdose mortality studies (2026 Sep 25)
 - Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
 
 ## Use boundary
