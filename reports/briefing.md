@@ -5,41 +5,41 @@
 
 ## Opening summary
 
-- Page content changed: NIJ NPS Discovery Research (2026-09-28) — Nitazenes, Medetomidine, Synthetic cannabinoids. ([source](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence))
-- Page content changed: Health Canada Opioid and Substance Surveillance (2026-09-28) — Nitazenes, Xylazine. ([source](https://www.canada.ca/en/health-canada/services/opioids/data-surveillance-research.html))
-- Page content changed: NIJ NPS Discovery Trend Reports (2026-09-28) — Synthetic cannabinoids. ([source](https://nij.ojp.gov/library/publications/nps-discovery-q3-2025-trend-reports-nps-benzodiazepines-nps-opioids-nps))
+- Page content changed: NIJ NPS Discovery Research (2026-10-12) — Nitazenes, Medetomidine, Synthetic cannabinoids. ([source](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence))
+- Page content changed: NIST Rapid Drug Analysis and Research (2026-10-12) — Nitazenes, Medetomidine, Xylazine. ([source](https://www.nist.gov/programs-projects/radar))
+- Page content changed: NIJ NPS Discovery Trend Reports (2026-10-12) — Synthetic cannabinoids. ([source](https://nij.ojp.gov/library/publications/nps-discovery-q3-2025-trend-reports-nps-benzodiazepines-nps-opioids-nps))
 
 ## Suggested slides
 
 ### Slide 1: Page content changed: NIJ NPS Discovery Research
-- **Key signal:** Page content changed: NIJ NPS Discovery Research (2026-09-28) — Nitazenes, Medetomidine, Synthetic cannabinoids.
+- **Key signal:** Page content changed: NIJ NPS Discovery Research (2026-10-12) — Nitazenes, Medetomidine, Synthetic cannabinoids.
 - **Why it matters:** Relevant to Court staff, Treatment providers, Harm reduction, Law enforcement.
-- **Evidence:** [NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence), 2026-09-28
+- **Evidence:** [NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence), 2026-10-12
 - **Priority score:** 55
 
-### Slide 2: Page content changed: Health Canada Opioid and Substance Surveillance
-- **Key signal:** Page content changed: Health Canada Opioid and Substance Surveillance (2026-09-28) — Nitazenes, Xylazine.
+### Slide 2: Page content changed: NIST Rapid Drug Analysis and Research
+- **Key signal:** Page content changed: NIST Rapid Drug Analysis and Research (2026-10-12) — Nitazenes, Medetomidine, Xylazine.
 - **Why it matters:** Relevant to Court staff, Treatment providers, Harm reduction.
-- **Evidence:** [Health Canada Opioid and Substance Surveillance](https://www.canada.ca/en/health-canada/services/opioids/data-surveillance-research.html), 2026-09-28
-- **Priority score:** 35
+- **Evidence:** [NIST Rapid Drug Analysis and Research](https://www.nist.gov/programs-projects/radar), 2026-10-12
+- **Priority score:** 39
 
 ### Slide 3: Page content changed: NIJ NPS Discovery Trend Reports
-- **Key signal:** Page content changed: NIJ NPS Discovery Trend Reports (2026-09-28) — Synthetic cannabinoids.
+- **Key signal:** Page content changed: NIJ NPS Discovery Trend Reports (2026-10-12) — Synthetic cannabinoids.
 - **Why it matters:** Relevant to Treatment providers, Law enforcement.
-- **Evidence:** [NIJ NPS Discovery Trend Reports](https://nij.ojp.gov/library/publications/nps-discovery-q3-2025-trend-reports-nps-benzodiazepines-nps-opioids-nps), 2026-09-28
+- **Evidence:** [NIJ NPS Discovery Trend Reports](https://nij.ojp.gov/library/publications/nps-discovery-q3-2025-trend-reports-nps-benzodiazepines-nps-opioids-nps), 2026-10-12
 - **Priority score:** 25
 
-### Slide 4: Page content changed: Wisconsin Drug Checking Technologies
-- **Key signal:** Page content changed: Wisconsin Drug Checking Technologies (2026-09-28) — Xylazine.
+### Slide 4: The effects of fentanyl and dexmedetomidine on cardiorespiratory activity: implications for morbidity and mortality associated with adulterated fentanyl products.
+- **Key signal:** The effects of fentanyl and dexmedetomidine on cardiorespiratory activity: implications for morbidity and mortality associated with adulterated fentanyl products. (2026) — Medetomidine, Mortality studies.
 - **Why it matters:** Relevant to Court staff, Treatment providers, Harm reduction.
-- **Evidence:** [Wisconsin Drug Checking Technologies](https://www.dhs.wisconsin.gov/aoda/drug-checking.htm), 2026-09-28
-- **Priority score:** 24
+- **Evidence:** [PubMed — emerging drug surveillance](https://pubmed.ncbi.nlm.nih.gov/42824617/), 2026
+- **Priority score:** 20
 
-### Slide 5: The opioid flexion phenotype: postural flexion and nodding in the fentanyl era.
-- **Key signal:** The opioid flexion phenotype: postural flexion and nodding in the fentanyl era. (2026) — New PubMed papers.
-- **Why it matters:** Relevant to General surveillance.
-- **Evidence:** [PubMed — emerging drug surveillance](https://pubmed.ncbi.nlm.nih.gov/42787112/), 2026
-- **Priority score:** 7
+### Slide 5: Dexmedetomidine Use and Intensive Care Unit Admissions for Patients With Medetomidine Withdrawal.
+- **Key signal:** Dexmedetomidine Use and Intensive Care Unit Admissions for Patients With Medetomidine Withdrawal. (2026 Sep 28) — Medetomidine, New PubMed papers.
+- **Why it matters:** Relevant to Treatment providers, Harm reduction.
+- **Evidence:** [PubMed — emerging drug surveillance](https://pubmed.ncbi.nlm.nih.gov/42804171/), 2026 Sep 28
+- **Priority score:** 15
 
 ## Presenter note
 

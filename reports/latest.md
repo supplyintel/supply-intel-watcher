@@ -1,26 +1,33 @@
 # Weekly drug intelligence report
 
-**Run time:** September 28, 2026 at 19:02 UTC
+**Run time:** October 12, 2026 at 20:40 UTC
 **Sources checked:** 50
-**New relevant items:** 29
-**Source failures:** 2
+**New relevant items:** 32
+**Source failures:** 3
 
 ## Massachusetts
 
 ### New reports
 
-#### [Responding to the increase in substance use, HIV, HCV, and overdose in New England (RISE-NE): Protocol for a prospective cohort study.](https://pubmed.ncbi.nlm.nih.gov/42789600/)
+#### [Designing Community-Based, Post-Overdose Outreach Programs in Rural Settings: Insights from People with Opioid Overdose Experiences.](https://pubmed.ncbi.nlm.nih.gov/42830391/) **[Useful for: One-pager]**
 - Source: PubMed — Massachusetts overdose and drug supply
-- Published/updated: 2026
-- Relevance score: 6
-- Terms matched: overdose
-- Note: Biello KB, Bazzi AR, Dunham K, Goldman JE | PloS one
+- Published/updated: 2026 Oct 4
+- Relevance score: 9
+- Terms matched: opioid, overdose
+- Note: Moner E, McGowan K, Bartnik A, Lyons F | Substance use & misuse
 
-#### [Meeting people where they are, whenever they are here: the implementation of harm reduction programs in two U.S. emergency departments.](https://pubmed.ncbi.nlm.nih.gov/42791515/)
+#### [Differences in trajectories of fatal and nonfatal opioid overdose by race and ethnicity in the HEALing Communities Study from 2018 to 2023.](https://pubmed.ncbi.nlm.nih.gov/42843524/) **[Useful for: One-pager]**
 - Source: PubMed — Massachusetts overdose and drug supply
-- Published/updated: 2026 Sep 25
+- Published/updated: 2026 Oct 7
+- Relevance score: 9
+- Terms matched: opioid, overdose
+- Note: Goddard-Eckrich D, Chahine RA, Chandler R, Villani J | Journal of substance use and addiction treatment
+
+#### [Interstate EMS medication restocking after hospital closure: A pharmacy-led regulatory response.](https://pubmed.ncbi.nlm.nih.gov/42850969/)
+- Source: PubMed — Massachusetts overdose and drug supply
+- Published/updated: 2026 Oct 9
 - Relevance score: 4
-- Note: Weisenthal K, Strokes N, Weinstein Z, Johnson S | International journal of emergency medicine
+- Note: Morgan RR, Blinn K, Hargrave DJ | American journal of health-system pharmacy : AJHP : official journal of the American Society of Health-System Pharmacists
 
 ## Emerging substances
 
@@ -28,190 +35,263 @@
 
 #### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence) **[Useful for: One-pager]**
 - Source: NIJ NPS Discovery Research
-- Published/updated: 2026-09-28
+- Published/updated: 2026-10-12
 - Relevance score: 49
 - Terms matched: adulterant, benzodiazepine, early warning, emerging drug, fentanyl, medetomidine, metonitazene, nitazene, novel psychoactive substance, NPS, overdose, public alert, scheduling, synthetic cannabinoid, toxicology
 - Note: The watched page changed. Review the source directly before using the information.
 
-#### [Page content changed: Health Canada Opioid and Substance Surveillance](https://www.canada.ca/en/health-canada/services/opioids/data-surveillance-research.html) **[Useful for: One-pager]**
-- Source: Health Canada Opioid and Substance Surveillance
-- Published/updated: 2026-09-28
-- Relevance score: 31
-- Terms matched: benzodiazepine, fentanyl, nitazene, opioid, overdose, poisoning, stimulant, xylazine
+#### [Page content changed: NIST Rapid Drug Analysis and Research](https://www.nist.gov/programs-projects/radar) **[Useful for: One-pager]**
+- Source: NIST Rapid Drug Analysis and Research
+- Published/updated: 2026-10-12
+- Relevance score: 35
+- Terms matched: adulterant, drug checking, fentanyl, medetomidine, nitazene, opioid, overdose, synthetic opioid, xylazine
 - Note: The watched page changed. Review the source directly before using the information.
 
-#### [Protodesnitazene: The identification and tissue distribution of a new nitazene.](https://pubmed.ncbi.nlm.nih.gov/42798250/)
+#### [Diagnosis and Management of Nitazene Dependence in Sydney, Australia: A Case Series.](https://pubmed.ncbi.nlm.nih.gov/42850819/)
 - Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 26
+- Published/updated: 2026 Nov
 - Relevance score: 6
 - Terms matched: nitazene
-- Note: Griffiths A, Milne N, Johnston M, Blakey K | Journal of forensic sciences
+- Note: Dutkiewicz D, Wilson H, Chisholm P, Jiranantakan T | Drug and alcohol review
 
 ### Medetomidine
 
 #### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence) **[Useful for: One-pager]**
 - Source: NIJ NPS Discovery Research
-- Published/updated: 2026-09-28
+- Published/updated: 2026-10-12
 - Relevance score: 49
 - Terms matched: adulterant, benzodiazepine, early warning, emerging drug, fentanyl, medetomidine, metonitazene, nitazene, novel psychoactive substance, NPS, overdose, public alert, scheduling, synthetic cannabinoid, toxicology
 - Note: The watched page changed. Review the source directly before using the information.
 
-#### [EXPRESS: EFFECTS OF INTRAMUSCULAR AND INTRANASAL ADMINISTRATION OF MEDETOMIDINE ON SEDATION AND SOME CARDIOPULMONARY VARIABLES IN HEALTHY CATS.](https://pubmed.ncbi.nlm.nih.gov/42768427/)
+#### [Page content changed: NIST Rapid Drug Analysis and Research](https://www.nist.gov/programs-projects/radar) **[Useful for: One-pager]**
+- Source: NIST Rapid Drug Analysis and Research
+- Published/updated: 2026-10-12
+- Relevance score: 35
+- Terms matched: adulterant, drug checking, fentanyl, medetomidine, nitazene, opioid, overdose, synthetic opioid, xylazine
+- Note: The watched page changed. Review the source directly before using the information.
+
+#### [The effects of fentanyl and dexmedetomidine on cardiorespiratory activity: implications for morbidity and mortality associated with adulterated fentanyl products.](https://pubmed.ncbi.nlm.nih.gov/42824617/) **[Useful for: Presentation, One-pager]**
 - Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 21
+- Published/updated: 2026
+- Relevance score: 16
+- Terms matched: dexmedetomidine, fentanyl, medetomidine, mortality
+- Note: Smith MA, Thomas EM, Hockett SG, Folger KJ | Frontiers in pharmacology
+
+#### [Dexmedetomidine Use and Intensive Care Unit Admissions for Patients With Medetomidine Withdrawal.](https://pubmed.ncbi.nlm.nih.gov/42804171/) **[Useful for: Presentation, One-pager]**
+- Source: PubMed — emerging drug surveillance
+- Published/updated: 2026 Sep 28
+- Relevance score: 11
+- Terms matched: dexmedetomidine, medetomidine
+- Note: Boyce TG, Thakrar AP, Durkin BR, Casey ER | JAMA internal medicine
+
+#### [Managing the Hospital Capacity Challenges of Medetomidine Withdrawal: A Retrospective Report of Dexmedetomidine Use in Intermediate Care Units.](https://pubmed.ncbi.nlm.nih.gov/42860369/) **[Useful for: Presentation, One-pager]**
+- Source: PubMed — emerging drug surveillance
+- Published/updated: 2026 Oct 9
+- Relevance score: 11
+- Terms matched: dexmedetomidine, medetomidine
+- Note: Durney PA, Goodstein D, Paquin E, Fitzpatrick G | Journal of addiction medicine
+
+#### [Clinical progress note: Management of the hospitalized patient with medetomidine withdrawal.](https://pubmed.ncbi.nlm.nih.gov/42811689/)
+- Source: PubMed — emerging drug surveillance
+- Published/updated: 2026 Sep 29
 - Relevance score: 6
 - Terms matched: medetomidine
-- Note: Sarra Ferrer M, Faucher S, Didier C, Giry M | Journal of feline medicine and surgery
+- Note: Caulkins RC, Lawson MR, Previtera M, Chan CA | Journal of hospital medicine
 
 ### Xylazine
 
-#### [Page content changed: Health Canada Opioid and Substance Surveillance](https://www.canada.ca/en/health-canada/services/opioids/data-surveillance-research.html) **[Useful for: One-pager]**
-- Source: Health Canada Opioid and Substance Surveillance
-- Published/updated: 2026-09-28
-- Relevance score: 31
-- Terms matched: benzodiazepine, fentanyl, nitazene, opioid, overdose, poisoning, stimulant, xylazine
+#### [Page content changed: NIST Rapid Drug Analysis and Research](https://www.nist.gov/programs-projects/radar) **[Useful for: One-pager]**
+- Source: NIST Rapid Drug Analysis and Research
+- Published/updated: 2026-10-12
+- Relevance score: 35
+- Terms matched: adulterant, drug checking, fentanyl, medetomidine, nitazene, opioid, overdose, synthetic opioid, xylazine
 - Note: The watched page changed. Review the source directly before using the information.
 
-#### [Page content changed: Wisconsin Drug Checking Technologies](https://www.dhs.wisconsin.gov/aoda/drug-checking.htm) **[Useful for: One-pager]**
-- Source: Wisconsin Drug Checking Technologies
-- Published/updated: 2026-09-28
-- Relevance score: 22
-- Terms matched: drug checking, fentanyl, methamphetamine, opioid, overdose, xylazine
-- Note: The watched page changed. Review the source directly before using the information.
-
-### Novel stimulants
-
-#### [Multiorgan toxicity of 3-Chloromethcathinone (3-CMC) in male and female mice: translational implications for liver, kidney, and spleen.](https://pubmed.ncbi.nlm.nih.gov/42778126/)
+#### [Xylazine Reshapes the Sleep and Respiratory Consequences of Chronic Fentanyl Exposure in a Sex-Dependent Manner.](https://pubmed.ncbi.nlm.nih.gov/42818621/) **[Useful for: Presentation, One-pager]**
 - Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 23
-- Relevance score: 4
-- Terms matched: cathinone
-- Note: De Luca F, Venuti MT, Bassi M, Bilel S | Toxicology
+- Published/updated: 2026 Sep 8
+- Relevance score: 9
+- Terms matched: fentanyl, xylazine
+- Note: Gamble MC, Vilca SJ, Williams BR, Guidon G | bioRxiv : the preprint server for biology
+
+#### ["You Do What You Have To Do": Risk Environments in Xylazine Wound Care.](https://pubmed.ncbi.nlm.nih.gov/42851032/)
+- Source: PubMed — emerging drug surveillance
+- Published/updated: 2026 Oct 8
+- Relevance score: 6
+- Terms matched: xylazine
+- Note: Studnicki O, Shang M, Hull I, Schultz K | Substance use & addiction journal
 
 ### Synthetic cannabinoids
 
 #### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence) **[Useful for: One-pager]**
 - Source: NIJ NPS Discovery Research
-- Published/updated: 2026-09-28
+- Published/updated: 2026-10-12
 - Relevance score: 49
 - Terms matched: adulterant, benzodiazepine, early warning, emerging drug, fentanyl, medetomidine, metonitazene, nitazene, novel psychoactive substance, NPS, overdose, public alert, scheduling, synthetic cannabinoid, toxicology
 - Note: The watched page changed. Review the source directly before using the information.
 
 #### [Page content changed: NIJ NPS Discovery Trend Reports](https://nij.ojp.gov/library/publications/nps-discovery-q3-2025-trend-reports-nps-benzodiazepines-nps-opioids-nps) **[Useful for: One-pager]**
 - Source: NIJ NPS Discovery Trend Reports
-- Published/updated: 2026-09-28
+- Published/updated: 2026-10-12
 - Relevance score: 23
 - Terms matched: benzodiazepine, novel psychoactive substance, NPS, opioid, stimulant, synthetic cannabinoid
+- Note: The watched page changed. Review the source directly before using the information.
+
+#### [Page content changed: WHO Expert Committee on Drug Dependence](https://www.who.int/groups/ecdd) **[Useful for: One-pager]**
+- Source: WHO Expert Committee on Drug Dependence
+- Published/updated: 2026-10-12
+- Relevance score: 10
+- Terms matched: NPS, synthetic cannabinoid
 - Note: The watched page changed. Review the source directly before using the information.
 
 ## Research
 
 ### New PubMed papers
 
-#### [The opioid flexion phenotype: postural flexion and nodding in the fentanyl era.](https://pubmed.ncbi.nlm.nih.gov/42787112/) **[Useful for: One-pager]**
+#### [Dexmedetomidine Use and Intensive Care Unit Admissions for Patients With Medetomidine Withdrawal.](https://pubmed.ncbi.nlm.nih.gov/42804171/) **[Useful for: Presentation, One-pager]**
 - Source: PubMed — emerging drug surveillance
-- Published/updated: 2026
-- Relevance score: 7
-- Terms matched: fentanyl, opioid
-- Note: Albert OM, Aboud H, Arthur A, Orukpe IO | Frontiers in neuroscience
+- Published/updated: 2026 Sep 28
+- Relevance score: 11
+- Terms matched: dexmedetomidine, medetomidine
+- Note: Boyce TG, Thakrar AP, Durkin BR, Casey ER | JAMA internal medicine
 
-#### [Responding to the increase in substance use, HIV, HCV, and overdose in New England (RISE-NE): Protocol for a prospective cohort study.](https://pubmed.ncbi.nlm.nih.gov/42789600/)
+#### [Managing the Hospital Capacity Challenges of Medetomidine Withdrawal: A Retrospective Report of Dexmedetomidine Use in Intermediate Care Units.](https://pubmed.ncbi.nlm.nih.gov/42860369/) **[Useful for: Presentation, One-pager]**
+- Source: PubMed — emerging drug surveillance
+- Published/updated: 2026 Oct 9
+- Relevance score: 11
+- Terms matched: dexmedetomidine, medetomidine
+- Note: Durney PA, Goodstein D, Paquin E, Fitzpatrick G | Journal of addiction medicine
+
+#### [Designing Community-Based, Post-Overdose Outreach Programs in Rural Settings: Insights from People with Opioid Overdose Experiences.](https://pubmed.ncbi.nlm.nih.gov/42830391/) **[Useful for: One-pager]**
 - Source: PubMed — Massachusetts overdose and drug supply
-- Published/updated: 2026
-- Relevance score: 6
-- Terms matched: overdose
-- Note: Biello KB, Bazzi AR, Dunham K, Goldman JE | PloS one
+- Published/updated: 2026 Oct 4
+- Relevance score: 9
+- Terms matched: opioid, overdose
+- Note: Moner E, McGowan K, Bartnik A, Lyons F | Substance use & misuse
 
-#### [EXPRESS: EFFECTS OF INTRAMUSCULAR AND INTRANASAL ADMINISTRATION OF MEDETOMIDINE ON SEDATION AND SOME CARDIOPULMONARY VARIABLES IN HEALTHY CATS.](https://pubmed.ncbi.nlm.nih.gov/42768427/)
+#### [Xylazine Reshapes the Sleep and Respiratory Consequences of Chronic Fentanyl Exposure in a Sex-Dependent Manner.](https://pubmed.ncbi.nlm.nih.gov/42818621/) **[Useful for: Presentation, One-pager]**
 - Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 21
+- Published/updated: 2026 Sep 8
+- Relevance score: 9
+- Terms matched: fentanyl, xylazine
+- Note: Gamble MC, Vilca SJ, Williams BR, Guidon G | bioRxiv : the preprint server for biology
+
+#### ["You Do What You Have To Do": Risk Environments in Xylazine Wound Care.](https://pubmed.ncbi.nlm.nih.gov/42851032/)
+- Source: PubMed — emerging drug surveillance
+- Published/updated: 2026 Oct 8
+- Relevance score: 6
+- Terms matched: xylazine
+- Note: Studnicki O, Shang M, Hull I, Schultz K | Substance use & addiction journal
+
+#### [Clinical progress note: Management of the hospitalized patient with medetomidine withdrawal.](https://pubmed.ncbi.nlm.nih.gov/42811689/)
+- Source: PubMed — emerging drug surveillance
+- Published/updated: 2026 Sep 29
 - Relevance score: 6
 - Terms matched: medetomidine
-- Note: Sarra Ferrer M, Faucher S, Didier C, Giry M | Journal of feline medicine and surgery
+- Note: Caulkins RC, Lawson MR, Previtera M, Chan CA | Journal of hospital medicine
 
-#### [Protodesnitazene: The identification and tissue distribution of a new nitazene.](https://pubmed.ncbi.nlm.nih.gov/42798250/)
+#### [Diagnosis and Management of Nitazene Dependence in Sydney, Australia: A Case Series.](https://pubmed.ncbi.nlm.nih.gov/42850819/)
 - Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 26
+- Published/updated: 2026 Nov
 - Relevance score: 6
 - Terms matched: nitazene
-- Note: Griffiths A, Milne N, Johnston M, Blakey K | Journal of forensic sciences
+- Note: Dutkiewicz D, Wilson H, Chisholm P, Jiranantakan T | Drug and alcohol review
 
-#### [Meeting people where they are, whenever they are here: the implementation of harm reduction programs in two U.S. emergency departments.](https://pubmed.ncbi.nlm.nih.gov/42791515/)
+#### [Trends in Fentanyl Adulteration From Rapid Drug Analysis and Research (RaDAR) Drug Checking Samples, January 2024 to June 2026.](https://pubmed.ncbi.nlm.nih.gov/42844883/)
+- Source: PubMed — emerging drug surveillance
+- Published/updated: 2026 Oct 7
+- Relevance score: 6
+- Terms matched: drug checking, fentanyl
+- Note: Sisco E, Pyfrom EM, Appley MG, Robinson EL | Drug testing and analysis
+
+#### [Interstate EMS medication restocking after hospital closure: A pharmacy-led regulatory response.](https://pubmed.ncbi.nlm.nih.gov/42850969/)
 - Source: PubMed — Massachusetts overdose and drug supply
-- Published/updated: 2026 Sep 25
+- Published/updated: 2026 Oct 9
 - Relevance score: 4
-- Note: Weisenthal K, Strokes N, Weinstein Z, Johnson S | International journal of emergency medicine
+- Note: Morgan RR, Blinn K, Hargrave DJ | American journal of health-system pharmacy : AJHP : official journal of the American Society of Health-System Pharmacists
 
-#### [Multiorgan toxicity of 3-Chloromethcathinone (3-CMC) in male and female mice: translational implications for liver, kidney, and spleen.](https://pubmed.ncbi.nlm.nih.gov/42778126/)
+#### [Infections and the Opioid Epidemic: Changing Epidemiology and Treatment Options.](https://pubmed.ncbi.nlm.nih.gov/42830379/)
 - Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 23
-- Relevance score: 4
-- Terms matched: cathinone
-- Note: De Luca F, Venuti MT, Bassi M, Bilel S | Toxicology
-
-#### [The evolving epidemiology of opioid use disorder: polysubstance use, drug supply transformation, and policy implications.](https://pubmed.ncbi.nlm.nih.gov/42781535/)
-- Source: PubMed — emerging drug surveillance
-- Published/updated: 2026
+- Published/updated: 2026 Oct 4
 - Relevance score: 4
 - Terms matched: opioid
-- Note: Mandapati NK, Tovar DC, Bindlish R, Hernandez YL | Frontiers in public health
+- Note: Fanucchi LC, Eaton E, Van Sickels N, Lofwall MR | Drugs
 
-#### [Concordance Analysis and Proficiency Testing Are Complementary, Not Interchangeable, in Drug Checking Technician Competency.](https://pubmed.ncbi.nlm.nih.gov/42778288/)
+#### [A Quantitative Analysis of Street-Level Drugs Seized in New South Wales, Australia: Purity, Dose and Adulterants.](https://pubmed.ncbi.nlm.nih.gov/42810992/)
 - Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep
+- Published/updated: 2026 Nov
 - Relevance score: 3
-- Terms matched: drug checking
-- Note: Tobias S | Drug and alcohol review
+- Terms matched: adulterant
+- Note: Smith JL, Harvey CA, NSW Police Force, Ewers CJ | Drug and alcohol review
 
-#### [Feasibility, acceptability, and impacts of a drug checking service within a supervised consumption site in Sydney, Australia.](https://pubmed.ncbi.nlm.nih.gov/42767087/)
+#### [Feasibility of Field Oral Health Assessment in Free-Ranging Rhesus Macaques (Macaca mulatta) on Cayo Santiago.](https://pubmed.ncbi.nlm.nih.gov/42831491/)
 - Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 21
-- Relevance score: 3
-- Terms matched: drug checking
-- Note: Page R, Kevin RC, Kowalski M, Nielsen S | The International journal on drug policy
-
-#### [Perioperative Pain in the Era of Emerging and Unregulated Substances: Recognition, Risk Assessment, and Management.](https://pubmed.ncbi.nlm.nih.gov/42766064/)
-- Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 21
+- Published/updated: 2026 Oct
 - Relevance score: 1
-- Note: Hong A, Okundaye A, Shapiro FE | Current pain and headache reports
+- Note: An JY, Hudson J, Nordlie A, O'Donnell R | American journal of primatology
 
-#### [Reconsidering the Alberta study of the closure of the Red Deer supervised consumption site.](https://pubmed.ncbi.nlm.nih.gov/42800212/)
+#### [Harm reduction vending machines as safer supply-supporting infrastructure.](https://pubmed.ncbi.nlm.nih.gov/42840548/)
 - Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 26
+- Published/updated: 2026
 - Relevance score: 1
-- Note: Kerr T, Bogosavljević K, Hyshka E, Karamouzian M | The International journal on drug policy
+- Note: Rife-Pennington T | Frontiers in psychiatry
 
-#### [The 5 Senses Framework-People Who Use Drugs Were and Are the First Drug Checkers.](https://pubmed.ncbi.nlm.nih.gov/42775647/)
+#### [Rapid chemical profiling of ecstasy tablets using portable near-infrared spectroscopy for forensic intelligence and early response applications.](https://pubmed.ncbi.nlm.nih.gov/42858513/)
 - Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 23
+- Published/updated: 2026 Oct 8
 - Relevance score: 1
-- Note: Hill K, Znamierowski E, Breen C, Rose R | Substance use & addiction journal
+- Note: Charest M, Gianola E, Jaquet L, Esseiva P | Forensic science international
+
+#### [The Kush Drug Epidemic in Sierra Leone: Public Health Implications, Socioeconomic Drivers and Health System Responses.](https://pubmed.ncbi.nlm.nih.gov/42812835/)
+- Source: PubMed — emerging drug surveillance
+- Published/updated: 2026 Dec
+- Relevance score: 1
+- Note: Turay A, Vandy A, Adebayo UO, Kolipha-Kamara MI | Public health challenges
 
 ### Toxicology case reports
 
-#### [Pharmacogenetic Evidence in Opioid-Related Toxicity and Death with an Appraisal of Emerging Multi-Omics Studies: A Systematic Review.](https://pubmed.ncbi.nlm.nih.gov/42794759/)
+#### [Pulmonary Arterial Hypertension Associated With Chronic Mephedrone Use: A Case Report.](https://pubmed.ncbi.nlm.nih.gov/42824527/)
 - Source: PubMed — forensic toxicology case reports
-- Published/updated: 2026 Sep 19
-- Relevance score: 5
-- Terms matched: opioid
-- Note: D'Anna T, Montana A, La Magna G, Piraino M | International journal of molecular sciences
+- Published/updated: 2026 Oct
+- Relevance score: 2
+- Note: Kashoub M, Plunkett M, Nashat H, Dimopoulos K | Pulmonary circulation
 
 ### Mortality studies
 
-#### [Clinical Characteristics and Treatment Outcomes Among Patients with Fentanyl-Positive Urine Drug Screening in Inpatient Detoxification and Rehabilitation.](https://pubmed.ncbi.nlm.nih.gov/42789416/)
-- Source: PubMed — overdose mortality studies
-- Published/updated: 2026 Sep 25
-- Relevance score: 5
-- Terms matched: fentanyl
-- Note: Lynch ST, Stevens K, Fletes W, McManus K | Substance use & misuse
-
-#### [Pharmacogenetic Evidence in Opioid-Related Toxicity and Death with an Appraisal of Emerging Multi-Omics Studies: A Systematic Review.](https://pubmed.ncbi.nlm.nih.gov/42794759/)
+#### [The effects of fentanyl and dexmedetomidine on cardiorespiratory activity: implications for morbidity and mortality associated with adulterated fentanyl products.](https://pubmed.ncbi.nlm.nih.gov/42824617/) **[Useful for: Presentation, One-pager]**
 - Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 19
-- Relevance score: 4
+- Published/updated: 2026
+- Relevance score: 16
+- Terms matched: dexmedetomidine, fentanyl, medetomidine, mortality
+- Note: Smith MA, Thomas EM, Hockett SG, Folger KJ | Frontiers in pharmacology
+
+#### [Declines in stimulant-involved overdose mortality occurred only with fentanyl co-involvement, United States, 2023-2024.](https://pubmed.ncbi.nlm.nih.gov/42830002/) **[Useful for: Presentation, One-pager]**
+- Source: PubMed — overdose mortality studies
+- Published/updated: 2026 Aug 12
+- Relevance score: 12
+- Terms matched: fentanyl, mortality, overdose, stimulant
+- Note: Busch DA | Drug and alcohol dependence
+
+#### [Differences in trajectories of fatal and nonfatal opioid overdose by race and ethnicity in the HEALing Communities Study from 2018 to 2023.](https://pubmed.ncbi.nlm.nih.gov/42843524/) **[Useful for: One-pager]**
+- Source: PubMed — Massachusetts overdose and drug supply
+- Published/updated: 2026 Oct 7
+- Relevance score: 9
+- Terms matched: opioid, overdose
+- Note: Goddard-Eckrich D, Chahine RA, Chandler R, Villani J | Journal of substance use and addiction treatment
+
+#### [Survival After Hospitalization in Patients with Opioid Use Disorder: Impact of Medications for Opioid Use Disorder.](https://pubmed.ncbi.nlm.nih.gov/42831747/)
+- Source: PubMed — overdose mortality studies
+- Published/updated: 2026 Oct 5
+- Relevance score: 5
 - Terms matched: opioid
-- Note: D'Anna T, Montana A, La Magna G, Piraino M | International journal of molecular sciences
+- Note: Wang SJ, Bohner C, Stanford E, Deshpande A | Substance use & misuse
+
+#### [Drug-related mortality in the United Kingdom: trends, inequalities, and changing substance patterns.](https://pubmed.ncbi.nlm.nih.gov/42804805/)
+- Source: PubMed — emerging drug surveillance
+- Published/updated: 2026 Sep 28
+- Relevance score: 3
+- Terms matched: mortality
+- Note: Vincent-Mistiaen ZI, Heneghan CJ | The International journal on drug policy
 
 ## Implications
 
@@ -219,274 +299,420 @@
 
 #### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence) **[Useful for: One-pager]**
 - Source: NIJ NPS Discovery Research
-- Published/updated: 2026-09-28
+- Published/updated: 2026-10-12
 - Relevance score: 49
 - Terms matched: adulterant, benzodiazepine, early warning, emerging drug, fentanyl, medetomidine, metonitazene, nitazene, novel psychoactive substance, NPS, overdose, public alert, scheduling, synthetic cannabinoid, toxicology
 - Why it may matter: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
 - Note: The watched page changed. Review the source directly before using the information.
 
-#### [Page content changed: Health Canada Opioid and Substance Surveillance](https://www.canada.ca/en/health-canada/services/opioids/data-surveillance-research.html) **[Useful for: One-pager]**
-- Source: Health Canada Opioid and Substance Surveillance
-- Published/updated: 2026-09-28
-- Relevance score: 31
-- Terms matched: benzodiazepine, fentanyl, nitazene, opioid, overdose, poisoning, stimulant, xylazine
+#### [Page content changed: NIST Rapid Drug Analysis and Research](https://www.nist.gov/programs-projects/radar) **[Useful for: One-pager]**
+- Source: NIST Rapid Drug Analysis and Research
+- Published/updated: 2026-10-12
+- Relevance score: 35
+- Terms matched: adulterant, drug checking, fentanyl, medetomidine, nitazene, opioid, overdose, synthetic opioid, xylazine
 - Why it may matter: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
 - Note: The watched page changed. Review the source directly before using the information.
 
-#### [Page content changed: Wisconsin Drug Checking Technologies](https://www.dhs.wisconsin.gov/aoda/drug-checking.htm) **[Useful for: One-pager]**
-- Source: Wisconsin Drug Checking Technologies
-- Published/updated: 2026-09-28
-- Relevance score: 22
-- Terms matched: drug checking, fentanyl, methamphetamine, opioid, overdose, xylazine
+#### [Page content changed: CDC DOSE-SYS Nonfatal Overdose Dashboard](https://www.cdc.gov/overdose-prevention/data-research/facts-stats/dose-dashboard-nonfatal-surveillance-data.html)
+- Source: CDC DOSE-SYS Nonfatal Overdose Dashboard
+- Published/updated: 2026-10-12
+- Relevance score: 27
+- Terms matched: benzodiazepine, fentanyl, methamphetamine, naloxone, opioid, overdose, poisoning, stimulant
 - Why it may matter: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
 - Note: The watched page changed. Review the source directly before using the information.
 
 #### [Page content changed: Vermont Substance Use Data and Reports](https://www.healthvermont.gov/alcohol-drugs/substance-use-data-reports/data-and-reports)
 - Source: Vermont Substance Use Data and Reports
-- Published/updated: 2026-09-28
+- Published/updated: 2026-10-12
 - Relevance score: 19
 - Terms matched: drug checking, naloxone, opioid, overdose, poisoning, stimulant
 - Why it may matter: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
 - Note: The watched page changed. Review the source directly before using the information.
 
-#### [Responding to the increase in substance use, HIV, HCV, and overdose in New England (RISE-NE): Protocol for a prospective cohort study.](https://pubmed.ncbi.nlm.nih.gov/42789600/)
-- Source: PubMed — Massachusetts overdose and drug supply
+#### [The effects of fentanyl and dexmedetomidine on cardiorespiratory activity: implications for morbidity and mortality associated with adulterated fentanyl products.](https://pubmed.ncbi.nlm.nih.gov/42824617/) **[Useful for: Presentation, One-pager]**
+- Source: PubMed — emerging drug surveillance
 - Published/updated: 2026
-- Relevance score: 6
-- Terms matched: overdose
+- Relevance score: 16
+- Terms matched: dexmedetomidine, fentanyl, medetomidine, mortality
 - Why it may matter: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
-- Note: Biello KB, Bazzi AR, Dunham K, Goldman JE | PloS one
+- Note: Smith MA, Thomas EM, Hockett SG, Folger KJ | Frontiers in pharmacology
 
-#### [Pharmacogenetic Evidence in Opioid-Related Toxicity and Death with an Appraisal of Emerging Multi-Omics Studies: A Systematic Review.](https://pubmed.ncbi.nlm.nih.gov/42794759/)
-- Source: PubMed — forensic toxicology case reports
-- Published/updated: 2026 Sep 19
-- Relevance score: 5
-- Terms matched: opioid
-- Why it may matter: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
-- Note: D'Anna T, Montana A, La Magna G, Piraino M | International journal of molecular sciences
-
-#### [Clinical Characteristics and Treatment Outcomes Among Patients with Fentanyl-Positive Urine Drug Screening in Inpatient Detoxification and Rehabilitation.](https://pubmed.ncbi.nlm.nih.gov/42789416/)
+#### [Declines in stimulant-involved overdose mortality occurred only with fentanyl co-involvement, United States, 2023-2024.](https://pubmed.ncbi.nlm.nih.gov/42830002/) **[Useful for: Presentation, One-pager]**
 - Source: PubMed — overdose mortality studies
-- Published/updated: 2026 Sep 25
-- Relevance score: 5
-- Terms matched: fentanyl
+- Published/updated: 2026 Aug 12
+- Relevance score: 12
+- Terms matched: fentanyl, mortality, overdose, stimulant
 - Why it may matter: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
-- Note: Lynch ST, Stevens K, Fletes W, McManus K | Substance use & misuse
+- Note: Busch DA | Drug and alcohol dependence
 
-#### [Meeting people where they are, whenever they are here: the implementation of harm reduction programs in two U.S. emergency departments.](https://pubmed.ncbi.nlm.nih.gov/42791515/)
+#### [Designing Community-Based, Post-Overdose Outreach Programs in Rural Settings: Insights from People with Opioid Overdose Experiences.](https://pubmed.ncbi.nlm.nih.gov/42830391/) **[Useful for: One-pager]**
 - Source: PubMed — Massachusetts overdose and drug supply
-- Published/updated: 2026 Sep 25
-- Relevance score: 4
+- Published/updated: 2026 Oct 4
+- Relevance score: 9
+- Terms matched: opioid, overdose
 - Why it may matter: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
-- Note: Weisenthal K, Strokes N, Weinstein Z, Johnson S | International journal of emergency medicine
+- Note: Moner E, McGowan K, Bartnik A, Lyons F | Substance use & misuse
 
-#### [Multiorgan toxicity of 3-Chloromethcathinone (3-CMC) in male and female mice: translational implications for liver, kidney, and spleen.](https://pubmed.ncbi.nlm.nih.gov/42778126/)
-- Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 23
-- Relevance score: 4
-- Terms matched: cathinone
+#### [Differences in trajectories of fatal and nonfatal opioid overdose by race and ethnicity in the HEALing Communities Study from 2018 to 2023.](https://pubmed.ncbi.nlm.nih.gov/42843524/) **[Useful for: One-pager]**
+- Source: PubMed — Massachusetts overdose and drug supply
+- Published/updated: 2026 Oct 7
+- Relevance score: 9
+- Terms matched: opioid, overdose
 - Why it may matter: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
-- Note: De Luca F, Venuti MT, Bassi M, Bilel S | Toxicology
+- Note: Goddard-Eckrich D, Chahine RA, Chandler R, Villani J | Journal of substance use and addiction treatment
 
-#### [Pharmacogenetic Evidence in Opioid-Related Toxicity and Death with an Appraisal of Emerging Multi-Omics Studies: A Systematic Review.](https://pubmed.ncbi.nlm.nih.gov/42794759/)
+#### [September 2026 – China introduces class scheduling of orphine analogues](https://www.unodc.org/LSS/Announcement/Details/b83bbce5-7445-4b69-91f5-c4fddd0d134d)
+- Source: UNODC Early Warning Advisory
+- Relevance score: 7
+- Terms matched: scheduling
+- Why it may matter: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
+- Note: September 2026 – China introduces class scheduling of orphine analogues
+
+#### [Trends in Fentanyl Adulteration From Rapid Drug Analysis and Research (RaDAR) Drug Checking Samples, January 2024 to June 2026.](https://pubmed.ncbi.nlm.nih.gov/42844883/)
 - Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 19
-- Relevance score: 4
+- Published/updated: 2026 Oct 7
+- Relevance score: 6
+- Terms matched: drug checking, fentanyl
+- Why it may matter: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
+- Note: Sisco E, Pyfrom EM, Appley MG, Robinson EL | Drug testing and analysis
+
+#### [Survival After Hospitalization in Patients with Opioid Use Disorder: Impact of Medications for Opioid Use Disorder.](https://pubmed.ncbi.nlm.nih.gov/42831747/)
+- Source: PubMed — overdose mortality studies
+- Published/updated: 2026 Oct 5
+- Relevance score: 5
 - Terms matched: opioid
 - Why it may matter: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
-- Note: D'Anna T, Montana A, La Magna G, Piraino M | International journal of molecular sciences
+- Note: Wang SJ, Bohner C, Stanford E, Deshpande A | Substance use & misuse
 
-#### [Concordance Analysis and Proficiency Testing Are Complementary, Not Interchangeable, in Drug Checking Technician Competency.](https://pubmed.ncbi.nlm.nih.gov/42778288/)
-- Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep
-- Relevance score: 3
-- Terms matched: drug checking
+#### [Interstate EMS medication restocking after hospital closure: A pharmacy-led regulatory response.](https://pubmed.ncbi.nlm.nih.gov/42850969/)
+- Source: PubMed — Massachusetts overdose and drug supply
+- Published/updated: 2026 Oct 9
+- Relevance score: 4
 - Why it may matter: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
-- Note: Tobias S | Drug and alcohol review
+- Note: Morgan RR, Blinn K, Hargrave DJ | American journal of health-system pharmacy : AJHP : official journal of the American Society of Health-System Pharmacists
 
-#### [Feasibility, acceptability, and impacts of a drug checking service within a supervised consumption site in Sydney, Australia.](https://pubmed.ncbi.nlm.nih.gov/42767087/)
+#### [Drug-related mortality in the United Kingdom: trends, inequalities, and changing substance patterns.](https://pubmed.ncbi.nlm.nih.gov/42804805/)
 - Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 21
+- Published/updated: 2026 Sep 28
 - Relevance score: 3
-- Terms matched: drug checking
+- Terms matched: mortality
 - Why it may matter: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
-- Note: Page R, Kevin RC, Kowalski M, Nielsen S | The International journal on drug policy
+- Note: Vincent-Mistiaen ZI, Heneghan CJ | The International journal on drug policy
+
+#### [Pulmonary Arterial Hypertension Associated With Chronic Mephedrone Use: A Case Report.](https://pubmed.ncbi.nlm.nih.gov/42824527/)
+- Source: PubMed — forensic toxicology case reports
+- Published/updated: 2026 Oct
+- Relevance score: 2
+- Why it may matter: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
+- Note: Kashoub M, Plunkett M, Nashat H, Dimopoulos K | Pulmonary circulation
 
 ### Treatment providers
 
 #### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence) **[Useful for: One-pager]**
 - Source: NIJ NPS Discovery Research
-- Published/updated: 2026-09-28
+- Published/updated: 2026-10-12
 - Relevance score: 49
 - Terms matched: adulterant, benzodiazepine, early warning, emerging drug, fentanyl, medetomidine, metonitazene, nitazene, novel psychoactive substance, NPS, overdose, public alert, scheduling, synthetic cannabinoid, toxicology
 - Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
 - Note: The watched page changed. Review the source directly before using the information.
 
-#### [Page content changed: Health Canada Opioid and Substance Surveillance](https://www.canada.ca/en/health-canada/services/opioids/data-surveillance-research.html) **[Useful for: One-pager]**
-- Source: Health Canada Opioid and Substance Surveillance
-- Published/updated: 2026-09-28
-- Relevance score: 31
-- Terms matched: benzodiazepine, fentanyl, nitazene, opioid, overdose, poisoning, stimulant, xylazine
+#### [Page content changed: NIST Rapid Drug Analysis and Research](https://www.nist.gov/programs-projects/radar) **[Useful for: One-pager]**
+- Source: NIST Rapid Drug Analysis and Research
+- Published/updated: 2026-10-12
+- Relevance score: 35
+- Terms matched: adulterant, drug checking, fentanyl, medetomidine, nitazene, opioid, overdose, synthetic opioid, xylazine
+- Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
+- Note: The watched page changed. Review the source directly before using the information.
+
+#### [Page content changed: CDC DOSE-SYS Nonfatal Overdose Dashboard](https://www.cdc.gov/overdose-prevention/data-research/facts-stats/dose-dashboard-nonfatal-surveillance-data.html)
+- Source: CDC DOSE-SYS Nonfatal Overdose Dashboard
+- Published/updated: 2026-10-12
+- Relevance score: 27
+- Terms matched: benzodiazepine, fentanyl, methamphetamine, naloxone, opioid, overdose, poisoning, stimulant
 - Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
 - Note: The watched page changed. Review the source directly before using the information.
 
 #### [Page content changed: NIJ NPS Discovery Trend Reports](https://nij.ojp.gov/library/publications/nps-discovery-q3-2025-trend-reports-nps-benzodiazepines-nps-opioids-nps) **[Useful for: One-pager]**
 - Source: NIJ NPS Discovery Trend Reports
-- Published/updated: 2026-09-28
+- Published/updated: 2026-10-12
 - Relevance score: 23
 - Terms matched: benzodiazepine, novel psychoactive substance, NPS, opioid, stimulant, synthetic cannabinoid
 - Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
 - Note: The watched page changed. Review the source directly before using the information.
 
-#### [Page content changed: Wisconsin Drug Checking Technologies](https://www.dhs.wisconsin.gov/aoda/drug-checking.htm) **[Useful for: One-pager]**
-- Source: Wisconsin Drug Checking Technologies
-- Published/updated: 2026-09-28
-- Relevance score: 22
-- Terms matched: drug checking, fentanyl, methamphetamine, opioid, overdose, xylazine
-- Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
-- Note: The watched page changed. Review the source directly before using the information.
-
 #### [Page content changed: Vermont Substance Use Data and Reports](https://www.healthvermont.gov/alcohol-drugs/substance-use-data-reports/data-and-reports)
 - Source: Vermont Substance Use Data and Reports
-- Published/updated: 2026-09-28
+- Published/updated: 2026-10-12
 - Relevance score: 19
 - Terms matched: drug checking, naloxone, opioid, overdose, poisoning, stimulant
 - Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
 - Note: The watched page changed. Review the source directly before using the information.
 
-#### [Responding to the increase in substance use, HIV, HCV, and overdose in New England (RISE-NE): Protocol for a prospective cohort study.](https://pubmed.ncbi.nlm.nih.gov/42789600/)
-- Source: PubMed — Massachusetts overdose and drug supply
-- Published/updated: 2026
-- Relevance score: 6
-- Terms matched: overdose
-- Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
-- Note: Biello KB, Bazzi AR, Dunham K, Goldman JE | PloS one
-
-#### [EXPRESS: EFFECTS OF INTRAMUSCULAR AND INTRANASAL ADMINISTRATION OF MEDETOMIDINE ON SEDATION AND SOME CARDIOPULMONARY VARIABLES IN HEALTHY CATS.](https://pubmed.ncbi.nlm.nih.gov/42768427/)
+#### [The effects of fentanyl and dexmedetomidine on cardiorespiratory activity: implications for morbidity and mortality associated with adulterated fentanyl products.](https://pubmed.ncbi.nlm.nih.gov/42824617/) **[Useful for: Presentation, One-pager]**
 - Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 21
+- Published/updated: 2026
+- Relevance score: 16
+- Terms matched: dexmedetomidine, fentanyl, medetomidine, mortality
+- Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
+- Note: Smith MA, Thomas EM, Hockett SG, Folger KJ | Frontiers in pharmacology
+
+#### [Declines in stimulant-involved overdose mortality occurred only with fentanyl co-involvement, United States, 2023-2024.](https://pubmed.ncbi.nlm.nih.gov/42830002/) **[Useful for: Presentation, One-pager]**
+- Source: PubMed — overdose mortality studies
+- Published/updated: 2026 Aug 12
+- Relevance score: 12
+- Terms matched: fentanyl, mortality, overdose, stimulant
+- Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
+- Note: Busch DA | Drug and alcohol dependence
+
+#### [Dexmedetomidine Use and Intensive Care Unit Admissions for Patients With Medetomidine Withdrawal.](https://pubmed.ncbi.nlm.nih.gov/42804171/) **[Useful for: Presentation, One-pager]**
+- Source: PubMed — emerging drug surveillance
+- Published/updated: 2026 Sep 28
+- Relevance score: 11
+- Terms matched: dexmedetomidine, medetomidine
+- Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
+- Note: Boyce TG, Thakrar AP, Durkin BR, Casey ER | JAMA internal medicine
+
+#### [Managing the Hospital Capacity Challenges of Medetomidine Withdrawal: A Retrospective Report of Dexmedetomidine Use in Intermediate Care Units.](https://pubmed.ncbi.nlm.nih.gov/42860369/) **[Useful for: Presentation, One-pager]**
+- Source: PubMed — emerging drug surveillance
+- Published/updated: 2026 Oct 9
+- Relevance score: 11
+- Terms matched: dexmedetomidine, medetomidine
+- Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
+- Note: Durney PA, Goodstein D, Paquin E, Fitzpatrick G | Journal of addiction medicine
+
+#### [Designing Community-Based, Post-Overdose Outreach Programs in Rural Settings: Insights from People with Opioid Overdose Experiences.](https://pubmed.ncbi.nlm.nih.gov/42830391/) **[Useful for: One-pager]**
+- Source: PubMed — Massachusetts overdose and drug supply
+- Published/updated: 2026 Oct 4
+- Relevance score: 9
+- Terms matched: opioid, overdose
+- Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
+- Note: Moner E, McGowan K, Bartnik A, Lyons F | Substance use & misuse
+
+#### [Differences in trajectories of fatal and nonfatal opioid overdose by race and ethnicity in the HEALing Communities Study from 2018 to 2023.](https://pubmed.ncbi.nlm.nih.gov/42843524/) **[Useful for: One-pager]**
+- Source: PubMed — Massachusetts overdose and drug supply
+- Published/updated: 2026 Oct 7
+- Relevance score: 9
+- Terms matched: opioid, overdose
+- Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
+- Note: Goddard-Eckrich D, Chahine RA, Chandler R, Villani J | Journal of substance use and addiction treatment
+
+#### [Xylazine Reshapes the Sleep and Respiratory Consequences of Chronic Fentanyl Exposure in a Sex-Dependent Manner.](https://pubmed.ncbi.nlm.nih.gov/42818621/) **[Useful for: Presentation, One-pager]**
+- Source: PubMed — emerging drug surveillance
+- Published/updated: 2026 Sep 8
+- Relevance score: 9
+- Terms matched: fentanyl, xylazine
+- Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
+- Note: Gamble MC, Vilca SJ, Williams BR, Guidon G | bioRxiv : the preprint server for biology
+
+#### ["You Do What You Have To Do": Risk Environments in Xylazine Wound Care.](https://pubmed.ncbi.nlm.nih.gov/42851032/)
+- Source: PubMed — emerging drug surveillance
+- Published/updated: 2026 Oct 8
+- Relevance score: 6
+- Terms matched: xylazine
+- Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
+- Note: Studnicki O, Shang M, Hull I, Schultz K | Substance use & addiction journal
+
+#### [Clinical progress note: Management of the hospitalized patient with medetomidine withdrawal.](https://pubmed.ncbi.nlm.nih.gov/42811689/)
+- Source: PubMed — emerging drug surveillance
+- Published/updated: 2026 Sep 29
 - Relevance score: 6
 - Terms matched: medetomidine
 - Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
-- Note: Sarra Ferrer M, Faucher S, Didier C, Giry M | Journal of feline medicine and surgery
+- Note: Caulkins RC, Lawson MR, Previtera M, Chan CA | Journal of hospital medicine
 
-#### [Protodesnitazene: The identification and tissue distribution of a new nitazene.](https://pubmed.ncbi.nlm.nih.gov/42798250/)
+#### [Diagnosis and Management of Nitazene Dependence in Sydney, Australia: A Case Series.](https://pubmed.ncbi.nlm.nih.gov/42850819/)
 - Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 26
+- Published/updated: 2026 Nov
 - Relevance score: 6
 - Terms matched: nitazene
 - Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
-- Note: Griffiths A, Milne N, Johnston M, Blakey K | Journal of forensic sciences
+- Note: Dutkiewicz D, Wilson H, Chisholm P, Jiranantakan T | Drug and alcohol review
 
-#### [Clinical Characteristics and Treatment Outcomes Among Patients with Fentanyl-Positive Urine Drug Screening in Inpatient Detoxification and Rehabilitation.](https://pubmed.ncbi.nlm.nih.gov/42789416/)
+#### [Survival After Hospitalization in Patients with Opioid Use Disorder: Impact of Medications for Opioid Use Disorder.](https://pubmed.ncbi.nlm.nih.gov/42831747/)
 - Source: PubMed — overdose mortality studies
-- Published/updated: 2026 Sep 25
+- Published/updated: 2026 Oct 5
 - Relevance score: 5
-- Terms matched: fentanyl
+- Terms matched: opioid
 - Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
-- Note: Lynch ST, Stevens K, Fletes W, McManus K | Substance use & misuse
+- Note: Wang SJ, Bohner C, Stanford E, Deshpande A | Substance use & misuse
 
-#### [Meeting people where they are, whenever they are here: the implementation of harm reduction programs in two U.S. emergency departments.](https://pubmed.ncbi.nlm.nih.gov/42791515/)
+#### [Interstate EMS medication restocking after hospital closure: A pharmacy-led regulatory response.](https://pubmed.ncbi.nlm.nih.gov/42850969/)
 - Source: PubMed — Massachusetts overdose and drug supply
-- Published/updated: 2026 Sep 25
+- Published/updated: 2026 Oct 9
 - Relevance score: 4
 - Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
-- Note: Weisenthal K, Strokes N, Weinstein Z, Johnson S | International journal of emergency medicine
+- Note: Morgan RR, Blinn K, Hargrave DJ | American journal of health-system pharmacy : AJHP : official journal of the American Society of Health-System Pharmacists
+
+#### [Infections and the Opioid Epidemic: Changing Epidemiology and Treatment Options.](https://pubmed.ncbi.nlm.nih.gov/42830379/)
+- Source: PubMed — emerging drug surveillance
+- Published/updated: 2026 Oct 4
+- Relevance score: 4
+- Terms matched: opioid
+- Why it may matter: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
+- Note: Fanucchi LC, Eaton E, Van Sickels N, Lofwall MR | Drugs
 
 ### Harm reduction
 
 #### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence) **[Useful for: One-pager]**
 - Source: NIJ NPS Discovery Research
-- Published/updated: 2026-09-28
+- Published/updated: 2026-10-12
 - Relevance score: 49
 - Terms matched: adulterant, benzodiazepine, early warning, emerging drug, fentanyl, medetomidine, metonitazene, nitazene, novel psychoactive substance, NPS, overdose, public alert, scheduling, synthetic cannabinoid, toxicology
 - Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 - Note: The watched page changed. Review the source directly before using the information.
 
-#### [Page content changed: Health Canada Opioid and Substance Surveillance](https://www.canada.ca/en/health-canada/services/opioids/data-surveillance-research.html) **[Useful for: One-pager]**
-- Source: Health Canada Opioid and Substance Surveillance
-- Published/updated: 2026-09-28
-- Relevance score: 31
-- Terms matched: benzodiazepine, fentanyl, nitazene, opioid, overdose, poisoning, stimulant, xylazine
+#### [Page content changed: NIST Rapid Drug Analysis and Research](https://www.nist.gov/programs-projects/radar) **[Useful for: One-pager]**
+- Source: NIST Rapid Drug Analysis and Research
+- Published/updated: 2026-10-12
+- Relevance score: 35
+- Terms matched: adulterant, drug checking, fentanyl, medetomidine, nitazene, opioid, overdose, synthetic opioid, xylazine
 - Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 - Note: The watched page changed. Review the source directly before using the information.
 
-#### [Page content changed: Wisconsin Drug Checking Technologies](https://www.dhs.wisconsin.gov/aoda/drug-checking.htm) **[Useful for: One-pager]**
-- Source: Wisconsin Drug Checking Technologies
-- Published/updated: 2026-09-28
-- Relevance score: 22
-- Terms matched: drug checking, fentanyl, methamphetamine, opioid, overdose, xylazine
+#### [Page content changed: CDC DOSE-SYS Nonfatal Overdose Dashboard](https://www.cdc.gov/overdose-prevention/data-research/facts-stats/dose-dashboard-nonfatal-surveillance-data.html)
+- Source: CDC DOSE-SYS Nonfatal Overdose Dashboard
+- Published/updated: 2026-10-12
+- Relevance score: 27
+- Terms matched: benzodiazepine, fentanyl, methamphetamine, naloxone, opioid, overdose, poisoning, stimulant
 - Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 - Note: The watched page changed. Review the source directly before using the information.
 
 #### [Page content changed: Vermont Substance Use Data and Reports](https://www.healthvermont.gov/alcohol-drugs/substance-use-data-reports/data-and-reports)
 - Source: Vermont Substance Use Data and Reports
-- Published/updated: 2026-09-28
+- Published/updated: 2026-10-12
 - Relevance score: 19
 - Terms matched: drug checking, naloxone, opioid, overdose, poisoning, stimulant
 - Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 - Note: The watched page changed. Review the source directly before using the information.
 
-#### [Responding to the increase in substance use, HIV, HCV, and overdose in New England (RISE-NE): Protocol for a prospective cohort study.](https://pubmed.ncbi.nlm.nih.gov/42789600/)
-- Source: PubMed — Massachusetts overdose and drug supply
-- Published/updated: 2026
-- Relevance score: 6
-- Terms matched: overdose
-- Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-- Note: Biello KB, Bazzi AR, Dunham K, Goldman JE | PloS one
-
-#### [EXPRESS: EFFECTS OF INTRAMUSCULAR AND INTRANASAL ADMINISTRATION OF MEDETOMIDINE ON SEDATION AND SOME CARDIOPULMONARY VARIABLES IN HEALTHY CATS.](https://pubmed.ncbi.nlm.nih.gov/42768427/)
+#### [The effects of fentanyl and dexmedetomidine on cardiorespiratory activity: implications for morbidity and mortality associated with adulterated fentanyl products.](https://pubmed.ncbi.nlm.nih.gov/42824617/) **[Useful for: Presentation, One-pager]**
 - Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 21
+- Published/updated: 2026
+- Relevance score: 16
+- Terms matched: dexmedetomidine, fentanyl, medetomidine, mortality
+- Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+- Note: Smith MA, Thomas EM, Hockett SG, Folger KJ | Frontiers in pharmacology
+
+#### [Declines in stimulant-involved overdose mortality occurred only with fentanyl co-involvement, United States, 2023-2024.](https://pubmed.ncbi.nlm.nih.gov/42830002/) **[Useful for: Presentation, One-pager]**
+- Source: PubMed — overdose mortality studies
+- Published/updated: 2026 Aug 12
+- Relevance score: 12
+- Terms matched: fentanyl, mortality, overdose, stimulant
+- Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+- Note: Busch DA | Drug and alcohol dependence
+
+#### [Dexmedetomidine Use and Intensive Care Unit Admissions for Patients With Medetomidine Withdrawal.](https://pubmed.ncbi.nlm.nih.gov/42804171/) **[Useful for: Presentation, One-pager]**
+- Source: PubMed — emerging drug surveillance
+- Published/updated: 2026 Sep 28
+- Relevance score: 11
+- Terms matched: dexmedetomidine, medetomidine
+- Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+- Note: Boyce TG, Thakrar AP, Durkin BR, Casey ER | JAMA internal medicine
+
+#### [Managing the Hospital Capacity Challenges of Medetomidine Withdrawal: A Retrospective Report of Dexmedetomidine Use in Intermediate Care Units.](https://pubmed.ncbi.nlm.nih.gov/42860369/) **[Useful for: Presentation, One-pager]**
+- Source: PubMed — emerging drug surveillance
+- Published/updated: 2026 Oct 9
+- Relevance score: 11
+- Terms matched: dexmedetomidine, medetomidine
+- Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+- Note: Durney PA, Goodstein D, Paquin E, Fitzpatrick G | Journal of addiction medicine
+
+#### [Designing Community-Based, Post-Overdose Outreach Programs in Rural Settings: Insights from People with Opioid Overdose Experiences.](https://pubmed.ncbi.nlm.nih.gov/42830391/) **[Useful for: One-pager]**
+- Source: PubMed — Massachusetts overdose and drug supply
+- Published/updated: 2026 Oct 4
+- Relevance score: 9
+- Terms matched: opioid, overdose
+- Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+- Note: Moner E, McGowan K, Bartnik A, Lyons F | Substance use & misuse
+
+#### [Differences in trajectories of fatal and nonfatal opioid overdose by race and ethnicity in the HEALing Communities Study from 2018 to 2023.](https://pubmed.ncbi.nlm.nih.gov/42843524/) **[Useful for: One-pager]**
+- Source: PubMed — Massachusetts overdose and drug supply
+- Published/updated: 2026 Oct 7
+- Relevance score: 9
+- Terms matched: opioid, overdose
+- Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+- Note: Goddard-Eckrich D, Chahine RA, Chandler R, Villani J | Journal of substance use and addiction treatment
+
+#### [Xylazine Reshapes the Sleep and Respiratory Consequences of Chronic Fentanyl Exposure in a Sex-Dependent Manner.](https://pubmed.ncbi.nlm.nih.gov/42818621/) **[Useful for: Presentation, One-pager]**
+- Source: PubMed — emerging drug surveillance
+- Published/updated: 2026 Sep 8
+- Relevance score: 9
+- Terms matched: fentanyl, xylazine
+- Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+- Note: Gamble MC, Vilca SJ, Williams BR, Guidon G | bioRxiv : the preprint server for biology
+
+#### [October 2026 – Increasing detections of para-methoxymethamphetamine (PMMA) in...](https://www.unodc.org/LSS/Announcement/Details/ddaae72a-fb07-43c7-b411-d0ec5aa88724)
+- Source: UNODC Early Warning Advisory
+- Relevance score: 8
+- Terms matched: methamphetamine
+- Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+- Note: October 2026 – Increasing detections of para-methoxymethamphetamine (PMMA) in...
+
+#### [September 2026 – China introduces class scheduling of orphine analogues](https://www.unodc.org/LSS/Announcement/Details/b83bbce5-7445-4b69-91f5-c4fddd0d134d)
+- Source: UNODC Early Warning Advisory
+- Relevance score: 7
+- Terms matched: scheduling
+- Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+- Note: September 2026 – China introduces class scheduling of orphine analogues
+
+#### [Multiple tablets containing a high dose of MDMA (ecstasy) found in NSW](https://www.health.nsw.gov.au/aod/public-drug-alerts/Pages/high-dose-mdma-oct26.aspx)
+- Source: NSW Health Public Drug Warnings
+- Relevance score: 6
+- Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+- Note: Multiple tablets containing a high dose of MDMA (ecstasy) found in NSW
+
+#### ["You Do What You Have To Do": Risk Environments in Xylazine Wound Care.](https://pubmed.ncbi.nlm.nih.gov/42851032/)
+- Source: PubMed — emerging drug surveillance
+- Published/updated: 2026 Oct 8
+- Relevance score: 6
+- Terms matched: xylazine
+- Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+- Note: Studnicki O, Shang M, Hull I, Schultz K | Substance use & addiction journal
+
+#### [Clinical progress note: Management of the hospitalized patient with medetomidine withdrawal.](https://pubmed.ncbi.nlm.nih.gov/42811689/)
+- Source: PubMed — emerging drug surveillance
+- Published/updated: 2026 Sep 29
 - Relevance score: 6
 - Terms matched: medetomidine
 - Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-- Note: Sarra Ferrer M, Faucher S, Didier C, Giry M | Journal of feline medicine and surgery
+- Note: Caulkins RC, Lawson MR, Previtera M, Chan CA | Journal of hospital medicine
 
-#### [Protodesnitazene: The identification and tissue distribution of a new nitazene.](https://pubmed.ncbi.nlm.nih.gov/42798250/)
+#### [Diagnosis and Management of Nitazene Dependence in Sydney, Australia: A Case Series.](https://pubmed.ncbi.nlm.nih.gov/42850819/)
 - Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 26
+- Published/updated: 2026 Nov
 - Relevance score: 6
 - Terms matched: nitazene
 - Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-- Note: Griffiths A, Milne N, Johnston M, Blakey K | Journal of forensic sciences
+- Note: Dutkiewicz D, Wilson H, Chisholm P, Jiranantakan T | Drug and alcohol review
 
-#### [Clinical Characteristics and Treatment Outcomes Among Patients with Fentanyl-Positive Urine Drug Screening in Inpatient Detoxification and Rehabilitation.](https://pubmed.ncbi.nlm.nih.gov/42789416/)
-- Source: PubMed — overdose mortality studies
-- Published/updated: 2026 Sep 25
-- Relevance score: 5
-- Terms matched: fentanyl
+#### [Trends in Fentanyl Adulteration From Rapid Drug Analysis and Research (RaDAR) Drug Checking Samples, January 2024 to June 2026.](https://pubmed.ncbi.nlm.nih.gov/42844883/)
+- Source: PubMed — emerging drug surveillance
+- Published/updated: 2026 Oct 7
+- Relevance score: 6
+- Terms matched: drug checking, fentanyl
 - Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-- Note: Lynch ST, Stevens K, Fletes W, McManus K | Substance use & misuse
+- Note: Sisco E, Pyfrom EM, Appley MG, Robinson EL | Drug testing and analysis
 
-#### [Meeting people where they are, whenever they are here: the implementation of harm reduction programs in two U.S. emergency departments.](https://pubmed.ncbi.nlm.nih.gov/42791515/)
+#### [Survival After Hospitalization in Patients with Opioid Use Disorder: Impact of Medications for Opioid Use Disorder.](https://pubmed.ncbi.nlm.nih.gov/42831747/)
+- Source: PubMed — overdose mortality studies
+- Published/updated: 2026 Oct 5
+- Relevance score: 5
+- Terms matched: opioid
+- Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+- Note: Wang SJ, Bohner C, Stanford E, Deshpande A | Substance use & misuse
+
+#### [Interstate EMS medication restocking after hospital closure: A pharmacy-led regulatory response.](https://pubmed.ncbi.nlm.nih.gov/42850969/)
 - Source: PubMed — Massachusetts overdose and drug supply
-- Published/updated: 2026 Sep 25
+- Published/updated: 2026 Oct 9
 - Relevance score: 4
 - Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-- Note: Weisenthal K, Strokes N, Weinstein Z, Johnson S | International journal of emergency medicine
-
-#### [Concordance Analysis and Proficiency Testing Are Complementary, Not Interchangeable, in Drug Checking Technician Competency.](https://pubmed.ncbi.nlm.nih.gov/42778288/)
-- Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep
-- Relevance score: 3
-- Terms matched: drug checking
-- Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-- Note: Tobias S | Drug and alcohol review
-
-#### [Feasibility, acceptability, and impacts of a drug checking service within a supervised consumption site in Sydney, Australia.](https://pubmed.ncbi.nlm.nih.gov/42767087/)
-- Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 21
-- Relevance score: 3
-- Terms matched: drug checking
-- Why it may matter: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-- Note: Page R, Kevin RC, Kowalski M, Nielsen S | The International journal on drug policy
+- Note: Morgan RR, Blinn K, Hargrave DJ | American journal of health-system pharmacy : AJHP : official journal of the American Society of Health-System Pharmacists
 
 ### Law enforcement
 
 #### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence) **[Useful for: One-pager]**
 - Source: NIJ NPS Discovery Research
-- Published/updated: 2026-09-28
+- Published/updated: 2026-10-12
 - Relevance score: 49
 - Terms matched: adulterant, benzodiazepine, early warning, emerging drug, fentanyl, medetomidine, metonitazene, nitazene, novel psychoactive substance, NPS, overdose, public alert, scheduling, synthetic cannabinoid, toxicology
 - Why it may matter: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
@@ -494,119 +720,75 @@
 
 #### [Page content changed: NIJ NPS Discovery Trend Reports](https://nij.ojp.gov/library/publications/nps-discovery-q3-2025-trend-reports-nps-benzodiazepines-nps-opioids-nps) **[Useful for: One-pager]**
 - Source: NIJ NPS Discovery Trend Reports
-- Published/updated: 2026-09-28
+- Published/updated: 2026-10-12
 - Relevance score: 23
 - Terms matched: benzodiazepine, novel psychoactive substance, NPS, opioid, stimulant, synthetic cannabinoid
 - Why it may matter: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
 - Note: The watched page changed. Review the source directly before using the information.
 
-#### [Responding to the increase in substance use, HIV, HCV, and overdose in New England (RISE-NE): Protocol for a prospective cohort study.](https://pubmed.ncbi.nlm.nih.gov/42789600/)
+#### [Designing Community-Based, Post-Overdose Outreach Programs in Rural Settings: Insights from People with Opioid Overdose Experiences.](https://pubmed.ncbi.nlm.nih.gov/42830391/) **[Useful for: One-pager]**
 - Source: PubMed — Massachusetts overdose and drug supply
-- Published/updated: 2026
-- Relevance score: 6
-- Terms matched: overdose
+- Published/updated: 2026 Oct 4
+- Relevance score: 9
+- Terms matched: opioid, overdose
 - Why it may matter: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
-- Note: Biello KB, Bazzi AR, Dunham K, Goldman JE | PloS one
+- Note: Moner E, McGowan K, Bartnik A, Lyons F | Substance use & misuse
 
-#### [Protodesnitazene: The identification and tissue distribution of a new nitazene.](https://pubmed.ncbi.nlm.nih.gov/42798250/)
-- Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 26
-- Relevance score: 6
-- Terms matched: nitazene
+#### [Differences in trajectories of fatal and nonfatal opioid overdose by race and ethnicity in the HEALing Communities Study from 2018 to 2023.](https://pubmed.ncbi.nlm.nih.gov/42843524/) **[Useful for: One-pager]**
+- Source: PubMed — Massachusetts overdose and drug supply
+- Published/updated: 2026 Oct 7
+- Relevance score: 9
+- Terms matched: opioid, overdose
 - Why it may matter: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
-- Note: Griffiths A, Milne N, Johnston M, Blakey K | Journal of forensic sciences
+- Note: Goddard-Eckrich D, Chahine RA, Chandler R, Villani J | Journal of substance use and addiction treatment
 
-#### [Pharmacogenetic Evidence in Opioid-Related Toxicity and Death with an Appraisal of Emerging Multi-Omics Studies: A Systematic Review.](https://pubmed.ncbi.nlm.nih.gov/42794759/)
+#### [September 2026 – China introduces class scheduling of orphine analogues](https://www.unodc.org/LSS/Announcement/Details/b83bbce5-7445-4b69-91f5-c4fddd0d134d)
+- Source: UNODC Early Warning Advisory
+- Relevance score: 7
+- Terms matched: scheduling
+- Why it may matter: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
+- Note: September 2026 – China introduces class scheduling of orphine analogues
+
+#### [Interstate EMS medication restocking after hospital closure: A pharmacy-led regulatory response.](https://pubmed.ncbi.nlm.nih.gov/42850969/)
+- Source: PubMed — Massachusetts overdose and drug supply
+- Published/updated: 2026 Oct 9
+- Relevance score: 4
+- Why it may matter: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
+- Note: Morgan RR, Blinn K, Hargrave DJ | American journal of health-system pharmacy : AJHP : official journal of the American Society of Health-System Pharmacists
+
+#### [Pulmonary Arterial Hypertension Associated With Chronic Mephedrone Use: A Case Report.](https://pubmed.ncbi.nlm.nih.gov/42824527/)
 - Source: PubMed — forensic toxicology case reports
-- Published/updated: 2026 Sep 19
-- Relevance score: 5
-- Terms matched: opioid
+- Published/updated: 2026 Oct
+- Relevance score: 2
 - Why it may matter: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
-- Note: D'Anna T, Montana A, La Magna G, Piraino M | International journal of molecular sciences
+- Note: Kashoub M, Plunkett M, Nashat H, Dimopoulos K | Pulmonary circulation
 
-#### [Meeting people where they are, whenever they are here: the implementation of harm reduction programs in two U.S. emergency departments.](https://pubmed.ncbi.nlm.nih.gov/42791515/)
-- Source: PubMed — Massachusetts overdose and drug supply
-- Published/updated: 2026 Sep 25
-- Relevance score: 4
-- Why it may matter: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
-- Note: Weisenthal K, Strokes N, Weinstein Z, Johnson S | International journal of emergency medicine
-
-#### [Multiorgan toxicity of 3-Chloromethcathinone (3-CMC) in male and female mice: translational implications for liver, kidney, and spleen.](https://pubmed.ncbi.nlm.nih.gov/42778126/)
+#### [Rapid chemical profiling of ecstasy tablets using portable near-infrared spectroscopy for forensic intelligence and early response applications.](https://pubmed.ncbi.nlm.nih.gov/42858513/)
 - Source: PubMed — emerging drug surveillance
-- Published/updated: 2026 Sep 23
-- Relevance score: 4
-- Terms matched: cathinone
+- Published/updated: 2026 Oct 8
+- Relevance score: 1
 - Why it may matter: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
-- Note: De Luca F, Venuti MT, Bassi M, Bilel S | Toxicology
-
-#### [The evolving epidemiology of opioid use disorder: polysubstance use, drug supply transformation, and policy implications.](https://pubmed.ncbi.nlm.nih.gov/42781535/)
-- Source: PubMed — emerging drug surveillance
-- Published/updated: 2026
-- Relevance score: 4
-- Terms matched: opioid
-- Why it may matter: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
-- Note: Mandapati NK, Tovar DC, Bindlish R, Hernandez YL | Frontiers in public health
+- Note: Charest M, Gianola E, Jaquet L, Esseiva P | Forensic science international
 
 ## Other new intelligence
 
-#### [Bulk Manufacturer of Controlled Substances Application: Cambridge Isotope Laboratories, Inc.](https://www.federalregister.gov/documents/2026/09/24/2026-19538/bulk-manufacturer-of-controlled-substances-application-cambridge-isotope-laboratories-inc)
+#### [Schedules of Controlled Substances: Placement of O-Desmethyltramadol in Schedule I; Correction](https://www.federalregister.gov/documents/2026/10/09/2026-20748/schedules-of-controlled-substances-placement-of-o-desmethyltramadol-in-schedule-i-correction)
 - Source: DEA Federal Register notices
 - Relevance score: 6
 - Terms matched: controlled substance
-- Note: Bulk Manufacturer of Controlled Substances Application: Cambridge Isotope Laboratories, Inc.
+- Note: Schedules of Controlled Substances: Placement of O-Desmethyltramadol in Schedule I; Correction
 
-#### [Bulk Manufacturer of Controlled Substances Application: Cargill, Incorporated](https://www.federalregister.gov/documents/2026/09/28/2026-19795/bulk-manufacturer-of-controlled-substances-application-cargill-incorporated)
+#### [Schedules of Controlled Substances; Removal of Exemption Status for Inactive Butalbital Products](https://www.federalregister.gov/documents/2026/10/09/2026-20757/schedules-of-controlled-substances-removal-of-exemption-status-for-inactive-butalbital-products)
 - Source: DEA Federal Register notices
 - Relevance score: 6
 - Terms matched: controlled substance
-- Note: Bulk Manufacturer of Controlled Substances Application: Cargill, Incorporated
-
-#### [Bulk Manufacturer of Controlled Substances Application: Cayman Chemical Company](https://www.federalregister.gov/documents/2026/09/24/2026-19542/bulk-manufacturer-of-controlled-substances-application-cayman-chemical-company)
-- Source: DEA Federal Register notices
-- Relevance score: 6
-- Terms matched: controlled substance
-- Note: Bulk Manufacturer of Controlled Substances Application: Cayman Chemical Company
-
-#### [Bulk Manufacturer of Controlled Substances Application: Eli-Elsohly Laboratories](https://www.federalregister.gov/documents/2026/09/24/2026-19541/bulk-manufacturer-of-controlled-substances-application-eli-elsohly-laboratories)
-- Source: DEA Federal Register notices
-- Relevance score: 6
-- Terms matched: controlled substance
-- Note: Bulk Manufacturer of Controlled Substances Application: Eli-Elsohly Laboratories
-
-#### [Bulk Manufacturer of Controlled Substances Application: Irvine Labs, Inc.](https://www.federalregister.gov/documents/2026/09/28/2026-19803/bulk-manufacturer-of-controlled-substances-application-irvine-labs-inc)
-- Source: DEA Federal Register notices
-- Relevance score: 6
-- Terms matched: controlled substance
-- Note: Bulk Manufacturer of Controlled Substances Application: Irvine Labs, Inc.
-
-#### [Importer of Controlled Substances Application: Benuvia Operations, LLC](https://www.federalregister.gov/documents/2026/09/28/2026-19792/importer-of-controlled-substances-application-benuvia-operations-llc)
-- Source: DEA Federal Register notices
-- Relevance score: 6
-- Terms matched: controlled substance
-- Note: Importer of Controlled Substances Application: Benuvia Operations, LLC
-
-#### [Importer of Controlled Substances Application: Cambridge Isotope Laboratories, Inc.](https://www.federalregister.gov/documents/2026/09/24/2026-19539/importer-of-controlled-substances-application-cambridge-isotope-laboratories-inc)
-- Source: DEA Federal Register notices
-- Relevance score: 6
-- Terms matched: controlled substance
-- Note: Importer of Controlled Substances Application: Cambridge Isotope Laboratories, Inc.
-
-#### [Importer of Controlled Substances Application: Fisher Clinical Services, Inc. (I)](https://www.federalregister.gov/documents/2026/09/24/2026-19540/importer-of-controlled-substances-application-fisher-clinical-services-inc-i)
-- Source: DEA Federal Register notices
-- Relevance score: 6
-- Terms matched: controlled substance
-- Note: Importer of Controlled Substances Application: Fisher Clinical Services, Inc. (I)
-
-#### [Schedules of Controlled Substances: Placement of 4-Hydroxy-N,N-Diisopropyltryptamine (4-OH-DiPT), 5-Methoxy-alpha-Methyltryptamine (5-MeO-AMT), 5-Methoxy-N-Methyl-N-Isopropyltryptamine (5-MeO-MiPT), 5-Methoxy-N,N-Diethyltryptamine (5-MeO-DET), and N,N-Diisopropyltryptamine (DiPT) Into Schedule I](https://www.federalregister.gov/documents/2026/09/23/2026-19400/schedules-of-controlled-substances-placement-of-4-hydroxy-nn-diisopropyltryptamine-4-oh-dipt)
-- Source: DEA Federal Register notices
-- Relevance score: 6
-- Terms matched: controlled substance
-- Note: Schedules of Controlled Substances: Placement of 4-Hydroxy-N,N-Diisopropyltryptamine (4-OH-DiPT), 5-Methoxy-alpha-Methyltryptamine (5-MeO-AMT), 5-Methoxy-N-Methyl-N-Isopropyltryptamine (5-MeO-MiPT), 5-Methoxy-N,N-Diethyltryptamine (5-MeO-DET), and N,N-Diisopropyltryptamine (DiPT) Into Schedule I
+- Note: Schedules of Controlled Substances; Removal of Exemption Status for Inactive Butalbital Products
 
 ## Source status
 
 - **FAILED — CFSRE NPS Discovery — Public Alerts**: HTTPError: 404 Client Error: Not Found for url: https://www.npsdiscovery.org/reports/public-alerts/ ([open source](https://www.npsdiscovery.org/reports/public-alerts/))
 - **FAILED — CFSRE NPS Discovery — Trend Reports**: HTTPError: 404 Client Error: Not Found for url: https://www.npsdiscovery.org/reports/trend-reports/ ([open source](https://www.npsdiscovery.org/reports/trend-reports/))
+- **FAILED — WEDINOS Drug Checking Results**: HTTPError: 404 Client Error: Not Found for url: https://wedinos.wales/sample-results/ ([open source](https://wedinos.wales/sample-results/))
 
 ## Use limits
 

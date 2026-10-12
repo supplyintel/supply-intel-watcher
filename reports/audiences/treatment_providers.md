@@ -10,59 +10,59 @@ May inform screening, clinical vigilance, and staff education; verify clinical g
 ## Priority signals
 
 ### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence)
-- Signal: Page content changed: NIJ NPS Discovery Research (2026-09-28) — Nitazenes, Medetomidine, Synthetic cannabinoids.
+- Signal: Page content changed: NIJ NPS Discovery Research (2026-10-12) — Nitazenes, Medetomidine, Synthetic cannabinoids.
 - Focus: Nitazenes, Medetomidine, Synthetic cannabinoids
 - Evidence status: Change detected — source review required
-- Source: NIJ NPS Discovery Research (2026-09-28)
+- Source: NIJ NPS Discovery Research (2026-10-12)
 - Suggested use: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
 
-### [Page content changed: Health Canada Opioid and Substance Surveillance](https://www.canada.ca/en/health-canada/services/opioids/data-surveillance-research.html)
-- Signal: Page content changed: Health Canada Opioid and Substance Surveillance (2026-09-28) — Nitazenes, Xylazine.
-- Focus: Nitazenes, Xylazine
+### [Page content changed: NIST Rapid Drug Analysis and Research](https://www.nist.gov/programs-projects/radar)
+- Signal: Page content changed: NIST Rapid Drug Analysis and Research (2026-10-12) — Nitazenes, Medetomidine, Xylazine.
+- Focus: Nitazenes, Medetomidine, Xylazine
 - Evidence status: Change detected — source review required
-- Source: Health Canada Opioid and Substance Surveillance (2026-09-28)
+- Source: NIST Rapid Drug Analysis and Research (2026-10-12)
+- Suggested use: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
+
+### [Page content changed: CDC DOSE-SYS Nonfatal Overdose Dashboard](https://www.cdc.gov/overdose-prevention/data-research/facts-stats/dose-dashboard-nonfatal-surveillance-data.html)
+- Signal: Page content changed: CDC DOSE-SYS Nonfatal Overdose Dashboard (2026-10-12) — United States.
+- Focus: United States
+- Evidence status: Change detected — source review required
+- Source: CDC DOSE-SYS Nonfatal Overdose Dashboard (2026-10-12)
 - Suggested use: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
 
 ### [Page content changed: NIJ NPS Discovery Trend Reports](https://nij.ojp.gov/library/publications/nps-discovery-q3-2025-trend-reports-nps-benzodiazepines-nps-opioids-nps)
-- Signal: Page content changed: NIJ NPS Discovery Trend Reports (2026-09-28) — Synthetic cannabinoids.
+- Signal: Page content changed: NIJ NPS Discovery Trend Reports (2026-10-12) — Synthetic cannabinoids.
 - Focus: Synthetic cannabinoids
 - Evidence status: Change detected — source review required
-- Source: NIJ NPS Discovery Trend Reports (2026-09-28)
+- Source: NIJ NPS Discovery Trend Reports (2026-10-12)
 - Suggested use: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
 
-### [Page content changed: Wisconsin Drug Checking Technologies](https://www.dhs.wisconsin.gov/aoda/drug-checking.htm)
-- Signal: Page content changed: Wisconsin Drug Checking Technologies (2026-09-28) — Xylazine.
-- Focus: Xylazine
-- Evidence status: Change detected — source review required
-- Source: Wisconsin Drug Checking Technologies (2026-09-28)
+### [The effects of fentanyl and dexmedetomidine on cardiorespiratory activity: implications for morbidity and mortality associated with adulterated fentanyl products.](https://pubmed.ncbi.nlm.nih.gov/42824617/)
+- Signal: The effects of fentanyl and dexmedetomidine on cardiorespiratory activity: implications for morbidity and mortality associated with adulterated fentanyl products. (2026) — Medetomidine, Mortality studies.
+- Focus: Medetomidine, Mortality studies
+- Evidence status: Cross-source signal (3 sources)
+- Source: PubMed — emerging drug surveillance (2026)
 - Suggested use: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
 
 ### [Page content changed: Vermont Substance Use Data and Reports](https://www.healthvermont.gov/alcohol-drugs/substance-use-data-reports/data-and-reports)
-- Signal: Page content changed: Vermont Substance Use Data and Reports (2026-09-28) — United States.
+- Signal: Page content changed: Vermont Substance Use Data and Reports (2026-10-12) — United States.
 - Focus: United States
 - Evidence status: Change detected — source review required
-- Source: Vermont Substance Use Data and Reports (2026-09-28)
+- Source: Vermont Substance Use Data and Reports (2026-10-12)
 - Suggested use: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
 
-### [Responding to the increase in substance use, HIV, HCV, and overdose in New England (RISE-NE): Protocol for a prospective cohort study.](https://pubmed.ncbi.nlm.nih.gov/42789600/)
-- Signal: Responding to the increase in substance use, HIV, HCV, and overdose in New England (RISE-NE): Protocol for a prospective cohort study. (2026) — New reports, New PubMed papers.
-- Focus: New reports, New PubMed papers
-- Evidence status: Single-source signal
-- Source: PubMed — Massachusetts overdose and drug supply (2026)
-- Suggested use: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
-
-### [EXPRESS: EFFECTS OF INTRAMUSCULAR AND INTRANASAL ADMINISTRATION OF MEDETOMIDINE ON SEDATION AND SOME CARDIOPULMONARY VARIABLES IN HEALTHY CATS.](https://pubmed.ncbi.nlm.nih.gov/42768427/)
-- Signal: EXPRESS: EFFECTS OF INTRAMUSCULAR AND INTRANASAL ADMINISTRATION OF MEDETOMIDINE ON SEDATION AND SOME CARDIOPULMONARY VARIABLES IN HEALTHY CATS. (2026 Sep 21) — Medetomidine, New PubMed papers.
+### [Dexmedetomidine Use and Intensive Care Unit Admissions for Patients With Medetomidine Withdrawal.](https://pubmed.ncbi.nlm.nih.gov/42804171/)
+- Signal: Dexmedetomidine Use and Intensive Care Unit Admissions for Patients With Medetomidine Withdrawal. (2026 Sep 28) — Medetomidine, New PubMed papers.
 - Focus: Medetomidine, New PubMed papers
-- Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — emerging drug surveillance (2026 Sep 21)
+- Evidence status: Cross-source signal (3 sources)
+- Source: PubMed — emerging drug surveillance (2026 Sep 28)
 - Suggested use: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
 
-### [Protodesnitazene: The identification and tissue distribution of a new nitazene.](https://pubmed.ncbi.nlm.nih.gov/42798250/)
-- Signal: Protodesnitazene: The identification and tissue distribution of a new nitazene. (2026 Sep 26) — Nitazenes, New PubMed papers.
-- Focus: Nitazenes, New PubMed papers
+### [Managing the Hospital Capacity Challenges of Medetomidine Withdrawal: A Retrospective Report of Dexmedetomidine Use in Intermediate Care Units.](https://pubmed.ncbi.nlm.nih.gov/42860369/)
+- Signal: Managing the Hospital Capacity Challenges of Medetomidine Withdrawal: A Retrospective Report of Dexmedetomidine Use in Intermediate Care Units. (2026 Oct 9) — Medetomidine, New PubMed papers.
+- Focus: Medetomidine, New PubMed papers
 - Evidence status: Cross-source signal (3 sources)
-- Source: PubMed — emerging drug surveillance (2026 Sep 26)
+- Source: PubMed — emerging drug surveillance (2026 Oct 9)
 - Suggested use: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
 
 ## Use boundary
