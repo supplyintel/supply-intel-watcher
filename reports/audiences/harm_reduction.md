@@ -10,59 +10,59 @@ May inform outreach, supply education, and alert monitoring; confirm local relev
 ## Priority signals
 
 ### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence)
-- Signal: Page content changed: NIJ NPS Discovery Research (2026-10-12) — Nitazenes, Medetomidine, Synthetic cannabinoids.
+- Signal: Page content changed: NIJ NPS Discovery Research (2026-10-19) — Nitazenes, Medetomidine, Synthetic cannabinoids.
 - Focus: Nitazenes, Medetomidine, Synthetic cannabinoids
 - Evidence status: Change detected — source review required
-- Source: NIJ NPS Discovery Research (2026-10-12)
+- Source: NIJ NPS Discovery Research (2026-10-19)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
 ### [Page content changed: NIST Rapid Drug Analysis and Research](https://www.nist.gov/programs-projects/radar)
-- Signal: Page content changed: NIST Rapid Drug Analysis and Research (2026-10-12) — Nitazenes, Medetomidine, Xylazine.
+- Signal: Page content changed: NIST Rapid Drug Analysis and Research (2026-10-19) — Nitazenes, Medetomidine, Xylazine.
 - Focus: Nitazenes, Medetomidine, Xylazine
 - Evidence status: Change detected — source review required
-- Source: NIST Rapid Drug Analysis and Research (2026-10-12)
+- Source: NIST Rapid Drug Analysis and Research (2026-10-19)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
-### [Page content changed: CDC DOSE-SYS Nonfatal Overdose Dashboard](https://www.cdc.gov/overdose-prevention/data-research/facts-stats/dose-dashboard-nonfatal-surveillance-data.html)
-- Signal: Page content changed: CDC DOSE-SYS Nonfatal Overdose Dashboard (2026-10-12) — United States.
+### [Page content changed: Erie County Harm Reduction Data](https://www3.erie.gov/health/harm-reduction-data)
+- Signal: Page content changed: Erie County Harm Reduction Data (2026-10-19) — United States.
 - Focus: United States
 - Evidence status: Change detected — source review required
-- Source: CDC DOSE-SYS Nonfatal Overdose Dashboard (2026-10-12)
+- Source: Erie County Harm Reduction Data (2026-10-19)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
-### [The effects of fentanyl and dexmedetomidine on cardiorespiratory activity: implications for morbidity and mortality associated with adulterated fentanyl products.](https://pubmed.ncbi.nlm.nih.gov/42824617/)
-- Signal: The effects of fentanyl and dexmedetomidine on cardiorespiratory activity: implications for morbidity and mortality associated with adulterated fentanyl products. (2026) — Medetomidine, Mortality studies.
-- Focus: Medetomidine, Mortality studies
-- Evidence status: Cross-source signal (3 sources)
-- Source: PubMed — emerging drug surveillance (2026)
-- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-
-### [Page content changed: Vermont Substance Use Data and Reports](https://www.healthvermont.gov/alcohol-drugs/substance-use-data-reports/data-and-reports)
-- Signal: Page content changed: Vermont Substance Use Data and Reports (2026-10-12) — United States.
-- Focus: United States
-- Evidence status: Change detected — source review required
-- Source: Vermont Substance Use Data and Reports (2026-10-12)
-- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-
-### [Dexmedetomidine Use and Intensive Care Unit Admissions for Patients With Medetomidine Withdrawal.](https://pubmed.ncbi.nlm.nih.gov/42804171/)
-- Signal: Dexmedetomidine Use and Intensive Care Unit Admissions for Patients With Medetomidine Withdrawal. (2026 Sep 28) — Medetomidine, New PubMed papers.
-- Focus: Medetomidine, New PubMed papers
-- Evidence status: Cross-source signal (3 sources)
-- Source: PubMed — emerging drug surveillance (2026 Sep 28)
-- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-
-### [Managing the Hospital Capacity Challenges of Medetomidine Withdrawal: A Retrospective Report of Dexmedetomidine Use in Intermediate Care Units.](https://pubmed.ncbi.nlm.nih.gov/42860369/)
-- Signal: Managing the Hospital Capacity Challenges of Medetomidine Withdrawal: A Retrospective Report of Dexmedetomidine Use in Intermediate Care Units. (2026 Oct 9) — Medetomidine, New PubMed papers.
-- Focus: Medetomidine, New PubMed papers
-- Evidence status: Cross-source signal (3 sources)
-- Source: PubMed — emerging drug surveillance (2026 Oct 9)
-- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-
-### [Declines in stimulant-involved overdose mortality occurred only with fentanyl co-involvement, United States, 2023-2024.](https://pubmed.ncbi.nlm.nih.gov/42830002/)
-- Signal: Declines in stimulant-involved overdose mortality occurred only with fentanyl co-involvement, United States, 2023-2024. (2026 Aug 12) — Mortality studies.
-- Focus: Mortality studies
+### [Implementation evaluation of a Massachusetts pilot program designed to reduce overdose deaths among Black and Latino men returning from incarceration.](https://pubmed.ncbi.nlm.nih.gov/42870993/)
+- Signal: Implementation evaluation of a Massachusetts pilot program designed to reduce overdose deaths among Black and Latino men returning from incarceration. (2026) — New reports, Mortality studies.
+- Focus: New reports, Mortality studies
 - Evidence status: Single-source signal
-- Source: PubMed — overdose mortality studies (2026 Aug 12)
+- Source: PubMed — Massachusetts overdose and drug supply (2026)
+- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+
+### [[Clinical challenges and toxicology of nitazenes].](https://pubmed.ncbi.nlm.nih.gov/42894935/)
+- Signal: [Clinical challenges and toxicology of nitazenes]. (2026 Sep 14) — Nitazenes, New PubMed papers.
+- Focus: Nitazenes, New PubMed papers
+- Evidence status: Cross-source signal (4 sources)
+- Source: PubMed — emerging drug surveillance (2026 Sep 14)
+- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+
+### [Page content changed: CDC Provisional Drug Overdose Death Counts](https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm)
+- Signal: Page content changed: CDC Provisional Drug Overdose Death Counts (2026-10-19) — United States.
+- Focus: United States
+- Evidence status: Change detected — source review required
+- Source: CDC Provisional Drug Overdose Death Counts (2026-10-19)
+- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+
+### [Structural Racism and Coalition Decision-Making: A Qualitative Study of Opioid Prevention and Treatment Implementation.](https://pubmed.ncbi.nlm.nih.gov/42873416/)
+- Signal: Structural Racism and Coalition Decision-Making: A Qualitative Study of Opioid Prevention and Treatment Implementation. (2026 Oct 14) — New reports, New PubMed papers.
+- Focus: New reports, New PubMed papers
+- Evidence status: Single-source signal
+- Source: PubMed — Massachusetts overdose and drug supply (2026 Oct 14)
+- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+
+### [Fully automated robotic sample preparation coupled with UPLC-MS/MS for high-throughput screening of 19 nitazene analogues in human urine.](https://pubmed.ncbi.nlm.nih.gov/42879993/)
+- Signal: Fully automated robotic sample preparation coupled with UPLC-MS/MS for high-throughput screening of 19 nitazene analogues in human urine. (2026 Oct 12) — Nitazenes, Toxicology case reports.
+- Focus: Nitazenes, Toxicology case reports
+- Evidence status: Cross-source signal (4 sources)
+- Source: PubMed — forensic toxicology case reports (2026 Oct 12)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
 ## Use boundary

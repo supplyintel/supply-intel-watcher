@@ -1,28 +1,22 @@
 # Massachusetts drug intelligence briefing
 
 **Sources checked:** 50
-**Direct Massachusetts items:** 3
-**External watchlist items:** 8
+**Direct Massachusetts items:** 2
+**External watchlist items:** 5
 
 ## Direct Massachusetts evidence
 
-### [Designing Community-Based, Post-Overdose Outreach Programs in Rural Settings: Insights from People with Opioid Overdose Experiences.](https://pubmed.ncbi.nlm.nih.gov/42830391/)
+### [Implementation evaluation of a Massachusetts pilot program designed to reduce overdose deaths among Black and Latino men returning from incarceration.](https://pubmed.ncbi.nlm.nih.gov/42870993/)
 - Type: New reports
 - Evidence status: Single-source signal
-- Source: PubMed — Massachusetts overdose and drug supply (2026 Oct 4)
-- Priority score: 13
+- Source: PubMed — Massachusetts overdose and drug supply (2026)
+- Priority score: 14
 
-### [Differences in trajectories of fatal and nonfatal opioid overdose by race and ethnicity in the HEALing Communities Study from 2018 to 2023.](https://pubmed.ncbi.nlm.nih.gov/42843524/)
+### [Structural Racism and Coalition Decision-Making: A Qualitative Study of Opioid Prevention and Treatment Implementation.](https://pubmed.ncbi.nlm.nih.gov/42873416/)
 - Type: New reports
 - Evidence status: Single-source signal
-- Source: PubMed — Massachusetts overdose and drug supply (2026 Oct 7)
-- Priority score: 13
-
-### [Interstate EMS medication restocking after hospital closure: A pharmacy-led regulatory response.](https://pubmed.ncbi.nlm.nih.gov/42850969/)
-- Type: New reports
-- Evidence status: Single-source signal
-- Source: PubMed — Massachusetts overdose and drug supply (2026 Oct 9)
-- Priority score: 8
+- Source: PubMed — Massachusetts overdose and drug supply (2026 Oct 14)
+- Priority score: 11
 
 ## External signals to monitor for Massachusetts
 
@@ -31,57 +25,39 @@ These items were reported outside Massachusetts or are not Massachusetts-specifi
 ### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence)
 - Substances: Nitazenes, Medetomidine, Synthetic cannabinoids
 - Reporting geography: United States
-- Source: NIJ NPS Discovery Research (2026-10-12)
+- Source: NIJ NPS Discovery Research (2026-10-19)
 - Why monitor: High-priority Nitazenes, Medetomidine, Synthetic cannabinoids signal for local situational awareness.
 
 ### [Page content changed: NIST Rapid Drug Analysis and Research](https://www.nist.gov/programs-projects/radar)
 - Substances: Nitazenes, Medetomidine, Xylazine
 - Reporting geography: United States
-- Source: NIST Rapid Drug Analysis and Research (2026-10-12)
+- Source: NIST Rapid Drug Analysis and Research (2026-10-19)
 - Why monitor: High-priority Nitazenes, Medetomidine, Xylazine signal for local situational awareness.
 
 ### [Page content changed: NIJ NPS Discovery Trend Reports](https://nij.ojp.gov/library/publications/nps-discovery-q3-2025-trend-reports-nps-benzodiazepines-nps-opioids-nps)
 - Substances: Synthetic cannabinoids
 - Reporting geography: United States
-- Source: NIJ NPS Discovery Trend Reports (2026-10-12)
+- Source: NIJ NPS Discovery Trend Reports (2026-10-19)
 - Why monitor: High-priority Synthetic cannabinoids signal for local situational awareness.
 
-### [The effects of fentanyl and dexmedetomidine on cardiorespiratory activity: implications for morbidity and mortality associated with adulterated fentanyl products.](https://pubmed.ncbi.nlm.nih.gov/42824617/)
-- Substances: Medetomidine
+### [[Clinical challenges and toxicology of nitazenes].](https://pubmed.ncbi.nlm.nih.gov/42894935/)
+- Substances: Nitazenes
 - Reporting geography: Research
-- Source: PubMed — emerging drug surveillance (2026)
-- Why monitor: High-priority Medetomidine signal for local situational awareness.
+- Source: PubMed — emerging drug surveillance (2026 Sep 14)
+- Why monitor: High-priority Nitazenes signal for local situational awareness.
 
-### [Dexmedetomidine Use and Intensive Care Unit Admissions for Patients With Medetomidine Withdrawal.](https://pubmed.ncbi.nlm.nih.gov/42804171/)
-- Substances: Medetomidine
+### [Fully automated robotic sample preparation coupled with UPLC-MS/MS for high-throughput screening of 19 nitazene analogues in human urine.](https://pubmed.ncbi.nlm.nih.gov/42879993/)
+- Substances: Nitazenes
 - Reporting geography: Research
-- Source: PubMed — emerging drug surveillance (2026 Sep 28)
-- Why monitor: High-priority Medetomidine signal for local situational awareness.
-
-### [Managing the Hospital Capacity Challenges of Medetomidine Withdrawal: A Retrospective Report of Dexmedetomidine Use in Intermediate Care Units.](https://pubmed.ncbi.nlm.nih.gov/42860369/)
-- Substances: Medetomidine
-- Reporting geography: Research
-- Source: PubMed — emerging drug surveillance (2026 Oct 9)
-- Why monitor: High-priority Medetomidine signal for local situational awareness.
-
-### [Xylazine Reshapes the Sleep and Respiratory Consequences of Chronic Fentanyl Exposure in a Sex-Dependent Manner.](https://pubmed.ncbi.nlm.nih.gov/42818621/)
-- Substances: Xylazine
-- Reporting geography: Research
-- Source: PubMed — emerging drug surveillance (2026 Sep 8)
-- Why monitor: High-priority Xylazine signal for local situational awareness.
-
-### [Page content changed: WHO Expert Committee on Drug Dependence](https://www.who.int/groups/ecdd)
-- Substances: Synthetic cannabinoids
-- Reporting geography: International
-- Source: WHO Expert Committee on Drug Dependence (2026-10-12)
-- Why monitor: High-priority Synthetic cannabinoids signal for local situational awareness.
+- Source: PubMed — forensic toxicology case reports (2026 Oct 12)
+- Why monitor: High-priority Nitazenes signal for local situational awareness.
 
 ## Potential Massachusetts audiences
 
 - **Court staff:** 6 relevant item(s) for human review.
-- **Treatment providers:** 10 relevant item(s) for human review.
-- **Harm reduction:** 9 relevant item(s) for human review.
-- **Law enforcement:** 5 relevant item(s) for human review.
+- **Treatment providers:** 7 relevant item(s) for human review.
+- **Harm reduction:** 6 relevant item(s) for human review.
+- **Law enforcement:** 6 relevant item(s) for human review.
 
 ## Geographic safeguard
 
