@@ -1,7 +1,7 @@
 # Editorial review queue
 
 **Sources checked:** 50
-**New items triaged:** 26
+**New items triaged:** 29
 
 ## Review now
 
@@ -17,20 +17,55 @@ High-priority alert or corroborated signal requiring prompt human review.
 ### [Page content changed: NIST Rapid Drug Analysis and Research](https://www.nist.gov/programs-projects/radar)
 - Priority score: 39
 - Evidence: Change detected — source review required
-- Related sources: NIJ NPS Discovery Research, NIST Rapid Drug Analysis and Research, PubMed — emerging drug surveillance, PubMed — forensic toxicology case reports
+- Related sources: NIJ NPS Discovery Research, NIST Rapid Drug Analysis and Research, PubMed — emerging drug surveillance, PubMed — forensic toxicology case reports, Wisconsin Drug Checking Technologies
 - Suggested products: One-pager
 - Audiences: Court staff, Treatment providers, Harm reduction
 
 ### [Page content changed: NIJ NPS Discovery Trend Reports](https://nij.ojp.gov/library/publications/nps-discovery-q3-2025-trend-reports-nps-benzodiazepines-nps-opioids-nps)
-- Priority score: 25
+- Priority score: 27
 - Evidence: Change detected — source review required
-- Related sources: NIJ NPS Discovery Research, NIJ NPS Discovery Trend Reports, PubMed — emerging drug surveillance
+- Related sources: NIJ NPS Discovery Research, NIJ NPS Discovery Trend Reports
 - Suggested products: One-pager
-- Audiences: Treatment providers, Law enforcement
+- Audiences: Court staff, Treatment providers, Harm reduction, Law enforcement
+
+### [Development and Validation of an Oral Fluid LC-MS/MS Method for Screening Emerging Synthetic Opioids Including Fentanyl Analogues, Nitazenes, and Xylazine.](https://pubmed.ncbi.nlm.nih.gov/42920258/)
+- Priority score: 26
+- Evidence: Cross-source signal (4 sources)
+- Related sources: NIJ NPS Discovery Research, NIST Rapid Drug Analysis and Research, PubMed — emerging drug surveillance, Wisconsin Drug Checking Technologies
+- Suggested products: Presentation, One-pager
+- Audiences: Court staff, Treatment providers, Harm reduction, Law enforcement
+
+### [Page content changed: Wisconsin Drug Checking Technologies](https://www.dhs.wisconsin.gov/aoda/drug-checking.htm)
+- Priority score: 24
+- Evidence: Change detected — source review required
+- Related sources: NIST Rapid Drug Analysis and Research, PubMed — emerging drug surveillance, Wisconsin Drug Checking Technologies
+- Suggested products: One-pager
+- Audiences: Court staff, Treatment providers, Harm reduction
+
+### [Hemodynamic Effects of Interfacility Dexmedetomidine Infusions During Transport of Patients with Alpha-2-adrenergic Agonist Withdrawal.](https://pubmed.ncbi.nlm.nih.gov/42900939/)
+- Priority score: 15
+- Evidence: Cross-source signal (4 sources)
+- Related sources: NIJ NPS Discovery Research, NIST Rapid Drug Analysis and Research, PubMed — emerging drug surveillance, PubMed — forensic toxicology case reports
+- Suggested products: Presentation, One-pager
+- Audiences: Treatment providers, Harm reduction
+
+### [Predicting high-risk novel benzodiazepines: A surveillance study of novel benzodiazepine detections and a case series of bromazolam exposures in New South Wales, Australia.](https://pubmed.ncbi.nlm.nih.gov/42910454/)
+- Priority score: 14
+- Evidence: Cross-source signal (2 sources)
+- Related sources: PubMed — emerging drug surveillance, PubMed — forensic toxicology case reports
+- Suggested products: Presentation, One-pager
+- Audiences: Court staff, Treatment providers, Law enforcement
 
 ## Monitor
 
 Relevant signal to track or consider for a briefing.
+
+### [Page content changed: Vermont Substance Use Data and Reports](https://www.healthvermont.gov/alcohol-drugs/substance-use-data-reports/data-and-reports)
+- Priority score: 19
+- Evidence: Change detected — source review required
+- Related sources: Vermont Substance Use Data and Reports
+- Suggested products: Archive/research
+- Audiences: Court staff, Treatment providers, Harm reduction
 
 ### [Page content changed: Erie County Harm Reduction Data](https://www3.erie.gov/health/harm-reduction-data)
 - Priority score: 17
@@ -39,50 +74,64 @@ Relevant signal to track or consider for a briefing.
 - Suggested products: Archive/research
 - Audiences: Court staff, Treatment providers, Harm reduction, Law enforcement
 
-### [Implementation evaluation of a Massachusetts pilot program designed to reduce overdose deaths among Black and Latino men returning from incarceration.](https://pubmed.ncbi.nlm.nih.gov/42870993/)
-- Priority score: 14
+### [Jail-based opioid treatment implementation, outcomes, and costs: lessons learned from the Massachusetts Justice Community Opioid Innovation Network (MassJCOIN).](https://pubmed.ncbi.nlm.nih.gov/42920115/)
+- Priority score: 17
 - Evidence: Single-source signal
 - Related sources: PubMed — Massachusetts overdose and drug supply
-- Suggested products: One-pager
-- Audiences: Court staff, Treatment providers, Harm reduction, Law enforcement
-
-### [[Clinical challenges and toxicology of nitazenes].](https://pubmed.ncbi.nlm.nih.gov/42894935/)
-- Priority score: 12
-- Evidence: Cross-source signal (4 sources)
-- Related sources: NIJ NPS Discovery Research, NIST Rapid Drug Analysis and Research, PubMed — emerging drug surveillance, PubMed — forensic toxicology case reports
 - Suggested products: Presentation, One-pager
 - Audiences: Court staff, Treatment providers, Harm reduction, Law enforcement
 
-### [Page content changed: CDC Provisional Drug Overdose Death Counts](https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm)
-- Priority score: 11
-- Evidence: Change detected — source review required
-- Related sources: CDC Provisional Drug Overdose Death Counts
-- Suggested products: Archive/research
-- Audiences: Court staff, Treatment providers, Harm reduction, Law enforcement
+### [Get the Public Alert](https://www.nflis.deadiversion.usdoj.gov/nflisdata/docs/publications/5-Chloro_Desmethyl_Chlorphine_Public_Alert_May-2026.pdf)
+- Priority score: 13
+- Evidence: Single-source signal
+- Related sources: NFLIS homepage
+- Suggested products: Presentation
+- Audiences: Court staff, Treatment providers, Harm reduction
 
-### [Structural Racism and Coalition Decision-Making: A Qualitative Study of Opioid Prevention and Treatment Implementation.](https://pubmed.ncbi.nlm.nih.gov/42873416/)
+### [Predicting high-risk novel benzodiazepines: A surveillance study of novel benzodiazepine detections and a case series of bromazolam exposures in New South Wales, Australia.](https://pubmed.ncbi.nlm.nih.gov/42910454/)
+- Priority score: 13
+- Evidence: Cross-source signal (2 sources)
+- Related sources: PubMed — emerging drug surveillance, PubMed — forensic toxicology case reports
+- Suggested products: Presentation, One-pager
+- Audiences: Treatment providers
+
+### [Get the Public Alert](https://www.nflis.deadiversion.usdoj.gov/nflisdata/docs/publications/4-Fluoro-3-methyl_diethylcathinone_Public_Alert_July-2026.pdf)
 - Priority score: 11
 - Evidence: Single-source signal
-- Related sources: PubMed — Massachusetts overdose and drug supply
+- Related sources: NFLIS homepage
 - Suggested products: One-pager
-- Audiences: Court staff, Treatment providers, Harm reduction, Law enforcement
+- Audiences: Harm reduction
 
-### [Fully automated robotic sample preparation coupled with UPLC-MS/MS for high-throughput screening of 19 nitazene analogues in human urine.](https://pubmed.ncbi.nlm.nih.gov/42879993/)
+### [Get the Public Alert](https://www.nflis.deadiversion.usdoj.gov/nflisdata/docs/publications/Fluoprazolam_Public_Alert_August-2026.pdf)
+- Priority score: 9
+- Evidence: Single-source signal
+- Related sources: NFLIS homepage
+- Suggested products: Archive/research
+- Audiences: Treatment providers, Harm reduction
+
+### [Get the Public Alert](https://www.nflis.deadiversion.usdoj.gov/nflisdata/docs/publications/N-Propionitrile_5-Chloro Desmethylbrorphine_Public_Alert_June-2026.pdf)
+- Priority score: 9
+- Evidence: Single-source signal
+- Related sources: NFLIS homepage
+- Suggested products: Archive/research
+- Audiences: Harm reduction
+
+### [Get the Public Alert](https://www.nflis.deadiversion.usdoj.gov/nflisdata/docs/publications/sec_butyl_butylone_Public_Alert_March-2026.pdf)
+- Priority score: 9
+- Evidence: Single-source signal
+- Related sources: NFLIS homepage
+- Suggested products: Archive/research
+- Audiences: Harm reduction
+
+### [Takotsubo Cardiomyopathy Associated With Severe Medetomidine Withdrawal: A Case Report.](https://pubmed.ncbi.nlm.nih.gov/42899488/)
 - Priority score: 9
 - Evidence: Cross-source signal (4 sources)
 - Related sources: NIJ NPS Discovery Research, NIST Rapid Drug Analysis and Research, PubMed — emerging drug surveillance, PubMed — forensic toxicology case reports
 - Suggested products: One-pager
 - Audiences: Court staff, Treatment providers, Harm reduction, Law enforcement
 
-### [Health Information Technology Infrastructure and Availability of Medications for Opioid Use Disorder and Naloxone in U.S. Substance Use Disorder Treatment Facilities.](https://pubmed.ncbi.nlm.nih.gov/42864480/)
+### [Decreasing fentanyl concentrations in urinalysis results for methadone treatment admissions: Evidence of changing fentanyl exposure in street drugs.](https://pubmed.ncbi.nlm.nih.gov/42909204/)
 - Priority score: 8
-- Evidence: Single-source signal
-- Related sources: PubMed — overdose mortality studies
-- Suggested products: One-pager
-- Audiences: Court staff, Treatment providers, Harm reduction
-
-### [Responding to the Fentanyl Overdose Crisis With a Tri-Government Incident Command Structure in Portland, Oregon, 2024.](https://pubmed.ncbi.nlm.nih.gov/42864734/)
-- Priority score: 7
 - Evidence: Single-source signal
 - Related sources: PubMed — overdose mortality studies
 - Suggested products: One-pager
@@ -92,108 +141,80 @@ Relevant signal to track or consider for a briefing.
 
 Lower-priority material retained for research and archive use.
 
-### [Fully automated robotic sample preparation coupled with UPLC-MS/MS for high-throughput screening of 19 nitazene analogues in human urine.](https://pubmed.ncbi.nlm.nih.gov/42879993/)
+### [On-site rapid screening of ethylene etonitazene via a versatile conjugated-polymer fluorescence platform.](https://pubmed.ncbi.nlm.nih.gov/42908475/)
+- Priority score: 8
+- Evidence: Cross-source signal (3 sources)
+- Related sources: NIJ NPS Discovery Research, NIST Rapid Drug Analysis and Research, PubMed — emerging drug surveillance
+- Suggested products: Archive/research
+- Audiences: Treatment providers, Harm reduction
+
+### [Takotsubo Cardiomyopathy Associated With Severe Medetomidine Withdrawal: A Case Report.](https://pubmed.ncbi.nlm.nih.gov/42899488/)
 - Priority score: 8
 - Evidence: Cross-source signal (4 sources)
 - Related sources: NIJ NPS Discovery Research, NIST Rapid Drug Analysis and Research, PubMed — emerging drug surveillance, PubMed — forensic toxicology case reports
 - Suggested products: Archive/research
 - Audiences: Treatment providers, Harm reduction
 
-### [Online Searches for Xylazine Following The Pitt Episode Featuring Xylazine-Associated Skin Wounds.](https://pubmed.ncbi.nlm.nih.gov/42881335/)
-- Priority score: 8
-- Evidence: Cross-source signal (2 sources)
-- Related sources: NIST Rapid Drug Analysis and Research, PubMed — emerging drug surveillance
-- Suggested products: Archive/research
-- Audiences: Treatment providers, Harm reduction
-
-### [Translational Toxicology of N-Isopropylbutylone: Integrated In Vivo and In Silico Assessment of a New Synthetic Cathinone.](https://pubmed.ncbi.nlm.nih.gov/42884038/)
-- Priority score: 8
-- Evidence: Single-source signal
-- Related sources: PubMed — emerging drug surveillance
-- Suggested products: Archive/research
-- Audiences: Court staff, Law enforcement
-
-### [Bulk Manufacturer of Controlled Substances Application: Groff Health Inc](https://www.federalregister.gov/documents/2026/10/19/2026-21368/bulk-manufacturer-of-controlled-substances-application-groff-health-inc)
+### [Initiatives to Prevent Fatal Drug Overdose Mortality After Incarceration.](https://pubmed.ncbi.nlm.nih.gov/42921798/)
 - Priority score: 6
 - Evidence: Single-source signal
-- Related sources: DEA Federal Register notices
-- Suggested products: Archive/research
-- Audiences: General
-
-### [Bulk Manufacturer of Controlled Substances Application: Janssen Pharmaceuticals, Inc.](https://www.federalregister.gov/documents/2026/10/19/2026-21369/bulk-manufacturer-of-controlled-substances-application-janssen-pharmaceuticals-inc)
-- Priority score: 6
-- Evidence: Single-source signal
-- Related sources: DEA Federal Register notices
-- Suggested products: Archive/research
-- Audiences: General
-
-### [Bulk Manufacturer of Controlled Substances Application: National Center for Natural Products Research University of Mississippi/NCNPR](https://www.federalregister.gov/documents/2026/10/19/2026-21359/bulk-manufacturer-of-controlled-substances-application-national-center-for-natural-products-research)
-- Priority score: 6
-- Evidence: Single-source signal
-- Related sources: DEA Federal Register notices
-- Suggested products: Archive/research
-- Audiences: General
-
-### [Bulk Manufacturer of Controlled Substances Application: Scottsdale Research Institute](https://www.federalregister.gov/documents/2026/10/19/2026-21360/bulk-manufacturer-of-controlled-substances-application-scottsdale-research-institute)
-- Priority score: 6
-- Evidence: Single-source signal
-- Related sources: DEA Federal Register notices
-- Suggested products: Archive/research
-- Audiences: General
-
-### [Importer of Controlled Substances Application: DMS Pharmaceutical Group](https://www.federalregister.gov/documents/2026/10/19/2026-21354/importer-of-controlled-substances-application-dms-pharmaceutical-group)
-- Priority score: 6
-- Evidence: Single-source signal
-- Related sources: DEA Federal Register notices
-- Suggested products: Archive/research
-- Audiences: General
-
-### [Importer of Controlled Substances Application: Groff Health Inc.](https://www.federalregister.gov/documents/2026/10/19/2026-21355/importer-of-controlled-substances-application-groff-health-inc)
-- Priority score: 6
-- Evidence: Single-source signal
-- Related sources: DEA Federal Register notices
-- Suggested products: Archive/research
-- Audiences: General
-
-### [Importer of Controlled Substances Application: Groff NA Hemplex LLC](https://www.federalregister.gov/documents/2026/10/19/2026-21367/importer-of-controlled-substances-application-groff-na-hemplex-llc)
-- Priority score: 6
-- Evidence: Single-source signal
-- Related sources: DEA Federal Register notices
-- Suggested products: Archive/research
-- Audiences: General
-
-### [Importer of Controlled Substances Application: Halo Pharmaceutical Inc.](https://www.federalregister.gov/documents/2026/10/19/2026-21353/importer-of-controlled-substances-application-halo-pharmaceutical-inc)
-- Priority score: 6
-- Evidence: Single-source signal
-- Related sources: DEA Federal Register notices
-- Suggested products: Archive/research
-- Audiences: General
-
-### [Importer of Controlled Substances Application: National Center for Natural Products Research](https://www.federalregister.gov/documents/2026/10/19/2026-21358/importer-of-controlled-substances-application-national-center-for-natural-products-research)
-- Priority score: 6
-- Evidence: Single-source signal
-- Related sources: DEA Federal Register notices
-- Suggested products: Archive/research
-- Audiences: General
-
-### [Importer of Controlled Substances Application: Organic Standards Solutions International, LLC](https://www.federalregister.gov/documents/2026/10/19/2026-21370/importer-of-controlled-substances-application-organic-standards-solutions-international-llc)
-- Priority score: 6
-- Evidence: Single-source signal
-- Related sources: DEA Federal Register notices
-- Suggested products: Archive/research
-- Audiences: General
-
-### [Prescribing to protect case series: naltrexone as a novel intervention to prevent fentanyl overdose in people who use cocaine.](https://pubmed.ncbi.nlm.nih.gov/42894254/)
-- Priority score: 6
-- Evidence: Single-source signal
-- Related sources: PubMed — emerging drug surveillance
+- Related sources: PubMed — overdose mortality studies
 - Suggested products: Archive/research
 - Audiences: Court staff, Treatment providers, Harm reduction
 
-### [Identification and quantification of Δ-9-tetrahydrocannabinol and the synthetic cannabinoid MDMB-4en-PINACA in edible products seized by United Kingdom police in 2024.](https://pubmed.ncbi.nlm.nih.gov/42866963/)
+### [Get the Public Alert](https://www.nflis.deadiversion.usdoj.gov/nflisdata/docs/publications/JWH-018-S_Public_Alert_March-2026.pdf)
 - Priority score: 6
-- Evidence: Cross-source signal (3 sources)
-- Related sources: NIJ NPS Discovery Research, NIJ NPS Discovery Trend Reports, PubMed — emerging drug surveillance
+- Evidence: Single-source signal
+- Related sources: NFLIS homepage
+- Suggested products: Archive/research
+- Audiences: Harm reduction
+
+### [Acute Kidney Injury Among Patients with Drug Overdose–Involved Hospitalizations — United States, 2016–2025](https://www.cdc.gov/mmwr/volumes/75/wr/mm7541a1.htm?s_cid=OS_mm7541a1_w)
+- Priority score: 5
+- Evidence: Single-source signal
+- Related sources: CDC MMWR
+- Suggested products: Archive/research
+- Audiences: Court staff, Treatment providers, Harm reduction
+
+### [Leveraging fourier-transform infrared spectroscopy for community drug checking to bridge clinical care and harm reduction services: case report.](https://pubmed.ncbi.nlm.nih.gov/42928326/)
+- Priority score: 3
+- Evidence: Single-source signal
+- Related sources: PubMed — emerging drug surveillance
+- Suggested products: Archive/research
+- Audiences: Court staff, Harm reduction
+
+### [Trust, place, and polysubstance use shape the feasibility of community-based drug checking in the Southern United States: A mixed-methods implementation study.](https://pubmed.ncbi.nlm.nih.gov/42926924/)
+- Priority score: 3
+- Evidence: Single-source signal
+- Related sources: PubMed — emerging drug surveillance
+- Suggested products: Archive/research
+- Audiences: Court staff, Harm reduction
+
+### [Analytical Detection and Sample Preparation Techniques for Selected New Psychoactive Substances: Advances, Critical Limitations, and Future Perspectives.](https://pubmed.ncbi.nlm.nih.gov/42902583/)
+- Priority score: 2
+- Evidence: Single-source signal
+- Related sources: PubMed — forensic toxicology case reports
+- Suggested products: Archive/research
+- Audiences: Court staff, Law enforcement
+
+### [Psychoactive Substances: Analytical Strategies for the Identification of Designer Drugs in Forensic and Clinical Contexts.](https://pubmed.ncbi.nlm.nih.gov/42898482/)
+- Priority score: 2
+- Evidence: Single-source signal
+- Related sources: PubMed — forensic toxicology case reports
+- Suggested products: Archive/research
+- Audiences: Court staff, Law enforcement
+
+### [La présence de médétomidine sur le marché des drogues illicites.](https://pubmed.ncbi.nlm.nih.gov/42896876/)
+- Priority score: 1
+- Evidence: Single-source signal
+- Related sources: PubMed — emerging drug surveillance
+- Suggested products: Archive/research
+- Audiences: General
+
+### [SEDATION DIFFERENTIALLY AFFECTS DISTORTION-PRODUCT AND STIMULUS-FREQUENCY OTOACOUSTIC EMISSIONS IN CHINCHILLAS.](https://pubmed.ncbi.nlm.nih.gov/42922564/)
+- Priority score: 1
+- Evidence: Single-source signal
+- Related sources: PubMed — emerging drug surveillance
 - Suggested products: Archive/research
 - Audiences: General
 
