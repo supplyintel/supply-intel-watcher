@@ -10,59 +10,59 @@ May inform situational awareness and training; surveillance signals alone do not
 ## Priority signals
 
 ### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence)
-- Signal: Page content changed: NIJ NPS Discovery Research (2026-10-26) — Nitazenes, Medetomidine, Synthetic cannabinoids.
+- Signal: Page content changed: NIJ NPS Discovery Research (2026-11-02) — Nitazenes, Medetomidine, Synthetic cannabinoids.
 - Focus: Nitazenes, Medetomidine, Synthetic cannabinoids
 - Evidence status: Change detected — source review required
-- Source: NIJ NPS Discovery Research (2026-10-26)
+- Source: NIJ NPS Discovery Research (2026-11-02)
 - Suggested use: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
 
 ### [Page content changed: NIJ NPS Discovery Trend Reports](https://nij.ojp.gov/library/publications/nps-discovery-q3-2025-trend-reports-nps-benzodiazepines-nps-opioids-nps)
-- Signal: Page content changed: NIJ NPS Discovery Trend Reports (2026-10-26) — Synthetic cannabinoids.
+- Signal: Page content changed: NIJ NPS Discovery Trend Reports (2026-11-02) — Synthetic cannabinoids.
 - Focus: Synthetic cannabinoids
 - Evidence status: Change detected — source review required
-- Source: NIJ NPS Discovery Trend Reports (2026-10-26)
+- Source: NIJ NPS Discovery Trend Reports (2026-11-02)
 - Suggested use: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
 
-### [Development and Validation of an Oral Fluid LC-MS/MS Method for Screening Emerging Synthetic Opioids Including Fentanyl Analogues, Nitazenes, and Xylazine.](https://pubmed.ncbi.nlm.nih.gov/42920258/)
-- Signal: Development and Validation of an Oral Fluid LC-MS/MS Method for Screening Emerging Synthetic Opioids Including Fentanyl Analogues, Nitazenes, and Xylazine. (2026 Oct 23) — Nitazenes, Xylazine, New PubMed papers.
-- Focus: Nitazenes, Xylazine, New PubMed papers
-- Evidence status: Cross-source signal (4 sources)
-- Source: PubMed — emerging drug surveillance (2026 Oct 23)
-- Suggested use: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
-
-### [Page content changed: Erie County Harm Reduction Data](https://www3.erie.gov/health/harm-reduction-data)
-- Signal: Page content changed: Erie County Harm Reduction Data (2026-10-26) — United States.
-- Focus: United States
-- Evidence status: Change detected — source review required
-- Source: Erie County Harm Reduction Data (2026-10-26)
-- Suggested use: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
-
-### [Jail-based opioid treatment implementation, outcomes, and costs: lessons learned from the Massachusetts Justice Community Opioid Innovation Network (MassJCOIN).](https://pubmed.ncbi.nlm.nih.gov/42920115/)
-- Signal: Jail-based opioid treatment implementation, outcomes, and costs: lessons learned from the Massachusetts Justice Community Opioid Innovation Network (MassJCOIN). (2026 Oct 23) — New reports, New PubMed papers.
-- Focus: New reports, New PubMed papers
+### [Ninety Years Later: Redlining and Opioid-Related Overdose Deaths among Massachusetts Residents, 2015-2019.](https://pubmed.ncbi.nlm.nih.gov/42969128/)
+- Signal: Ninety Years Later: Redlining and Opioid-Related Overdose Deaths among Massachusetts Residents, 2015-2019. (2026) — New reports, Mortality studies.
+- Focus: New reports, Mortality studies
 - Evidence status: Single-source signal
-- Source: PubMed — Massachusetts overdose and drug supply (2026 Oct 23)
+- Source: PubMed — Massachusetts overdose and drug supply (2026)
 - Suggested use: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
 
-### [Predicting high-risk novel benzodiazepines: A surveillance study of novel benzodiazepine detections and a case series of bromazolam exposures in New South Wales, Australia.](https://pubmed.ncbi.nlm.nih.gov/42910454/)
-- Signal: Predicting high-risk novel benzodiazepines: A surveillance study of novel benzodiazepine detections and a case series of bromazolam exposures in New South Wales, Australia. (2026 Oct 22) — Novel benzodiazepines, Toxicology case reports.
+### [Impact of drug scheduling on detection of bromazolam in the unregulated opioid supply: An interrupted time series analysis.](https://pubmed.ncbi.nlm.nih.gov/42950364/)
+- Signal: Impact of drug scheduling on detection of bromazolam in the unregulated opioid supply: An interrupted time series analysis. (2026 Oct 22) — Novel benzodiazepines, New PubMed papers.
+- Focus: Novel benzodiazepines, New PubMed papers
+- Evidence status: Cross-source signal (2 sources)
+- Source: PubMed — emerging drug surveillance (2026 Oct 22)
+- Suggested use: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
+
+### [Bromazolam Positive Toxicology Cases: Analytical Findings and Observed Impairment.](https://pubmed.ncbi.nlm.nih.gov/42937126/)
+- Signal: Bromazolam Positive Toxicology Cases: Analytical Findings and Observed Impairment. (2026 Oct 27) — Novel benzodiazepines, Toxicology case reports.
 - Focus: Novel benzodiazepines, Toxicology case reports
 - Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — forensic toxicology case reports (2026 Oct 22)
+- Source: PubMed — forensic toxicology case reports (2026 Oct 27)
 - Suggested use: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
 
-### [Takotsubo Cardiomyopathy Associated With Severe Medetomidine Withdrawal: A Case Report.](https://pubmed.ncbi.nlm.nih.gov/42899488/)
-- Signal: Takotsubo Cardiomyopathy Associated With Severe Medetomidine Withdrawal: A Case Report. (2026 Oct 20) — Medetomidine, Toxicology case reports.
-- Focus: Medetomidine, Toxicology case reports
-- Evidence status: Cross-source signal (4 sources)
-- Source: PubMed — forensic toxicology case reports (2026 Oct 20)
+### [Diagnostic performance of xylazine test strips in urine from fentanyl-positive hospitalized patients.](https://pubmed.ncbi.nlm.nih.gov/42960873/)
+- Signal: Diagnostic performance of xylazine test strips in urine from fentanyl-positive hospitalized patients. (2026 Oct 30) — Xylazine, New PubMed papers.
+- Focus: Xylazine, New PubMed papers
+- Evidence status: Cross-source signal (2 sources)
+- Source: PubMed — emerging drug surveillance (2026 Oct 30)
 - Suggested use: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
 
-### [Analytical Detection and Sample Preparation Techniques for Selected New Psychoactive Substances: Advances, Critical Limitations, and Future Perspectives.](https://pubmed.ncbi.nlm.nih.gov/42902583/)
-- Signal: Analytical Detection and Sample Preparation Techniques for Selected New Psychoactive Substances: Advances, Critical Limitations, and Future Perspectives. (2026 Oct 20) — Toxicology case reports.
-- Focus: Toxicology case reports
-- Evidence status: Single-source signal
-- Source: PubMed — forensic toxicology case reports (2026 Oct 20)
+### [Bromazolam Positive Toxicology Cases: Analytical Findings and Observed Impairment.](https://pubmed.ncbi.nlm.nih.gov/42937126/)
+- Signal: Bromazolam Positive Toxicology Cases: Analytical Findings and Observed Impairment. (2026 Oct 27) — Novel benzodiazepines, New PubMed papers.
+- Focus: Novel benzodiazepines, New PubMed papers
+- Evidence status: Cross-source signal (2 sources)
+- Source: PubMed — emerging drug surveillance (2026 Oct 27)
+- Suggested use: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
+
+### [Physiologically based pharmacokinetic modeling as a translational tool in forensic toxicology: from pig to human synthetic cannabinoid toxicokinetics using 5F-Cumyl-P7AICA and its major metabolite as a case study.](https://pubmed.ncbi.nlm.nih.gov/42965597/)
+- Signal: Physiologically based pharmacokinetic modeling as a translational tool in forensic toxicology: from pig to human synthetic cannabinoid toxicokinetics using 5F-Cumyl-P7AICA and its major metabolite as a case study. (2026 Oct 31) — Synthetic cannabinoids, Toxicology case reports.
+- Focus: Synthetic cannabinoids, Toxicology case reports
+- Evidence status: Cross-source signal (3 sources)
+- Source: PubMed — forensic toxicology case reports (2026 Oct 31)
 - Suggested use: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
 
 ## Use boundary

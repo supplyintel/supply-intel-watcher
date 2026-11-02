@@ -10,59 +10,59 @@ May inform screening, clinical vigilance, and staff education; verify clinical g
 ## Priority signals
 
 ### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence)
-- Signal: Page content changed: NIJ NPS Discovery Research (2026-10-26) — Nitazenes, Medetomidine, Synthetic cannabinoids.
+- Signal: Page content changed: NIJ NPS Discovery Research (2026-11-02) — Nitazenes, Medetomidine, Synthetic cannabinoids.
 - Focus: Nitazenes, Medetomidine, Synthetic cannabinoids
 - Evidence status: Change detected — source review required
-- Source: NIJ NPS Discovery Research (2026-10-26)
+- Source: NIJ NPS Discovery Research (2026-11-02)
 - Suggested use: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
 
-### [Page content changed: NIST Rapid Drug Analysis and Research](https://www.nist.gov/programs-projects/radar)
-- Signal: Page content changed: NIST Rapid Drug Analysis and Research (2026-10-26) — Nitazenes, Medetomidine, Xylazine.
-- Focus: Nitazenes, Medetomidine, Xylazine
+### [Page content changed: CDC DOSE-SYS Nonfatal Overdose Dashboard](https://www.cdc.gov/overdose-prevention/data-research/facts-stats/dose-dashboard-nonfatal-surveillance-data.html)
+- Signal: Page content changed: CDC DOSE-SYS Nonfatal Overdose Dashboard (2026-11-02) — United States.
+- Focus: United States
 - Evidence status: Change detected — source review required
-- Source: NIST Rapid Drug Analysis and Research (2026-10-26)
+- Source: CDC DOSE-SYS Nonfatal Overdose Dashboard (2026-11-02)
 - Suggested use: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
 
 ### [Page content changed: NIJ NPS Discovery Trend Reports](https://nij.ojp.gov/library/publications/nps-discovery-q3-2025-trend-reports-nps-benzodiazepines-nps-opioids-nps)
-- Signal: Page content changed: NIJ NPS Discovery Trend Reports (2026-10-26) — Synthetic cannabinoids.
+- Signal: Page content changed: NIJ NPS Discovery Trend Reports (2026-11-02) — Synthetic cannabinoids.
 - Focus: Synthetic cannabinoids
 - Evidence status: Change detected — source review required
-- Source: NIJ NPS Discovery Trend Reports (2026-10-26)
+- Source: NIJ NPS Discovery Trend Reports (2026-11-02)
 - Suggested use: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
 
-### [Development and Validation of an Oral Fluid LC-MS/MS Method for Screening Emerging Synthetic Opioids Including Fentanyl Analogues, Nitazenes, and Xylazine.](https://pubmed.ncbi.nlm.nih.gov/42920258/)
-- Signal: Development and Validation of an Oral Fluid LC-MS/MS Method for Screening Emerging Synthetic Opioids Including Fentanyl Analogues, Nitazenes, and Xylazine. (2026 Oct 23) — Nitazenes, Xylazine, New PubMed papers.
-- Focus: Nitazenes, Xylazine, New PubMed papers
-- Evidence status: Cross-source signal (4 sources)
-- Source: PubMed — emerging drug surveillance (2026 Oct 23)
-- Suggested use: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
-
-### [Page content changed: Wisconsin Drug Checking Technologies](https://www.dhs.wisconsin.gov/aoda/drug-checking.htm)
-- Signal: Page content changed: Wisconsin Drug Checking Technologies (2026-10-26) — Xylazine.
+### [Page content changed: New York Drug Checking Service](https://www.health.ny.gov/diseases/aids/consumers/prevention/oduh/drug_checking.htm)
+- Signal: Page content changed: New York Drug Checking Service (2026-11-02) — Xylazine.
 - Focus: Xylazine
 - Evidence status: Change detected — source review required
-- Source: Wisconsin Drug Checking Technologies (2026-10-26)
+- Source: New York Drug Checking Service (2026-11-02)
 - Suggested use: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
 
 ### [Page content changed: Vermont Substance Use Data and Reports](https://www.healthvermont.gov/alcohol-drugs/substance-use-data-reports/data-and-reports)
-- Signal: Page content changed: Vermont Substance Use Data and Reports (2026-10-26) — United States.
+- Signal: Page content changed: Vermont Substance Use Data and Reports (2026-11-02) — United States.
 - Focus: United States
 - Evidence status: Change detected — source review required
-- Source: Vermont Substance Use Data and Reports (2026-10-26)
+- Source: Vermont Substance Use Data and Reports (2026-11-02)
 - Suggested use: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
 
-### [Page content changed: Erie County Harm Reduction Data](https://www3.erie.gov/health/harm-reduction-data)
-- Signal: Page content changed: Erie County Harm Reduction Data (2026-10-26) — United States.
-- Focus: United States
-- Evidence status: Change detected — source review required
-- Source: Erie County Harm Reduction Data (2026-10-26)
-- Suggested use: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
-
-### [Jail-based opioid treatment implementation, outcomes, and costs: lessons learned from the Massachusetts Justice Community Opioid Innovation Network (MassJCOIN).](https://pubmed.ncbi.nlm.nih.gov/42920115/)
-- Signal: Jail-based opioid treatment implementation, outcomes, and costs: lessons learned from the Massachusetts Justice Community Opioid Innovation Network (MassJCOIN). (2026 Oct 23) — New reports, New PubMed papers.
-- Focus: New reports, New PubMed papers
+### [Ninety Years Later: Redlining and Opioid-Related Overdose Deaths among Massachusetts Residents, 2015-2019.](https://pubmed.ncbi.nlm.nih.gov/42969128/)
+- Signal: Ninety Years Later: Redlining and Opioid-Related Overdose Deaths among Massachusetts Residents, 2015-2019. (2026) — New reports, Mortality studies.
+- Focus: New reports, Mortality studies
 - Evidence status: Single-source signal
-- Source: PubMed — Massachusetts overdose and drug supply (2026 Oct 23)
+- Source: PubMed — Massachusetts overdose and drug supply (2026)
+- Suggested use: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
+
+### [Diagnostic performance of xylazine test strips in urine from fentanyl-positive hospitalized patients.](https://pubmed.ncbi.nlm.nih.gov/42960873/)
+- Signal: Diagnostic performance of xylazine test strips in urine from fentanyl-positive hospitalized patients. (2026 Oct 30) — Xylazine, New PubMed papers.
+- Focus: Xylazine, New PubMed papers
+- Evidence status: Cross-source signal (2 sources)
+- Source: PubMed — emerging drug surveillance (2026 Oct 30)
+- Suggested use: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
+
+### [Drug policies and annual opioid overdose mortality in U.S. states with the five worst and five best trends between 2018 and 2023: an ecological study.](https://pubmed.ncbi.nlm.nih.gov/42964771/)
+- Signal: Drug policies and annual opioid overdose mortality in U.S. states with the five worst and five best trends between 2018 and 2023: an ecological study. (2026 Dec) — Mortality studies.
+- Focus: Mortality studies
+- Evidence status: Single-source signal
+- Source: PubMed — overdose mortality studies (2026 Dec)
 - Suggested use: May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
 
 ## Use boundary

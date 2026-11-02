@@ -1,30 +1,30 @@
 # One-pager source brief
 
 **Sources checked:** 50
-**Items selected:** 9
+**Items selected:** 10
 
 ## What is new
 
-- **[Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence)** — Page content changed: NIJ NPS Discovery Research (2026-10-26) — Nitazenes, Medetomidine, Synthetic cannabinoids.
-- **[Page content changed: NIST Rapid Drug Analysis and Research](https://www.nist.gov/programs-projects/radar)** — Page content changed: NIST Rapid Drug Analysis and Research (2026-10-26) — Nitazenes, Medetomidine, Xylazine.
-- **[Page content changed: NIJ NPS Discovery Trend Reports](https://nij.ojp.gov/library/publications/nps-discovery-q3-2025-trend-reports-nps-benzodiazepines-nps-opioids-nps)** — Page content changed: NIJ NPS Discovery Trend Reports (2026-10-26) — Synthetic cannabinoids.
-- **[Development and Validation of an Oral Fluid LC-MS/MS Method for Screening Emerging Synthetic Opioids Including Fentanyl Analogues, Nitazenes, and Xylazine.](https://pubmed.ncbi.nlm.nih.gov/42920258/)** — Development and Validation of an Oral Fluid LC-MS/MS Method for Screening Emerging Synthetic Opioids Including Fentanyl Analogues, Nitazenes, and Xylazine. (2026 Oct 23) — Nitazenes, Xylazine, New PubMed papers.
-- **[Page content changed: Wisconsin Drug Checking Technologies](https://www.dhs.wisconsin.gov/aoda/drug-checking.htm)** — Page content changed: Wisconsin Drug Checking Technologies (2026-10-26) — Xylazine.
+- **[Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence)** — Page content changed: NIJ NPS Discovery Research (2026-11-02) — Nitazenes, Medetomidine, Synthetic cannabinoids.
+- **[Page content changed: NIJ NPS Discovery Trend Reports](https://nij.ojp.gov/library/publications/nps-discovery-q3-2025-trend-reports-nps-benzodiazepines-nps-opioids-nps)** — Page content changed: NIJ NPS Discovery Trend Reports (2026-11-02) — Synthetic cannabinoids.
+- **[Page content changed: New York Drug Checking Service](https://www.health.ny.gov/diseases/aids/consumers/prevention/oduh/drug_checking.htm)** — Page content changed: New York Drug Checking Service (2026-11-02) — Xylazine.
+- **[Ninety Years Later: Redlining and Opioid-Related Overdose Deaths among Massachusetts Residents, 2015-2019.](https://pubmed.ncbi.nlm.nih.gov/42969128/)** — Ninety Years Later: Redlining and Opioid-Related Overdose Deaths among Massachusetts Residents, 2015-2019. (2026) — New reports, Mortality studies.
+- **[Impact of drug scheduling on detection of bromazolam in the unregulated opioid supply: An interrupted time series analysis.](https://pubmed.ncbi.nlm.nih.gov/42950364/)** — Impact of drug scheduling on detection of bromazolam in the unregulated opioid supply: An interrupted time series analysis. (2026 Oct 22) — Novel benzodiazepines, New PubMed papers.
 
 ## Substances to watch
 
-- **Nitazenes:** 3 new item(s); sources: NIJ NPS Discovery Research, NIST Rapid Drug Analysis and Research, PubMed — emerging drug surveillance.
-- **Medetomidine:** 3 new item(s); sources: NIJ NPS Discovery Research, NIST Rapid Drug Analysis and Research, PubMed — emerging drug surveillance.
-- **Xylazine:** 3 new item(s); sources: NIST Rapid Drug Analysis and Research, Wisconsin Drug Checking Technologies, PubMed — emerging drug surveillance.
-- **Novel benzodiazepines:** 2 new item(s); sources: PubMed — forensic toxicology case reports, PubMed — emerging drug surveillance.
-- **Synthetic cannabinoids:** 2 new item(s); sources: NIJ NPS Discovery Research, NIJ NPS Discovery Trend Reports.
+- **Nitazenes:** 1 new item(s); sources: NIJ NPS Discovery Research.
+- **Medetomidine:** 1 new item(s); sources: NIJ NPS Discovery Research.
+- **Xylazine:** 2 new item(s); sources: New York Drug Checking Service, PubMed — emerging drug surveillance.
+- **Novel benzodiazepines:** 3 new item(s); sources: PubMed — emerging drug surveillance, PubMed — forensic toxicology case reports.
+- **Synthetic cannabinoids:** 3 new item(s); sources: NIJ NPS Discovery Research, NIJ NPS Discovery Trend Reports, PubMed — forensic toxicology case reports.
 
 ## Practical relevance
 
-- **Court staff (7):** May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
-- **Treatment providers (9):** May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
-- **Harm reduction (7):** May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-- **Law enforcement (5):** May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
+- **Court staff (9):** May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
+- **Treatment providers (6):** May inform screening, clinical vigilance, and staff education; verify clinical guidance with the linked source.
+- **Harm reduction (5):** May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+- **Law enforcement (8):** May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
 
 ## Use note
 
