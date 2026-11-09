@@ -10,59 +10,59 @@ May inform outreach, supply education, and alert monitoring; confirm local relev
 ## Priority signals
 
 ### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence)
-- Signal: Page content changed: NIJ NPS Discovery Research (2026-11-02) — Nitazenes, Medetomidine, Synthetic cannabinoids.
+- Signal: Page content changed: NIJ NPS Discovery Research (2026-11-09) — Nitazenes, Medetomidine, Synthetic cannabinoids.
 - Focus: Nitazenes, Medetomidine, Synthetic cannabinoids
 - Evidence status: Change detected — source review required
-- Source: NIJ NPS Discovery Research (2026-11-02)
+- Source: NIJ NPS Discovery Research (2026-11-09)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
 ### [Page content changed: CDC DOSE-SYS Nonfatal Overdose Dashboard](https://www.cdc.gov/overdose-prevention/data-research/facts-stats/dose-dashboard-nonfatal-surveillance-data.html)
-- Signal: Page content changed: CDC DOSE-SYS Nonfatal Overdose Dashboard (2026-11-02) — United States.
+- Signal: Page content changed: CDC DOSE-SYS Nonfatal Overdose Dashboard (2026-11-09) — United States.
 - Focus: United States
 - Evidence status: Change detected — source review required
-- Source: CDC DOSE-SYS Nonfatal Overdose Dashboard (2026-11-02)
+- Source: CDC DOSE-SYS Nonfatal Overdose Dashboard (2026-11-09)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
-### [Page content changed: New York Drug Checking Service](https://www.health.ny.gov/diseases/aids/consumers/prevention/oduh/drug_checking.htm)
-- Signal: Page content changed: New York Drug Checking Service (2026-11-02) — Xylazine.
-- Focus: Xylazine
-- Evidence status: Change detected — source review required
-- Source: New York Drug Checking Service (2026-11-02)
-- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-
-### [Page content changed: Vermont Substance Use Data and Reports](https://www.healthvermont.gov/alcohol-drugs/substance-use-data-reports/data-and-reports)
-- Signal: Page content changed: Vermont Substance Use Data and Reports (2026-11-02) — United States.
-- Focus: United States
-- Evidence status: Change detected — source review required
-- Source: Vermont Substance Use Data and Reports (2026-11-02)
-- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-
-### [Ninety Years Later: Redlining and Opioid-Related Overdose Deaths among Massachusetts Residents, 2015-2019.](https://pubmed.ncbi.nlm.nih.gov/42969128/)
-- Signal: Ninety Years Later: Redlining and Opioid-Related Overdose Deaths among Massachusetts Residents, 2015-2019. (2026) — New reports, Mortality studies.
-- Focus: New reports, Mortality studies
-- Evidence status: Single-source signal
-- Source: PubMed — Massachusetts overdose and drug supply (2026)
-- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-
-### [Diagnostic performance of xylazine test strips in urine from fentanyl-positive hospitalized patients.](https://pubmed.ncbi.nlm.nih.gov/42960873/)
-- Signal: Diagnostic performance of xylazine test strips in urine from fentanyl-positive hospitalized patients. (2026 Oct 30) — Xylazine, New PubMed papers.
+### ["It Just Puts You Out!" 'Tranq Sleep,' Sensory Discernment, and the Experience of Consuming Xylazine-Adulterated Fentanyl in Rural North Carolina.](https://pubmed.ncbi.nlm.nih.gov/42990465/)
+- Signal: "It Just Puts You Out!" 'Tranq Sleep,' Sensory Discernment, and the Experience of Consuming Xylazine-Adulterated Fentanyl in Rural North Carolina. (2026 Oct 30) — Xylazine, New PubMed papers.
 - Focus: Xylazine, New PubMed papers
-- Evidence status: Cross-source signal (2 sources)
+- Evidence status: Single-source signal
 - Source: PubMed — emerging drug surveillance (2026 Oct 30)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
-### [Drug policies and annual opioid overdose mortality in U.S. states with the five worst and five best trends between 2018 and 2023: an ecological study.](https://pubmed.ncbi.nlm.nih.gov/42964771/)
-- Signal: Drug policies and annual opioid overdose mortality in U.S. states with the five worst and five best trends between 2018 and 2023: an ecological study. (2026 Dec) — Mortality studies.
-- Focus: Mortality studies
-- Evidence status: Single-source signal
-- Source: PubMed — overdose mortality studies (2026 Dec)
+### [Characterizing the Emergence of Medetomidine in Southern California Fentanyl Markets.](https://pubmed.ncbi.nlm.nih.gov/42996303/)
+- Signal: Characterizing the Emergence of Medetomidine in Southern California Fentanyl Markets. (2026 Oct 22) — Medetomidine, New PubMed papers.
+- Focus: Medetomidine, New PubMed papers
+- Evidence status: Cross-source signal (2 sources)
+- Source: PubMed — emerging drug surveillance (2026 Oct 22)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
-### [A portable voltammetric sensor for presumptive screening of xylazine and ketamine in spiked beverages.](https://pubmed.ncbi.nlm.nih.gov/42952122/)
-- Signal: A portable voltammetric sensor for presumptive screening of xylazine and ketamine in spiked beverages. (2026 Oct 28) — Xylazine, New PubMed papers.
-- Focus: Xylazine, New PubMed papers
+### [Medetomidine in the US Illegal Fentanyl Supply: An Emerging Threat Requiring Physician Awareness.](https://pubmed.ncbi.nlm.nih.gov/42981510/)
+- Signal: Medetomidine in the US Illegal Fentanyl Supply: An Emerging Threat Requiring Physician Awareness. (2026) — Medetomidine, New PubMed papers.
+- Focus: Medetomidine, New PubMed papers
 - Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — emerging drug surveillance (2026 Oct 28)
+- Source: PubMed — emerging drug surveillance (2026)
+- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+
+### [November 2026 – Current NPS Threats: Emerging benzodiazepine-type NPS in 2025...](https://www.unodc.org/LSS/Announcement/Details/01443756-f804-4d01-a281-ae3e728249a3)
+- Signal: November 2026 – Current NPS Threats: Emerging benzodiazepine-type NPS in 2025... — International.
+- Focus: International
+- Evidence status: Single-source signal
+- Source: UNODC Early Warning Advisory
+- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+
+### [Impact of improved access to medications for opioid use disorder in residential treatment.](https://pubmed.ncbi.nlm.nih.gov/42971934/)
+- Signal: Impact of improved access to medications for opioid use disorder in residential treatment. (2026 Nov 2) — New reports, New PubMed papers.
+- Focus: New reports, New PubMed papers
+- Evidence status: Single-source signal
+- Source: PubMed — Massachusetts overdose and drug supply (2026 Nov 2)
+- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+
+### [Medetomidine: Dose-Response Approach to Drug Monitoring.](https://pubmed.ncbi.nlm.nih.gov/42976234/)
+- Signal: Medetomidine: Dose-Response Approach to Drug Monitoring. (2026 Nov 2) — Medetomidine, New PubMed papers.
+- Focus: Medetomidine, New PubMed papers
+- Evidence status: Cross-source signal (2 sources)
+- Source: PubMed — emerging drug surveillance (2026 Nov 2)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
 ## Use boundary

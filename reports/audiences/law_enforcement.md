@@ -10,59 +10,59 @@ May inform situational awareness and training; surveillance signals alone do not
 ## Priority signals
 
 ### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence)
-- Signal: Page content changed: NIJ NPS Discovery Research (2026-11-02) — Nitazenes, Medetomidine, Synthetic cannabinoids.
+- Signal: Page content changed: NIJ NPS Discovery Research (2026-11-09) — Nitazenes, Medetomidine, Synthetic cannabinoids.
 - Focus: Nitazenes, Medetomidine, Synthetic cannabinoids
 - Evidence status: Change detected — source review required
-- Source: NIJ NPS Discovery Research (2026-11-02)
+- Source: NIJ NPS Discovery Research (2026-11-09)
 - Suggested use: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
 
 ### [Page content changed: NIJ NPS Discovery Trend Reports](https://nij.ojp.gov/library/publications/nps-discovery-q3-2025-trend-reports-nps-benzodiazepines-nps-opioids-nps)
-- Signal: Page content changed: NIJ NPS Discovery Trend Reports (2026-11-02) — Synthetic cannabinoids.
+- Signal: Page content changed: NIJ NPS Discovery Trend Reports (2026-11-09) — Synthetic cannabinoids.
 - Focus: Synthetic cannabinoids
 - Evidence status: Change detected — source review required
-- Source: NIJ NPS Discovery Trend Reports (2026-11-02)
+- Source: NIJ NPS Discovery Trend Reports (2026-11-09)
 - Suggested use: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
 
-### [Ninety Years Later: Redlining and Opioid-Related Overdose Deaths among Massachusetts Residents, 2015-2019.](https://pubmed.ncbi.nlm.nih.gov/42969128/)
-- Signal: Ninety Years Later: Redlining and Opioid-Related Overdose Deaths among Massachusetts Residents, 2015-2019. (2026) — New reports, Mortality studies.
-- Focus: New reports, Mortality studies
-- Evidence status: Single-source signal
-- Source: PubMed — Massachusetts overdose and drug supply (2026)
-- Suggested use: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
-
-### [Impact of drug scheduling on detection of bromazolam in the unregulated opioid supply: An interrupted time series analysis.](https://pubmed.ncbi.nlm.nih.gov/42950364/)
-- Signal: Impact of drug scheduling on detection of bromazolam in the unregulated opioid supply: An interrupted time series analysis. (2026 Oct 22) — Novel benzodiazepines, New PubMed papers.
-- Focus: Novel benzodiazepines, New PubMed papers
-- Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — emerging drug surveillance (2026 Oct 22)
-- Suggested use: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
-
-### [Bromazolam Positive Toxicology Cases: Analytical Findings and Observed Impairment.](https://pubmed.ncbi.nlm.nih.gov/42937126/)
-- Signal: Bromazolam Positive Toxicology Cases: Analytical Findings and Observed Impairment. (2026 Oct 27) — Novel benzodiazepines, Toxicology case reports.
+### [Bromazolam positive toxicology cases: analytical findings and observed impairment.](https://pubmed.ncbi.nlm.nih.gov/42937126/)
+- Signal: Bromazolam positive toxicology cases: analytical findings and observed impairment. (2026 Sep 26) — Novel benzodiazepines, Toxicology case reports.
 - Focus: Novel benzodiazepines, Toxicology case reports
 - Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — forensic toxicology case reports (2026 Oct 27)
+- Source: PubMed — forensic toxicology case reports (2026 Sep 26)
 - Suggested use: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
 
-### [Diagnostic performance of xylazine test strips in urine from fentanyl-positive hospitalized patients.](https://pubmed.ncbi.nlm.nih.gov/42960873/)
-- Signal: Diagnostic performance of xylazine test strips in urine from fentanyl-positive hospitalized patients. (2026 Oct 30) — Xylazine, New PubMed papers.
-- Focus: Xylazine, New PubMed papers
-- Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — emerging drug surveillance (2026 Oct 30)
-- Suggested use: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
-
-### [Bromazolam Positive Toxicology Cases: Analytical Findings and Observed Impairment.](https://pubmed.ncbi.nlm.nih.gov/42937126/)
-- Signal: Bromazolam Positive Toxicology Cases: Analytical Findings and Observed Impairment. (2026 Oct 27) — Novel benzodiazepines, New PubMed papers.
+### [Bromazolam positive toxicology cases: analytical findings and observed impairment.](https://pubmed.ncbi.nlm.nih.gov/42937126/)
+- Signal: Bromazolam positive toxicology cases: analytical findings and observed impairment. (2026 Sep 26) — Novel benzodiazepines, New PubMed papers.
 - Focus: Novel benzodiazepines, New PubMed papers
 - Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — emerging drug surveillance (2026 Oct 27)
+- Source: PubMed — emerging drug surveillance (2026 Sep 26)
 - Suggested use: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
 
-### [Physiologically based pharmacokinetic modeling as a translational tool in forensic toxicology: from pig to human synthetic cannabinoid toxicokinetics using 5F-Cumyl-P7AICA and its major metabolite as a case study.](https://pubmed.ncbi.nlm.nih.gov/42965597/)
-- Signal: Physiologically based pharmacokinetic modeling as a translational tool in forensic toxicology: from pig to human synthetic cannabinoid toxicokinetics using 5F-Cumyl-P7AICA and its major metabolite as a case study. (2026 Oct 31) — Synthetic cannabinoids, Toxicology case reports.
+### [Impact of improved access to medications for opioid use disorder in residential treatment.](https://pubmed.ncbi.nlm.nih.gov/42971934/)
+- Signal: Impact of improved access to medications for opioid use disorder in residential treatment. (2026 Nov 2) — New reports, New PubMed papers.
+- Focus: New reports, New PubMed papers
+- Evidence status: Single-source signal
+- Source: PubMed — Massachusetts overdose and drug supply (2026 Nov 2)
+- Suggested use: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
+
+### [Case Report: Mislabeling of an online "alprazolam triazolobenzophenone" pill leads to severe intoxication with the novel synthetic opioid cychlorphine.](https://pubmed.ncbi.nlm.nih.gov/42979587/)
+- Signal: Case Report: Mislabeling of an online "alprazolam triazolobenzophenone" pill leads to severe intoxication with the novel synthetic opioid cychlorphine. (2026) — Toxicology case reports.
+- Focus: Toxicology case reports
+- Evidence status: Single-source signal
+- Source: PubMed — forensic toxicology case reports (2026)
+- Suggested use: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
+
+### [Case Report: Mislabeling of an online "alprazolam triazolobenzophenone" pill leads to severe intoxication with the novel synthetic opioid cychlorphine.](https://pubmed.ncbi.nlm.nih.gov/42979587/)
+- Signal: Case Report: Mislabeling of an online "alprazolam triazolobenzophenone" pill leads to severe intoxication with the novel synthetic opioid cychlorphine. (2026) — Toxicology case reports.
+- Focus: Toxicology case reports
+- Evidence status: Single-source signal
+- Source: PubMed — emerging drug surveillance (2026)
+- Suggested use: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
+
+### [Caps Off to Abstinence: Unraveling Synthetic Cannabinoid Contamination in Hair Analysis With Headgear Evidence?](https://pubmed.ncbi.nlm.nih.gov/42989845/)
+- Signal: Caps Off to Abstinence: Unraveling Synthetic Cannabinoid Contamination in Hair Analysis With Headgear Evidence? (2026 Nov 5) — Synthetic cannabinoids, Toxicology case reports.
 - Focus: Synthetic cannabinoids, Toxicology case reports
 - Evidence status: Cross-source signal (3 sources)
-- Source: PubMed — forensic toxicology case reports (2026 Oct 31)
+- Source: PubMed — forensic toxicology case reports (2026 Nov 5)
 - Suggested use: May inform situational awareness and training; surveillance signals alone do not establish identity, impairment, or culpability.
 
 ## Use boundary
