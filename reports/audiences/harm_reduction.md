@@ -10,59 +10,59 @@ May inform outreach, supply education, and alert monitoring; confirm local relev
 ## Priority signals
 
 ### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence)
-- Signal: Page content changed: NIJ NPS Discovery Research (2026-11-09) — Nitazenes, Medetomidine, Synthetic cannabinoids.
+- Signal: Page content changed: NIJ NPS Discovery Research (2026-11-16) — Nitazenes, Medetomidine, Synthetic cannabinoids.
 - Focus: Nitazenes, Medetomidine, Synthetic cannabinoids
 - Evidence status: Change detected — source review required
-- Source: NIJ NPS Discovery Research (2026-11-09)
+- Source: NIJ NPS Discovery Research (2026-11-16)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
-### [Page content changed: CDC DOSE-SYS Nonfatal Overdose Dashboard](https://www.cdc.gov/overdose-prevention/data-research/facts-stats/dose-dashboard-nonfatal-surveillance-data.html)
-- Signal: Page content changed: CDC DOSE-SYS Nonfatal Overdose Dashboard (2026-11-09) — United States.
+### [Page content changed: CDC DOSE-DIS Nonfatal Overdose Dashboard](https://www.cdc.gov/overdose-prevention/data-research/facts-stats/dose-dashboard-nonfatal-discharge-data.html)
+- Signal: Page content changed: CDC DOSE-DIS Nonfatal Overdose Dashboard (2026-11-16) — United States.
 - Focus: United States
 - Evidence status: Change detected — source review required
-- Source: CDC DOSE-SYS Nonfatal Overdose Dashboard (2026-11-09)
+- Source: CDC DOSE-DIS Nonfatal Overdose Dashboard (2026-11-16)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
-### ["It Just Puts You Out!" 'Tranq Sleep,' Sensory Discernment, and the Experience of Consuming Xylazine-Adulterated Fentanyl in Rural North Carolina.](https://pubmed.ncbi.nlm.nih.gov/42990465/)
-- Signal: "It Just Puts You Out!" 'Tranq Sleep,' Sensory Discernment, and the Experience of Consuming Xylazine-Adulterated Fentanyl in Rural North Carolina. (2026 Oct 30) — Xylazine, New PubMed papers.
+### [Fatal polysubstance intoxications involving inhalation of nitazene analogues: identification of fluetonitazepyne and 5-methyl etodesnitazene.](https://pubmed.ncbi.nlm.nih.gov/43003943/)
+- Signal: Fatal polysubstance intoxications involving inhalation of nitazene analogues: identification of fluetonitazepyne and 5-methyl etodesnitazene. (2026 Nov 10) — Nitazenes, Toxicology case reports.
+- Focus: Nitazenes, Toxicology case reports
+- Evidence status: Cross-source signal (3 sources)
+- Source: PubMed — forensic toxicology case reports (2026 Nov 10)
+- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+
+### [Fatal polysubstance intoxications involving inhalation of nitazene analogues: identification of fluetonitazepyne and 5-methyl etodesnitazene.](https://pubmed.ncbi.nlm.nih.gov/43003943/)
+- Signal: Fatal polysubstance intoxications involving inhalation of nitazene analogues: identification of fluetonitazepyne and 5-methyl etodesnitazene. (2026 Nov 10) — Nitazenes, Mortality studies.
+- Focus: Nitazenes, Mortality studies
+- Evidence status: Cross-source signal (3 sources)
+- Source: PubMed — emerging drug surveillance (2026 Nov 10)
+- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
+
+### [Fentanyl and xylazine precipitated withdrawal in Swiss Webster mice.](https://pubmed.ncbi.nlm.nih.gov/43008358/)
+- Signal: Fentanyl and xylazine precipitated withdrawal in Swiss Webster mice. (2026 Oct 31) — Xylazine, New PubMed papers.
 - Focus: Xylazine, New PubMed papers
 - Evidence status: Single-source signal
-- Source: PubMed — emerging drug surveillance (2026 Oct 30)
+- Source: PubMed — emerging drug surveillance (2026 Oct 31)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
-### [Characterizing the Emergence of Medetomidine in Southern California Fentanyl Markets.](https://pubmed.ncbi.nlm.nih.gov/42996303/)
-- Signal: Characterizing the Emergence of Medetomidine in Southern California Fentanyl Markets. (2026 Oct 22) — Medetomidine, New PubMed papers.
-- Focus: Medetomidine, New PubMed papers
-- Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — emerging drug surveillance (2026 Oct 22)
+### [Page content changed: CDC Provisional Drug Overdose Death Counts](https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm)
+- Signal: Page content changed: CDC Provisional Drug Overdose Death Counts (2026-11-16) — United States.
+- Focus: United States
+- Evidence status: Change detected — source review required
+- Source: CDC Provisional Drug Overdose Death Counts (2026-11-16)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
-### [Medetomidine in the US Illegal Fentanyl Supply: An Emerging Threat Requiring Physician Awareness.](https://pubmed.ncbi.nlm.nih.gov/42981510/)
-- Signal: Medetomidine in the US Illegal Fentanyl Supply: An Emerging Threat Requiring Physician Awareness. (2026) — Medetomidine, New PubMed papers.
-- Focus: Medetomidine, New PubMed papers
-- Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — emerging drug surveillance (2026)
-- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-
-### [November 2026 – Current NPS Threats: Emerging benzodiazepine-type NPS in 2025...](https://www.unodc.org/LSS/Announcement/Details/01443756-f804-4d01-a281-ae3e728249a3)
-- Signal: November 2026 – Current NPS Threats: Emerging benzodiazepine-type NPS in 2025... — International.
-- Focus: International
+### [Trends in all-cause, overdose and opioid overdose mortality by Medicaid enrollment status in Wisconsin, 2017-2022.](https://pubmed.ncbi.nlm.nih.gov/43003235/)
+- Signal: Trends in all-cause, overdose and opioid overdose mortality by Medicaid enrollment status in Wisconsin, 2017-2022. (2026 Nov 9) — Mortality studies.
+- Focus: Mortality studies
 - Evidence status: Single-source signal
-- Source: UNODC Early Warning Advisory
+- Source: PubMed — overdose mortality studies (2026 Nov 9)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
-### [Impact of improved access to medications for opioid use disorder in residential treatment.](https://pubmed.ncbi.nlm.nih.gov/42971934/)
-- Signal: Impact of improved access to medications for opioid use disorder in residential treatment. (2026 Nov 2) — New reports, New PubMed papers.
-- Focus: New reports, New PubMed papers
-- Evidence status: Single-source signal
-- Source: PubMed — Massachusetts overdose and drug supply (2026 Nov 2)
-- Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
-
-### [Medetomidine: Dose-Response Approach to Drug Monitoring.](https://pubmed.ncbi.nlm.nih.gov/42976234/)
-- Signal: Medetomidine: Dose-Response Approach to Drug Monitoring. (2026 Nov 2) — Medetomidine, New PubMed papers.
-- Focus: Medetomidine, New PubMed papers
-- Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — emerging drug surveillance (2026 Nov 2)
+### [Page content changed: CDC SUDORS Fatal Overdose Dashboard](https://www.cdc.gov/overdose-prevention/data-research/facts-stats/sudors-dashboard-fatal-overdose-data.html)
+- Signal: Page content changed: CDC SUDORS Fatal Overdose Dashboard (2026-11-16) — United States.
+- Focus: United States
+- Evidence status: Change detected — source review required
+- Source: CDC SUDORS Fatal Overdose Dashboard (2026-11-16)
 - Suggested use: May inform outreach, supply education, and alert monitoring; confirm local relevance before distribution.
 
 ## Use boundary

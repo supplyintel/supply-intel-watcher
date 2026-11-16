@@ -10,59 +10,59 @@ May inform court education, case context, and referral conversations; do not tre
 ## Priority signals
 
 ### [Page content changed: NIJ NPS Discovery Research](https://nij.ojp.gov/library/publications/implementation-nps-discovery-early-warning-system-novel-drug-intelligence)
-- Signal: Page content changed: NIJ NPS Discovery Research (2026-11-09) — Nitazenes, Medetomidine, Synthetic cannabinoids.
+- Signal: Page content changed: NIJ NPS Discovery Research (2026-11-16) — Nitazenes, Medetomidine, Synthetic cannabinoids.
 - Focus: Nitazenes, Medetomidine, Synthetic cannabinoids
 - Evidence status: Change detected — source review required
-- Source: NIJ NPS Discovery Research (2026-11-09)
+- Source: NIJ NPS Discovery Research (2026-11-16)
 - Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
 
-### [Page content changed: CDC DOSE-SYS Nonfatal Overdose Dashboard](https://www.cdc.gov/overdose-prevention/data-research/facts-stats/dose-dashboard-nonfatal-surveillance-data.html)
-- Signal: Page content changed: CDC DOSE-SYS Nonfatal Overdose Dashboard (2026-11-09) — United States.
+### [Page content changed: CDC DOSE-DIS Nonfatal Overdose Dashboard](https://www.cdc.gov/overdose-prevention/data-research/facts-stats/dose-dashboard-nonfatal-discharge-data.html)
+- Signal: Page content changed: CDC DOSE-DIS Nonfatal Overdose Dashboard (2026-11-16) — United States.
 - Focus: United States
 - Evidence status: Change detected — source review required
-- Source: CDC DOSE-SYS Nonfatal Overdose Dashboard (2026-11-09)
+- Source: CDC DOSE-DIS Nonfatal Overdose Dashboard (2026-11-16)
 - Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
 
-### [Bromazolam positive toxicology cases: analytical findings and observed impairment.](https://pubmed.ncbi.nlm.nih.gov/42937126/)
-- Signal: Bromazolam positive toxicology cases: analytical findings and observed impairment. (2026 Sep 26) — Novel benzodiazepines, Toxicology case reports.
-- Focus: Novel benzodiazepines, Toxicology case reports
-- Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — forensic toxicology case reports (2026 Sep 26)
-- Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
-
-### [Bromazolam positive toxicology cases: analytical findings and observed impairment.](https://pubmed.ncbi.nlm.nih.gov/42937126/)
-- Signal: Bromazolam positive toxicology cases: analytical findings and observed impairment. (2026 Sep 26) — Novel benzodiazepines, New PubMed papers.
-- Focus: Novel benzodiazepines, New PubMed papers
-- Evidence status: Cross-source signal (2 sources)
-- Source: PubMed — emerging drug surveillance (2026 Sep 26)
-- Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
-
-### [Impact of improved access to medications for opioid use disorder in residential treatment.](https://pubmed.ncbi.nlm.nih.gov/42971934/)
-- Signal: Impact of improved access to medications for opioid use disorder in residential treatment. (2026 Nov 2) — New reports, New PubMed papers.
-- Focus: New reports, New PubMed papers
-- Evidence status: Single-source signal
-- Source: PubMed — Massachusetts overdose and drug supply (2026 Nov 2)
-- Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
-
-### [Case Report: Mislabeling of an online "alprazolam triazolobenzophenone" pill leads to severe intoxication with the novel synthetic opioid cychlorphine.](https://pubmed.ncbi.nlm.nih.gov/42979587/)
-- Signal: Case Report: Mislabeling of an online "alprazolam triazolobenzophenone" pill leads to severe intoxication with the novel synthetic opioid cychlorphine. (2026) — Toxicology case reports.
-- Focus: Toxicology case reports
-- Evidence status: Single-source signal
-- Source: PubMed — forensic toxicology case reports (2026)
-- Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
-
-### [Case Report: Mislabeling of an online "alprazolam triazolobenzophenone" pill leads to severe intoxication with the novel synthetic opioid cychlorphine.](https://pubmed.ncbi.nlm.nih.gov/42979587/)
-- Signal: Case Report: Mislabeling of an online "alprazolam triazolobenzophenone" pill leads to severe intoxication with the novel synthetic opioid cychlorphine. (2026) — Toxicology case reports.
-- Focus: Toxicology case reports
-- Evidence status: Single-source signal
-- Source: PubMed — emerging drug surveillance (2026)
-- Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
-
-### [Caps Off to Abstinence: Unraveling Synthetic Cannabinoid Contamination in Hair Analysis With Headgear Evidence?](https://pubmed.ncbi.nlm.nih.gov/42989845/)
-- Signal: Caps Off to Abstinence: Unraveling Synthetic Cannabinoid Contamination in Hair Analysis With Headgear Evidence? (2026 Nov 5) — Synthetic cannabinoids, Toxicology case reports.
-- Focus: Synthetic cannabinoids, Toxicology case reports
+### [Fatal polysubstance intoxications involving inhalation of nitazene analogues: identification of fluetonitazepyne and 5-methyl etodesnitazene.](https://pubmed.ncbi.nlm.nih.gov/43003943/)
+- Signal: Fatal polysubstance intoxications involving inhalation of nitazene analogues: identification of fluetonitazepyne and 5-methyl etodesnitazene. (2026 Nov 10) — Nitazenes, Toxicology case reports.
+- Focus: Nitazenes, Toxicology case reports
 - Evidence status: Cross-source signal (3 sources)
-- Source: PubMed — forensic toxicology case reports (2026 Nov 5)
+- Source: PubMed — forensic toxicology case reports (2026 Nov 10)
+- Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
+
+### [Page content changed: CDC Provisional Drug Overdose Death Counts](https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm)
+- Signal: Page content changed: CDC Provisional Drug Overdose Death Counts (2026-11-16) — United States.
+- Focus: United States
+- Evidence status: Change detected — source review required
+- Source: CDC Provisional Drug Overdose Death Counts (2026-11-16)
+- Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
+
+### [Trends in all-cause, overdose and opioid overdose mortality by Medicaid enrollment status in Wisconsin, 2017-2022.](https://pubmed.ncbi.nlm.nih.gov/43003235/)
+- Signal: Trends in all-cause, overdose and opioid overdose mortality by Medicaid enrollment status in Wisconsin, 2017-2022. (2026 Nov 9) — Mortality studies.
+- Focus: Mortality studies
+- Evidence status: Single-source signal
+- Source: PubMed — overdose mortality studies (2026 Nov 9)
+- Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
+
+### [Page content changed: CDC SUDORS Fatal Overdose Dashboard](https://www.cdc.gov/overdose-prevention/data-research/facts-stats/sudors-dashboard-fatal-overdose-data.html)
+- Signal: Page content changed: CDC SUDORS Fatal Overdose Dashboard (2026-11-16) — United States.
+- Focus: United States
+- Evidence status: Change detected — source review required
+- Source: CDC SUDORS Fatal Overdose Dashboard (2026-11-16)
+- Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
+
+### [Comparison of subcutaneous and intravenous administration of the monoclonal antibody CSX-1004 on fentanyl-induced respiratory depression in squirrel monkeys.](https://pubmed.ncbi.nlm.nih.gov/43031929/)
+- Signal: Comparison of subcutaneous and intravenous administration of the monoclonal antibody CSX-1004 on fentanyl-induced respiratory depression in squirrel monkeys. (2026) — Mortality studies.
+- Focus: Mortality studies
+- Evidence status: Single-source signal
+- Source: PubMed — overdose mortality studies (2026)
+- Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
+
+### [Increases in Overdose Deaths Among People With HIV Across 14 U.S. Jurisdictions, 2014-2023.](https://pubmed.ncbi.nlm.nih.gov/43017510/)
+- Signal: Increases in Overdose Deaths Among People With HIV Across 14 U.S. Jurisdictions, 2014-2023. (2026 Dec) — Mortality studies.
+- Focus: Mortality studies
+- Evidence status: Single-source signal
+- Source: PubMed — overdose mortality studies (2026 Dec)
 - Suggested use: May inform court education, case context, and referral conversations; do not treat surveillance as evidence about an individual case.
 
 ## Use boundary
